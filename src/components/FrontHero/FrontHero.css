@@ -1,0 +1,14 @@
+.FrontHero-slider {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.FrontHero-slider>div {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
