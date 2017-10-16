@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -11,6 +15,10 @@ body {
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+
+.main-page {
+  padding-top: 59px;
 }
 
 .App-header {

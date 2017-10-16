@@ -6,16 +6,67 @@
     width: 100%;
     background-color: black;
     align-items: center;
+    z-index: 3;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.MainHeader .logo {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    padding: 0;
+    background-image: url(./rsm-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 59px;
+    margin: 0;
 }
 
 .MainHeader ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: flex-end;
 }
 
 .MainHeader ul li {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.8em;
+}
+
+.MainHeader ul li a {
     display: inline-block;
     padding: 20px;
     color: white;
+    text-decoration: none;
+
+    font-weight: lighter;
+    position: relative;
+    transition: all 0.1s ease-in;
 }
+
+.MainHeader ul li a:hover {
+    color: #e0c417;
+    transform: translateY(-2px);
+}
+
+.MainHeader ul li a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #e0c417;
+    transition: all 0.1s ease-in;
+}
+
+.MainHeader ul li a:hover:before {
+    height: 4px;
+}
+
+

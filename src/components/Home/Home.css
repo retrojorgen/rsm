@@ -1,0 +1,42 @@
+.Home .section {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.Home .welcome {
+}
+
+.Home .two-col {
+    display: flex;
+    margin-top: 80px;
+    font-family: "Rubik", sans-serif;
+}
+
+.Home .left-col,.Home .right-col {
+    width: 50%;
+    padding: 20px;
+}
+
+.Home .left-col {
+    background-image: url(./welcome-image.jpg);
+    background-size: cover;
+}
+
+.Home .right-col h2 {
+    font-weight: bold;
+    font-size: 2em;
+    color: #e0c417;
+    margin-top: 0;
+    max-width: 600px;
+}
+
+.Home .right-col p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: white;
+    max-width: 600px;
+    
+}
+
+
+

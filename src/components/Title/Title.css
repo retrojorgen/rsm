@@ -1,0 +1,48 @@
+.Title {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.Title h1 {
+    display: inline-block;
+    color: white;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2em;
+    position: relative;
+    margin-top: 40px;
+     
+}
+.Title h1 span {
+    display: block;
+    padding: 10px 20px;
+    background-color: black; 
+    position: relative;
+    z-index: 2; 
+}
+
+.Title h1:before {  
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 5px;
+    background-color: #e0c417;
+    transform: rotate(-2deg);
+    z-index: 1;
+}
+.Title h1:after {  
+    content: ""; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 5px;
+    background-color: #e0c417;
+    transform: rotate(-2deg);
+    z-index: 1;
+}

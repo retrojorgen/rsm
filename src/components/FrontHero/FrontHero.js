@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './FrontHero.css';
 
+import SliderRsm from './../SliderRsm/SliderRsm';
+
 export default class FrontHero extends Component {
     render() {
+        let sliderHeight = window.innerHeight - 59;
         return (
-            <div>
+            <div  className="FrontHero-wrapper" style={{'height': sliderHeight + 'px'}}>
                 <Slider className="FrontHero-slider">
-                    <div><h3>1</h3></div>
-                    <div><h3>2</h3></div>
-                    <div><h3>3</h3></div>
-                    <div><h3>4</h3></div>
-                    <div><h3>5</h3></div>
-                    <div><h3>6</h3></div>
+                    <div><SliderRsm /></div>
+                    <div></div>
                 </Slider>
             </div>
         )
