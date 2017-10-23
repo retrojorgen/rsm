@@ -1,1 +1,15 @@
-2017/10/06-14:34:40.728 33795 Reusing MANIFEST /Users/retrojorgen/Repos/private/retrospillmessen/.vscode/chrome/Default/Session Storage/MANIFEST-000001
+2017/10/15-14:18:04.550 33027 Reusing MANIFEST /Users/jorgenjacobsen/Repos/private/rsm/.vscode/chrome/Default/Session Storage/MANIFEST-000001
+2017/10/15-14:18:04.550 33027 Recovering log #3
+2017/10/15-14:18:04.551 33027 Reusing old log /Users/jorgenjacobsen/Repos/private/rsm/.vscode/chrome/Default/Session Storage/000003.log 
+2017/10/18-12:51:38.538 217899 Level-0 table #5: started
+2017/10/18-12:51:38.540 217899 Level-0 table #5: 19360 bytes OK
+2017/10/18-12:51:38.542 217899 Delete type=0 #3
+2017/10/18-14:27:48.647 217899 Level-0 table #7: started
+2017/10/18-14:27:48.650 217899 Level-0 table #7: 15514 bytes OK
+2017/10/18-14:27:48.652 217899 Delete type=0 #4
+2017/10/18-15:07:14.756 217899 Compacting 1@1 + 1@2 files
+2017/10/18-15:07:14.759 217899 Generated table #8@1: 250 keys, 15691 bytes
+2017/10/18-15:07:14.759 217899 Compacted 1@1 + 1@2 files => 15691 bytes
+2017/10/18-15:07:14.760 217899 compacted to: files[ 0 0 1 0 0 0 0 ]
+2017/10/18-15:07:14.760 217899 Delete type=2 #5
+2017/10/18-15:07:14.761 217899 Delete type=2 #7
