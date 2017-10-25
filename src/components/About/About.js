@@ -86,7 +86,8 @@ const ImageSection = styled.div `
   background: url(${props => props.backgroundImage});
   background-size: cover;  
   background-position:center center;
-  bnackground-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: block;
   opacity: 0.6;
   box-shadow: 0 0 40px black inset;

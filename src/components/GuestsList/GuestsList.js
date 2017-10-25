@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import HeaderBackground from './al-lowe-background.jpg';
+import HeaderBackground from './top-background.jpg';
 import LarryBackground from './al-lowe-background.jpg';
 import SectionBackground from './guests-background.jpg';
+import Allowe from './allowe.png';
 
 import Title from '../Title/Title';
 
@@ -52,19 +53,47 @@ const ImageSection = styled.div `
   background: url(${props => props.backgroundImage});
   background-size: cover;  
   background-position:center center;
-  bnackground-repeat: no-repeat;
+  background-repeat: no-repeat;
   display: block;
   opacity: 0.6;
   box-shadow: 0 0 40px black inset;
+  background-attachment: fixed;
   &:hover {
     opacity: 0.9;
   }
   @media (max-device-width: 1100px) {
     position: relative;
+    background-size: auto 100%;
     height: 300px;
     opacity: 1;
     text-align: center;
   } 
+`;
+
+const ProfileSection = styled.div `
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: url(${props => props.backgroundImage});
+background-size: 50%;  
+background-position:left bottom;
+background-repeat: no-repeat;
+display: block;
+opacity: 1;
+box-shadow: 0 0 40px black inset;
+&:hover {
+  opacity: 1;
+}
+@media (max-device-width: 1100px) {
+  position: absolute;
+  background-size: 80%;
+  background-position:center bottom;  
+  height: 300px;
+  opacity: 1;
+  text-align: center;
+} 
 `;
 
 const ImageDescription = styled.span `
@@ -84,6 +113,7 @@ const ImageDescription = styled.span `
     position: relative;
     opacity: 1;
     right: auto;
+    left: auto;
     top: auto;
     margin-top: 10px;
     padding: 10px;
@@ -145,47 +175,18 @@ export default class GuestsList extends Component {
         sections: [
           {
             backgroundImage: LarryBackground,
+            personImage: Allowe,
             imageDescription: "Al Lowe kommer til Retrospillmessen 18",
             header: "Al Lowe (Leisure Suit Larry)",
             paragraphs: [
-              `Lite visste Al Lowe om at spillet han utviklet så og si alene i 1987 skulle bli et av de mest ikoniske spillene i historien!
-              Eventyrspillet om den 40 år gamle taperen Larry Laffer, som forgjeves prøver å sjarmere damer, ble
-              en farsott på sent 80- og tidlig 90-tallet.`,
-              
-              `Al Lowe var da 40 år gammel, og allerede en senior i spillbransjen. Han var egentlig musikklærer,
-              Men lærte seg selv å programmere på en Apple-maskin sent på 70-tallet. Han startet med å utvikle
-              lære-spill og ble etter kort tid oppdaget av spillselskapet Sierra Online med Roberta og Ken Williams bak roret.
-              I starten utviklet Al spill for Sierra basert på Disney-lisenser. Disse både skrev, designet og scriptet han selv.
-              Men spillet han straks skulle bli kjent for fantes faktisk allerede.`,
-              
-              `SoftPorn Adventures var et tekstbasert eventyrspill, utviklet og skapt av Chuck Benton, og utgikk av
-              samme selskap som Al nå var ansatt i, Sierra Online. Spillet kom riktignok ut ett år før Al Lowe ble ansatt,
-              og Al var storfan av det. I SoftPorn Adventures skal hovedpersonen (som ikke har navn) få tak i visse
-              objekter ved å forføre en rekke damer. Høres kjent ut?`,
-              
-              `Al skjønte fort at SoftPorn Adventures passet perfekt til den nye spillmotoren til Sierra. Han hadde allerede jobbet
-              som utvikler på Kings Quest 3 og Police Quest 1 som brukte en versjon av samme motoren.`,
-              
-              `I 1986 fikk han endelig overtalt Ken Williams til å satse på et nytt spill basert på SoftPorn Adventures. Al skapte
-              karakteren Larry Laffer (i originalspillet hadde ikke karakteren navn) og la til noen nye vitser, men brukte historien
-              og problemene slik det var i originalen. Og ikke minst den ikoniske introlåten.`,
-              
-              `I starten gikk det ikke så bra for spillet. Mange butikker nektet å ta det inn pga det grove temaet. I spillet må man 
-              blant annet ta stilling til om man skal ha seksuell omgang med en prostituert. Et tema som var langt fra kontroversielt
-              I 1987.  I starten lå spillet an til å bli den største fadesen i Sierras historie.`,
-              
-              `Det var derimot før jungeltelegrafen hørte om spillet. Sakte men sikkert gikk ryktet om spillet og etterspørselen økte.
-              Mot slutten av samme året var spillet blitt en finansiell suksess. Det ble kåret til årets beste eventyrspill og solgte
-              250 000 kopier. `,
-              
-              `7 spill ble gitt ut i hovedserien til Larry, og fortsatte med to spill med Larry’s sønn larry Lovage. En oppusset versjon av originalenspillet ble nylig utgitt på iOS.`,
-              
-              `Al pensjonerte seg offisielt fra Sierra i 1998, og bor nå i Seattle. Han kaller seg selv for verdens eldste spilldesigner. Han var tross alt på Larrys alder allerede i 1987.`,
-              
-              `Vi gleder oss utrolig mye til å få en av de virkelige legendene innen spillhistorien til Retrospillmessen 2018!`,
-              
-              `Kort oppsummert:`,
-              `Al Lowe er kjent for å skape spillserien Leisure Suit Larry. Han har også jobbet på Kings Quest- og Police Quest-serien.`
+              `Al Lowe er en av de virkelig store legendene i spillbransjen!`,
+              `Han er kjent for å ha skapt spillserien Leisure Suit Larry, ofte hyllet som et av de mest unike eventyrspillene i historien!`,
+              `Han jobbet for Sierra (tidligere Sierra On Line) store deler av karrieren, først som utvikler av lærespill på lisens fra Disney.`,
+              `Senere som utvikler på Kings Quest og Police Quest serien, før han bega seg ut på Larry-serien`,
+              `Al pensjonerte seg offisielt fra Sierra i 1998, men engasjementet for spill og humor (og elektriske togbaner) har han aldri lagt på hylla.
+              Al er i dag 71 år gammel og kaller seg for "The oldest video game developer alive". Vi gleder oss utrolig til å treffe han på RSM 18 hvor han kommer
+              både for å holde foredrag og gjøre Q&A`,
+
             ]
           },
         ]
@@ -222,6 +223,7 @@ export default class GuestsList extends Component {
           <ImageSection backgroundImage={a.backgroundImage}>
             <ImageDescription alignment={imageAligment}>{a.imageDescription}</ImageDescription>
           </ImageSection>
+          <ProfileSection backgroundImage={a.personImage}/>
           <ContentSection>
             <ContentSectionHeader>{a.header}</ContentSectionHeader>
             {a.paragraphs.map((c, ck) => (
