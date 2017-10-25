@@ -8,6 +8,9 @@ const Section = styled.div `
     display: block;
     margin-bottom: 20px;
     margin-top: 80px;
+    @media (max-device-width: 1100px) {
+        margin-top: 20px;
+    }
 `;
 
 const ContentSections = styled.div `
@@ -65,7 +68,7 @@ export default class Welcome extends React.Component {
                 <ContentSections>
                     <LeftContent />
                     <RightContent>
-                        <h2>Endelig kan vi begynne å glede oss til neste års Retrospillmesse! </h2>
+                        <h2>Endelig kan vi begynne å glede oss til årets største Retrospillmesse! </h2>
                         <p>Retrospillmessen er messa som samler gamere i alle aldre
         en helg i Sandefjord. Messen hvor vi møter gamle kjente, skaper nye minner, og ikke minst har det skikkelig moro!
         Lurer du på hva som skjer på Retrospillmessen? Les mer her..</p>

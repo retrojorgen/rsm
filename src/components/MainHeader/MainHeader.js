@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import RSMLogo from './rsm-logo.png';
 import MenuBackgroundMobile from './menu-background-mobile.jpg';
 import MediaQuery from 'react-responsive';
+import LanguageSelect from '../LanguageSelect/LanguageSelect';
 
 const MainHeaderWrapper = styled.nav`
     display: flex;
@@ -146,7 +147,57 @@ export default class MainHeader extends React.Component {
   }
 
   render() {
-    console.log(this.state.mobileButton);
+    const language = localStorage.language || 'no';
+    
+    const translation = {
+      menuItems: {
+        no: [
+          {
+            url: "/",
+            title: "Forside",
+            exact: true
+          },
+          {
+            url: "/about",
+            title: "Om Retrospillmessen"
+          },
+          {
+            url: "/rent",
+            title: "Leie stand"
+          },
+          {
+            url: "/guests",
+            title: "VIP Gjester"
+          }
+        ],
+        en: [
+          {
+            url: "/",
+            title: "Frontpage",
+            exact: true
+          },
+          {
+            url: "/about",
+            title: "About the convention"
+          },
+          {
+            url: "/rent",
+            title: "For vendors"
+          },
+          {
+            url: "/guests",
+            title: "VIP Guests"
+          }
+        ],
+      }
+    }
+
+    console.log('språk', language);
+    let menuItems = translation.menuItems[language].map((a, key) => (
+      <li key={key}><NavLink to={a.url} onClick={this.toggleMobileMenu} activeClassName="active" exact={ a.exact }>{a.title}</NavLink></li>      
+    ));
+
+
     return (
       <MainHeaderWrapper state={this.state.mobileButton}>
           <h1>RSM 18</h1>
@@ -156,14 +207,9 @@ export default class MainHeader extends React.Component {
             </MobileButton>
           </MediaQuery>
           <ul>
-              <li><NavLink to="/" onClick={this.toggleMobileMenu} activeClassName="active" exact={ true }>Forside</NavLink></li>
-              <li><NavLink to="/about" onClick={this.toggleMobileMenu} activeClassName="active">Om Retrospillmessen</NavLink></li>
-              <li><NavLink to="/rent" onClick={this.toggleMobileMenu} activeClassName="active">Leie stand</NavLink></li>
-              <li><NavLink to="/rent" onClick={this.toggleMobileMenu} activeClassName="active">VIP Gjester</NavLink></li>
-              <li><NavLink to="/rent" onClick={this.toggleMobileMenu} activeClassName="active">Timeplan</NavLink></li>
-              <li><NavLink to="/rent" onClick={this.toggleMobileMenu} activeClassName="active">Praktisk info</NavLink></li>
-              <li><NavLink to="/rent" onClick={this.toggleMobileMenu} activeClassName="active">Billetter</NavLink></li>
+            {menuItems}
           </ul>
+          <LanguageSelect />
       </MainHeaderWrapper>
     );
   }

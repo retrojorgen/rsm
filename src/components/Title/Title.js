@@ -27,7 +27,7 @@ const TitleWrap = styled.div`
     &:before {  
       content: ""; 
       position: absolute;
-      left: 0;
+      left: 10px;
       top: 0;
       width: 40%;
       height: 5px;
@@ -39,7 +39,7 @@ const TitleWrap = styled.div`
     &:after {  
       content: ""; 
       position: absolute;
-      right: 0;
+      right: 10px;
       bottom: 0;
       width: 40%;
       height: 5px;

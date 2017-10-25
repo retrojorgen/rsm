@@ -259,8 +259,11 @@
             }, {
                "date_added": "12962559171656689",
                "id": "350",
+               "meta_info": {
+                  "last_visited_desktop": "13153237251222714"
+               },
                "name": "Face",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "27",
                "type": "url",
                "url": "http://www.facebook.com/"
             }, {
@@ -302,11 +305,11 @@
                "date_added": "12962559171672000",
                "id": "356",
                "meta_info": {
-                  "last_visited": "13152816588825290",
-                  "last_visited_desktop": "13152919955292041"
+                  "last_visited": "13153123116030987",
+                  "last_visited_desktop": "13153410946337163"
                },
                "name": "NA",
-               "sync_transaction_version": "24",
+               "sync_transaction_version": "60",
                "type": "url",
                "url": "http://www.nettavisen.no/"
             }, {
@@ -527,8 +530,11 @@
                   }, {
                      "date_added": "12938707164437000",
                      "id": "1073",
+                     "meta_info": {
+                        "last_visited_desktop": "13153237251222714"
+                     },
                      "name": "Fb",
-                     "sync_transaction_version": "1",
+                     "sync_transaction_version": "27",
                      "type": "url",
                      "url": "http://www.facebook.com/"
                   }, {
@@ -563,11 +569,11 @@
                      "date_added": "12938718954732000",
                      "id": "1078",
                      "meta_info": {
-                        "last_visited": "13153073848561948",
-                        "last_visited_desktop": "13153090743758170"
+                        "last_visited": "13153337780324256",
+                        "last_visited_desktop": "13153407625472257"
                      },
                      "name": "VG",
-                     "sync_transaction_version": "26",
+                     "sync_transaction_version": "55",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -715,7 +721,7 @@
                      "url": "http://www1.fantrax.com/fantasy/home.go?leagueId=qxp182geh3xn4ik2"
                   } ],
                   "date_added": "13152727262050483",
-                  "date_modified": "13153090745666348",
+                  "date_modified": "13153407935220230",
                   "id": "774",
                   "name": "Links",
                   "sync_transaction_version": "1",
@@ -2453,11 +2459,11 @@
                      "date_added": "12950878596035000",
                      "id": "831",
                      "meta_info": {
-                        "last_visited": "13153073848561948",
-                        "last_visited_desktop": "13153090743758170"
+                        "last_visited": "13153337780324256",
+                        "last_visited_desktop": "13153407625472257"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "26",
+                     "sync_transaction_version": "55",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -2567,7 +2573,7 @@
                      "url": "http://www.dreamgrow.com/11-reasons-why-newsletter-beats-social-media/"
                   } ],
                   "date_added": "13152727262050615",
-                  "date_modified": "13153090745666345",
+                  "date_modified": "13153407935220228",
                   "id": "790",
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
@@ -2902,8 +2908,11 @@
             }, {
                "date_added": "12938707164437000",
                "id": "396",
+               "meta_info": {
+                  "last_visited_desktop": "13153237251222714"
+               },
                "name": "Fb",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "27",
                "type": "url",
                "url": "http://www.facebook.com/"
             }, {
@@ -4551,11 +4560,11 @@
                      "date_added": "12950878596035000",
                      "id": "582",
                      "meta_info": {
-                        "last_visited": "13153073848561948",
-                        "last_visited_desktop": "13153090743758170"
+                        "last_visited": "13153337780324256",
+                        "last_visited_desktop": "13153407625472257"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "26",
+                     "sync_transaction_version": "55",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -4567,7 +4576,7 @@
                      "url": "http://www.worldrecordsacademy.org/"
                   } ],
                   "date_added": "13152727262037450",
-                  "date_modified": "13153090745666350",
+                  "date_modified": "13153407935220232",
                   "id": "534",
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
@@ -5585,15 +5594,15 @@
                "date_added": "13151484916914717",
                "id": "423",
                "meta_info": {
-                  "last_visited_desktop": "13151671496366272"
+                  "last_visited_desktop": "13153226217904233"
                },
                "name": "fikseliste utgave",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "27",
                "type": "url",
                "url": "https://docs.google.com/document/d/1r5FWIlf_Rk9Gex7oOg0qt4uskft97FPVuO5APJm0xno/edit"
             } ],
             "date_added": "13152727262023192",
-            "date_modified": "13153079136877919",
+            "date_modified": "13153410997203126",
             "id": "283",
             "name": "old",
             "sync_transaction_version": "1",
@@ -5603,10 +5612,11 @@
                "date_added": "13151746016140342",
                "id": "310",
                "meta_info": {
+                  "last_visited": "13153127410363231",
                   "last_visited_desktop": "13152197010456094"
                },
                "name": "It's Nice That",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "27",
                "type": "url",
                "url": "https://www.itsnicethat.com/"
             }, {
@@ -5623,10 +5633,11 @@
                "date_added": "13151746219116118",
                "id": "312",
                "meta_info": {
+                  "last_visited": "13153127944887689",
                   "last_visited_desktop": "13152197352050062"
                },
                "name": "Designer News",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "27",
                "type": "url",
                "url": "https://www.designernews.co/"
             }, {
@@ -5643,10 +5654,11 @@
                "date_added": "13151746405974973",
                "id": "314",
                "meta_info": {
+                  "last_visited": "13153128961874839",
                   "last_visited_desktop": "13152197405012029"
                },
                "name": "uxdesign.cc",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "27",
                "type": "url",
                "url": "https://uxdesign.cc/"
             }, {
@@ -5661,7 +5673,7 @@
                "url": "https://images.guide/"
             } ],
             "date_added": "13152727262023198",
-            "date_modified": "13152727262023198",
+            "date_modified": "13153342595568202",
             "id": "284",
             "name": "DSGN/UX",
             "sync_transaction_version": "1",
@@ -5870,10 +5882,10 @@
             "date_added": "13151423030406835",
             "id": "288",
             "meta_info": {
-               "last_visited_desktop": "13152874009639505"
+               "last_visited_desktop": "13153401781124149"
             },
             "name": "waffle",
-            "sync_transaction_version": "24",
+            "sync_transaction_version": "47",
             "type": "url",
             "url": "https://waffle.io/dbmedialab/pluss?label=pluss"
          }, {
@@ -5900,16 +5912,16 @@
             "date_added": "13151484964183596",
             "id": "291",
             "meta_info": {
-               "last_visited": "13153074801064052",
-               "last_visited_desktop": "13152919751351679"
+               "last_visited": "13153294660406754",
+               "last_visited_desktop": "13153411396029708"
             },
             "name": "db",
-            "sync_transaction_version": "24",
+            "sync_transaction_version": "61",
             "type": "url",
             "url": "https://www.dagbladet.no/"
          } ],
          "date_added": "13152543424034650",
-         "date_modified": "13153079136877914",
+         "date_modified": "13153401854711065",
          "id": "1",
          "name": "Bookmarks Bar",
          "type": "folder"
@@ -6443,8 +6455,11 @@
                }, {
                   "date_added": "13033428537740435",
                   "id": "207",
+                  "meta_info": {
+                     "last_visited_desktop": "13153301428873762"
+                  },
                   "name": "Sublime Text (2) - Drew Barontini",
-                  "sync_transaction_version": "1",
+                  "sync_transaction_version": "27",
                   "type": "url",
                   "url": "http://drewbarontini.com/setup/sublime-text/"
                }, {
@@ -6554,7 +6569,7 @@
                   "url": "chrome://newtab/"
                } ],
                "date_added": "13152727262017135",
-               "date_modified": "13152727262017135",
+               "date_modified": "13153342595568196",
                "id": "184",
                "name": "Daily routine blogs",
                "sync_transaction_version": "1",
@@ -7506,11 +7521,11 @@
                "date_added": "13033428537320186",
                "id": "167",
                "meta_info": {
-                  "last_visited": "13153075238735009",
-                  "last_visited_desktop": "13152382679329130"
+                  "last_visited": "13153121280654467",
+                  "last_visited_desktop": "13153409290590807"
                },
                "name": "",
-               "sync_transaction_version": "24",
+               "sync_transaction_version": "58",
                "type": "url",
                "url": "http://www.theverge.com/"
             }, {
@@ -7591,7 +7606,7 @@
                "url": "https://en.wikipedia.org/w/api.php"
             } ],
             "date_added": "13152727262008077",
-            "date_modified": "13153079136877921",
+            "date_modified": "13153409385934770",
             "id": "43",
             "name": "old bookmarks bar",
             "sync_transaction_version": "1",
@@ -7672,10 +7687,10 @@
             "id": "53",
             "meta_info": {
                "last_visited": "13152714586977551",
-               "last_visited_desktop": "13152870204383298"
+               "last_visited_desktop": "13153301697623300"
             },
             "name": "Dagbladet.no - forsiden",
-            "sync_transaction_version": "24",
+            "sync_transaction_version": "27",
             "type": "url",
             "url": "http://www.dagbladet.no/"
          }, {
@@ -7687,12 +7702,12 @@
             "url": "http://www.doloresserier.se/svenska-serier-begagnat/ovriga-serier-a-o/n/nintendo-magasinet/nintendo-magasinet-1990-01-prenumerantex.html"
          } ],
          "date_added": "13152543424034658",
-         "date_modified": "13153079136877917",
+         "date_modified": "13153342595568211",
          "id": "2",
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "26",
+      "sync_transaction_version": "61",
       "synced": {
          "children": [ {
             "children": [ {
@@ -7820,10 +7835,10 @@
             "date_added": "13139567318273040",
             "id": "15",
             "meta_info": {
-               "last_visited_desktop": "13142890210101151"
+               "last_visited_desktop": "13153319994005717"
             },
             "name": "https://retrospillmessen.hoopla.no/#active",
-            "sync_transaction_version": "1",
+            "sync_transaction_version": "27",
             "type": "url",
             "url": "https://retrospillmessen.hoopla.no/#active"
          }, {
@@ -7912,7 +7927,7 @@
             "url": "https://www.bonappetit.com/test-kitchen/cooking-tips/slideshow/basic-cooking-techniques#1"
          } ],
          "date_added": "13152543424034659",
-         "date_modified": "13151105630776432",
+         "date_modified": "13153342595568209",
          "id": "3",
          "name": "Mobile Bookmarks",
          "type": "folder"

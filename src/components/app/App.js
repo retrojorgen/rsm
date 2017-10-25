@@ -6,6 +6,7 @@ import MainHeader from './../MainHeader/MainHeader';
 import About from './../About/About';
 import Rent from './../Rent/Rent';
 import Home from './../Home/Home';
+import GuestsList from './../GuestsList/GuestsList';
 
 class App extends Component {
 
@@ -20,6 +21,7 @@ class App extends Component {
                 <Route path="/" component={Home} exact={true} />
                 <Route path="/about" component={About} />
                 <Route path="/rent" component={Rent} />
+                <Route path="/guests" component={GuestsList} />
               </Switch>
           </div>
         </div>

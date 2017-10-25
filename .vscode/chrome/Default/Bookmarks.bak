@@ -37,11 +37,6 @@
             }, {
                "date_added": "13073578329401359",
                "id": "320",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_d64508991741f993",
-                  "stars.version": "sync.server.Chrome41"
-               },
                "name": "",
                "sync_transaction_version": "1",
                "type": "url",
@@ -135,13 +130,6 @@
             }, {
                "date_added": "13069955086229000",
                "id": "332",
-               "meta_info": {
-                  "stars.flags": "4",
-                  "stars.id": "ssc_3073580f3767b0ac",
-                  "stars.imageData": "Cg5ybm83dF9XNFFSRWhaTRJrCmNodHRwOi8vb20uc3RhcnRzaWRlbi5uby93cC1jb250ZW50L3VwbG9hZHMvMjAxMy8wNy82MTYvcmVjdDZ4NC9hcnRpa2tlbGJvYXJkL0FCQ05fYXJ0aWtrZWxib2FyZC5qcGcQkwIYtwEaYwpbaHR0cDovL3QyLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NScDZKS202eXAtMXZnYk9kNHZTazhpbVFQQ0pJMnJ1X2JmZllMVFdMd1paSTIxX21oVRCTAhi3ASIQCAEQkwIYtwFCBhIEgAAAACjBnKf+jIfNAg==",
-                  "stars.pageData": "Ig52ZnQ0NVB1c3hTejduTQ==",
-                  "stars.type": "2"
-               },
                "name": "ABC Nyheter | ABC Startsiden",
                "sync_transaction_version": "1",
                "type": "url",
@@ -299,11 +287,6 @@
             }, {
                "date_added": "12962559171578689",
                "id": "354",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_e3f8b216d274cf58",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Mail",
                "sync_transaction_version": "1",
                "type": "url",
@@ -319,11 +302,11 @@
                "date_added": "12962559171672000",
                "id": "356",
                "meta_info": {
-                  "last_visited": "13152774108977434",
-                  "last_visited_desktop": "13152801788976437"
+                  "last_visited": "13152816588825290",
+                  "last_visited_desktop": "13152919955292041"
                },
                "name": "NA",
-               "sync_transaction_version": "15",
+               "sync_transaction_version": "24",
                "type": "url",
                "url": "http://www.nettavisen.no/"
             }, {
@@ -385,11 +368,6 @@
             }, {
                "date_added": "12970143819953607",
                "id": "365",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_e9a2361bf590deb9",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Escenic",
                "sync_transaction_version": "1",
                "type": "url",
@@ -474,11 +452,6 @@
             }, {
                "date_added": "12938715269088224",
                "id": "377",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_830932e888436125",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Ord",
                "sync_transaction_version": "1",
                "type": "url",
@@ -547,11 +520,6 @@
                   }, {
                      "date_added": "12938706736677137",
                      "id": "1072",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_fe496050722eea4a",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Escenic",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -587,13 +555,6 @@
                   }, {
                      "date_added": "12938715269088000",
                      "id": "1077",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_4ae412832c4a7615",
-                        "stars.imageData": "Cg5ZSWdrdWFGaWR3cVNXTRJBCjpodHRwOi8vd3d3Lm5vYi1vcmRib2sudWlvLm5vL2Nzcy9ncmFmaWtrL2hvZGUtc3RhbmRhcmQuZ2lmEOgHGGUaYgpbaHR0cDovL3QwLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NRaHpuUW9tODFPdHZjc3d6MGFMN3dUOFRWRUltcXRsUmN4cFFuTTF6SFBYTXNLWFF5axDYBBg8Ih4IARDYBBg8IPkeQgYSBIn8AABKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig42U0NKVUhidFdIdE81TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Ord",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -602,11 +563,11 @@
                      "date_added": "12938718954732000",
                      "id": "1078",
                      "meta_info": {
-                        "last_visited": "13152774396381211",
-                        "last_visited_desktop": "13152805046785975"
+                        "last_visited": "13153073848561948",
+                        "last_visited_desktop": "13153090743758170"
                      },
                      "name": "VG",
-                     "sync_transaction_version": "21",
+                     "sync_transaction_version": "26",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -754,12 +715,8 @@
                      "url": "http://www1.fantrax.com/fantasy/home.go?leagueId=qxp182geh3xn4ik2"
                   } ],
                   "date_added": "13152727262050483",
-                  "date_modified": "13152780378095440",
+                  "date_modified": "13153090745666348",
                   "id": "774",
-                  "meta_info": {
-                     "stars.id": "ssf_f7738038b03c0021",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Links",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -781,11 +738,6 @@
                   }, {
                      "date_added": "12938598808113687",
                      "id": "1035",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_e5e1c653a2c78db3",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "NTB Nyhetskalender",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -793,11 +745,6 @@
                   }, {
                      "date_added": "12938706727304453",
                      "id": "1036",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_2181c783955d2ea0",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Escenic",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -812,13 +759,6 @@
                   }, {
                      "date_added": "12938715273696000",
                      "id": "1038",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_330954f03b7d40e1",
-                        "stars.imageData": "Cg5ZSWdrdWFGaWR3cVNXTRJBCjpodHRwOi8vd3d3Lm5vYi1vcmRib2sudWlvLm5vL2Nzcy9ncmFmaWtrL2hvZGUtc3RhbmRhcmQuZ2lmEOgHGGUaYgpbaHR0cDovL3QwLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NRaHpuUW9tODFPdHZjc3d6MGFMN3dUOFRWRUltcXRsUmN4cFFuTTF6SFBYTXNLWFF5axDYBBg8Ih4IARDYBBg8IPkeQgYSBIn8AABKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig42U0NKVUhidFdIdE81TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "ORDBOK.NO",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -826,11 +766,6 @@
                   }, {
                      "date_added": "12938797253386273",
                      "id": "1039",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6de6aa3905a3e616",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Vintersport live",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -859,12 +794,6 @@
                   }, {
                      "date_added": "12940191018238000",
                      "id": "1043",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_7469e7624f2046a4",
-                        "stars.pageData": "Ig5jLVFuSXRSb2lQTUlYTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Russiske og greske navn",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -893,11 +822,6 @@
                   }, {
                      "date_added": "12945882436935730",
                      "id": "1047",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_cd31338d145e1609",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "RSA - CIDWAY - pålogging",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -912,11 +836,6 @@
                   }, {
                      "date_added": "12946560478834957",
                      "id": "1049",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_46db51c477b1be76",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Chartbeat",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -938,12 +857,6 @@
                   }, {
                      "date_added": "12953891699106000",
                      "id": "1052",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_19e8783d2cd761d0",
-                        "stars.pageData": "Ig4tOExMRmhfMW1sUzFkTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Priskalkulator - Norges Bank",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -951,11 +864,6 @@
                   }, {
                      "date_added": "12968857057749373",
                      "id": "1053",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_0b0dd6c26c34753b",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "NTB",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -963,11 +871,6 @@
                   }, {
                      "date_added": "12946128103692419",
                      "id": "1054",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_42bbab37ec04ea6a",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "FotoWeb® 6.0",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -975,11 +878,6 @@
                   }, {
                      "date_added": "12971012149062438",
                      "id": "1055",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_66ab9876612943f4",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "NTBs nyhetsportal",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1001,11 +899,6 @@
                   }, {
                      "date_added": "12974288852320734",
                      "id": "1058",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_7bfdcda6fbee93e3",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Mest delt norge",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1013,13 +906,6 @@
                   }, {
                      "date_added": "12977576393682000",
                      "id": "1059",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_99f0af80931b7c24",
-                        "stars.imageData": "Cg5aTlAydnZvUmxJZjgtTRJPCkdodHRwOi8vd3d3Lm5vcnNrZXNwb3J0c2pvdXJuYWxpc3Rlci5uby9waWN0dXJlcy8yMDE0LzA2L2xpbGxlaGFtbWVyLmpwZxDIARiAARpjCltodHRwOi8vdDAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1J3bFFVamw3cWRoRm5nVkFHcmI2akpqZUh5b0ZZVUlxR1ltbVZlNjRySmJlUXcxUU8wEMgBGIABIh8IARDIARiAASDhIkIGEgQIrY16SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5kWFRzOTA3VXB4MXdTTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norske Sportsjournalisters Forbund",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1027,12 +913,6 @@
                   }, {
                      "date_added": "12988797665006000",
                      "id": "1060",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_70b0de2035f7934e",
-                        "stars.pageData": "Ig5GRWdGbzRpUWpzVVh2TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "ePlayer Dashboard",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1070,12 +950,6 @@
                         "children": [ {
                            "date_added": "13012038855261000",
                            "id": "1069",
-                           "meta_info": {
-                              "stars.flags": "5",
-                              "stars.id": "ssc_3c1825044d69ba32",
-                              "stars.pageData": "Ig5acXg1UDU0UWg1MEdITQ==",
-                              "stars.type": "2"
-                           },
                            "name": "Stats.HockeyAnalysis.com NHL Player Stats - On Ice Goal Stats/Ratings 201213",
                            "sync_transaction_version": "1",
                            "type": "url",
@@ -1084,10 +958,6 @@
                         "date_added": "13152727262065328",
                         "date_modified": "13152727262065328",
                         "id": "1068",
-                        "meta_info": {
-                           "stars.id": "ssf_9ae269c640e7a07b",
-                           "stars.version": "sync.server.Chrome42"
-                        },
                         "name": "New folder",
                         "sync_transaction_version": "1",
                         "type": "folder"
@@ -1095,10 +965,6 @@
                      "date_added": "13152727262065082",
                      "date_modified": "13152727262065082",
                      "id": "1064",
-                     "meta_info": {
-                        "stars.id": "ssf_f7920ec6e8bb598c",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Blogger",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -1120,10 +986,6 @@
                   "date_added": "13152727262050490",
                   "date_modified": "13152727262050490",
                   "id": "775",
-                  "meta_info": {
-                     "stars.id": "ssf_cde5cd05dfc21ccc",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Arbeidsverktøy",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -1131,12 +993,6 @@
                   "children": [ {
                      "date_added": "12938598372027000",
                      "id": "1024",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_950dd19bb32f5967",
-                        "stars.pageData": "Ig5kdFZuVTN0ZHctdXBNTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "IE Add-on galleri",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1144,12 +1000,6 @@
                   }, {
                      "date_added": "12938600605671000",
                      "id": "1025",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_cb7fa278eeac74cf",
-                        "stars.pageData": "Ig5hRGtOeWtvTmwwQzR2TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "IE Add-on site",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1157,12 +1007,6 @@
                   }, {
                      "date_added": "12938598371949000",
                      "id": "1026",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6da68b0dc9f5e575",
-                        "stars.pageData": "Ig5lSktLQ1AyTlQ5eEF5TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Internet Explorer - Startside",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1170,12 +1014,6 @@
                   }, {
                      "date_added": "12938600605687000",
                      "id": "1027",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_7d5d14e09375a4e5",
-                        "stars.pageData": "Ig5MWFRCbkZSUEF5SzdoTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Internet Explorer 7 - Rent, elegant og strømlinjeformet nytt grensesnitt",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1183,12 +1021,6 @@
                   }, {
                      "date_added": "12938600605702000",
                      "id": "1028",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_9e843fa954235c70",
-                        "stars.pageData": "Ig5lSktLQ1AyTlQ5eEF5TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Internet Explorer 7 - Startside",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1196,12 +1028,6 @@
                   }, {
                      "date_added": "12938598372120000",
                      "id": "1029",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_bf6b8e1a53fd4dce",
-                        "stars.pageData": "Ig45akltMWtTS1ZQWEFtTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Microsoft Norge",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1209,12 +1035,6 @@
                   }, {
                      "date_added": "12938600605702000",
                      "id": "1030",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_88a6c1e474304506",
-                        "stars.pageData": "Ig44Y0taQjhLMlhhejMzTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Microsoft Store",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1222,12 +1042,6 @@
                   }, {
                      "date_added": "12938600605718000",
                      "id": "1031",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_0053c82b1f8345b7",
-                        "stars.pageData": "Ig5hRGtOeWtvTmwwQzR2TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Windows Marketplace - Software and hardware for the Windows operating system",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1235,12 +1049,6 @@
                   }, {
                      "date_added": "12938598372120000",
                      "id": "1032",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_b2f456f8c55b6cbe",
-                        "stars.pageData": "Ig5wWWxSdF8wbXVMaXhvTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Windows",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1249,10 +1057,6 @@
                   "date_added": "13152727262050498",
                   "date_modified": "13152727262050498",
                   "id": "776",
-                  "meta_info": {
-                     "stars.id": "ssf_502f82fff79ad0ad",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Microsoft-webområder",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -1260,12 +1064,6 @@
                   "children": [ {
                      "date_added": "12938598372058000",
                      "id": "1018",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_4b10101c297134b7",
-                        "stars.pageData": "Ig5KejBJeGRPWW43SmowTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "MSN Mann",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1273,12 +1071,6 @@
                   }, {
                      "date_added": "12938598372027000",
                      "id": "1019",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_d3be892a8df24592",
-                        "stars.pageData": "Ig5KaEhJbzNIWGYtdmdqTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "MSN Norge",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1286,12 +1078,6 @@
                   }, {
                      "date_added": "12938598372042000",
                      "id": "1020",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_58d372c58a96bf51",
-                        "stars.pageData": "Ig43T2tNOFZ3ZXhYbDVmTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "MSN Nyheter",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1299,12 +1085,6 @@
                   }, {
                      "date_added": "12938598372074000",
                      "id": "1021",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_d4829a08f18df618",
-                        "stars.pageData": "Ig5oYjdLYXlFRURMQmlZTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "MSN Rally",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1312,12 +1092,6 @@
                   }, {
                      "date_added": "12938598372058000",
                      "id": "1022",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_fe2a928be0c2a808",
-                        "stars.pageData": "Ig51SkV6MlUtUU1YZjFyTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "MSN Underholdning",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1325,11 +1099,6 @@
                   }, {
                      "date_added": "12938598372027208",
                      "id": "1023",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_8a40794e0e69f94f",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Sportsnyheter fra TV2 Sporten",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1338,10 +1107,6 @@
                   "date_added": "13152727262050506",
                   "date_modified": "13152727262050506",
                   "id": "777",
-                  "meta_info": {
-                     "stars.id": "ssf_acbe1893575b6638",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "MSN-webområder",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -1349,12 +1114,6 @@
                   "children": [ {
                      "date_added": "12938598372105000",
                      "id": "1014",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_5fa15ab392004ed8",
-                        "stars.pageData": "Ig4wR09OZTFWb1JoQk9ZTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Windows Live Gallery",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1362,12 +1121,6 @@
                   }, {
                      "date_added": "12938598372089000",
                      "id": "1015",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_51f3027fdd286ed6",
-                        "stars.pageData": "Ig5nYjlZdUt4QUlUTlVkTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Windows Live Hotmail",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1375,12 +1128,6 @@
                   }, {
                      "date_added": "12938598372089000",
                      "id": "1016",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_58c1ce593ad973a6",
-                        "stars.pageData": "Ig5NcjlfeUZCVkVtUVBSTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Windows Live Spaces",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1388,12 +1135,6 @@
                   }, {
                      "date_added": "12938598372105000",
                      "id": "1017",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_fdfe9e1954958133",
-                        "stars.pageData": "Ig5JMy1DTVJvdzZ5OVFVTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Windows Live-nedlastinger",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1402,21 +1143,12 @@
                   "date_added": "13152727262050512",
                   "date_modified": "13152727262050512",
                   "id": "778",
-                  "meta_info": {
-                     "stars.id": "ssf_8b63b6ea6e0a5c92",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Windows Live",
                   "sync_transaction_version": "1",
                   "type": "folder"
                }, {
                   "date_added": "12938600605093523",
                   "id": "779",
-                  "meta_info": {
-                     "stars.flags": "5",
-                     "stars.id": "ssc_abf61a33bfda8a5c",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Escenic",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -1656,13 +1388,6 @@
                   }, {
                      "date_added": "12980029808597000",
                      "id": "1013",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_6c028ad399f6a4e1",
-                        "stars.imageData": "Cg4zXzRzRk82Y3U4T210TRJdClVodHRwOi8vZ2Z4LmFmdG9uYmxhZGV0LWNkbi5zZS90ZW1wbGF0ZS92ZXIxLTAvZ2Z4L2xvZ29zL3YxL2FmdG9uYmxhZGV0X2dlbmVyaWNfZmIuZ2lmEKwCGKwCGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVEVDRGpSUUZ0dUJVS1NISWhCTm8zNWp3Y2dXWWlmZUpHcUxJYkNlQnRES1FqOGdUQlUQ4QEY4QEiHggBEOEBGOEBIJ0VQgYSBIn/gP9KCWltYWdlL3BuZw==",
-                        "stars.pageData": "EsQBQlJOTy4gRXJpayBLYXJsc3NvbiDDpHIgZW4gZHLDtm1zcGVsYXJlIGbDtnIgVHJlIEtyb25vciBpIFZNLiBNZW4gaGFyIGbDtnJidW5kZXQgcsOlZCBhdHQgZsO2cnPDpGtyYSBob25vbT8g4oCTIERldCB2ZXQgdmkgaW50ZSDDpG4uIE1lbiBkZXQgZmlubnMgbmF0dXJsaWd0dmlzIGVuIGdyw6RucyBmw7ZyIGFsbHRpbmcsIHPDpGdlciBUcuKApiIOVzN3UEZCNXN6ci1FdU0=",
-                        "stars.type": "2"
-                     },
                      "name": "...men han kan bli för dyr Hockey-VM Landslag Hockey Sportbladet Aftonbladet",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1671,10 +1396,6 @@
                   "date_added": "13152727262050556",
                   "date_modified": "13152727262050557",
                   "id": "780",
-                  "meta_info": {
-                     "stars.id": "ssf_6fed0dae8698a5c7",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Aviser",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -1704,10 +1425,6 @@
                   "date_added": "13152727262050562",
                   "date_modified": "13152727262050562",
                   "id": "781",
-                  "meta_info": {
-                     "stars.id": "ssf_5d55634d6bf505f1",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Potensielle saker",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -1736,12 +1453,6 @@
                   }, {
                      "date_added": "12938730532534000",
                      "id": "972",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_e93e432d5b2bf54e",
-                        "stars.pageData": "Ig4ta2hBZmhtWjQ0UkFLTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "isildur1",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1749,11 +1460,6 @@
                   }, {
                      "date_added": "12938800165268239",
                      "id": "973",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_631176fe6947aeba",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Sigurds pokerblogg",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1783,10 +1489,6 @@
                   "date_added": "13152727262050568",
                   "date_modified": "13152727262050568",
                   "id": "782",
-                  "meta_info": {
-                     "stars.id": "ssf_03d36fe0fb277132",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Poker",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -1794,11 +1496,6 @@
                   "children": [ {
                      "date_added": "12938783915846329",
                      "id": "940",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_743c8e816cff44d6",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Debattsentralen Ishockey",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1855,13 +1552,6 @@
                   }, {
                      "date_added": "12939903205049000",
                      "id": "948",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_504e23dd3636e635",
-                        "stars.imageData": "Cg5ucVFSZ1FneENTbU9QTRJQCkpodHRwOi8vYmxvZ3MuZGVudmVycG9zdC5jb20vYXZzL3dwLWNvbnRlbnQvYXV0aG9ycy9taWtlJTIwY2hhbWJlcnMtMzg0LmpwZxBoGGgaYQpbaHR0cDovL3QyLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NSekVrYzU2SUc3bEMwYkZTaDF4eGdUWVROOW9SWWZVTWVXZ2dWWENEMDJIVzdIRVlWUBBoGGgiHQgBEGgYaCDUDkIGEgSAAgD/SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5qVS1Qd2M5TWE2S21ZTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "All Things Avs",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1953,13 +1643,6 @@
                   }, {
                      "date_added": "12962392186166000",
                      "id": "961",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_19e86f85cb06496d",
-                        "stars.imageData": "Cg5XZXh6dEw5SDlQeGg0TRJlCl1odHRwOi8vYmx1ZWphY2tldHN4dHJhLmRpc3BhdGNoLmNvbS9jb250ZW50L2RpZ2l0YWwvaW1hZ2VzL0ZCU2hhcmluZ0ljb25zX2JsdWVqYWNrZXRzeHRyYS5wbmcQoAEYoAEaYwpbaHR0cDovL3QxLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NSMDdZMXdsVmd2ZDJEMjNmWnB3SC1IMjhzNnRuMV9aOXlfcUNlZ1l0cWdqc2RlOExzTBCgARigASIfCAEQoAEYoAEg4TxCBhIEgZN+/0oKaW1hZ2UvanBlZw==",
-                        "stars.pageData": "EjBDb2x1bWJ1cyBCbHVlIEphY2tldHMgbmV3cywgc3RhdHMsIHBob3RvcywgdmlkZW8iDmJ5dkw4WjFYYV9WU2VN",
-                        "stars.type": "2"
-                     },
                      "name": "Columbus Dispatch",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -1967,12 +1650,6 @@
                   }, {
                      "date_added": "12971111655849000",
                      "id": "962",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6c4d90252a621259",
-                        "stars.pageData": "Ig5SckJqMmJFQjVraHlJTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Hockeymagasinet",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2008,13 +1685,6 @@
                   }, {
                      "date_added": "13014396348569000",
                      "id": "967",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_cfdc322db5ad0a08",
-                        "stars.imageData": "Cg5Xc3dIOXpmQnREN2V4TRKcAQqTAWh0dHA6Ly9tdDEuZ29vZ2xlYXBpcy5jb20vdnQ/cGI9ITFtNCExbTMhMWkxNiEyaTE4MjY5ITNpMjM5MzIhMm0zITFlMCEyc20hM2kyNzEwMDAwMDAhM205ITJzZW4tVVMhM3NVUyE1ZTE4ITEybTEhMWU0NyExMm0zITFlMzchMm0xITFzc21hcnRtYXBzITRlMBDMARjMARpjCltodHRwOi8vdDIuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1FZS2JqWVdhSEtpTk5VMXhlc0JuMDI4czlTTXROUm8zTUkzYXdzOUhOTnA3em80dUFBEMwBGMwBIh8IARDMARjMASDqHUIGEgSAAgD/SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig50a3BES25YX3VQYzRhTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Newport Sports Management Inc. - thehockeyagency.com",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2030,10 +1700,6 @@
                   "date_added": "13152727262050575",
                   "date_modified": "13152727262050575",
                   "id": "783",
-                  "meta_info": {
-                     "stars.id": "ssf_31a2cae2af75ecef",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Hockey",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2042,13 +1708,6 @@
                      "children": [ {
                         "date_added": "12940001620383000",
                         "id": "926",
-                        "meta_info": {
-                           "stars.flags": "4",
-                           "stars.id": "ssc_df8ebc509be287eb",
-                           "stars.imageData": "Cg5aQ0cyVWFGY0h0MXQ4TRIvCidodHRwOi8vd3d3LmFuZGVyc2JhcmRhbC5jb20vMjAxNC8yMC5qcGcQlwIYtQEaYwpbaHR0cDovL3QwLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NTWTQ1OHBPMW1oZ0FraXhmMkNsaWlwQ1ZBOEtnNzJhNFlSYW9YX1kxWXNVQTZOWDZiUxCXAhi1ASIfCAEQlwIYtQEg9z5CBhIEAAGLqkoKaW1hZ2UvanBlZw==",
-                           "stars.pageData": "Ig5JcnNUcW5FS3RLejB0TQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Anders Bardal",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -2091,12 +1750,6 @@
                      }, {
                         "date_added": "12940001436808000",
                         "id": "932",
-                        "meta_info": {
-                           "stars.flags": "5",
-                           "stars.id": "ssc_4c253ba07e823419",
-                           "stars.pageData": "Ig5MOXhBNEE4c0FvcGltTQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Marthe Kristoffersen",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -2104,11 +1757,6 @@
                      }, {
                         "date_added": "12940001534444386",
                         "id": "933",
-                        "meta_info": {
-                           "stars.flags": "5",
-                           "stars.id": "ssc_236c512072540e00",
-                           "stars.version": "sync.server.Chrome42"
-                        },
                         "name": "Martin Johnsrud Sundby",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -2130,13 +1778,6 @@
                      }, {
                         "date_added": "12940001473760000",
                         "id": "936",
-                        "meta_info": {
-                           "stars.flags": "4",
-                           "stars.id": "ssc_27197f47abd63b42",
-                           "stars.imageData": "Cg5JV3RuUDgyaDJObFRMTRJjCltodHRwOi8vdGVhbW5vcnRodWcubm8vd3AtY29udGVudC90aGVtZXMvdmFudGFnZS9zbGlkZXIvYmFja2dyb3VuZHMvc2xpZGUtcGV0dGVyLW92ZXJsYXkucG5nEOgCGIwBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUzJDSGdKV1VnVWF3anRDbGltVWNtMjlfQnlyNW1zZllGaEg3ejlpNjc4SHdxT3h3QlcQ6AIYjAEiHwgBEOgCGIwBINMkQgYSBKNhgABKCmltYWdlL2pwZWc=",
-                           "stars.pageData": "Ig5vU0xhYUhXd1c0aFZjTQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Team Northug",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -2144,13 +1785,6 @@
                      }, {
                         "date_added": "12940001418919000",
                         "id": "937",
-                        "meta_info": {
-                           "stars.flags": "4",
-                           "stars.id": "ssc_43537adceeec4198",
-                           "stars.imageData": "Cg5DNURSZU5wS2xxeVdETRJFCj1odHRwOi8vd3d3LnRoZXJlc2Vqb2hhdWcubm8vRmlsZXMvQmlsbGVkZXIva2FydXNlbGwvMDAwMzIuanBnEKwCGKgBGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUXEtbkl2R0k1THhfMm95aDhrRkRlTGQxMGs1dkp3c0lHWkU5MXQ1RXI2aEx2LUpUQUIQrAIYqAEiHwgBEKwCGKgBIINJQgYSBK8BenxKCmltYWdlL2pwZWc=",
-                           "stars.pageData": "Ig5DVjR1Z1VjME1WeFJ0TQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Therese Johaug",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -2173,10 +1807,6 @@
                      "date_added": "13152727262057173",
                      "date_modified": "13152727262057173",
                      "id": "921",
-                     "meta_info": {
-                        "stars.id": "ssf_e54658b5441a43cd",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Utøversider",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -2190,13 +1820,6 @@
                   }, {
                      "date_added": "12939987962878000",
                      "id": "923",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_7f8cb8b2d0102e5b",
-                        "stars.imageData": "Cg5PYzhHakxqWDRzSmxWTRJMCkRodHRwOi8vd3d3LmJpYXRobG9ud29ybGQuY29tL21lZGlhL2ltYWdlcy9jb21tb24vbGl2ZV9yZXN1bHRzX2VuLmpwZxDsARipARpjCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1MxaGNqOU1PZWh0WW5nelUtS0Q3d1ZNaFVLNTBFYlVqNkRBTW5vUW9tNV9qcThZMHAwEOwBGKkBIh8IARDsARipASCIJUIGEgSAAAAASgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5VNnNnd3ptODV6cXQ3TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "International Biathlon Union",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2211,13 +1834,6 @@
                   }, {
                      "date_added": "12940863196424000",
                      "id": "925",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_c85692650e9636b1",
-                        "stars.imageData": "Cg5uQmlTa0pEVkxaU3p5TRI5CjJodHRwOi8vd3d3LnNwZWVkc2thdGluZ3Jlc3VsdHMuY29tL2ltYWdlcy9Mb2dvLnBuZxCTAhhaGmIKW2h0dHA6Ly90MC5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUXpiRGdSTHFSYURpVV9HWUpwdzRhXzAxMng1aUluT2pSRHV2Nm9oRDJCUEVYdkZkTUcQ3AEYSCISCAEQ3AEYSCDzKkIGEgSAAAAA",
-                        "stars.pageData": "Ig5wV0ZNaExQamQ3QXR0TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "SpeedskatingResults.com",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2226,10 +1842,6 @@
                   "date_added": "13152727262050580",
                   "date_modified": "13152727262050580",
                   "id": "784",
-                  "meta_info": {
-                     "stars.id": "ssf_bf36fefd3f933ea2",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Vintersport",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2237,13 +1849,6 @@
                   "children": [ {
                      "date_added": "12958228384353000",
                      "id": "915",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_541da6cf66a05c99",
-                        "stars.imageData": "Cg5kcGdvRUFHSWNOSXYwTRJiClpodHRwOi8vd3d3LmVudHJlcHJlbmV1ci5jb20vZGJpbWFnZXMvYmxvZy9mYWNlYm9vay1wb3N0aW5nLXRlY2huaXF1ZXMtdGhhdC1yZWFsbHktd29yay5qcGcQpgEYpgEaYwpbaHR0cDovL3QyLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NRSF9DV013TTFRUFB6TlhOSlQxRUc4clZDOVlSNk81bmJHY1hvbERubXQxdWw0VWhwchCmARimASIfCAEQpgEYpgEg8CpCBhIEMLKa/0oKaW1hZ2UvanBlZw==",
-                        "stars.pageData": "EnlCb29zdGluZyB0aGUgZWZmZWN0aXZlbmVzcyBvZiB5b3VyIEZhY2Vib29rIHB1Ymxpc2hpbmcgc3RyYXRlZ3kgaXMgZWFzeSBpZiB5b3Uga25vdyB0aGUgYW5zd2VycyB0byB0aGVzZSBzZXZlbiBxdWVzdGlvbnMuIg53TmZMR0I4NFNVeGR1TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Facebook Posting Techniques that Really Work",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2251,12 +1856,6 @@
                   }, {
                      "date_added": "12946464784845000",
                      "id": "916",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6bba5cdb180314c8",
-                        "stars.pageData": "Ig5yYWJZbmYtRTBTbGJsTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Gravemaskinen",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2271,12 +1870,6 @@
                   }, {
                      "date_added": "12945788004941000",
                      "id": "918",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_2a2b5ac68e6a5214",
-                        "stars.pageData": "Ig53V3VRNmNwZVpGWF9pTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norske Sportsjournalisters Forbund",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2299,10 +1892,6 @@
                   "date_added": "13152727262050585",
                   "date_modified": "13152727262050585",
                   "id": "785",
-                  "meta_info": {
-                     "stars.id": "ssf_478d950a6f23405a",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Praktisk",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2317,13 +1906,6 @@
                   }, {
                      "date_added": "12942246029383000",
                      "id": "914",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_0dee73409a8e79e4",
-                        "stars.imageData": "Cg5qd0ZtbHlvRzBUZ1NxTRK2AQqtAWh0dHA6Ly93d3cuc3BvcnRzYW5hbHlzZS5uby9waG90b2FsYnVtL3ZpZXc0L0wzUnZiMnh6TDNCb2IzUnZZV3hpZFcxZmRtbGxkeTlqZFhOMGIyMWxjaTlwYldjdk56QTVOaTlpWVc1dVpYSTBOamd2TnpBNU5qWTJMbkJ1Wnk5RGNtOXdMejk0UFRBbWVUMHdKbmRwWkhSb1BUTXdNQ1pvWldsbmFIUTlNVFk0EPABGIYBGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVFBEelZHTEdzR0c0TW40OFcwbUwyUVpLRGEyT2hIMkNqemFrbVhTaHNqYWZjRFpiZ1EQ8AEYhgEiHwgBEPABGIYBIK0mQgYSBLsBfJNKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig5NZTFjNU5MN2JDUFQwTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "sportsanalyse.no",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2332,10 +1914,6 @@
                   "date_added": "13152727262050591",
                   "date_modified": "13152727262050591",
                   "id": "786",
-                  "meta_info": {
-                     "stars.id": "ssf_098bef7daabab507",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Diverse idretter",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2478,10 +2056,6 @@
                      "date_added": "13152727262053932",
                      "date_modified": "13152727262053932",
                      "id": "853",
-                     "meta_info": {
-                        "stars.id": "ssf_59352384f3397f0f",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Fotballklubber",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -2525,10 +2099,6 @@
                      "date_added": "13152727262053942",
                      "date_modified": "13152727262053942",
                      "id": "854",
-                     "meta_info": {
-                        "stars.id": "ssf_45b76c1d7bf06efd",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Fotballstats",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -2663,10 +2233,6 @@
                      "date_added": "13152727262053951",
                      "date_modified": "13152727262053951",
                      "id": "855",
-                     "meta_info": {
-                        "stars.id": "ssf_1cb5c705ed556689",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Tippeligaen",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -2722,13 +2288,6 @@
                   }, {
                      "date_added": "12945797250103000",
                      "id": "863",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_70265183c651680b",
-                        "stars.imageData": "Cg5oS2pEckpORU56TGpjTRJPCkdodHRwOi8vd3d3Lm5mZGYubm8vZXBfYmlsZGVyLzYvNzU5LWUxYWQyZTEyNzI1OGQ3NDMxMzYxNjNhODc0ZTkzMzJkLmpwZxCpAhiqARpjCltodHRwOi8vdDAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1J3b1hHbHVzUVJZT3NaejB6aWV2ZXFhYmRBT0k3YU9ISzFJcjh4b3ZiLWVJYmdMZ2tSEKkCGKoBIh8IARCpAhiqASDnOUIGEgS/BXt+SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5xSEhiLVJUdmFjNE9xTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norsk Fotballdommerforening",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2743,12 +2302,6 @@
                   }, {
                      "date_added": "12958134748213000",
                      "id": "865",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_5abe67242b7e5cfc",
-                        "stars.pageData": "Ig5CNDhhUXBRQXdoeEwwTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norske fotballspillere i utlandet. Presensliste",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2756,12 +2309,6 @@
                   }, {
                      "date_added": "12959096350630000",
                      "id": "866",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_78bd52be1915aba7",
-                        "stars.pageData": "Ig5BSFlleVFJbFZZTkpHTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Football DataCo Contact Us",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2776,11 +2323,6 @@
                   }, {
                      "date_added": "12938862424928314",
                      "id": "868",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_1446f392f7bb22dc",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "GoalFever.com",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2803,10 +2345,6 @@
                   "date_added": "13152727262050596",
                   "date_modified": "13152727262050596",
                   "id": "787",
-                  "meta_info": {
-                     "stars.id": "ssf_56f1ed6d63586609",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Fotball",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2836,10 +2374,6 @@
                   "date_added": "13152727262050602",
                   "date_modified": "13152727262050602",
                   "id": "788",
-                  "meta_info": {
-                     "stars.id": "ssf_fa53a254dce89052",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Spill",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2854,13 +2388,6 @@
                   }, {
                      "date_added": "12971119031588000",
                      "id": "848",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_bcb64b850656a2d0",
-                        "stars.imageData": "Cg52cUc1a09lOFhYYTktTRJmCl5odHRwOi8vYmVyZWt2YW0uY29tL2Jsb2cvd3AtY29udGVudC91cGxvYWRzLzIwMTIvMDEvU2tqZXJtYmlsZGUtMjAxMi0wMS0xNS1rbC4tMTAuMjYuMzUtQU0ucG5nEMMBGIICGmMKW2h0dHA6Ly90Mi5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUl85Q1dEWEFORGtRa2lNMlE5dWVFZy1aTVNYT3ROZjR5Z054ZkpaRjk5d0ptWkVUVVcQwwEYggIiFAgBEMMBGIICILeIAUIGEgSKGXxg",
-                        "stars.pageData": "ErUBTm9lbiBnYW5nZXIgZXIgZGV0IGZ1bGx0IGZvcnRqZW50IMOlIGJsaSBidWV0IHV0IHDDpSBkaXJla3Rlc2VuZHQgdHYuIMOFIG3DuHRlIGh2ZXJkYWdzcmFzaXNtZW4gbWVkIMO4bGthc3RpbmcgZXIgaW1pZGxlcnRpZCBpa2tlIHZlaWVuIMOlIGfDpS4gQnlnZGUtTm9yZ2UgdmFudCBoZWxkaWd2aXMgdGlsIHNsdXR0LiIOc01MU3ZUWENMaHQ1cE0=",
-                        "stars.type": "2"
-                     },
                      "name": "Hedersmenn og møkkamenn",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -2876,10 +2403,6 @@
                   "date_added": "13152727262050608",
                   "date_modified": "13152727262050608",
                   "id": "789",
-                  "meta_info": {
-                     "stars.id": "ssf_bee281d4bba7e9db",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Privat",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -2930,11 +2453,11 @@
                      "date_added": "12950878596035000",
                      "id": "831",
                      "meta_info": {
-                        "last_visited": "13152774396381211",
-                        "last_visited_desktop": "13152805046785975"
+                        "last_visited": "13153073848561948",
+                        "last_visited_desktop": "13153090743758170"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "20",
+                     "sync_transaction_version": "26",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -3031,11 +2554,6 @@
                   }, {
                      "date_added": "12961511244433393",
                      "id": "845",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_3d7a86412827342d",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "http--www.worldrecordsacademy.org-",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3049,23 +2567,14 @@
                      "url": "http://www.dreamgrow.com/11-reasons-why-newsletter-beats-social-media/"
                   } ],
                   "date_added": "13152727262050615",
-                  "date_modified": "13152780378095438",
+                  "date_modified": "13153090745666345",
                   "id": "790",
-                  "meta_info": {
-                     "stars.id": "ssf_6563619ad71bb8a2",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
                   "type": "folder"
                }, {
                   "date_added": "12950892906328053",
                   "id": "791",
-                  "meta_info": {
-                     "stars.flags": "5",
-                     "stars.id": "ssc_5dc4b401298489d6",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "NT live",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -3102,11 +2611,6 @@
                   }, {
                      "date_added": "12950878017138663",
                      "id": "816",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_d51cf43db030760e",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "John Arne Riises Blogg",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3121,12 +2625,6 @@
                   }, {
                      "date_added": "12960060140082000",
                      "id": "818",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_563e44817ae0f0a6",
-                        "stars.pageData": "Ig5MOXhBNEE4c0FvcGltTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Marthe Kristoffersen",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3134,13 +2632,6 @@
                   }, {
                      "date_added": "12950878053016000",
                      "id": "819",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_580a88d5ae4150d5",
-                        "stars.imageData": "Cg5yMTJtS2JleTNpcGc3TRJICkBodHRwOi8vZ2Ftc3QuY28udWsvd3AtY29udGVudC91cGxvYWRzLzIwMTIvMDcvYmlsZGUxLTIyNHgzMDAuanBnELMBGPABGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjU1B5X1EzLXdHS2ZITi1zeGZBcmhsSHpvUU8xSTFsT01HSk05X3hDMXJQMzlFbEsxZXAQswEY8AEiHwgBELMBGPABIKpAQgYSBAAB/19KCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig44dmJjQ0N5ZFQyQk5BTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Morten Gamst Pedersen",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3162,13 +2653,6 @@
                   }, {
                      "date_added": "12960059898147000",
                      "id": "822",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_d9b0ce326ca071e4",
-                        "stars.imageData": "Cg5JV3RuUDgyaDJObFRMTRJjCltodHRwOi8vdGVhbW5vcnRodWcubm8vd3AtY29udGVudC90aGVtZXMvdmFudGFnZS9zbGlkZXIvYmFja2dyb3VuZHMvc2xpZGUtcGV0dGVyLW92ZXJsYXkucG5nEOgCGIwBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUzJDSGdKV1VnVWF3anRDbGltVWNtMjlfQnlyNW1zZllGaEg3ejlpNjc4SHdxT3h3QlcQ6AIYjAEiHwgBEOgCGIwBINMkQgYSBKNhgABKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig5vU0xhYUhXd1c0aFZjTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Team Northug",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3191,10 +2675,6 @@
                   "date_added": "13152727262050749",
                   "date_modified": "13152727262050749",
                   "id": "794",
-                  "meta_info": {
-                     "stars.id": "ssf_df8d9222ad485f76",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Idrettsutøvere",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -3224,10 +2704,6 @@
                   "date_added": "13152727262050758",
                   "date_modified": "13152727262050758",
                   "id": "795",
-                  "meta_info": {
-                     "stars.id": "ssf_5c83aca939df74bc",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Det Store Intervjuet",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -3285,23 +2761,12 @@
                   "date_added": "13152727262050910",
                   "date_modified": "13152727262050910",
                   "id": "799",
-                  "meta_info": {
-                     "stars.id": "ssf_9968d9200ca3bc99",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Presentasjon - eksempler",
                   "sync_transaction_version": "1",
                   "type": "folder"
                }, {
                   "date_added": "12976306523698000",
                   "id": "800",
-                  "meta_info": {
-                     "stars.flags": "4",
-                     "stars.id": "ssc_2dec61ffa97b4f86",
-                     "stars.imageData": "Cg5VVHpQblFkaUZvaVBTTRJSCkpodHRwOi8vd3d3LmNkbi50djIubm8vbXVsdGltZWRpYS9UVjIvYXJjaGl2ZS8wMDk1MS9SQktfU29nbmRhbF85NTE4MjRhLmpwZxCsAhioARpjCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1FaZ255TXZ6bDZ4Vm1BQjZUME9acHV6S1FYVVU5azFQX252ZVNpT05UYVFiMWJ3SzF3EKwCGKgBIh8IARCsAhioASCAYEIGEgS/PX19SgppbWFnZS9qcGVn",
-                     "stars.pageData": "EpUBUm9zZW5ib3JncyBidWRzamV0dCBlciBuZXN0ZW4gc2p1IGdhbmdlciBzdMO4cnJlIGVubiBTb2duZGFscy4gRGV0IHNrcmVtbWVyIGlra2UgwqtzbcOla2x1YmJlbmXCuy4gU2pla2sgVGlwcGVsaWdhLWtsdWJiZW5lcyBidWRzamV0dGVyIGZvciAyMDEyIGhlci4iDldiTUpHb0I1WXFPeWNN",
-                     "stars.type": "2"
-                  },
                   "name": "Tippeliga-klubbenes budsjetter 2012 – Vi har ressurser som ikke kan måles i kroner - TV 2 Sporten Fotball",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -3332,10 +2797,6 @@
                   "date_added": "13152727262051142",
                   "date_modified": "13152727262051142",
                   "id": "803",
-                  "meta_info": {
-                     "stars.id": "ssf_ce1bc09fc52164a1",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Ikke sitert",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -3343,13 +2804,6 @@
                   "children": [ {
                      "date_added": "13014140089476000",
                      "id": "805",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_822d19bda85d2ff7",
-                        "stars.imageData": "Cg5oODJKQ0FoOE5Jb3lNTRJ1Cm1odHRwOi8vd3d3LnBvbGl0aWZvcnVtLm5vL2ZpbGVzdG9yZS9Qb2xpdGlmb3J1bS9CaWxkZXIvMjAxMy9NYWkvVmlkZW9vdmVydmtpbmdOWVBEMi5qcGc/c2l6ZT03NDJ4MCZxdWFsaXR5PTc1EKICGK4BGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUm1FQUE0Yjg4alE4N3R1S3V1T2VkalFJYk1YYmV2UDM2TDBlLUE5NW5ST0hwaEUtTk0QogIYrgEiEAgBEKICGK4BQgYSBAABZWUooZyEqaOlzgI=",
-                        "stars.pageData": "Ig5WZWN0bE4yZ1RPZnBOTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Framtidens overvåkning - Politiforum",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3358,10 +2812,6 @@
                   "date_added": "13152727262051155",
                   "date_modified": "13152727262051155",
                   "id": "804",
-                  "meta_info": {
-                     "stars.id": "ssf_999b4e898a0f7a93",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Interessant stoff",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -3369,10 +2819,6 @@
                "date_added": "13152727262027742",
                "date_modified": "13152727262027742",
                "id": "384",
-               "meta_info": {
-                  "stars.id": "ssf_aeb96268c6129eba",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Imported From IE",
                "sync_transaction_version": "1",
                "type": "folder"
@@ -3400,11 +2846,6 @@
             }, {
                "date_added": "13003503476837510",
                "id": "388",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_41238a31416da00c",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "skinm2013.no/nm-er-i-gang-liveresultater-her/",
                "sync_transaction_version": "1",
                "type": "url",
@@ -3412,11 +2853,6 @@
             }, {
                "date_added": "13010583294861339",
                "id": "389",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_2ab9fed0d541ca18",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "NTB",
                "sync_transaction_version": "1",
                "type": "url",
@@ -3424,11 +2860,6 @@
             }, {
                "date_added": "13010583336312545",
                "id": "390",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_be59eff2e9641bd1",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Ord",
                "sync_transaction_version": "1",
                "type": "url",
@@ -3436,11 +2867,6 @@
             }, {
                "date_added": "13010583382016545",
                "id": "391",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_84a4cb9d2034d490",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Esc",
                "sync_transaction_version": "1",
                "type": "url",
@@ -3455,11 +2881,6 @@
             }, {
                "date_added": "12938706736677137",
                "id": "393",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_00f56051ea7118df",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Escenic",
                "sync_transaction_version": "1",
                "type": "url",
@@ -3532,13 +2953,6 @@
                   }, {
                      "date_added": "13002100593594000",
                      "id": "743",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_c1a06b8285f17960",
-                        "stars.imageData": "Cg40WHAweC0yUHdaRzVvTRJjClxodHRwOi8vd3d3LmJhLm5vL2t1bmRlc2VudGVyL3dwLWNvbnRlbnQvdGhlbWVzL3Jlc3BvbnNpdmVfY2F0Y2gvaW1hZ2VzL3N0YXRpYy9hYm9ubmVtZW50LnBuZxC8ARhlGmIKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUnp5R2V2cUpmVzVJc1ZKWU4tLWVjSnJvWWpWWC1NZkxUVlBhc1c0QkppZGYybXBCOG4QvAEYZSIeCAEQvAEYZSCmHUIGEgSAAAAASgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig4tWTE2a3FrYzhWYmJWTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Bergensavisen » Ansatte",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3553,11 +2967,6 @@
                   }, {
                      "date_added": "12946560478834957",
                      "id": "745",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6566301d8d349ffb",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Chartbeat",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3572,11 +2981,6 @@
                   }, {
                      "date_added": "12938706727304453",
                      "id": "747",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_f8c95872072ca595",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Escenic",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3584,11 +2988,6 @@
                   }, {
                      "date_added": "12946128103692419",
                      "id": "748",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6cb8cb8cb8e3ea8a",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "FotoWeb® 6.0",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3631,11 +3030,6 @@
                   }, {
                      "date_added": "12974288852320734",
                      "id": "754",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_536334a86b0fc3bb",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Mest delt  norge",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3643,11 +3037,6 @@
                   }, {
                      "date_added": "12938598808113687",
                      "id": "755",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_ddee728c2f2089eb",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "NTB Nyhetskalender",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3655,11 +3044,6 @@
                   }, {
                      "date_added": "12968857057749373",
                      "id": "756",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_591bc7c6bed52af2",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "NTB",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3667,11 +3051,6 @@
                   }, {
                      "date_added": "12971012149062438",
                      "id": "757",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_18e12747aeeef3d4",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "NTBs nyhetsportal",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3679,11 +3058,6 @@
                   }, {
                      "date_added": "12996245604985702",
                      "id": "758",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_a87af1e9150fab99",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Nettavisen blogg",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3691,13 +3065,6 @@
                   }, {
                      "date_added": "12977576393682000",
                      "id": "759",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_b59f8d66cc9f7566",
-                        "stars.imageData": "Cg5aTlAydnZvUmxJZjgtTRJPCkdodHRwOi8vd3d3Lm5vcnNrZXNwb3J0c2pvdXJuYWxpc3Rlci5uby9waWN0dXJlcy8yMDE0LzA2L2xpbGxlaGFtbWVyLmpwZxDIARiAARpjCltodHRwOi8vdDAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1J3bFFVamw3cWRoRm5nVkFHcmI2akpqZUh5b0ZZVUlxR1ltbVZlNjRySmJlUXcxUU8wEMgBGIABIh8IARDIARiAASDhIkIGEgQIrY16SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5kWFRzOTA3VXB4MXdTTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norske Sportsjournalisters Forbund",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3705,13 +3072,6 @@
                   }, {
                      "date_added": "12938715273696000",
                      "id": "760",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_6ba8824cd6f13a2a",
-                        "stars.imageData": "Cg5ZSWdrdWFGaWR3cVNXTRJBCjpodHRwOi8vd3d3Lm5vYi1vcmRib2sudWlvLm5vL2Nzcy9ncmFmaWtrL2hvZGUtc3RhbmRhcmQuZ2lmEOgHGGUaYgpbaHR0cDovL3QwLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NRaHpuUW9tODFPdHZjc3d6MGFMN3dUOFRWRUltcXRsUmN4cFFuTTF6SFBYTXNLWFF5axDYBBg8Ih4IARDYBBg8IPkeQgYSBIn8AABKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig42U0NKVUhidFdIdE81TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "ORDBOK.NO",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3719,12 +3079,6 @@
                   }, {
                      "date_added": "12953891699106000",
                      "id": "761",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_f0d6ffd3ab9e6703",
-                        "stars.pageData": "Ig4tOExMRmhfMW1sUzFkTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Priskalkulator - Norges Bank",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3732,11 +3086,6 @@
                   }, {
                      "date_added": "12945882436935730",
                      "id": "762",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_6a39d87a2b94b077",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "RSA - CIDWAY - pålogging",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3744,12 +3093,6 @@
                   }, {
                      "date_added": "12940191018238000",
                      "id": "763",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_81bcf328443efef8",
-                        "stars.pageData": "Ig5jLVFuSXRSb2lQTUlYTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Russiske og greske navn",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3785,11 +3128,6 @@
                   }, {
                      "date_added": "12938797253386273",
                      "id": "768",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_31954379582f3cea",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Vintersport live",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3811,12 +3149,6 @@
                   }, {
                      "date_added": "12988797665006000",
                      "id": "771",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_2a7447ddbac7ab2f",
-                        "stars.pageData": "Ig5GRWdGbzRpUWpzVVh2TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "ePlayer Dashboard",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -3839,10 +3171,6 @@
                   "date_added": "13152727262036846",
                   "date_modified": "13152727262036846",
                   "id": "515",
-                  "meta_info": {
-                     "stars.id": "ssf_1dcc6ec92656a9c5",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Arbeidsverktøy",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -3850,13 +3178,6 @@
                   "children": [ {
                      "date_added": "12980029808597000",
                      "id": "707",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_089eab15710c5789",
-                        "stars.imageData": "Cg4zXzRzRk82Y3U4T210TRJdClVodHRwOi8vZ2Z4LmFmdG9uYmxhZGV0LWNkbi5zZS90ZW1wbGF0ZS92ZXIxLTAvZ2Z4L2xvZ29zL3YxL2FmdG9uYmxhZGV0X2dlbmVyaWNfZmIuZ2lmEKwCGKwCGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVEVDRGpSUUZ0dUJVS1NISWhCTm8zNWp3Y2dXWWlmZUpHcUxJYkNlQnRES1FqOGdUQlUQ4QEY4QEiHggBEOEBGOEBIJ0VQgYSBIn/gP9KCWltYWdlL3BuZw==",
-                        "stars.pageData": "EsQBQlJOTy4gRXJpayBLYXJsc3NvbiDDpHIgZW4gZHLDtm1zcGVsYXJlIGbDtnIgVHJlIEtyb25vciBpIFZNLiBNZW4gaGFyIGbDtnJidW5kZXQgcsOlZCBhdHQgZsO2cnPDpGtyYSBob25vbT8g4oCTIERldCB2ZXQgdmkgaW50ZSDDpG4uIE1lbiBkZXQgZmlubnMgbmF0dXJsaWd0dmlzIGVuIGdyw6RucyBmw7ZyIGFsbHRpbmcsIHPDpGdlciBUcuKApiIOVzN3UEZCNXN6ci1FdU0=",
-                        "stars.type": "2"
-                     },
                      "name": "...men han kan bli för dyr  Hockey-VM  Landslag  Hockey  Sportbladet  Aftonbladet",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4096,10 +3417,6 @@
                   "date_added": "13152727262036857",
                   "date_modified": "13152727262036857",
                   "id": "516",
-                  "meta_info": {
-                     "stars.id": "ssf_dee24c8d0070822d",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Aviser",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -4129,10 +3446,6 @@
                   "date_added": "13152727262036865",
                   "date_modified": "13152727262036865",
                   "id": "517",
-                  "meta_info": {
-                     "stars.id": "ssf_2e44fb20f207a6eb",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Det Store Intervjuet",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -4161,13 +3474,6 @@
                   }, {
                      "date_added": "12942246029383000",
                      "id": "703",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_e1d22aedc61576fd",
-                        "stars.imageData": "Cg5qd0ZtbHlvRzBUZ1NxTRK2AQqtAWh0dHA6Ly93d3cuc3BvcnRzYW5hbHlzZS5uby9waG90b2FsYnVtL3ZpZXc0L0wzUnZiMnh6TDNCb2IzUnZZV3hpZFcxZmRtbGxkeTlqZFhOMGIyMWxjaTlwYldjdk56QTVOaTlpWVc1dVpYSTBOamd2TnpBNU5qWTJMbkJ1Wnk5RGNtOXdMejk0UFRBbWVUMHdKbmRwWkhSb1BUTXdNQ1pvWldsbmFIUTlNVFk0EPABGIYBGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVFBEelZHTEdzR0c0TW40OFcwbUwyUVpLRGEyT2hIMkNqemFrbVhTaHNqYWZjRFpiZ1EQ8AEYhgEiHwgBEPABGIYBIK0mQgYSBLsBfJNKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig5NZTFjNU5MN2JDUFQwTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "sportsanalyse.no",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4176,21 +3482,12 @@
                   "date_added": "13152727262037024",
                   "date_modified": "13152727262037025",
                   "id": "520",
-                  "meta_info": {
-                     "stars.id": "ssf_e9ea001cc670c0f4",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Diverse idretter",
                   "sync_transaction_version": "1",
                   "type": "folder"
                }, {
                   "date_added": "12938600605093523",
                   "id": "521",
-                  "meta_info": {
-                     "stars.flags": "5",
-                     "stars.id": "ssc_b9600c6a2e0f3a2d",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Escenic",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -4234,13 +3531,6 @@
                   }, {
                      "date_added": "12959096350630000",
                      "id": "648",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_0f87f27ce42ce524",
-                        "stars.imageData": "Cg5MOEl4WUZxNEhtbGFjTRI5CjJodHRwOi8vd3d3LmZvb3RiYWxsLWRhdGFjby5jb20vaW1nL01lbnVfYm90dG9tLnBuZxDMARhkGmIKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUVVrZEctNXE2Rk5SeFN3ZTNyR2UwU1NLNjJpX2twN1ZlOVJpdVhYVk5UUjJTVXBuUUIQowEYUCIdCAEQowEYUCD/BEIGEgSAAAAASglpbWFnZS9wbmc=",
-                        "stars.pageData": "Ig5BSFlleVFJbFZZTkpHTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Football DataCo  Contact Us",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4390,10 +3680,6 @@
                      "date_added": "13152727262044473",
                      "date_modified": "13152727262044473",
                      "id": "650",
-                     "meta_info": {
-                        "stars.id": "ssf_627378f824f2e249",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Fotballklubber",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -4437,23 +3723,12 @@
                      "date_added": "13152727262044487",
                      "date_modified": "13152727262044487",
                      "id": "651",
-                     "meta_info": {
-                        "stars.id": "ssf_21ad84bab1ca6758",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Fotballstats",
                      "sync_transaction_version": "1",
                      "type": "folder"
                   }, {
                      "date_added": "12938862424928000",
                      "id": "652",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_fa5ba71a3ebc7048",
-                        "stars.imageData": "Cg50N1dxRVRmNTRLaks5TRIvCihodHRwOi8vd3d3LmdvYWxmZXZlci5jb20vaW1hZ2VzL2xvZ28ucG5nEOgBGFoaYgpbaHR0cDovL3QzLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NSalJGTkpmaHAtN24yMTRLODFmRlVCZkxmNEZJcDBUekc0WC1HMU50ZnI5Zkllc2QybBC5ARhIIhIIARC5ARhIINoZQgYSBIAAAAA=",
-                        "stars.pageData": "Ig4xQlZ6bVN1aDI0RlhyTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "GoalFever.com",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4461,13 +3736,6 @@
                   }, {
                      "date_added": "12945797250103000",
                      "id": "653",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_463e2147e83300c8",
-                        "stars.imageData": "Cg5oS2pEckpORU56TGpjTRJPCkdodHRwOi8vd3d3Lm5mZGYubm8vZXBfYmlsZGVyLzYvNzU5LWUxYWQyZTEyNzI1OGQ3NDMxMzYxNjNhODc0ZTkzMzJkLmpwZxCpAhiqARpjCltodHRwOi8vdDAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1J3b1hHbHVzUVJZT3NaejB6aWV2ZXFhYmRBT0k3YU9ISzFJcjh4b3ZiLWVJYmdMZ2tSEKkCGKoBIh8IARCpAhiqASDnOUIGEgS/BXt+SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5xSEhiLVJUdmFjNE9xTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norsk Fotballdommerforening",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4475,12 +3743,6 @@
                   }, {
                      "date_added": "12958134748213000",
                      "id": "654",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_e028ca2e7332c3df",
-                        "stars.pageData": "Ig5CNDhhUXBRQXdoeEwwTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norske fotballspillere i utlandet. Presensliste",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4637,10 +3899,6 @@
                      "date_added": "13152727262044942",
                      "date_modified": "13152727262044942",
                      "id": "658",
-                     "meta_info": {
-                        "stars.id": "ssf_caa3a97f1246a4f2",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Tippeligaen",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -4655,10 +3913,6 @@
                   "date_added": "13152727262037094",
                   "date_modified": "13152727262037094",
                   "id": "522",
-                  "meta_info": {
-                     "stars.id": "ssf_828084e79de60854",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Fotball",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -4673,13 +3927,6 @@
                   "children": [ {
                      "date_added": "12939903205049000",
                      "id": "620",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_5e56c00864eb6a4a",
-                        "stars.imageData": "Cg5ucVFSZ1FneENTbU9QTRJQCkpodHRwOi8vYmxvZ3MuZGVudmVycG9zdC5jb20vYXZzL3dwLWNvbnRlbnQvYXV0aG9ycy9taWtlJTIwY2hhbWJlcnMtMzg0LmpwZxBoGGgaYQpbaHR0cDovL3QyLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NSekVrYzU2SUc3bEMwYkZTaDF4eGdUWVROOW9SWWZVTWVXZ2dWWENEMDJIVzdIRVlWUBBoGGgiHQgBEGgYaCDUDkIGEgSAAgD/SgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5qVS1Qd2M5TWE2S21ZTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "All Things Avs",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4708,13 +3955,6 @@
                   }, {
                      "date_added": "12962392186166000",
                      "id": "624",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_5bf2e741888bf1c9",
-                        "stars.imageData": "Cg5XZXh6dEw5SDlQeGg0TRJlCl1odHRwOi8vYmx1ZWphY2tldHN4dHJhLmRpc3BhdGNoLmNvbS9jb250ZW50L2RpZ2l0YWwvaW1hZ2VzL0ZCU2hhcmluZ0ljb25zX2JsdWVqYWNrZXRzeHRyYS5wbmcQoAEYoAEaYwpbaHR0cDovL3QxLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NSMDdZMXdsVmd2ZDJEMjNmWnB3SC1IMjhzNnRuMV9aOXlfcUNlZ1l0cWdqc2RlOExzTBCgARigASIfCAEQoAEYoAEg4TxCBhIEgZN+/0oKaW1hZ2UvanBlZw==",
-                        "stars.pageData": "EjBDb2x1bWJ1cyBCbHVlIEphY2tldHMgbmV3cywgc3RhdHMsIHBob3RvcywgdmlkZW8iDmJ5dkw4WjFYYV9WU2VN",
-                        "stars.type": "2"
-                     },
                      "name": "Columbus Dispatch",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4729,11 +3969,6 @@
                   }, {
                      "date_added": "12938783915846329",
                      "id": "626",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_566c309e92c3bd78",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Debattsentralen  Ishockey",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4776,12 +4011,6 @@
                   }, {
                      "date_added": "12971111655849000",
                      "id": "632",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_f0e80f598f0e4d3e",
-                        "stars.pageData": "Ig5UWW1jbHJrRHppbW1OTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Hockeymagasinet",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4860,10 +4089,6 @@
                   "date_added": "13152727262037179",
                   "date_modified": "13152727262037179",
                   "id": "524",
-                  "meta_info": {
-                     "stars.id": "ssf_479dea35af605d03",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Hockey",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -4885,13 +4110,6 @@
                   }, {
                      "date_added": "12950878017138000",
                      "id": "611",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_cf69970642886362",
-                        "stars.imageData": "Cg5JY2puMlF2M2o5SkNOTRJNCkZodHRwOi8vd3d3LmpvaG5hcm5lcmlpc2Uubm8vdXBsb2FkLzIwMC9yaWdodHRvcGxheWxvZ28uanBnP2NhY2hlPTE3NzQxEGIYoAEaYgpbaHR0cDovL3QxLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NTTkczMFg4RjJ1cWladlF4R3cycHhWWU9qNkEtRW9hRE1mZnYyeHg4VzNrNzRkcW5pbBBiGKABIhIIARBiGKABIJcrQgYSBIAAAAA=",
-                        "stars.pageData": "Ig51bkVQSnBQU0M3b3RQTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "John Arne Riises Blogg",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4906,12 +4124,6 @@
                   }, {
                      "date_added": "12960060140082000",
                      "id": "613",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_679e2c84e7888747",
-                        "stars.pageData": "Ig5MOXhBNEE4c0FvcGltTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Marthe Kristoffersen",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4919,13 +4131,6 @@
                   }, {
                      "date_added": "12950878053016000",
                      "id": "614",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_37718e55136ed9c5",
-                        "stars.imageData": "Cg5yMTJtS2JleTNpcGc3TRJICkBodHRwOi8vZ2Ftc3QuY28udWsvd3AtY29udGVudC91cGxvYWRzLzIwMTIvMDcvYmlsZGUxLTIyNHgzMDAuanBnELMBGPABGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjU1B5X1EzLXdHS2ZITi1zeGZBcmhsSHpvUU8xSTFsT01HSk05X3hDMXJQMzlFbEsxZXAQswEY8AEiHwgBELMBGPABIKpAQgYSBAAB/19KCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig44dmJjQ0N5ZFQyQk5BTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Morten Gamst Pedersen",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4947,13 +4152,6 @@
                   }, {
                      "date_added": "12960059898147000",
                      "id": "617",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_1420c72dfe1af76a",
-                        "stars.imageData": "Cg5JV3RuUDgyaDJObFRMTRJjCltodHRwOi8vdGVhbW5vcnRodWcubm8vd3AtY29udGVudC90aGVtZXMvdmFudGFnZS9zbGlkZXIvYmFja2dyb3VuZHMvc2xpZGUtcGV0dGVyLW92ZXJsYXkucG5nEOgCGIwBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUzJDSGdKV1VnVWF3anRDbGltVWNtMjlfQnlyNW1zZllGaEg3ejlpNjc4SHdxT3h3QlcQ6AIYjAEiHwgBEOgCGIwBINMkQgYSBKNhgABKCmltYWdlL2pwZWc=",
-                        "stars.pageData": "Ig5vU0xhYUhXd1c0aFZjTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Team Northug",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -4976,10 +4174,6 @@
                   "date_added": "13152727262037190",
                   "date_modified": "13152727262037190",
                   "id": "525",
-                  "meta_info": {
-                     "stars.id": "ssf_56f8473fd1943d3c",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Idrettsutøvere",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -4993,13 +4187,6 @@
                }, {
                   "date_added": "12950892906328000",
                   "id": "527",
-                  "meta_info": {
-                     "stars.flags": "4",
-                     "stars.id": "ssc_b02feec2a5f46f3c",
-                     "stars.imageData": "Cg5oSDdzYUx1dUc5X0laTRI8CjRodHRwOi8vbnQuanVtcG1lZGlhZ3JvdXAubm8vaW1hZ2VzL250X2ZvcnNpZGVfMTEuanBnENsBGOcBGmMKW2h0dHA6Ly90MC5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjU2RTd2t4WjBNZWIzZmZLYThiUllfMVhHZkpzRDB4VXlVc3BsblJudVhuUFN5YlQ5ZkMQ2wEY5wEiHwgBENsBGOcBIKR/QgYSBIEEAABKCmltYWdlL2pwZWc=",
-                     "stars.pageData": "Ig5UNnBqOTM1UVl3a3hCTQ==",
-                     "stars.type": "2"
-                  },
                   "name": "NT live",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -5057,11 +4244,6 @@
                   }, {
                      "date_added": "12938800165268239",
                      "id": "607",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_2d50558762befc9d",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Sigurds pokerblogg",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5069,12 +4251,6 @@
                   }, {
                      "date_added": "12938730532534000",
                      "id": "608",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_5e27f89b0bbd47d4",
-                        "stars.pageData": "Ig4ta2hBZmhtWjQ0UkFLTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "isildur1",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5083,10 +4259,6 @@
                   "date_added": "13152727262037411",
                   "date_modified": "13152727262037411",
                   "id": "529",
-                  "meta_info": {
-                     "stars.id": "ssf_da3640bae3c50efa",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Poker",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5116,10 +4288,6 @@
                   "date_added": "13152727262037422",
                   "date_modified": "13152727262037422",
                   "id": "530",
-                  "meta_info": {
-                     "stars.id": "ssf_38385f0661599246",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Potensielle saker",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5127,13 +4295,6 @@
                   "children": [ {
                      "date_added": "12958228384353000",
                      "id": "591",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_dc9efb2ef79a59de",
-                        "stars.imageData": "Cg5kcGdvRUFHSWNOSXYwTRJiClpodHRwOi8vd3d3LmVudHJlcHJlbmV1ci5jb20vZGJpbWFnZXMvYmxvZy9mYWNlYm9vay1wb3N0aW5nLXRlY2huaXF1ZXMtdGhhdC1yZWFsbHktd29yay5qcGcQpgEYpgEaYwpbaHR0cDovL3QyLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NRSF9DV013TTFRUFB6TlhOSlQxRUc4clZDOVlSNk81bmJHY1hvbERubXQxdWw0VWhwchCmARimASIfCAEQpgEYpgEg8CpCBhIEMLKa/0oKaW1hZ2UvanBlZw==",
-                        "stars.pageData": "EnlCb29zdGluZyB0aGUgZWZmZWN0aXZlbmVzcyBvZiB5b3VyIEZhY2Vib29rIHB1Ymxpc2hpbmcgc3RyYXRlZ3kgaXMgZWFzeSBpZiB5b3Uga25vdyB0aGUgYW5zd2VycyB0byB0aGVzZSBzZXZlbiBxdWVzdGlvbnMuIg53TmZMR0I4NFNVeGR1TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Facebook Posting Techniques that Really Work",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5141,12 +4302,6 @@
                   }, {
                      "date_added": "12946464784845000",
                      "id": "592",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_184e042d9a7f46bb",
-                        "stars.pageData": "Ig5yYWJZbmYtRTBTbGJsTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Gravemaskinen",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5168,12 +4323,6 @@
                   }, {
                      "date_added": "12945788004941000",
                      "id": "595",
-                     "meta_info": {
-                        "stars.flags": "5",
-                        "stars.id": "ssc_49de6971c232fff7",
-                        "stars.pageData": "Ig53V3VRNmNwZVpGWF9pTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "Norske Sportsjournalisters Forbund",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5196,10 +4345,6 @@
                   "date_added": "13152727262037430",
                   "date_modified": "13152727262037430",
                   "id": "531",
-                  "meta_info": {
-                     "stars.id": "ssf_06d9838229e86155",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Praktisk",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5236,10 +4381,6 @@
                   "date_added": "13152727262037437",
                   "date_modified": "13152727262037438",
                   "id": "532",
-                  "meta_info": {
-                     "stars.id": "ssf_830518e2c84cd2db",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Presentasjon - eksempler",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5254,13 +4395,6 @@
                   }, {
                      "date_added": "12971119031588000",
                      "id": "585",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_479f1736f882410f",
-                        "stars.imageData": "Cg52cUc1a09lOFhYYTktTRJmCl5odHRwOi8vYmVyZWt2YW0uY29tL2Jsb2cvd3AtY29udGVudC91cGxvYWRzLzIwMTIvMDEvU2tqZXJtYmlsZGUtMjAxMi0wMS0xNS1rbC4tMTAuMjYuMzUtQU0ucG5nEMMBGIICGmMKW2h0dHA6Ly90Mi5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUl85Q1dEWEFORGtRa2lNMlE5dWVFZy1aTVNYT3ROZjR5Z054ZkpaRjk5d0ptWkVUVVcQwwEYggIiFAgBEMMBGIICILeIAUIGEgSKGXxg",
-                        "stars.pageData": "ErUBTm9lbiBnYW5nZXIgZXIgZGV0IGZ1bGx0IGZvcnRqZW50IMOlIGJsaSBidWV0IHV0IHDDpSBkaXJla3Rlc2VuZHQgdHYuIMOFIG3DuHRlIGh2ZXJkYWdzcmFzaXNtZW4gbWVkIMO4bGthc3RpbmcgZXIgaW1pZGxlcnRpZCBpa2tlIHZlaWVuIMOlIGfDpS4gQnlnZGUtTm9yZ2UgdmFudCBoZWxkaWd2aXMgdGlsIHNsdXR0LiIOc01MU3ZUWENMaHQ1cE0=",
-                        "stars.type": "2"
-                     },
                      "name": "Hedersmenn og møkkamenn",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5276,10 +4410,6 @@
                   "date_added": "13152727262037444",
                   "date_modified": "13152727262037444",
                   "id": "533",
-                  "meta_info": {
-                     "stars.id": "ssf_f1c226680450dbb0",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Privat",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5421,35 +4551,24 @@
                      "date_added": "12950878596035000",
                      "id": "582",
                      "meta_info": {
-                        "last_visited": "13152774396381211",
-                        "last_visited_desktop": "13152805046785975"
+                        "last_visited": "13153073848561948",
+                        "last_visited_desktop": "13153090743758170"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "19",
+                     "sync_transaction_version": "26",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
                      "date_added": "12961511244433000",
                      "id": "583",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_74da5dc6a9195edf",
-                        "stars.imageData": "Cg5ZS1dITjQ4S29hVEpQTRJqCmNodHRwOi8vd3d3LndvcmxkcmVjb3JkYWNhZGVteS5jb20vYmlnZ2VzdC9pbWcvMjE1MzI0LWJfbGFyZ2VzdF9wb3N0Y2FyZF9tb3NhaWNfUmFpbmJvd3NfSG9zcGljZS5qcGcQnAEYcBpiCltodHRwOi8vdDAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1RRb2RoeUFQWjhrYzRPbVVXMHZmNEtodXRBbFNHWmRyY1phdzFXMUE4cjdPbmcyNXdaEJwBGHAiHggBEJwBGHAgiSxCBhIEAAF8fUoKaW1hZ2UvanBlZw==",
-                        "stars.pageData": "Ig5TdW5vOWlwSkpYS3RKTQ==",
-                        "stars.type": "2"
-                     },
                      "name": "http--www.worldrecordsacademy.org-",
                      "sync_transaction_version": "1",
                      "type": "url",
                      "url": "http://www.worldrecordsacademy.org/"
                   } ],
                   "date_added": "13152727262037450",
-                  "date_modified": "13152780378095442",
+                  "date_modified": "13153090745666350",
                   "id": "534",
-                  "meta_info": {
-                     "stars.id": "ssf_6ac6515701a883c2",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5479,10 +4598,6 @@
                   "date_added": "13152727262037456",
                   "date_modified": "13152727262037456",
                   "id": "535",
-                  "meta_info": {
-                     "stars.id": "ssf_76c81404a369549a",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Spill",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5496,13 +4611,6 @@
                }, {
                   "date_added": "12976306523698000",
                   "id": "537",
-                  "meta_info": {
-                     "stars.flags": "4",
-                     "stars.id": "ssc_74712559bb12717c",
-                     "stars.imageData": "Cg5VVHpQblFkaUZvaVBTTRJSCkpodHRwOi8vd3d3LmNkbi50djIubm8vbXVsdGltZWRpYS9UVjIvYXJjaGl2ZS8wMDk1MS9SQktfU29nbmRhbF85NTE4MjRhLmpwZxCsAhioARpjCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1FaZ255TXZ6bDZ4Vm1BQjZUME9acHV6S1FYVVU5azFQX252ZVNpT05UYVFiMWJ3SzF3EKwCGKgBIh8IARCsAhioASCAYEIGEgS/PX19SgppbWFnZS9qcGVn",
-                     "stars.pageData": "EpUBUm9zZW5ib3JncyBidWRzamV0dCBlciBuZXN0ZW4gc2p1IGdhbmdlciBzdMO4cnJlIGVubiBTb2duZGFscy4gRGV0IHNrcmVtbWVyIGlra2UgwqtzbcOla2x1YmJlbmXCuy4gU2pla2sgVGlwcGVsaWdhLWtsdWJiZW5lcyBidWRzamV0dGVyIGZvciAyMDEyIGhlci4iDldiTUpHb0I1WXFPeWNN",
-                     "stars.type": "2"
-                  },
                   "name": "Tippeliga-klubbenes budsjetter 2012 – Vi har ressurser som ikke kan måles i kroner - TV 2 Sporten  Fotball",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -5525,13 +4633,6 @@
                   }, {
                      "date_added": "12939987962878000",
                      "id": "543",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_09399408a5d72c7f",
-                        "stars.imageData": "Cg5PYzhHakxqWDRzSmxWTRJMCkRodHRwOi8vd3d3LmJpYXRobG9ud29ybGQuY29tL21lZGlhL2ltYWdlcy9jb21tb24vbGl2ZV9yZXN1bHRzX2VuLmpwZxDsARipARpjCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1MxaGNqOU1PZWh0WW5nelUtS0Q3d1ZNaFVLNTBFYlVqNkRBTW5vUW9tNV9qcThZMHAwEOwBGKkBIh8IARDsARipASCIJUIGEgSAAAAASgppbWFnZS9qcGVn",
-                        "stars.pageData": "Ig5VNnNnd3ptODV6cXQ3TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "International Biathlon Union",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5539,13 +4640,6 @@
                   }, {
                      "date_added": "12940863196424000",
                      "id": "544",
-                     "meta_info": {
-                        "stars.flags": "4",
-                        "stars.id": "ssc_5baf784d5bb2f99c",
-                        "stars.imageData": "Cg5uQmlTa0pEVkxaU3p5TRI5CjJodHRwOi8vd3d3LnNwZWVkc2thdGluZ3Jlc3VsdHMuY29tL2ltYWdlcy9Mb2dvLnBuZxCTAhhaGmIKW2h0dHA6Ly90MC5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUXpiRGdSTHFSYURpVV9HWUpwdzRhXzAxMng1aUluT2pSRHV2Nm9oRDJCUEVYdkZkTUcQ3AEYSCISCAEQ3AEYSCDzKkIGEgSAAAAA",
-                        "stars.pageData": "Ig5wV0ZNaExQamQ3QXR0TQ==",
-                        "stars.type": "2"
-                     },
                      "name": "SpeedskatingResults.com",
                      "sync_transaction_version": "1",
                      "type": "url",
@@ -5554,13 +4648,6 @@
                      "children": [ {
                         "date_added": "12940001620383000",
                         "id": "546",
-                        "meta_info": {
-                           "stars.flags": "4",
-                           "stars.id": "ssc_616403129277a6a7",
-                           "stars.imageData": "Cg5aQ0cyVWFGY0h0MXQ4TRIvCidodHRwOi8vd3d3LmFuZGVyc2JhcmRhbC5jb20vMjAxNC8yMC5qcGcQlwIYtQEaYwpbaHR0cDovL3QwLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NTWTQ1OHBPMW1oZ0FraXhmMkNsaWlwQ1ZBOEtnNzJhNFlSYW9YX1kxWXNVQTZOWDZiUxCXAhi1ASIfCAEQlwIYtQEg9z5CBhIEAAGLqkoKaW1hZ2UvanBlZw==",
-                           "stars.pageData": "Ig5JcnNUcW5FS3RLejB0TQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Anders Bardal",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -5603,12 +4690,6 @@
                      }, {
                         "date_added": "12940001436808000",
                         "id": "552",
-                        "meta_info": {
-                           "stars.flags": "5",
-                           "stars.id": "ssc_c4e0b46ea5160d50",
-                           "stars.pageData": "Ig5MOXhBNEE4c0FvcGltTQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Marthe Kristoffersen",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -5616,11 +4697,6 @@
                      }, {
                         "date_added": "12940001534444386",
                         "id": "553",
-                        "meta_info": {
-                           "stars.flags": "5",
-                           "stars.id": "ssc_e39c5c2c8f772958",
-                           "stars.version": "sync.server.Chrome42"
-                        },
                         "name": "Martin Johnsrud Sundby",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -5642,13 +4718,6 @@
                      }, {
                         "date_added": "12940001473760000",
                         "id": "556",
-                        "meta_info": {
-                           "stars.flags": "4",
-                           "stars.id": "ssc_599920fc4fe690a8",
-                           "stars.imageData": "Cg5JV3RuUDgyaDJObFRMTRJjCltodHRwOi8vdGVhbW5vcnRodWcubm8vd3AtY29udGVudC90aGVtZXMvdmFudGFnZS9zbGlkZXIvYmFja2dyb3VuZHMvc2xpZGUtcGV0dGVyLW92ZXJsYXkucG5nEOgCGIwBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUzJDSGdKV1VnVWF3anRDbGltVWNtMjlfQnlyNW1zZllGaEg3ejlpNjc4SHdxT3h3QlcQ6AIYjAEiHwgBEOgCGIwBINMkQgYSBKNhgABKCmltYWdlL2pwZWc=",
-                           "stars.pageData": "Ig5vU0xhYUhXd1c0aFZjTQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Team Northug",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -5656,13 +4725,6 @@
                      }, {
                         "date_added": "12940001418919000",
                         "id": "557",
-                        "meta_info": {
-                           "stars.flags": "4",
-                           "stars.id": "ssc_a4cf1bf86db9c325",
-                           "stars.imageData": "Cg5DNURSZU5wS2xxeVdETRJFCj1odHRwOi8vd3d3LnRoZXJlc2Vqb2hhdWcubm8vRmlsZXMvQmlsbGVkZXIva2FydXNlbGwvMDAwMzIuanBnEKwCGKgBGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUXEtbkl2R0k1THhfMm95aDhrRkRlTGQxMGs1dkp3c0lHWkU5MXQ1RXI2aEx2LUpUQUIQrAIYqAEiHwgBEKwCGKgBIINJQgYSBK8BenxKCmltYWdlL2pwZWc=",
-                           "stars.pageData": "Ig5DVjR1Z1VjME1WeFJ0TQ==",
-                           "stars.type": "2"
-                        },
                         "name": "Therese Johaug",
                         "sync_transaction_version": "1",
                         "type": "url",
@@ -5685,10 +4747,6 @@
                      "date_added": "13152727262037950",
                      "date_modified": "13152727262037950",
                      "id": "545",
-                     "meta_info": {
-                        "stars.id": "ssf_1059d826d5672842",
-                        "stars.version": "sync.server.Chrome42"
-                     },
                      "name": "Utøversider",
                      "sync_transaction_version": "1",
                      "type": "folder"
@@ -5696,10 +4754,6 @@
                   "date_added": "13152727262037634",
                   "date_modified": "13152727262037634",
                   "id": "538",
-                  "meta_info": {
-                     "stars.id": "ssf_0f60e50be4d9639e",
-                     "stars.version": "sync.server.Chrome42"
-                  },
                   "name": "Vintersport",
                   "sync_transaction_version": "1",
                   "type": "folder"
@@ -5721,10 +4775,6 @@
                "date_added": "13152727262028560",
                "date_modified": "13152727262028560",
                "id": "401",
-               "meta_info": {
-                  "stars.id": "ssf_b579722c0b57042f",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Importert fra Internet Explorer",
                "sync_transaction_version": "1",
                "type": "folder"
@@ -5738,11 +4788,6 @@
             }, {
                "date_added": "13010609528718785",
                "id": "403",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_6270a5cb55da9273",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "Mail",
                "sync_transaction_version": "1",
                "type": "url",
@@ -5750,11 +4795,6 @@
             }, {
                "date_added": "13010768293583605",
                "id": "404",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_0e2721e0820df902",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "DrFront - Login",
                "sync_transaction_version": "1",
                "type": "url",
@@ -5769,11 +4809,6 @@
             }, {
                "date_added": "13011338942181321",
                "id": "406",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_eca59e4381d3353d",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "TV 2 WorkPlace",
                "sync_transaction_version": "1",
                "type": "url",
@@ -5856,10 +4891,6 @@
                "date_added": "13152727262029752",
                "date_modified": "13152727262029752",
                "id": "416",
-               "meta_info": {
-                  "stars.id": "ssf_c83678a3b45ec917",
-                  "stars.version": "sync.server.Chrome41"
-               },
                "name": "digital tidsreise",
                "sync_transaction_version": "1",
                "type": "folder"
@@ -5867,13 +4898,6 @@
                "children": [ {
                   "date_added": "13071165154873000",
                   "id": "507",
-                  "meta_info": {
-                     "stars.flags": "4",
-                     "stars.id": "ssc_ddc885ee8b972339",
-                     "stars.imageData": "Cg5pZ19uNzBvX19EbmI1TRI7CjNodHRwOi8vaS55dGltZy5jb20vdmkvTmNnOTZBT0NQV00vbWF4cmVzZGVmYXVsdC5qcGcQgAoY0AUaYwpbaHR0cDovL3QyLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NTMC1oQ0c0SDR2ZzRGM1hMRFpEOXhBSjZncUxHNWo1R3c5amJMa2g0cTd1bDNPdEloYhCsAhioASIfCAEQrAIYqAEg809CBhIEAAxafUoKaW1hZ2UvanBlZw==",
-                     "stars.pageData": "Ig5EbTdXNzR4YXFFcjhrTQ==",
-                     "stars.type": "2"
-                  },
                   "name": "Home",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -5930,10 +4954,6 @@
                "date_added": "13152727262029763",
                "date_modified": "13152727262029763",
                "id": "417",
-               "meta_info": {
-                  "stars.id": "ssf_04f8bd053ade2dd6",
-                  "stars.version": "sync.server.Chrome41"
-               },
                "name": "retrospillmessen-inspirasjon",
                "sync_transaction_version": "1",
                "type": "folder"
@@ -6312,12 +5332,6 @@
                }, {
                   "date_added": "13069948730925000",
                   "id": "506",
-                  "meta_info": {
-                     "stars.flags": "5",
-                     "stars.id": "ssc_c3bd3d47cee3c749",
-                     "stars.pageData": "Ig56VnhEYlYwUWpDdGZDTQ==",
-                     "stars.type": "2"
-                  },
                   "name": "BonsaiJS Demos - Pie Chart",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -6326,10 +5340,6 @@
                "date_added": "13152727262029772",
                "date_modified": "13152727262029772",
                "id": "418",
-               "meta_info": {
-                  "stars.id": "ssf_61963192e6ea7eaf",
-                  "stars.version": "sync.server.Chrome40"
-               },
                "name": "Skal lages sak av",
                "sync_transaction_version": "1",
                "type": "folder"
@@ -6344,12 +5354,6 @@
                }, {
                   "date_added": "13072266027521000",
                   "id": "425",
-                  "meta_info": {
-                     "stars.flags": "4",
-                     "stars.id": "ssc_77e5a6a9dac2555a",
-                     "stars.pageData": "Ig5mZTVnVHJNcURGNmkxTQ==",
-                     "stars.type": "2"
-                  },
                   "name": "Axiom Verge Review: A Rival for Super Metroid",
                   "sync_transaction_version": "1",
                   "type": "url",
@@ -6547,10 +5551,6 @@
                "date_added": "13152727262029780",
                "date_modified": "13152727262029780",
                "id": "419",
-               "meta_info": {
-                  "stars.id": "ssf_ce913471138f225c",
-                  "stars.version": "sync.server.Chrome41"
-               },
                "name": "retrotimen-nyheter",
                "sync_transaction_version": "1",
                "type": "folder"
@@ -6593,7 +5593,7 @@
                "url": "https://docs.google.com/document/d/1r5FWIlf_Rk9Gex7oOg0qt4uskft97FPVuO5APJm0xno/edit"
             } ],
             "date_added": "13152727262023192",
-            "date_modified": "13152797337578723",
+            "date_modified": "13153079136877919",
             "id": "283",
             "name": "old",
             "sync_transaction_version": "1",
@@ -6816,20 +5816,20 @@
                   "date_added": "13152447958106534",
                   "id": "293",
                   "meta_info": {
-                     "last_visited_desktop": "13152447958107966"
+                     "last_visited_desktop": "13152897908646916"
                   },
                   "name": "Tikka masala med fisk",
-                  "sync_transaction_version": "1",
+                  "sync_transaction_version": "24",
                   "type": "url",
                   "url": "https://www.rema.no/oppskrifter/tikka-masala-med-ternet-fisk/REC-35192"
                }, {
                   "date_added": "13152448046124457",
                   "id": "294",
                   "meta_info": {
-                     "last_visited_desktop": "13152727275848376"
+                     "last_visited_desktop": "13152897905062584"
                   },
                   "name": "Grillet kylling med pasta ",
-                  "sync_transaction_version": "3",
+                  "sync_transaction_version": "24",
                   "type": "url",
                   "url": "https://www.rema.no/oppskrifter/grillet-kylling-med-pasta/REC-35722"
                }, {
@@ -6846,15 +5846,15 @@
                   "date_added": "13152448125792227",
                   "id": "296",
                   "meta_info": {
-                     "last_visited_desktop": "13152727279557467"
+                     "last_visited_desktop": "13152898455773163"
                   },
                   "name": "Asiatisk wok med kjøttboller og nudler",
-                  "sync_transaction_version": "4",
+                  "sync_transaction_version": "24",
                   "type": "url",
                   "url": "https://www.rema.no/oppskrifter/asiatisk-wok-med-kj%C3%B8ttboller-og-nudler/REC-35373"
                } ],
                "date_added": "13152727262023391",
-               "date_modified": "13152727262023391",
+               "date_modified": "13153079136877914",
                "id": "292",
                "name": "uke42",
                "sync_transaction_version": "1",
@@ -6870,10 +5870,10 @@
             "date_added": "13151423030406835",
             "id": "288",
             "meta_info": {
-               "last_visited_desktop": "13152612174759424"
+               "last_visited_desktop": "13152874009639505"
             },
             "name": "waffle",
-            "sync_transaction_version": "1",
+            "sync_transaction_version": "24",
             "type": "url",
             "url": "https://waffle.io/dbmedialab/pluss?label=pluss"
          }, {
@@ -6900,16 +5900,16 @@
             "date_added": "13151484964183596",
             "id": "291",
             "meta_info": {
-               "last_visited": "13152774095461859",
-               "last_visited_desktop": "13152806799928007"
+               "last_visited": "13153074801064052",
+               "last_visited_desktop": "13152919751351679"
             },
             "name": "db",
-            "sync_transaction_version": "23",
+            "sync_transaction_version": "24",
             "type": "url",
             "url": "https://www.dagbladet.no/"
          } ],
          "date_added": "13152543424034650",
-         "date_modified": "13151484964183596",
+         "date_modified": "13153079136877914",
          "id": "1",
          "name": "Bookmarks Bar",
          "type": "folder"
@@ -6978,10 +5978,6 @@
             "date_added": "13152727262008031",
             "date_modified": "13152727262008031",
             "id": "38",
-            "meta_info": {
-               "stars.id": "ssf_df7e5d20f2a11199",
-               "stars.version": "sync.server.Chrome40"
-            },
             "name": "forujm",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -6997,10 +5993,6 @@
             "date_added": "13152727262008040",
             "date_modified": "13152727262008040",
             "id": "39",
-            "meta_info": {
-               "stars.id": "ssf_9b31fa7a3c1b7e30",
-               "stars.version": "sync.server.Chrome40"
-            },
             "name": "forum",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -7086,10 +6078,6 @@
             "date_added": "13152727262008048",
             "date_modified": "13152727262008048",
             "id": "40",
-            "meta_info": {
-               "stars.id": "ssf_976ccec083445ef5",
-               "stars.version": "sync.server.Chrome40"
-            },
             "name": "amazon consoles",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -7098,10 +6086,6 @@
             "date_added": "13152727262008057",
             "date_modified": "13152727262008057",
             "id": "41",
-            "meta_info": {
-               "stars.id": "ssf_9f08c0aa7b424d33",
-               "stars.version": "sync.server.Chrome40"
-            },
             "name": "vagranthusk",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -7731,10 +6715,6 @@
             "date_added": "13152727262008065",
             "date_modified": "13152727262008065",
             "id": "42",
-            "meta_info": {
-               "stars.id": "ssf_0680e0efb9f2a456",
-               "stars.version": "sync.server.Chrome40"
-            },
             "name": "Inspiration",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -7749,13 +6729,6 @@
             }, {
                "date_added": "13042373364306000",
                "id": "57",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_6feae5cc3d8cabe3",
-                  "stars.imageData": "Cg4wOEFQbEdPYTVHRmJyTRJHCj9odHRwOi8vZ2Z4Lm5yay5uby8vVDd6US1QUXpZMUFzcVd1VVkzbEUwUXVpXzR4b282ODZuZ3hTU0d3SGJmZ1EQrAIYqAEaYwpbaHR0cDovL3QzLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NUclM2TFBoYlhnVmk5THR2WUJCT0VBenN6OTI3NWIxbHhtLXctVlpWT3FzRGNPYmhVSRCsAhioASIQCAEQrAIYqAFCBhIEAAF8fCi5m5LSt+TMAg==",
-                  "stars.pageData": "Ig40WFNMeGdNSWJaTUVLTQ==",
-                  "stars.type": "2"
-               },
                "name": "Vegetarpizza - NRK Mat",
                "sync_transaction_version": "1",
                "type": "url",
@@ -7833,13 +6806,6 @@
             }, {
                "date_added": "13043351676256000",
                "id": "68",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_d061ab5f8415a2a9",
-                  "stars.imageData": "Cg5KYUxQYkdtNnRtQTFGTRJuCmZodHRwOi8vcHJpbmNlaW5rLmNvbS93cC93cC1jb250ZW50L3RoZW1lcy9wcmluY2Vpbmtjb21wYW55L2ltYWdlcy90aGUtbW9zdC1oYW5kcy1vbi1zY3JlZW4tcHJpbnRlci5wbmcQkAcYwgEaYgpbaHR0cDovL3QxLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NReWFka3l3NC1oX1l4T1hIUkhJLUFrWnpZMlJfWDRYUVVSTUdBY1pLT0pPYkxWa3J3YhDnAxhnIh4IARDnAxhnIIlXQgYSBIBMAABKCmltYWdlL2pwZWc=",
-                  "stars.pageData": "Ig5GWGhuQk5UNlZkUHpWTQ==",
-                  "stars.type": "2"
-               },
                "name": "The Prince Ink Company | Premium Screen Printers",
                "sync_transaction_version": "1",
                "type": "url",
@@ -7917,13 +6883,6 @@
             }, {
                "date_added": "13047370003602000",
                "id": "79",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_77d0731cded0cf29",
-                  "stars.imageData": "Cg5GSGlvYTRYdjRTYlkyTRKpAQqgAWh0dHA6Ly9wYnguaW1hZ2VzLm5ldHRhdmlzZW4ubm8vP3c9MjUwJmg9MjUwJnVybD1odHRwOi8vbmV0dGF2aXNlbi5jZG4uZHJwdWJsaXNoLmFwdG9tYS5uby9pbWFnZXMvYXJ0aWNsZS8yMDE0LzA2LzE1Lzg0NTUyOTIvMS93MzAwXzF4MV9hYy9pbnN0YWdyYW1fZml0bmVzcy5qcGcQyAEYyAEaYwpbaHR0cDovL3QwLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NUa2JvOUNSZk1ackxaTWFvclpzZmhxSnZMbE91aUJHS3NvZXBaYWpqVnNmWVpvMzZOZhDIARjIASIfCAEQyAEYyAEgjE1CBhIEl95l/0oKaW1hZ2UvanBlZw==",
-                  "stars.pageData": "EixEZXR0ZSBzeW5lcyBkZSBlciBsYXR0ZXJsaWcgb2cgZm9ybsOmcm1lbmRlLiIOVFNGVUZKTGtydWtsT00=",
-                  "stars.type": "2"
-               },
                "name": "10 ting du aldri må si til en fitness-jente",
                "sync_transaction_version": "1",
                "type": "url",
@@ -7931,13 +6890,6 @@
             }, {
                "date_added": "13048431563902000",
                "id": "80",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_5b44f9b48dbc99dc",
-                  "stars.imageData": "EkUKPWh0dHA6Ly9jcmF6eWhvdXNld2ViLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxNC8wMi9Zb2FzdC5qcGcQtQIYowE=",
-                  "stars.pageData": "Ig5EWHFHVndvWjNyMWZpTQ==",
-                  "stars.type": "2"
-               },
                "name": "10 Best Wordpress Plugins 2014 - Crazy House MediaCrazy House Media",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8036,13 +6988,6 @@
             }, {
                "date_added": "13050096911035000",
                "id": "94",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_4e3c54baf0f595d6",
-                  "stars.imageData": "Cg5jaVdHRG1BQ3VLWXNqTRJJCkFodHRwOi8va2Fib29tcGljcy5jb20vZmlsZXMvaW1hZ2VzL2hlbHAvaW50ZXJpb3JkZXNpZ25iYW5uZXIxLnBuZxDQAhiYAhpjCltodHRwOi8vdDIuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1FjRnNYUmNCc2dqSnd1RlV6TmZIWXlrUUFhM3AyajR2SzNQWVNhbGRHZ1JrTVpEcmNQEPYBGM0BIhAIARD2ARjNAUIGEgSAAAAAKJHq4qnt3cUC",
-                  "stars.pageData": "Ig5IWXRYckZYRVlfOThITQ==",
-                  "stars.type": "2"
-               },
                "name": "KaboomPics.com",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8085,13 +7030,6 @@
             }, {
                "date_added": "13051885980175000",
                "id": "100",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_a89cc35aa6c8a850",
-                  "stars.imageData": "Cg5pclM2NmtiV1NWWV8zTRI/CjdodHRwOi8vZGltc2VtZW5vdi5jb20vcGx1Z2lucy9yb3lhbC1zbGlkZXIvaW1nL2hvbWUuanBnEKwCGKgBGmMKW2h0dHA6Ly90Mi5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjU3AwZkJkVFV0dEwwd2wzMVBhcHBvRHplQXEtSC1qRF91emJnb0Q1aXBDbTJ5eFBiSTIQrAIYqAEiEwgBEKwCGKgBIKRAQgYSBAEBjJA=",
-                  "stars.pageData": "Ig42M0pzdXFyS1QzZGlkTQ==",
-                  "stars.type": "2"
-               },
                "name": "RoyalSlider WordPress Plugin",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8113,13 +7051,6 @@
             }, {
                "date_added": "13052696011391000",
                "id": "103",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_a0b57945ebf56295",
-                  "stars.imageData": "Cg5EYzNsd2JHeDVtMl8wTRJOCkZodHRwOi8vaW5zcGlyYXRpb25mZWVkLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxNC8xMS9kcm9wYm94LXRpcHMuanBnEKQBGIQBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVDJTRVRBNnlEYlQwSVFMQUR3SHRXejkwTGZqWnlxZDRqemMya2x4VmFUeFVDQ3NPbzgQpAEYhAEiEAgBEKQBGIQBQgYSBIAAAAAo/+Dhj9m4xQI=",
-                  "stars.pageData": "Ig5tWkx0VXBJRTlkTVRGTQ==",
-                  "stars.type": "2"
-               },
                "name": "Inspirationfeed - be inspired!",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8200,12 +7131,6 @@
             }, {
                "date_added": "13055167145147000",
                "id": "114",
-               "meta_info": {
-                  "stars.flags": "7",
-                  "stars.id": "ssc_7234345db649c304",
-                  "stars.pageData": "Ig44WldTdHdyN3h0R3ZDTQ==",
-                  "stars.type": "2"
-               },
                "name": "snes9x",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8297,13 +7222,6 @@
             }, {
                "date_added": "13060792949480000",
                "id": "127",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_25c4a0be535c9a6d",
-                  "stars.imageData": "Cg5xVFZPYUJSRjhGQURTTRJUCkxodHRwOi8vZ2Z4LmRhZ2JsYWRldC5uby9sYWJyYWRvci8zNjIvMzYyODY0LzM2Mjg2NDU3L2pwZy9hY3RpdmUvMTk1Nng4MTguanBnEMAMGJ0FGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUnl2SlJLT2ZONmlRc1JIM19tYTNNVzFSMGpvdzVkUXpFOWxVTElnMTBTQjhFbmduWVYQ2wIYkQEiEAgBENsCGJEBQgYSBBIBd3wo9sXK5KrNxQI=",
-                  "stars.pageData": "Ig5lSi11M1dNLVQ4NzZzTQ==",
-                  "stars.type": "2"
-               },
                "name": "20 smarte Mac-tips for nybegynnere - tema - Dagbladet.no",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8503,13 +7421,6 @@
             }, {
                "date_added": "13052696435131000",
                "id": "155",
-               "meta_info": {
-                  "stars.flags": "6",
-                  "stars.id": "ssc_e5c1971c47bd90a6",
-                  "stars.imageData": "Cg5EYzNsd2JHeDVtMl8wTRJOCkZodHRwOi8vaW5zcGlyYXRpb25mZWVkLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxNC8xMS9kcm9wYm94LXRpcHMuanBnEKQBGIQBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVDJTRVRBNnlEYlQwSVFMQUR3SHRXejkwTGZqWnlxZDRqemMya2x4VmFUeFVDQ3NPbzgQpAEYhAEiEAgBEKQBGIQBQgYSBIAAAAAo/+Dhj9m4xQI=",
-                  "stars.pageData": "Ig5tWkx0VXBJRTlkTVRGTQ==",
-                  "stars.type": "2"
-               },
                "name": "",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8531,13 +7442,6 @@
             }, {
                "date_added": "13045224983591000",
                "id": "158",
-               "meta_info": {
-                  "stars.id": "ssc_dcce7316f56ba136",
-                  "stars.imageData": "Cg5GYUhnajdvMWxCemJCTRIoCiJodHRwOi8vYW1lbmRvci5uby9hc3NldHMvaW1nLzIucG5nEHYYdhphCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1NlVDc0LVc2WjdZdE8ydkVSV2RqaTB2aTg1NlBVRFh6UGd0NlB6RllIb2NyNkctcExZEHYYdiIcCAEQdhh2IOINQgYSBIACAP9KCWltYWdlL3BuZw==",
-                  "stars.pageData": "Ig5ic0lySjA0cXRXLS1vTQ==",
-                  "stars.type": "2",
-                  "stars.version": "sync.server.Chrome40"
-               },
                "name": "Amendor - Bedre læring",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8602,10 +7506,11 @@
                "date_added": "13033428537320186",
                "id": "167",
                "meta_info": {
+                  "last_visited": "13153075238735009",
                   "last_visited_desktop": "13152382679329130"
                },
                "name": "",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "24",
                "type": "url",
                "url": "http://www.theverge.com/"
             }, {
@@ -8686,25 +7591,14 @@
                "url": "https://en.wikipedia.org/w/api.php"
             } ],
             "date_added": "13152727262008077",
-            "date_modified": "13152727262008077",
+            "date_modified": "13153079136877921",
             "id": "43",
-            "meta_info": {
-               "stars.id": "ssf_ca5f65fbd24120df",
-               "stars.version": "sync.server.Chrome40"
-            },
             "name": "old bookmarks bar",
             "sync_transaction_version": "1",
             "type": "folder"
          }, {
             "date_added": "13074251302353000",
             "id": "44",
-            "meta_info": {
-               "stars.flags": "0",
-               "stars.id": "c_f0epi8twq7r3",
-               "stars.note": "",
-               "stars.pageData": "Ig5RYkdmQVJyMlVSYVZVTQ==",
-               "stars.type": "2"
-            },
             "name": "Ti i skuddet lister 1990-1991",
             "sync_transaction_version": "1",
             "type": "url",
@@ -8721,12 +7615,6 @@
             "date_added": "13152727262008161",
             "date_modified": "13152727262008161",
             "id": "45",
-            "meta_info": {
-               "stars.description": "",
-               "stars.id": "ssf_0f248d6080e49c3b",
-               "stars.isPublic": "false",
-               "stars.version": "crx.2.2015.427.11450"
-            },
             "name": "retrotimen",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -8784,10 +7672,10 @@
             "id": "53",
             "meta_info": {
                "last_visited": "13152714586977551",
-               "last_visited_desktop": "13152453542306447"
+               "last_visited_desktop": "13152870204383298"
             },
             "name": "Dagbladet.no - forsiden",
-            "sync_transaction_version": "1",
+            "sync_transaction_version": "24",
             "type": "url",
             "url": "http://www.dagbladet.no/"
          }, {
@@ -8799,12 +7687,12 @@
             "url": "http://www.doloresserier.se/svenska-serier-begagnat/ovriga-serier-a-o/n/nintendo-magasinet/nintendo-magasinet-1990-01-prenumerantex.html"
          } ],
          "date_added": "13152543424034658",
-         "date_modified": "13076891125884000",
+         "date_modified": "13153079136877917",
          "id": "2",
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "23",
+      "sync_transaction_version": "26",
       "synced": {
          "children": [ {
             "children": [ {
@@ -8839,21 +7727,12 @@
             "date_added": "13152727262005881",
             "date_modified": "13152727262005881",
             "id": "6",
-            "meta_info": {
-               "stars.id": "ssf_904dfed76c7f1017",
-               "stars.version": "sync.server.Chrome42"
-            },
             "name": "Underholdning",
             "sync_transaction_version": "1",
             "type": "folder"
          }, {
             "date_added": "13005243936373566",
             "id": "7",
-            "meta_info": {
-               "stars.flags": "5",
-               "stars.id": "ssc_00f897e37810e4e2",
-               "stars.version": "sync.server.Chrome42"
-            },
             "name": "Kate Upton Outtakes, Sports Illustrated Swimsuit 2012 - Video Dailymotion",
             "sync_transaction_version": "1",
             "type": "url",
@@ -8870,10 +7749,6 @@
             "date_added": "13152727262006100",
             "date_modified": "13152727262006100",
             "id": "8",
-            "meta_info": {
-               "stars.id": "ssf_6a9ff71ba6772f05",
-               "stars.version": "sync.server.Chrome42"
-            },
             "name": "Arbeid",
             "sync_transaction_version": "1",
             "type": "folder"
@@ -8895,11 +7770,6 @@
             }, {
                "date_added": "13011455253832243",
                "id": "30",
-               "meta_info": {
-                  "stars.flags": "5",
-                  "stars.id": "ssc_107a3838fc360aa6",
-                  "stars.version": "sync.server.Chrome42"
-               },
                "name": "[HD] Ciara Price Dailymotion Wideo",
                "sync_transaction_version": "1",
                "type": "url",
@@ -8908,10 +7778,6 @@
             "date_added": "13152727262006109",
             "date_modified": "13152727262006109",
             "id": "9",
-            "meta_info": {
-               "stars.id": "ssf_6aeeda55d25224dc",
-               "stars.version": "sync.server.Chrome42"
-            },
             "name": "Verktøy",
             "sync_transaction_version": "1",
             "type": "folder"
