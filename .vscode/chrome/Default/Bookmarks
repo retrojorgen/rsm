@@ -5913,10 +5913,10 @@
             "id": "291",
             "meta_info": {
                "last_visited": "13153428710035307",
-               "last_visited_desktop": "13153434247239858"
+               "last_visited_desktop": "13153435732471188"
             },
             "name": "db",
-            "sync_transaction_version": "65",
+            "sync_transaction_version": "67",
             "type": "url",
             "url": "https://www.dagbladet.no/"
          } ],
@@ -7707,7 +7707,7 @@
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "65",
+      "sync_transaction_version": "67",
       "synced": {
          "children": [ {
             "children": [ {

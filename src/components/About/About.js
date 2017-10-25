@@ -119,6 +119,7 @@ const ImageDescription = styled.span `
     position: relative;
     opacity: 1;
     right: auto;
+    left: auto;
     top: auto;
     margin-top: 10px;
     padding: 10px;

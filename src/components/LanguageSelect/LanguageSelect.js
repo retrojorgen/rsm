@@ -23,9 +23,10 @@ const SelectedButton = styled.button`
   border: 0;
   padding: 6px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 0.9em;
   outline: none;
+  box-shadow: 0 0 2px rgba(0,0,0,0.8);
   @media (min-device-width: 1100px) {
     background-color: #e0c417;
     color: black;

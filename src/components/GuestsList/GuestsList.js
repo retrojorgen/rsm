@@ -71,29 +71,29 @@ const ImageSection = styled.div `
 `;
 
 const ProfileSection = styled.div `
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background: url(${props => props.backgroundImage});
-background-size: 50%;  
-background-position:left bottom;
-background-repeat: no-repeat;
-display: block;
-opacity: 1;
-box-shadow: 0 0 40px black inset;
-&:hover {
-  opacity: 1;
-}
-@media (max-device-width: 1100px) {
   position: absolute;
-  background-size: 80%;
-  background-position:center bottom;  
-  height: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(${props => props.backgroundImage});
+  background-size: 50%;  
+  background-position:left bottom;
+  background-repeat: no-repeat;
+  display: block;
   opacity: 1;
-  text-align: center;
-} 
+  box-shadow: 0 0 40px black inset;
+  &:hover {
+    opacity: 1;
+  }
+  @media (max-device-width: 1100px) {
+    position: absolute;
+    background-size: 80%;
+    background-position:center bottom;  
+    height: 300px;
+    opacity: 1;
+    text-align: center;
+  } 
 `;
 
 const ImageDescription = styled.span `
@@ -174,8 +174,8 @@ export default class GuestsList extends Component {
         title: "Gjester på RSM 18",
         sections: [
           {
-            backgroundImage: LarryBackground,
             personImage: Allowe,
+            backgroundImage: LarryBackground,
             imageDescription: "Al Lowe kommer til Retrospillmessen 18",
             header: "Al Lowe (Leisure Suit Larry)",
             paragraphs: [
@@ -196,16 +196,17 @@ export default class GuestsList extends Component {
         sections: [
           {
             backgroundImage: LarryBackground,
+            personImage: Allowe,
             imageDescription: "Al Lowe kommer til Retrospillmessen 18",
-            header: "Dette opplever du på Retrospillmessen",
+            header: "Al Lowe (Leisure Suit Larry)",
             paragraphs: [
-              `Retrospillmessen er nordens største retroevent. 
-              Hvert år strømmer over 5000 mennesker til en hall 
-              i Sandefjord for å oppleve en bit av den høyst levende retrokulturen!`,
-              `På Retrospillmessen kan du være deg selv, og vite at du er med folk som er like engasjerte
-              og interesserte som deg! Vi er en koselig og laidback messe av nerder, for nerder, og det er vi veldig stolte av!`,
-              `Hos oss finner du spill fra alle tiår, tegneserier, merch, de beste gjestene fra youtube
-              og spillbransjen, retroleker og mye mer!`,
+              `71 år gamle Al Lowe er en av de virkelig store legendene i spillbransjen.`,
+              `Han er kjent for å ha skapt spillserien Leisure Suit Larry, ofte hyllet som et av de mest unike eventyrspillene i historien!`,
+              `Han jobbet for Sierra (tidligere Sierra On Line) store deler av karrieren, først som utvikler av lærespill på lisens fra Disney.`,
+              `Senere som utvikler på Kings Quest og Police Quest serien, før han bega seg ut på Larry-serien`,
+              `Al pensjonerte seg offisielt fra Sierra i 1998, men engasjementet for spill og humor (og elektriske togbaner) har han aldri lagt på hylla.
+              Al er i dag 71 år gammel og kaller seg for "The oldest video game developer alive". Vi gleder oss utrolig til å treffe han på RSM 18 hvor han kommer
+              både for å holde foredrag og gjøre Q&A`,
             ]
           },
         ]
@@ -218,12 +219,15 @@ export default class GuestsList extends Component {
       let flex = sectionToggle ? 'flex-start': 'flex-end';
       let imageAligment = sectionToggle ? 'right': 'left';
       sectionToggle = !sectionToggle;
+      console.log(a);
       return (
         <Section justified={flex} key={k}>
           <ImageSection backgroundImage={a.backgroundImage}>
             <ImageDescription alignment={imageAligment}>{a.imageDescription}</ImageDescription>
           </ImageSection>
-          <ProfileSection backgroundImage={a.personImage}/>
+          {a.personImage && 
+            <ProfileSection backgroundImage={a.personImage}/>
+          }
           <ContentSection>
             <ContentSectionHeader>{a.header}</ContentSectionHeader>
             {a.paragraphs.map((c, ck) => (
