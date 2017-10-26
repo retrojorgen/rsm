@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
+import styled from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import MainHeader from './../MainHeader/MainHeader';
 import About from './../About/About';
 import Rent from './../Rent/Rent';
 import Home from './../Home/Home';
+import Footer from './../Footer/Footer';
 import GuestsList from './../GuestsList/GuestsList';
+
+const MainPageInner = styled.div`
+  position: relative;
+  z-index: 10;
+  background-color: black;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+`;
 
 class App extends Component {
 
@@ -15,15 +24,18 @@ class App extends Component {
     return (
       <Router>
         <div className="main-page">
-          <MainHeader />
-          <div className="router-view">
-              <Switch>
-                <Route path="/" component={Home} exact={true} />
-                <Route path="/about" component={About} />
-                <Route path="/rent" component={Rent} />
-                <Route path="/guests" component={GuestsList} />
-              </Switch>
-          </div>
+          <MainPageInner>
+            <MainHeader />
+            <div className="router-view">
+                <Switch>
+                  <Route path="/" component={Home} exact={true} />
+                  <Route path="/about" component={About} />
+                  <Route path="/rent" component={Rent} />
+                  <Route path="/guests" component={GuestsList} />
+                </Switch>
+            </div>
+          </MainPageInner>
+          <Footer />
         </div>
       </Router>
     )

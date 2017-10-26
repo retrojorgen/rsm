@@ -72,12 +72,12 @@ const ImageSection = styled.div `
 
 const ProfileSection = styled.div `
   position: absolute;
-  left: 0;
+  left: -300px;
   top: 0;
   width: 100%;
   height: 100%;
   background-image: url(${props => props.backgroundImage});
-  background-size: 50%;  
+  background-size: 70%;  
   background-position:left bottom;
   background-repeat: no-repeat;
   display: block;
@@ -165,23 +165,36 @@ const HeaderTitleWrapper = styled.div `
   }
 `;
 
+const UnnanouncedHeader = styled.div `
+  padding: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+`;
+
 export default class GuestsList extends Component {
   
+
   render() {
+    window.scrollTo(0, 0);
     const language = localStorage.language || 'no';
     const translations = {
       no: {
         title: "Gjester på RSM 18",
+        unnanouncedHeader: "Følg med, flere gjester annonseres snart!",
         sections: [
           {
             personImage: Allowe,
             backgroundImage: LarryBackground,
             imageDescription: "Al Lowe kommer til Retrospillmessen 18",
             header: "Al Lowe (Leisure Suit Larry)",
+            
             paragraphs: [
               `Al Lowe er en av de virkelig store legendene i spillbransjen!`,
               `Han er kjent for å ha skapt spillserien Leisure Suit Larry, ofte hyllet som et av de mest unike eventyrspillene i historien!`,
-              `Han jobbet for Sierra (tidligere Sierra On Line) store deler av karrieren, først som utvikler av lærespill på lisens fra Disney.`,
+              `Han jobbet for spillselskapet Sierra (tidligere Sierra On Line) store deler av karrieren, først som utvikler av lærespill på lisens fra Disney.`,
               `Senere som utvikler på Kings Quest og Police Quest serien, før han bega seg ut på Larry-serien`,
               `Al pensjonerte seg offisielt fra Sierra i 1998, men engasjementet for spill og humor (og elektriske togbaner) har han aldri lagt på hylla.
               Al er i dag 71 år gammel og kaller seg for "The oldest video game developer alive". Vi gleder oss utrolig til å treffe han på RSM 18 hvor han kommer
@@ -193,20 +206,21 @@ export default class GuestsList extends Component {
       },
       en: {
         title: "Gjester på RSM 18",
+        unnanouncedHeader: "More guests will be announced shortly!",
         sections: [
           {
             backgroundImage: LarryBackground,
             personImage: Allowe,
-            imageDescription: "Al Lowe kommer til Retrospillmessen 18",
-            header: "Al Lowe (Leisure Suit Larry)",
+            imageDescription: "Al Lowe is visiting Retrospillmessen 2018",
+            header: "Al Lowe (Leisure Suit Larry-series)",
+            
             paragraphs: [
-              `71 år gamle Al Lowe er en av de virkelig store legendene i spillbransjen.`,
-              `Han er kjent for å ha skapt spillserien Leisure Suit Larry, ofte hyllet som et av de mest unike eventyrspillene i historien!`,
-              `Han jobbet for Sierra (tidligere Sierra On Line) store deler av karrieren, først som utvikler av lærespill på lisens fra Disney.`,
-              `Senere som utvikler på Kings Quest og Police Quest serien, før han bega seg ut på Larry-serien`,
-              `Al pensjonerte seg offisielt fra Sierra i 1998, men engasjementet for spill og humor (og elektriske togbaner) har han aldri lagt på hylla.
-              Al er i dag 71 år gammel og kaller seg for "The oldest video game developer alive". Vi gleder oss utrolig til å treffe han på RSM 18 hvor han kommer
-              både for å holde foredrag og gjøre Q&A`,
+              `Al Lowe is one of the true legends of the video game business.`,
+              `Lowe got the worlds (of video gamers) attention with his ground breaking computer game Leisure Suit Larry. Which is still regarded as one of the most unique adventures games ever created.`,
+              `For most of his career he worked for the gaming company Sierra (formerly Sierra On Line). First as a developer of educational games with a Disney license,
+              later as developer on the Kings Quest and Police Quest series, before devoting his time to the Leisure Suit Larry series.`,            
+              `Al officially retired from Sierra in 1998, but he never retired from being a funny, creative and unique individual. He even released a joke-app on the App store!`,
+              `Today, Al is 71 years young, and refers to himself at The oldest video game developer alive. We simply can't wait to meet and listen to Al at Retrospillmessen 2018!`
             ]
           },
         ]
@@ -237,6 +251,7 @@ export default class GuestsList extends Component {
             ))}
           </ContentSection>
         </Section>
+        
       );
     });
 
@@ -250,6 +265,7 @@ export default class GuestsList extends Component {
         </Header>
         
         {sections}
+        <UnnanouncedHeader>{translation.unnanouncedHeader}</UnnanouncedHeader>
       </div>
     );
   }

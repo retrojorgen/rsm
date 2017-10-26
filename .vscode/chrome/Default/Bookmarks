@@ -305,11 +305,11 @@
                "date_added": "12962559171672000",
                "id": "356",
                "meta_info": {
-                  "last_visited": "13153123116030987",
-                  "last_visited_desktop": "13153410946337163"
+                  "last_visited": "13153508775896358",
+                  "last_visited_desktop": "13153494492295486"
                },
                "name": "NA",
-               "sync_transaction_version": "60",
+               "sync_transaction_version": "91",
                "type": "url",
                "url": "http://www.nettavisen.no/"
             }, {
@@ -569,11 +569,11 @@
                      "date_added": "12938718954732000",
                      "id": "1078",
                      "meta_info": {
-                        "last_visited": "13153425114379068",
-                        "last_visited_desktop": "13153407625472257"
+                        "last_visited": "13153490444458562",
+                        "last_visited_desktop": "13153521908495675"
                      },
                      "name": "VG",
-                     "sync_transaction_version": "62",
+                     "sync_transaction_version": "95",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -721,7 +721,7 @@
                      "url": "http://www1.fantrax.com/fantasy/home.go?leagueId=qxp182geh3xn4ik2"
                   } ],
                   "date_added": "13152727262050483",
-                  "date_modified": "13153427474078024",
+                  "date_modified": "13153516759475319",
                   "id": "774",
                   "name": "Links",
                   "sync_transaction_version": "1",
@@ -2459,11 +2459,11 @@
                      "date_added": "12950878596035000",
                      "id": "831",
                      "meta_info": {
-                        "last_visited": "13153425114379068",
-                        "last_visited_desktop": "13153407625472257"
+                        "last_visited": "13153490444458562",
+                        "last_visited_desktop": "13153521908495675"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "62",
+                     "sync_transaction_version": "96",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -2573,7 +2573,7 @@
                      "url": "http://www.dreamgrow.com/11-reasons-why-newsletter-beats-social-media/"
                   } ],
                   "date_added": "13152727262050615",
-                  "date_modified": "13153427474078021",
+                  "date_modified": "13153516759475318",
                   "id": "790",
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
@@ -4560,11 +4560,11 @@
                      "date_added": "12950878596035000",
                      "id": "582",
                      "meta_info": {
-                        "last_visited": "13153425114379068",
-                        "last_visited_desktop": "13153407625472257"
+                        "last_visited": "13153490444458562",
+                        "last_visited_desktop": "13153521908495675"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "62",
+                     "sync_transaction_version": "97",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -4576,7 +4576,7 @@
                      "url": "http://www.worldrecordsacademy.org/"
                   } ],
                   "date_added": "13152727262037450",
-                  "date_modified": "13153427474078026",
+                  "date_modified": "13153516759475321",
                   "id": "534",
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
@@ -5602,7 +5602,7 @@
                "url": "https://docs.google.com/document/d/1r5FWIlf_Rk9Gex7oOg0qt4uskft97FPVuO5APJm0xno/edit"
             } ],
             "date_added": "13152727262023192",
-            "date_modified": "13153410997203126",
+            "date_modified": "13153512153044262",
             "id": "283",
             "name": "old",
             "sync_transaction_version": "1",
@@ -5882,20 +5882,20 @@
             "date_added": "13151423030406835",
             "id": "288",
             "meta_info": {
-               "last_visited_desktop": "13153401781124149"
+               "last_visited_desktop": "13153478853981642"
             },
             "name": "waffle",
-            "sync_transaction_version": "47",
+            "sync_transaction_version": "77",
             "type": "url",
             "url": "https://waffle.io/dbmedialab/pluss?label=pluss"
          }, {
             "date_added": "13151423048989777",
             "id": "289",
             "meta_info": {
-               "last_visited_desktop": "13152806754451470"
+               "last_visited_desktop": "13153481612861712"
             },
             "name": "db-git",
-            "sync_transaction_version": "22",
+            "sync_transaction_version": "78",
             "type": "url",
             "url": "https://github.com/orgs/dbmedialab/dashboard"
          }, {
@@ -5912,16 +5912,16 @@
             "date_added": "13151484964183596",
             "id": "291",
             "meta_info": {
-               "last_visited": "13153428710035307",
-               "last_visited_desktop": "13153435732471188"
+               "last_visited": "13153508734729900",
+               "last_visited_desktop": "13153512280687811"
             },
             "name": "db",
-            "sync_transaction_version": "67",
+            "sync_transaction_version": "92",
             "type": "url",
             "url": "https://www.dagbladet.no/"
          } ],
          "date_added": "13152543424034650",
-         "date_modified": "13153401854711065",
+         "date_modified": "13153478877928768",
          "id": "1",
          "name": "Bookmarks Bar",
          "type": "folder"
@@ -7522,10 +7522,10 @@
                "id": "167",
                "meta_info": {
                   "last_visited": "13153121280654467",
-                  "last_visited_desktop": "13153432803970139"
+                  "last_visited_desktop": "13153500932515495"
                },
                "name": "",
-               "sync_transaction_version": "64",
+               "sync_transaction_version": "90",
                "type": "url",
                "url": "http://www.theverge.com/"
             }, {
@@ -7606,7 +7606,7 @@
                "url": "https://en.wikipedia.org/w/api.php"
             } ],
             "date_added": "13152727262008077",
-            "date_modified": "13153433063138253",
+            "date_modified": "13153500961980167",
             "id": "43",
             "name": "old bookmarks bar",
             "sync_transaction_version": "1",
@@ -7707,7 +7707,7 @@
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "67",
+      "sync_transaction_version": "97",
       "synced": {
          "children": [ {
             "children": [ {

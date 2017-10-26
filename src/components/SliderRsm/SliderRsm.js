@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import logo from './slider-rsm-logo.png';
+import logoEn from './slider-rsm-logo-english.png';
 import background from './slider-rsm-background.jpg';
+
 
 const SliderRsmContainer = styled.div `
     position: relative;
@@ -36,10 +38,20 @@ const Backdrop = styled.div `
 
 export default class SliderRsm extends Component {
     render() {
+        const language = localStorage.language || 'no';
+        const translations = {
+            no: {
+              logo: logo,
+            },
+            en: {
+              logo: logoEn,
+            }
+          }
+          let translation = translations[language];  
         return (
             <SliderRsmContainer>
                 <Backdrop />
-                <img src={logo} alt="Slider" />
+                <img src={translation.logo} alt="Slider" />
             </SliderRsmContainer>
         )
     }

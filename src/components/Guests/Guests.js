@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import larryBack from './larry-rsm-video-background.mp4';
 import alLowe from './allowe.png';
 import lefdalLogo from './lefdal-logo.png';
+import { NavLink } from 'react-router-dom';
 import Title from './../Title/Title';
 import GuestsBackground from './guests-background.jpg';
 
@@ -99,7 +100,7 @@ const SectionDescription = styled.p`
     position: relative;
 `;
 
-const Guest = styled.div`
+const Guest = styled(NavLink)`
     display: block;
     width: 30%;
     
@@ -167,30 +168,85 @@ const Unnanounced = styled.div`
 
 export default class Guests extends Component {
   render() {
+    const language = localStorage.language || 'no';
+    const translations = {
+      no: {
+        title: "VIP-gjester Retrospillmessen 2018",
+        subTitle: `Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
+        guests: [
+            {
+                type: "announced",
+                video: larryBack,
+                profile: alLowe,
+                name: "Al Lowe",
+                description: "Skaperen av Leisure Suit Larry-serien",
+                alt: "Al Lowe kommer til RSM 2018"
+
+            },
+            {
+                type: "unannounced",
+                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+            },
+            {
+                type: "unannounced",
+                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+            },
+        ],
+      },
+      en: {
+        title: "VIP Guests Retrospillmessen 2018",
+        subTitle: `More guests will be announced soon! Follow us here and on our <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
+        guests: [
+            {
+                type: "announced",
+                video: larryBack,
+                profile: alLowe,
+                name: "Al Lowe",
+                description: "The creator of Leisure Suit Larry!",
+                alt: "Al Lowe is coming to RSM 2018"
+
+            },
+            {
+                type: "unannounced",
+                p: "hest",
+                message: "Follow us here and on facebook. More guests will be announced soon!"
+            },
+            {
+                type: "unannounced",
+                s: "hest",
+                message: "Follow us here and on facebook. More guests will be announced soon!"
+            }
+        ],
+      }
+    }
+    let translation = translations[language];
     return (
     <SectionWrapper>
-        <Title title="Gjester 2018" />
-        <SectionDescription>Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a></SectionDescription>
+        <Title title={translation.title} />
+        <SectionDescription dangerouslySetInnerHTML={{__html: translation.subTitle}}></SectionDescription>
         <GuestsContainer>
-            <Guest>
-                <video autoPlay="true" loop="true">
-                    <source src={larryBack} type="video/mp4" />
-                </video>
-                <GuestProfile>
-                    <img src={alLowe} alt="Al Lowe kommer til RSM 2018" />
-                </GuestProfile>
-                <HeaderContainer guestName="Al Lowe" guestDescription="Skaperen av Leisure Suit Larry-serien" />
-            </Guest>
-
-            <Unnanounced>
-                    <h1>?</h1>
-                    <p>Følg med på Facebook og nettsiden. Gjester annonseres fortløpende</p>
-            </Unnanounced>
-            
-            <Unnanounced>
-                    <h1>?</h1>
-                    <p>Følg med på Facebook og nettsiden. Gjester annonseres fortløpende</p>
-            </Unnanounced>
+            {translation.guests.map((g, k) => {
+                if(g.type == 'announced') {
+                    return (
+                        <Guest to="/guests" key={k}>
+                            <video autoPlay="true" loop="true">
+                                <source src={g.video} type="video/mp4" />
+                            </video>
+                            <GuestProfile>
+                                <img src={g.profile} alt={g.alt} />
+                            </GuestProfile>
+                            <HeaderContainer guestName={g.name} guestDescription={g.description} />
+                        </Guest>
+                    )
+                } else {
+                    return (
+                        <Unnanounced key={k}>
+                            <h1>?</h1>
+                            <p>{g.message}</p>
+                        </Unnanounced>
+                    )
+                }
+            })}
         </GuestsContainer>
     </SectionWrapper>
     );
