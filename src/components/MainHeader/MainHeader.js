@@ -169,7 +169,7 @@ export default class MainHeader extends React.Component {
             url: "/guests",
             title: "VIP Gjester"
           }
-        ],
+        ],  
         en: [
           {
             url: "/",

@@ -32,6 +32,7 @@ const ContentSection = styled.div `
   &:before {
     content: '';
     background: url(${SectionBackground});
+    background-size: 50%;
     position: absolute;
     left: 0;
     top: 0;
@@ -91,6 +92,7 @@ const ProfileSection = styled.div `
     background-size: 80%;
     background-position:center bottom;  
     height: 300px;
+    left: 0;
     opacity: 1;
     text-align: center;
   } 
@@ -151,6 +153,9 @@ const Header = styled.div `
     margin: 0;
     text-transform: uppercase;
     color: #e0c417;
+  }
+  @media (max-device-width: 1100px) {
+    height: auto;
   }
 `;
 const HeaderTitleWrapper = styled.div `

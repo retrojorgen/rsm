@@ -1,0 +1,599 @@
+$(document).ready(
+    function()
+    {
+        $("#menus .arrow").hover(
+            function(){$(this).addClass('hover');},    
+            function(){$(this).removeClass('hover');}
+        );
+        
+        if ( $("a[target='special']").length != 0 )
+        {
+            $("a[target='special']").each(
+                function()
+                {
+                    $(this).click(
+                        function()
+                        {
+                            $("#blackblack").css(
+                                {
+                                    'position' :'absolute',
+                                    'width': $(document).width(),
+                                    'left':'0px',
+                                    'opacity':'0.5',
+                                    'top':'0px',
+                                    'z-index':'10000',
+                                    'overflow':'hidden',
+                                    'height': $(document).height(),
+                                    'background-color':'black'
+                                }
+                            )
+                            .click(function(){hideSpecialLink()})
+                            .show();
+                        $("#speciallink").css({
+                            'position':'absolute',
+                            'z-index':'20000',
+                            'top':'30px',
+                            'left':(($(document).width()-810)/2)
+                        })
+                        .append(
+                            $("<div/>")
+                            .css(
+                                {
+                                    'width':'810px',
+                                    'height':'710px',
+                                    'border-radius':'5px',
+                                    'background-color':'white'
+                                }    
+                            )
+                            .append(
+                                $("<iframe/>")
+                                    .attr("src",$(this).attr('href'))
+                                    .attr("frameborder", "0")
+                                    .css({
+                                        'width' : '800px',
+                                        'height' : '700px',
+                                        'border' : '0px',
+                                        'z-index':'2000'
+                                        }
+                                    )
+                            ).append(
+                                $("<div/>").css({'margin-top':'-20px','margin-left':'680px'}).html("<a href='javascript:;' onclick='hideSpecialLink()'>steng</a>")
+                            )
+                        ).show();    
+                        
+                        return false;
+                    }
+                    )
+                }
+            );
+        }
+    }
+)
+
+function hideSpecialLink()
+{
+    $("#blackblack").hide();
+    $("#speciallink").html("").hide();
+}
+
+
+function doSearch(obj)
+{
+    var queryField = $(obj).parent().find('input')
+    if (queryField.length == 1 && queryField.val() != "")
+    {
+        window.location = '/nyhetsarkiv?query=' + queryField.val()
+    }
+    
+}
+
+function CheckForm19(f) 
+{
+    if (f.email.value == "" || f.email.value == 'Din e-postadresse')
+    {
+        alert("Vennligst fyll inn din e-post adresse.");
+        f.email.focus();
+        return false;
+    }
+    return true;
+};
+
+function showSubMenu(id , muchoMan , obj)
+{
+    
+    if (muchoMan)
+    {
+        if( $(this).hasClass('hover') )
+        {
+            $(this).removeClass('hover')
+        }else
+        {
+            $(this).addClass('hover')
+        }
+    }else
+    {
+        // RESET ALL
+        $(".arrow").removeClass('active');
+        if ( $("#"+id+ ":visible").length != 0  || $('.submenu:visible').length == 0 )
+        {
+            $("#"+id).slideToggle( function()
+            {
+                if ($("#"+id+":visible").length == 1)
+                {
+                   $(obj,".arrow").addClass('active');
+                 }else
+                 {
+                    $(obj,".arrow").removeClass('active');
+                }    
+        });   
+        }else
+        {
+            $('.submenu:visible').slideToggle(function(){ showSubMenu(id,muchoMan,obj) })
+        }
+    }
+}
+
+function showTab(obj,tab)
+{
+    $('.searchmenu li.active').removeClass('active');
+    if (tab == 'news')
+    {
+        $('#news-items').show();
+        $('#perinfo').hide();
+    }else
+    {
+        $('#news-items').hide();
+        $('#perinfo').show();
+    }
+    $(obj).parent().addClass('active')
+}
+
+
+function changeTab(obj , id)
+{
+    $('.contentmenu ul li').each(
+        function()
+        {
+            $(this).removeClass('active');    
+            var sz = $(this).find('img').attr('src');
+            if (sz)
+            {$(this).find('img').attr('src' , sz.replace('_aktiv', '_norm'))}
+        }
+    );
+    scrollMe(obj);
+    $(obj).addClass('active')
+    var sz = $(obj).find('img').attr('src');
+    if (sz)
+    {$(obj).find('img').attr('src' , sz.replace('_norm', '_aktiv'))}
+    $('div.listing').hide();
+    $('#'+id).fadeIn();
+}
+
+function initMyTickbox(ob)
+{
+  var il = ob.items.length;
+  if (ob.options.transmode == 'slide' && ob.options.mode == 'circle')
+  {
+    il = il - 2;
+  }
+
+  if (il <= 1)
+  {
+    $('.ticknav').hide();
+    return false;
+  }
+  else
+  {
+    var html = '<ul>';
+    for (var i=0; i < il; i++)
+    {
+      html += '<li class="sprites ticker' + (i == ob.current ? ' active' : '') + '">' + i + '</li>';
+    }
+    html += '</ul>';
+
+    $('.ticknav').html(html);
+
+    $('li.ticker').click(function(){ob.stop(); ob.goto(parseInt($(this).html())); ob.play()});
+    $('ul', '.ticknav').css({width:((il+1)*18)});
+  }
+
+  // add custom method for handling the tickers
+  ob.tickbox_method = function()
+  {
+    var items = $('.ticker', '.ticknav');
+    items.removeClass('active');
+    $(items[this.current]).addClass('active');
+  }
+}
+
+/*
+# Carousel 1.8 [jQuery plugin for 1.3+]
+#
+# Copyright (C) 2010 - Snapper Net Solutions | www.snapper.no
+#
+# Usage:
+# $('#yourcarousel').carousel()
+#
+#   > where #yourcarousel points to your ul containing one li per item to be displayed
+#
+# 1.2 adds fade as a transition mode
+# 1.3 is rewritten to be more robust when used with other plugins
+# 1.4 adds optional < and > (prev, next)
+# 1.5 adds new mode, circle, which just circles around (slide)
+# 1.6 adds new mode, noloop, as well as possibility of using custom functions for buttons/tickbox
+# 1.7 adds new transition, dissolve
+# 1.8 adds play() function
+
+# Modes:
+# noloop > 1, 2, 3, 4 (doesn't loop)
+# restart > 1, 2, 3, 4 < 1, 2, 3, 4 (snaps rapidly back to first when finished)
+# circle > 1, 2, 3, 4, 1, 2, 3, 4
+*/
+
+(function($)
+{
+  $.fn.carousel = function(options)
+  {
+    var self = this;
+
+    self.current = 0;
+    self.previous = 0;
+    self.items = [];
+    self.itemw = 0;
+    self.fullw = 0;
+    self.timer = null;
+    self.locked = false;
+    self.animating = false;
+
+    var obj = $(this);
+    var defaults =
+    {
+      auto: 0,
+      pos: 0,
+      mode: 'restart',
+      transmode: 'slide',
+      transition: 1.0,
+      tickbox: false,
+      buttons: ''
+    };
+
+    // Get parameters
+    self.options = $.extend({}, defaults, options);
+    self.options.auto = self.options.auto * 1000;
+    self.options.transition = self.options.transition * 1000;
+
+    //
+    // Public methods
+    //
+
+    this.prev = function()
+    {
+      if (self.locked == true || self.animating == true)
+        return false;
+
+      // Remember previous object id
+      self.previous = self.current;
+      self.current--;
+      self._animate(self.current);
+      if (typeof(self.options.change) == 'function')
+        self.options.change(self);
+    };
+
+    this.next = function()
+    {
+      if (self.locked == true || self.animating == true)
+        return false;
+
+      // Remember previous object id
+      self.previous = self.current;
+      self.current++;
+      self._animate(self.current);
+      if (typeof(self.options.change) == 'function')
+        self.options.change(self);
+    };
+
+    this.goto = function(n, noanim)
+    {
+      if (self.locked == true || self.animating == true)
+        return false;
+
+      // Remember previous object id
+      self.previous = self.current;
+      self.current = n;
+      self._animate(self.current, noanim);
+      if (typeof(self.options.change) == 'function')
+        self.options.change(self);
+    };
+
+    this.stop = function()
+    {
+      clearInterval(self.timer);
+      self.timer = null;
+    };
+
+    this.play = function()
+    {
+      clearInterval(self.timer);
+      self.timer = setInterval(function(){self.next()}, self.options.auto);
+    }
+
+    this.clicked = function(el)
+    {
+      self.stop();
+      if ($(el).hasClass('prev'))
+        self.prev();
+      else
+        self.next();
+    };
+
+    this.update_tickbox = function()
+    {
+      var ticknum = self.current;
+      if (self.options.mode == 'circle' && self.current >= self.shownum)
+        ticknum = 0;
+
+      if (self.tickbox_method)
+      {
+        self.tickbox_method()
+      }
+      else
+      {
+        var tb = $('.tickbox', self.master);
+        var ti = $('li', tb);
+        ti.removeClass('active');
+        $(ti[ticknum]).addClass('active');
+      }
+    };
+
+    //
+    // Private methods
+    //
+
+    var _finished = function()
+    {
+      self.animating = false;
+      if (self.options.tickbox)
+        self.update_tickbox();
+
+      if (self.options.mode == 'circle')
+      {
+          if (self.current >= self.shownum)
+        {
+          self.current = 0;
+          self.goto(0, true);
+        }
+        else if (self.current < 0)
+        {
+          self.current = self.shownum-1;
+          self.goto(self.shownum-1, true);
+        }
+      }
+    };
+
+    // Transition mode slide (default)
+    var _slide = function(i, noanim)
+    {
+      _track_control(i);
+
+      var cp = (self.options.mode == 'circle') ? self.current+1 : self.current;
+      var pos = cp * self.itemw * -1;
+
+      if (noanim == true)
+      {
+        var x = 0;
+        self.css({left: pos});
+        _finished();
+      }
+      else
+      {
+        self.animating = true;
+        self.animate({left: pos, easing: 'swing'}, self.options.transition, function(){_finished()});
+      }
+    };
+
+    var _fade = function(i, noanim)
+    {
+      _track_control(i);
+      //if (self.current == self.previous)
+      //  return;
+
+      if (noanim == true)
+        var x = 0;
+      else
+      {
+        self.animating = true;
+        var pel = self.items[self.previous];
+        var nel = self.items[self.current];
+        $(pel).fadeOut(self.options.transition, function(){ $(nel).fadeIn(self.options.transition, function(){_finished()}) });
+      }
+    };
+
+    var _dissolve = function(i, noanim)
+    {
+      _track_control(i);
+      if (noanim == true)
+        var x = 0;
+      else
+      {
+        self.animating = true;
+        var pel = self.items[self.previous];
+        var nel = self.items[self.current];
+        $(pel).css('z-index', 2);
+        $(nel).css('z-index', 1).show();
+        $(pel).fadeOut(self.options.transition, function(){_finished()});
+      }
+    }
+
+    var _track_control = function(i)
+    {
+      if (self.options.mode == 'restart')
+      {
+        if (self.current >= self.items.length) self.current = 0;
+        else if (self.current < 0) self.current = self.items.length - 1;
+      }
+      else if (self.options.mode == 'circle')
+      {
+        if (self.current >= self.items.length) self.current = self.items.length - 1;
+        else if (self.current < -1) self.current = -1;
+      }
+      else if (self.options.mode == 'noloop')
+      {
+        if (self.current <= 0) self.current = 0;
+        else if (self.current >= self.items.length) self.current = self.current-1;
+      }
+      else
+      {
+        if (self.current >= self.items.length) self.current = self.items.length - 1;
+        else if (self.current < 0) self.current = 0;
+      }
+    };
+
+    // Set up
+    return this.each( function()
+    {
+      self.master = $(this).parent();
+      self.items = $('ul:first-child > li', self.master);
+      self.itemw = $(self.items[0]).width();
+      self.fullw = self.items.length * self.itemw;
+      self.shownum = self.items.length;
+      var li_css = {width: self.itemw};
+
+      // Adjust to circle mode
+      if (self.options.mode == 'circle')
+      {
+        var pref = $(self.items[0]).clone();
+        var suff = $(self.items[self.items.length-1]).clone();
+        pref.appendTo(this);
+        suff.prependTo(this);
+        self.items.push(pref[0]);
+        self.items.push(suff[0]);
+        self.fullw += (self.itemw*2);
+      }
+
+      // Set transition mode
+      switch (self.options.transmode)
+      {
+        case "fade":
+          self.fullw = self.itemw;
+          li_css.position = 'absolute';
+          li_css.display = 'none';
+          self._animate = _fade;
+          break;
+
+        case "dissolve":
+          self.fullw = self.itemw;
+          li_css.position = 'absolute';
+          li_css.display = 'none';
+          self._animate = _dissolve;
+          $.each(self.items, function(n){$(this).css('z-index', 1+n)});
+          break;
+
+        default:
+          self._animate = _slide;
+          if (self.options.mode == 'circle')
+            self.css({left: self.itemw*-1});
+
+          break;
+      }
+
+      $.each(self.items, function(){$(this).css(li_css)});
+      $('li:first-child', this).css('display', 'block')
+      $(this).addClass('lime_carousel').css('width', self.fullw);
+
+      if (self.options.auto && self.items.length > 1)
+        self.timer = setInterval(function(){self.next()}, self.options.auto);
+
+      // Do we need to add any buttons?
+      if (self.options.buttons)
+      {
+        if (typeof(self.options.buttons) == 'function')
+        {
+          self.options.buttons(self);
+        }
+        else
+        {
+          self.master.append('<div class="' + self.options.buttons + ' prev"></div><div class="' + self.options.buttons + ' next"></div>');
+          $('.button', self.master).click(function(){self.clicked(this)});
+        }
+      }
+
+      if (typeof(self.options.tickbox) == 'function')
+      {
+         self.options.tickbox(self);
+         self.options.tickbox = true;
+      }
+
+      // Do we need to add status pointers
+      if (self.options.tickbox && !self.tickbox_method)
+      {
+          if (!self.shownum) return;
+
+        var html = '<li class="active" value="0">&nbsp;</li>';
+        var il = self.shownum;
+        for (var i=1; i < il; i++)
+        {
+          html += '<li value="' + i + '">&nbsp;</li>';
+        }
+        self.master.append('<ul class="tickbox">' + html + '</ul>');
+        var tb = $('.tickbox', self.master);
+        $('li', tb).click(function(){self.stop(); self.goto($(this).attr('value'))});
+      }
+    });
+  };
+})(jQuery);
+
+/*
+ * jTwitter 1.1.1 - Twitter API abstraction plugin for jQuery
+ *
+ * Copyright (c) 2009 jQuery Howto
+ *
+ * Licensed under the GPL license:
+ *   http://www.gnu.org/licenses/gpl.html
+ *
+ * URL:
+ *   http://jquery-howto.blogspot.com
+ *
+ * Author URL:
+ *   http://jquery-howto.blogspot.com
+ *
+ */
+(function( $ ){
+    $.extend( {
+    	jTwitter: function( opt ) {
+			var info = {};
+			
+			// If no arguments are sent or only username is set
+			if( opt.username == 'undefined' || opt.numPosts == 'undefined' ) {
+				return;
+			} else if( $.isFunction( opt.numPosts ) ) {
+				// If only username and callback function is set
+				opt.fn = opt.numPosts;
+				opt.numPosts = 5;
+			}
+			
+            if (opt.url == 'undefined')
+            {
+    			opt.url = "http://twitter.com/status/user_timeline/"
+				+ opt.username + ".json?count="+opt.numPosts+"&callback=?";
+            }
+            
+			$.getJSON( opt.url, function( data ){
+				if( $.isFunction( opt.fn ) ) {
+					opt.fn.call( this, data );
+				}
+			});
+		}
+	});
+})( jQuery );
+
+/**
+ * jQuery.ScrollTo - Easy element scrolling using jQuery.
+ * Copyright (c) 2007-2009 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
+ * Dual licensed under MIT and GPL.
+ * Date: 5/25/2009
+ * @author Ariel Flesler
+ * @version 1.4.2
+ *
+ * http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+ */
+;(function(d){var k=d.scrollTo=function(a,i,e){d(window).scrollTo(a,i,e)};k.defaults={axis:'xy',duration:parseFloat(d.fn.jquery)>=1.3?0:1};k.window=function(a){return d(window)._scrollable()};d.fn._scrollable=function(){return this.map(function(){var a=this,i=!a.nodeName||d.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!i)return a;var e=(a.contentWindow||a).document||a.ownerDocument||a;return d.browser.safari||e.compatMode=='BackCompat'?e.body:e.documentElement})};d.fn.scrollTo=function(n,j,b){if(typeof j=='object'){b=j;j=0}if(typeof b=='function')b={onAfter:b};if(n=='max')n=9e9;b=d.extend({},k.defaults,b);j=j||b.speed||b.duration;b.queue=b.queue&&b.axis.length>1;if(b.queue)j/=2;b.offset=p(b.offset);b.over=p(b.over);return this._scrollable().each(function(){var q=this,r=d(q),f=n,s,g={},u=r.is('html,body');switch(typeof f){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(f)){f=p(f);break}f=d(f,this);case'object':if(f.is||f.style)s=(f=d(f)).offset()}d.each(b.axis.split(''),function(a,i){var e=i=='x'?'Left':'Top',h=e.toLowerCase(),c='scroll'+e,l=q[c],m=k.max(q,i);if(s){g[c]=s[h]+(u?0:l-r.offset()[h]);if(b.margin){g[c]-=parseInt(f.css('margin'+e))||0;g[c]-=parseInt(f.css('border'+e+'Width'))||0}g[c]+=b.offset[h]||0;if(b.over[h])g[c]+=f[i=='x'?'width':'height']()*b.over[h]}else{var o=f[h];g[c]=o.slice&&o.slice(-1)=='%'?parseFloat(o)/100*m:o}if(/^\d+$/.test(g[c]))g[c]=g[c]<=0?0:Math.min(g[c],m);if(!a&&b.queue){if(l!=g[c])t(b.onAfterFirst);delete g[c]}});t(b.onAfter);function t(a){r.animate(g,j,b.easing,a&&function(){a.call(this,n,b)})}}).end()};k.max=function(a,i){var e=i=='x'?'Width':'Height',h='scroll'+e;if(!d(a).is('html,body'))return a[h]-d(a)[e.toLowerCase()]();var c='client'+e,l=a.ownerDocument.documentElement,m=a.ownerDocument.body;return Math.max(l[h],m[h])-Math.min(l[c],m[c])};function p(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);

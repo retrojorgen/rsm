@@ -1,0 +1,623 @@
+<!-- Main menu -->
+
+
+    <ul class="main-menu__list main-menu__list--primary" id="nav">
+        <li class="hide-on-mobile">
+            <a href="https://secure.skandiabanken.no/Home/" class="main-menu__link main-menu__link--primary main-menu__link--home">
+                <span class="icon-text icon-text--home"></span>
+                <span class="accessibility">Hjem</span>
+            </a>
+        </li>
+                <li>
+                    <a href="#" class="main-menu__link main-menu__link--primary main-menu__link--more" aria-expanded="false">Oversikt</a>
+                    <div class="main-menu__level main-menu__level--two">
+                            <ul class="main-menu__list main-menu__list--secondary">
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Overview/Full" class="main-menu__link main-menu__link--secondary">Totaloversikt</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/AccountStatement" class="main-menu__link main-menu__link--secondary">Kontoutskrift</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Accounts/OpenAccount" class="main-menu__link main-menu__link--secondary">&#197;pne konto</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Accounts/AccountInformation" class="main-menu__link main-menu__link--secondary">Kontoinformasjon</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/AuthenticationAdmin" class="main-menu__link main-menu__link--secondary">Innlogging og signering</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="main-menu__link main-menu__link--secondary main-menu__link--more" aria-expanded="false">Mobile tjenester</a>
+                                                <div class="main-menu__level main-menu__level--three">
+                                                    <ul class="main-menu__list main-menu__list--tertiary">
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/ProductPageRedirect/SmsBank" class="main-menu__link main-menu__link--tertiary">SMS-bank</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/wrap/Bank/Customer/NotificationsAdmin" class="main-menu__link main-menu__link--tertiary">SMS-varslinger</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/Wrap/SkbSecure/Bank/Billing/Settings.aspx" class="main-menu__link main-menu__link--tertiary">Belastningskonto for SMS</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/Wrap/SkbSecure/Bank/Billing/Default.aspx" class="main-menu__link main-menu__link--tertiary">SMS kostnader</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/SmartOTP/ManageDevices" class="main-menu__link main-menu__link--tertiary">Aktive apper</a>
+                                                                </li>
+                                                    </ul>
+                                                </div>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Pfm" class="main-menu__link main-menu__link--secondary">Min &#248;konomi</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Wrap/SkbSecure/Customer/Main/Balance/Default.aspx" class="main-menu__link main-menu__link--secondary">Min balanse</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/priser/" class="main-menu__link main-menu__link--secondary">Priser</a>
+                                        </li>
+                            </ul>
+                        <div class="main-menu__content-area">
+<div><div>
+
+
+<div class="box box--campaign-blue">
+
+    <div class="media media--aware">
+
+
+            <div class="media__img--rev">
+                    <a class="ideogram--74 ideogram-epi--betale" href="https://secure.skandiabanken.no/Personal/PersonalInfo"></a>
+            </div>
+
+
+        <div class="media__body">
+                <h2><a href="https://secure.skandiabanken.no/Personal/PersonalInfo" class="link--text-color" >Snart sender vi deg nytt kort</a></h2>
+
+            <div class="template__editable">
+                <p><br />I løpet av høsten sender vi de første kortene med nytt navn og logo. Kortene sendes til folkeregistrert adresse.<br /><br /></p>
+            </div>
+            
+
+
+
+        <a href="https://secure.skandiabanken.no/Personal/PersonalInfo" class="goto link--text-color" target="_self">Sjekk om vi har riktig adresse</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+</div></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main-menu__link main-menu__link--primary main-menu__link--more" aria-expanded="false">Betaling</a>
+                    <div class="main-menu__level main-menu__level--two">
+                            <ul class="main-menu__list main-menu__list--secondary">
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Payment/PaymentInsert" class="main-menu__link main-menu__link--secondary">Betale</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Transfer" class="main-menu__link main-menu__link--secondary">Overf&#248;re</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/PhonePayment" class="main-menu__link main-menu__link--secondary">Vennebetaling</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Payment/ListStandingOrder" class="main-menu__link main-menu__link--secondary">Faste overf&#248;ringer</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="main-menu__link main-menu__link--secondary main-menu__link--more" aria-expanded="false">Utenlandsbetaling</a>
+                                                <div class="main-menu__level main-menu__level--three">
+                                                    <ul class="main-menu__list main-menu__list--tertiary">
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/foreignpayment" class="main-menu__link main-menu__link--tertiary">Registrer utenlandsbetaling</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/ForeignPayment/listduepayments" class="main-menu__link main-menu__link--tertiary">Forfallsregister</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/ForeignPayment/listpaymentreceipts" class="main-menu__link main-menu__link--tertiary">Utf&#248;rte betalinger</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/foreignpayment/currencylist" class="main-menu__link main-menu__link--tertiary">Valutakurser</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://skandiabanken.no/bruke/betaling/utenlandsbetaling/a-motta-penger-fra-utlandet/" class="main-menu__link main-menu__link--tertiary">Motta penger fra utlandet</a>
+                                                                </li>
+                                                    </ul>
+                                                </div>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/AccountStatement" class="main-menu__link main-menu__link--secondary">Kontoutskrift</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/DueTransactions" class="main-menu__link main-menu__link--secondary">Forfallsoversikt</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/PaymentReceipts" class="main-menu__link main-menu__link--secondary">Utf&#248;rte betalinger</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/EInvoice/AgreementsOverview" class="main-menu__link main-menu__link--secondary">eFaktura og AvtaleGiro</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Payment/RecipientRegistry" class="main-menu__link main-menu__link--secondary">Mottakerregister</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Payment/PaymentSettings?expandPayment=true" class="main-menu__link main-menu__link--secondary">Konto- og betalingsinnstillinger</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/bruke/priser/" class="main-menu__link main-menu__link--secondary">Priser</a>
+                                        </li>
+                            </ul>
+                        <div class="main-menu__content-area">
+<div><div>
+
+
+<div class="box box--campaign-blue">
+
+    <div class="media media--aware">
+
+
+            <div class="media__img--rev">
+                    <a class="ideogram--74 ideogram-epi--dialog" href="https://secure.skandiabanken.no/Home/wrap/Bank/Customer/NotificationsAdmin?id=1255"></a>
+            </div>
+
+
+        <div class="media__body">
+                <h2><a href="https://secure.skandiabanken.no/Home/wrap/Bank/Customer/NotificationsAdmin?id=1255" class="link--text-color" >Bli varslet p&#229; SMS</a></h2>
+
+            <div class="template__editable">
+                <p>Visste du at du kan bli varslet på SMS når en betaling er stoppet eller dekning mangler?</p>
+<p>Med varsling på SMS har du full kontroll.</p>
+            </div>
+            
+
+
+
+        <a href="https://secure.skandiabanken.no/Home/wrap/Bank/Customer/NotificationsAdmin?id=1255" class="goto link--text-color" target="_self">Aktiver varslinger</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+</div></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main-menu__link main-menu__link--primary main-menu__link--more" aria-expanded="false">Kort</a>
+                    <div class="main-menu__level main-menu__level--two">
+                            <ul class="main-menu__list main-menu__list--secondary">
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Card/CardList" class="main-menu__link main-menu__link--secondary">Mine kort</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Card/OrderCard" class="main-menu__link main-menu__link--secondary">Bestill kort</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/kort/sperre-kort/" class="main-menu__link main-menu__link--secondary">Sperre kort</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Card/RegionLock" class="main-menu__link main-menu__link--secondary">Regionsperre</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Card/Ecommerce" class="main-menu__link main-menu__link--secondary">Netthandel</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Home/Card/GetPin" class="main-menu__link main-menu__link--secondary">Vis PIN</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/kort/priser/" class="main-menu__link main-menu__link--secondary">Priser</a>
+                                        </li>
+                            </ul>
+                        <div class="main-menu__content-area">
+<div><div>
+
+
+<div class="box box--campaign-green">
+
+    <div class="media media--aware">
+
+
+            <div class="media__img--rev">
+                    <a class="ideogram--74 ideogram-epi--betale" href="https://skandiabanken.no/aktuelt/kort/nye-regler-for-fakturering-av-kredittkort/"></a>
+            </div>
+
+
+        <div class="media__body">
+                <h2><a href="https://skandiabanken.no/aktuelt/kort/nye-regler-for-fakturering-av-kredittkort/" class="link--text-color" >Fakturaendring for deg med kredittkort</a></h2>
+
+            <div class="template__editable">
+                <p>Husk at du fortsatt kan betale minimumsbeløp, men da må du endre det selv på kredittkortfakturaen din før hvert forfall den 20. hver måned.&nbsp;</p>
+            </div>
+            
+
+
+
+        <a href="https://skandiabanken.no/aktuelt/kort/nye-regler-for-fakturering-av-kredittkort/" class="goto link--text-color" target="_self">Detaljer om endring kredittkortfaktura</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+</div></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main-menu__link main-menu__link--primary main-menu__link--more" aria-expanded="false">L&#229;n</a>
+                    <div class="main-menu__level main-menu__level--two">
+                            <ul class="main-menu__list main-menu__list--secondary">
+<li >
+                                            <a href="https://secure.skandiabanken.no/Financing/MyLoans/Overview" class="main-menu__link main-menu__link--secondary">Mine l&#229;n</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/lan/billan/" class="main-menu__link main-menu__link--secondary">Bill&#229;n</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/lan/boliglan/" class="main-menu__link main-menu__link--secondary">Boligl&#229;n</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/lan/boligkreditt/" class="main-menu__link main-menu__link--secondary">Boligkreditt</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/lan/brukslan/" class="main-menu__link main-menu__link--secondary">Bruksl&#229;n</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Financing/AccountCredit/Accounts" class="main-menu__link main-menu__link--secondary">Kontokreditt</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/lan/priser/" class="main-menu__link main-menu__link--secondary">Priser</a>
+                                        </li>
+                            </ul>
+                        <div class="main-menu__content-area">
+<div><div>
+
+
+<div class="box box--campaign-purple">
+
+    <div class="media media--aware">
+
+
+            <div class="media__img--rev">
+                    <a class="ideogram--74 ideogram-epi--hverdagsokonomi" href="https://skandiabanken.no/lan/billan/flytt-billan/"></a>
+            </div>
+
+
+        <div class="media__body">
+                <h2><a href="https://skandiabanken.no/lan/billan/flytt-billan/" class="link--text-color" >N&#229; kan du flytte bill&#229;net ditt til oss</a></h2>
+
+            <div class="template__editable">
+                <p><br />Endelig kan du søke om å flytte billånet ditt til oss. Hos oss får du lav rente og ingen gebyrer.<br /><br /></p>
+            </div>
+            
+
+
+
+        <a href="https://skandiabanken.no/lan/billan/flytt-billan/" class="goto link--text-color" target="_self">S&#248;k om &#229; flytte bill&#229;net ditt</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+</div></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main-menu__link main-menu__link--primary main-menu__link--more" aria-expanded="false">Sparing</a>
+                    <div class="main-menu__level main-menu__level--two">
+                            <ul class="main-menu__list main-menu__list--secondary">
+<li >
+                                            <a href="https://secure.skandiabanken.no/Savings/MySavings" class="main-menu__link main-menu__link--secondary">Min sparing</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Savings/AskAccount/Create" class="main-menu__link main-menu__link--secondary">&#197;pne aksjesparekonto</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Savings/Fund/SavingsPackage" class="main-menu__link main-menu__link--secondary">Mine spareavtaler</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/nettbank/sparing/spareavtale/vare-sparepakker/" class="main-menu__link main-menu__link--secondary">Start spareavtale</a>
+                                        </li>
+<li >
+                                            <a href="https://secure.skandiabanken.no/Savings/SmartSaving/Create/SelectType" class="main-menu__link main-menu__link--secondary">Start restsparing</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/nettbank/sparing/aksjesparekonto/flytt-aksjer-og-fond/" class="main-menu__link main-menu__link--secondary">Flytt aksjer og fond</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="main-menu__link main-menu__link--secondary main-menu__link--more" aria-expanded="false">Fond</a>
+                                                <div class="main-menu__level main-menu__level--three">
+                                                    <ul class="main-menu__list main-menu__list--tertiary">
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Fund/Depot" class="main-menu__link main-menu__link--tertiary">Mine fond</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Fund/BuyFund" class="main-menu__link main-menu__link--tertiary">Kj&#248;p fond</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Fund/BuyFund/FundList" class="main-menu__link main-menu__link--tertiary">Fondsliste</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Transactions/TransactionsHistory/FundHistory" class="main-menu__link main-menu__link--tertiary">Ordrehistorikk</a>
+                                                                </li>
+                                                    </ul>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="main-menu__link main-menu__link--secondary main-menu__link--more" aria-expanded="false">Aksje</a>
+                                                <div class="main-menu__level main-menu__level--three">
+                                                    <ul class="main-menu__list main-menu__list--tertiary">
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Stock/Market/Split" class="main-menu__link main-menu__link--tertiary">Aksjehandel</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Stock/Market/Holdings" class="main-menu__link main-menu__link--tertiary">Mine aksjer</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Stock/Market/Lists" class="main-menu__link main-menu__link--tertiary">Kurslister</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Transactions/TransactionsHistory/StockHistory" class="main-menu__link main-menu__link--tertiary">Ordrehistorikk</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/SecuritiesCredit" class="main-menu__link main-menu__link--tertiary">Verdipapirkreditt</a>
+                                                                </li>
+                                                    </ul>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="main-menu__link main-menu__link--secondary main-menu__link--more" aria-expanded="false">Innstillinger</a>
+                                                <div class="main-menu__level main-menu__level--three">
+                                                    <ul class="main-menu__list main-menu__list--tertiary">
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Stock/RealTimeAgreement" class="main-menu__link main-menu__link--tertiary">Sanntidsinformasjon</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Savings/Stock/Market/Alerts" class="main-menu__link main-menu__link--tertiary">Alarmer for aksjer</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/Payment/PaymentSettings?expandfund=true" class="main-menu__link main-menu__link--tertiary">Fondsinnstillinger</a>
+                                                                </li>
+<li >
+                                                                    <a href="https://secure.skandiabanken.no/Home/Payment/PaymentSettings?expandaccount=true" class="main-menu__link main-menu__link--tertiary">Endre kontonavn</a>
+                                                                </li>
+                                                    </ul>
+                                                </div>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/spare/kalkulatorer/pensjonskalkulator/" class="main-menu__link main-menu__link--secondary">Pensjonskalkulator</a>
+                                        </li>
+<li >
+                                            <a href="https://skandiabanken.no/spare/priser/" class="main-menu__link main-menu__link--secondary">Priser</a>
+                                        </li>
+                            </ul>
+                        <div class="main-menu__content-area">
+<div><div>
+
+
+<div class="box box--campaign-blue">
+
+    <div class="media media--aware">
+
+
+            <div class="media__img--rev">
+                    <a class="ideogram--74 ideogram-epi--verdiskapning" href="https://skandiabanken.no/bruke/kontoer/aksjesparekonto/"></a>
+            </div>
+
+
+        <div class="media__body">
+                <h2><a href="https://skandiabanken.no/bruke/kontoer/aksjesparekonto/" class="link--text-color" >Aksjesparekonto</a></h2>
+
+            <div class="template__editable">
+                <p>Den lønnsomme sparenyheten aksjesparekonto ble lansert 1. september. Produktet gjør det enklere og mer gunstig for deg som sparer i aksjer og aksjefond.<br /><br /></p>
+            </div>
+            
+
+
+
+        <a href="https://skandiabanken.no/bruke/kontoer/aksjesparekonto/" class="goto link--text-color" target="_self">Hvorfor alle b&#248;r f&#229; seg aksjesparekonto </a>
+
+        </div>
+
+    </div>
+</div>
+
+
+</div></div>
+                        </div>
+                    </div>
+                </li>
+    </ul>
+
+<!-- End main menu -->
+
+
+<!-- Footer -->
+
+
+<footer class="footer authenticated">
+    <div class="wrapper">
+        <div id="toTheTop" class="hide"><a href="#body"></a></div>
+        <div class="row">
+            <div class="row__column row__column--right one-third">
+
+
+                <div class="footer__contact">
+                    <div class="media">
+                        <div class="media__body">
+                            <img src="https://skandiabanken.no/cdn-3f2a6318/globalassets/bilder/ansatte/1016_12.jpg?width=168&format=jpg" class="contact__avatar contact__avatar--big contact__avatar--right contact-image-footer" alt="Snakk med oss">
+                            <h2 class="h2--on-level" >Kontakt oss</h2>
+                            <a class="link--tel" href="tel:55260000" >55 26 00 00</a>
+                            <p class="mb0" >06 – 24, alle dager</p>
+                            <p class="mb" ></p>
+                        </div>
+                    </div>
+
+
+                        <a href="#" id="chatstartbutton" class="hide button button--secondary button--inline mb-" data-startchatonclick><span class="icon-text icon-text--chat"></span> Chat med oss</a>
+                </div>
+            </div>
+
+
+                <div id="chatstuff" class="chat hide" data-chat="">
+                    <div class="chat__inner">
+                        
+                        
+
+                        <div id="chatframe" class="hide" data-url="https://secure.skandiabanken.no/Authentication/Chat"
+                             data-chat-screenreader-chatfinished="Chat samtale avsluttet."
+                             data-chat-screenreader-chatclosed="Chat lukket."
+                             data-chat-screenreader-newmessage="Chat, ny melding."
+                             data-chat-screenreader-inqueue="Chat, du venter i kø."
+                             data-chat-screenreader-operatorcontact="Chat samtale startet."
+                             data-chat-screenreader-newoperatorcontact="Chat, du er satt over til ny saksbehandler.">
+                        </div>
+                        <div id="chatwaitcontent" class="chat__wait-content">
+                            <div data-loadingicon class='loading'><div class='loading__container'><div class='loading__element'></div><div class='loading__element'></div></div><span class='accessibility'>Vennligst vent.</span></div>
+                            <div id="chaterrormessage" class="hide box box--small box--notification">Vi har problemer med chatløsningen, vent eller prøv igjen senere. <a href="#" data-closechatonclick>Lukk chat</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row__column two-thirds">
+                <div class="footer__column">
+                    <h4 >Snarveier</h4>
+                    
+<ul>
+        <li>
+                <a href="https://skandiabanken.no/sporsmal-og-svar/">Hjelp</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/om-oss/kontakt/">Kontakt oss</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/kort/sperre-kort/">Sperre kort</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/om-oss/kontakt/reklamasjon-og-klage/">Klage</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/lan/lanekalkulator/">L&#229;nekalkulator</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/bruke/sikkerhet/">Sikkerhet og personvern</a>
+        </li>
+        <li>
+                <a href="https://secure.skandiabanken.no/home/logout">Logg ut</a>
+        </li>
+</ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 >Om oss</h4>
+                    
+<ul>
+        <li>
+                <a href="https://skandiabanken.no/om-oss/om-skandiabanken/">Om Skandiabanken</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/IR/">Investor Relations</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/aktuelt/">Aktuelt</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/om-oss/om-skandiabanken/samfunnsansvar/">Samfunnsansvar</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/framgang-sammen/">Framgang sammen</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/om-oss/om-skandiabanken/offisielle-kanaler/">Offisielle kanaler</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/priser/">Priser</a>
+        </li>
+</ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 >F&#248;lg oss</h4>
+                    <ul class="footer__links footer__links--social">
+                        <li><a href="https://www.facebook.com/Skandiabanken" target="_blank"><span class="icon-text icon-text--social-facebook" title="Facebook"></span><span class="accessibility">Facebook - Skandiabanken</span></a></li>
+                        <li><a href="https://twitter.com/skandiabanken" target="_blank"><span class="icon-text icon-text--social-twitter" title="Twitter"></span><span class="accessibility">Twitter - Skandiabanken</span></a></li>
+                        <li><a href="https://www.linkedin.com/company/skandiabanken-no" target="_blank"><span class="icon-text icon-text--social-linkedin" title="LinkedIn"></span><span class="accessibility">Linkedin - Skandiabanken</span></a></li>
+                        <li><a href="http://instagram.com/skandiabanken" target="_blank"><span class="icon-text icon-text--social-instagram" title="Instagram"></span><span class="accessibility">Instagram - Skandiabanken</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__legal">
+                    
+<ul>
+        <li>
+                <a href="https://skandiabanken.no/compliance/bruk-av-cookies/?id=158">Bruk av cookies</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/compliance/personvern-og-samtykke/">Personvern og samtykke</a>
+        </li>
+        <li>
+                <a href="https://skandiabanken.no/compliance/brukervilkar/?id=522">Brukervilk&#229;r</a>
+        </li>
+</ul>
+                </div>
+
+                <div id="loginInfo" class="footer__muted"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row__column one-whole">
+                <div class="legal">
+                    &#169; Skandiabanken ASA – Org.nr: 915 287 700
+                </div>
+
+                <div id="serverInfo" class="serverInfo">
+                    2017-11-02T12:33:00 - 4
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer -->
+
+
+<!-- Profile menu -->
+
+<ul class="profile-menu__ul" tabindex="-1">
+                <li class="profile-menu__list-item ">
+                    <a href="https://secure.skandiabanken.no/Home/Settings" class="profile-menu__link">Mine innstillinger</a>
+                </li>
+                <li class="profile-menu__list-item ">
+                    <a href="https://secure.skandiabanken.no/Home/wrap/SkbSecure/Customer/Main/Mailbox/Inbox.aspx" class="profile-menu__link">Min meldingsboks</a>
+                </li>
+                <li class="profile-menu__list-item ">
+                    <a href="https://secure.skandiabanken.no/Home/AuthenticationAdmin" class="profile-menu__link">Innlogging og signering</a>
+                </li>
+                <li class="profile-menu__list-item ">
+                    <a href="https://secure.skandiabanken.no/Home/Wrap/SkbSecure/Customer/Contract/CustomerAgreementsList.aspx" class="profile-menu__link">Avtaleregister</a>
+                </li>
+                <li class="profile-menu__list-item ">
+                    <a href="https://secure.skandiabanken.no/Home/Wrap/SkbSecure/Customer/AnnualReport/Default.aspx" class="profile-menu__link">&#197;rsoppgaver</a>
+                </li>
+                <li class="profile-menu__list-item ">
+                    <a href="https://skandiabanken.no/sporsmal-og-svar/" class="profile-menu__link">Hjelp</a>
+                </li>
+                <li class="profile-menu__list-item ">
+                    <a href="https://skandiabanken.no/om-oss/kontakt/" class="profile-menu__link">Kontakt oss</a>
+                </li>
+</ul>
+
+<!-- End profile menu -->

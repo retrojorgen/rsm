@@ -1,5 +1,5 @@
 {
-   "checksum": "7d87da90375fa42f35ef9adb1b61e18f",
+   "checksum": "28d9d1e0ddd3e2d3d1da26f3b200c9b6",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -305,11 +305,11 @@
                "date_added": "12962559171672000",
                "id": "356",
                "meta_info": {
-                  "last_visited": "13153508775896358",
-                  "last_visited_desktop": "13153494492295486"
+                  "last_visited": "13154075133695048",
+                  "last_visited_desktop": "13154095887844218"
                },
                "name": "NA",
-               "sync_transaction_version": "91",
+               "sync_transaction_version": "426",
                "type": "url",
                "url": "http://www.nettavisen.no/"
             }, {
@@ -569,11 +569,11 @@
                      "date_added": "12938718954732000",
                      "id": "1078",
                      "meta_info": {
-                        "last_visited": "13153490444458562",
-                        "last_visited_desktop": "13153521908495675"
+                        "last_visited": "13153780840157975",
+                        "last_visited_desktop": "13154095588559835"
                      },
                      "name": "VG",
-                     "sync_transaction_version": "95",
+                     "sync_transaction_version": "421",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -721,7 +721,7 @@
                      "url": "http://www1.fantrax.com/fantasy/home.go?leagueId=qxp182geh3xn4ik2"
                   } ],
                   "date_added": "13152727262050483",
-                  "date_modified": "13153516759475319",
+                  "date_modified": "13153823460733389",
                   "id": "774",
                   "name": "Links",
                   "sync_transaction_version": "1",
@@ -2140,8 +2140,11 @@
                      }, {
                         "date_added": "12940763020339000",
                         "id": "875",
+                        "meta_info": {
+                           "last_visited_desktop": "13153846158889579"
+                        },
                         "name": "ODD Grenland",
-                        "sync_transaction_version": "1",
+                        "sync_transaction_version": "212",
                         "type": "url",
                         "url": "http://www.oddgrenland.no/"
                      }, {
@@ -2459,11 +2462,11 @@
                      "date_added": "12950878596035000",
                      "id": "831",
                      "meta_info": {
-                        "last_visited": "13153490444458562",
-                        "last_visited_desktop": "13153521908495675"
+                        "last_visited": "13153780840157975",
+                        "last_visited_desktop": "13154095588559835"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "96",
+                     "sync_transaction_version": "422",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -2573,7 +2576,7 @@
                      "url": "http://www.dreamgrow.com/11-reasons-why-newsletter-beats-social-media/"
                   } ],
                   "date_added": "13152727262050615",
-                  "date_modified": "13153516759475318",
+                  "date_modified": "13153823460733383",
                   "id": "790",
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
@@ -3830,8 +3833,11 @@
                      }, {
                         "date_added": "12940763020339000",
                         "id": "667",
+                        "meta_info": {
+                           "last_visited_desktop": "13153846158889579"
+                        },
                         "name": "ODD Grenland",
-                        "sync_transaction_version": "1",
+                        "sync_transaction_version": "213",
                         "type": "url",
                         "url": "http://www.oddgrenland.no/"
                      }, {
@@ -4560,11 +4566,11 @@
                      "date_added": "12950878596035000",
                      "id": "582",
                      "meta_info": {
-                        "last_visited": "13153490444458562",
-                        "last_visited_desktop": "13153521908495675"
+                        "last_visited": "13153780840157975",
+                        "last_visited_desktop": "13154095588559835"
                      },
                      "name": "VG Nett",
-                     "sync_transaction_version": "97",
+                     "sync_transaction_version": "423",
                      "type": "url",
                      "url": "http://www.vg.no/"
                   }, {
@@ -4576,7 +4582,7 @@
                      "url": "http://www.worldrecordsacademy.org/"
                   } ],
                   "date_added": "13152727262037450",
-                  "date_modified": "13153516759475321",
+                  "date_modified": "13153823460733393",
                   "id": "534",
                   "name": "Sjekklisten",
                   "sync_transaction_version": "1",
@@ -5602,7 +5608,7 @@
                "url": "https://docs.google.com/document/d/1r5FWIlf_Rk9Gex7oOg0qt4uskft97FPVuO5APJm0xno/edit"
             } ],
             "date_added": "13152727262023192",
-            "date_modified": "13153512153044262",
+            "date_modified": "13154081613710562",
             "id": "283",
             "name": "old",
             "sync_transaction_version": "1",
@@ -5613,10 +5619,10 @@
                "id": "310",
                "meta_info": {
                   "last_visited": "13153127410363231",
-                  "last_visited_desktop": "13152197010456094"
+                  "last_visited_desktop": "13153845822215193"
                },
                "name": "It's Nice That",
-               "sync_transaction_version": "27",
+               "sync_transaction_version": "204",
                "type": "url",
                "url": "https://www.itsnicethat.com/"
             }, {
@@ -5634,10 +5640,10 @@
                "id": "312",
                "meta_info": {
                   "last_visited": "13153127944887689",
-                  "last_visited_desktop": "13152197352050062"
+                  "last_visited_desktop": "13153845838485967"
                },
                "name": "Designer News",
-               "sync_transaction_version": "27",
+               "sync_transaction_version": "205",
                "type": "url",
                "url": "https://www.designernews.co/"
             }, {
@@ -5655,10 +5661,10 @@
                "id": "314",
                "meta_info": {
                   "last_visited": "13153128961874839",
-                  "last_visited_desktop": "13152197405012029"
+                  "last_visited_desktop": "13153845804047279"
                },
                "name": "uxdesign.cc",
-               "sync_transaction_version": "27",
+               "sync_transaction_version": "203",
                "type": "url",
                "url": "https://uxdesign.cc/"
             }, {
@@ -5767,9 +5773,19 @@
                "sync_transaction_version": "1",
                "type": "url",
                "url": "https://github.com/CookPete/react-player"
+            }, {
+               "date_added": "13153911012898593",
+               "id": "1103",
+               "meta_info": {
+                  "last_visited_desktop": "13153911012901682"
+               },
+               "name": "facebook + node",
+               "sync_transaction_version": "235",
+               "type": "url",
+               "url": "http://rationalappdev.com/logging-into-react-native-apps-with-facebook-or-google/"
             } ],
             "date_added": "13152727262023203",
-            "date_modified": "13152727262023203",
+            "date_modified": "13153911025053711",
             "id": "285",
             "name": "REACT",
             "sync_transaction_version": "1",
@@ -5879,44 +5895,152 @@
             "sync_transaction_version": "1",
             "type": "folder"
          }, {
+            "children": [ {
+               "date_added": "13153926574069872",
+               "id": "1104",
+               "meta_info": {
+                  "last_visited_desktop": "13153926574073047"
+               },
+               "name": "Wikipedia:On this day/Today - Wikipedia",
+               "sync_transaction_version": "289",
+               "type": "url",
+               "url": "https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today"
+            }, {
+               "date_added": "13153926586732529",
+               "id": "1106",
+               "meta_info": {
+                  "last_visited_desktop": "13153927883014723"
+               },
+               "name": "on this day",
+               "sync_transaction_version": "302",
+               "type": "url",
+               "url": "http://www.onthisday.com/"
+            }, {
+               "date_added": "13153926685594806",
+               "id": "1107",
+               "meta_info": {
+                  "last_visited_desktop": "13153926685599058"
+               },
+               "name": "Dagen i dag - NRK",
+               "sync_transaction_version": "300",
+               "type": "url",
+               "url": "http://m.nrk.no/dagenidag/"
+            }, {
+               "date_added": "13153928088088970",
+               "id": "1108",
+               "meta_info": {
+                  "last_visited_desktop": "13153928088092340"
+               },
+               "name": "On This Day | Britannica.com",
+               "sync_transaction_version": "306",
+               "type": "url",
+               "url": "https://www.britannica.com/on-this-day"
+            }, {
+               "date_added": "13153928093667587",
+               "id": "1109",
+               "meta_info": {
+                  "last_visited_desktop": "13153928093670815"
+               },
+               "name": "BBC ON THIS DAY | Front Page",
+               "sync_transaction_version": "310",
+               "type": "url",
+               "url": "http://news.bbc.co.uk/onthisday"
+            }, {
+               "date_added": "13153928198998478",
+               "id": "1110",
+               "meta_info": {
+                  "last_visited_desktop": "13153928199000749"
+               },
+               "name": "This Day in Music.com",
+               "sync_transaction_version": "314",
+               "type": "url",
+               "url": "http://www.thisdayinmusic.com/"
+            }, {
+               "date_added": "13153929811574164",
+               "id": "1111",
+               "meta_info": {
+                  "last_visited_desktop": "13153929811577940"
+               },
+               "name": "Merkedag – Wikipedia",
+               "sync_transaction_version": "321",
+               "type": "url",
+               "url": "https://no.wikipedia.org/wiki/Merkedag"
+            }, {
+               "date_added": "13153929853360106",
+               "id": "1112",
+               "meta_info": {
+                  "last_visited_desktop": "13153929853361643"
+               },
+               "name": "Oslo - Nordisk Film Kino",
+               "sync_transaction_version": "325",
+               "type": "url",
+               "url": "https://www.nfkino.no/oslo/"
+            }, {
+               "date_added": "13154095074175102",
+               "id": "1113",
+               "meta_info": {
+                  "last_visited_desktop": "13154095074180692"
+               },
+               "name": "Cloudinary - Features",
+               "sync_transaction_version": "419",
+               "type": "url",
+               "url": "https://cloudinary.com/features"
+            }, {
+               "date_added": "13154107220493270",
+               "id": "1114",
+               "meta_info": {
+                  "last_visited_desktop": "13154107220496275"
+               },
+               "name": "Run MongoDB on Google Cloud Platform  |  Node.js  |  Google Cloud Platform",
+               "sync_transaction_version": "454",
+               "type": "url",
+               "url": "https://cloud.google.com/nodejs/resources/databases/mongodb"
+            } ],
+            "date_added": "13153926584008200",
+            "date_modified": "13154107229301287",
+            "id": "1105",
+            "name": "doapp",
+            "sync_transaction_version": "290",
+            "type": "folder"
+         }, {
             "date_added": "13151423030406835",
             "id": "288",
             "meta_info": {
-               "last_visited_desktop": "13153478853981642"
+               "last_visited_desktop": "13154089628895212"
             },
             "name": "waffle",
-            "sync_transaction_version": "77",
+            "sync_transaction_version": "396",
             "type": "url",
             "url": "https://waffle.io/dbmedialab/pluss?label=pluss"
          }, {
             "date_added": "13151423048989777",
             "id": "289",
             "meta_info": {
-               "last_visited_desktop": "13153481612861712"
+               "last_visited_desktop": "13154013113171061"
             },
             "name": "db-git",
-            "sync_transaction_version": "78",
+            "sync_transaction_version": "358",
             "type": "url",
             "url": "https://github.com/orgs/dbmedialab/dashboard"
          }, {
             "date_added": "13151423057056888",
             "id": "290",
             "meta_info": {
-               "last_visited_desktop": "13152721378444349"
+               "last_visited_desktop": "13153937901381382"
             },
             "name": "redigert-utgave-git",
-            "sync_transaction_version": "1",
+            "sync_transaction_version": "330",
             "type": "url",
             "url": "https://github.com/dbmedialab/redigert-utgave-app"
          }, {
             "date_added": "13151484964183596",
             "id": "291",
             "meta_info": {
-               "last_visited": "13153508734729900",
-               "last_visited_desktop": "13153512280687811"
+               "last_visited": "13154161958197978",
+               "last_visited_desktop": "13154173000991880"
             },
             "name": "db",
-            "sync_transaction_version": "92",
+            "sync_transaction_version": "464",
             "type": "url",
             "url": "https://www.dagbladet.no/"
          } ],
@@ -7521,11 +7645,11 @@
                "date_added": "13033428537320186",
                "id": "167",
                "meta_info": {
-                  "last_visited": "13153121280654467",
-                  "last_visited_desktop": "13153500932515495"
+                  "last_visited": "13154164588931576",
+                  "last_visited_desktop": "13153843295159869"
                },
                "name": "",
-               "sync_transaction_version": "90",
+               "sync_transaction_version": "462",
                "type": "url",
                "url": "http://www.theverge.com/"
             }, {
@@ -7538,8 +7662,11 @@
             }, {
                "date_added": "13033428537433478",
                "id": "169",
+               "meta_info": {
+                  "last_visited_desktop": "13153910782496758"
+               },
                "name": "",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "229",
                "type": "url",
                "url": "http://dribbble.com/"
             }, {
@@ -7606,7 +7733,7 @@
                "url": "https://en.wikipedia.org/w/api.php"
             } ],
             "date_added": "13152727262008077",
-            "date_modified": "13153500961980167",
+            "date_modified": "13154172233926089",
             "id": "43",
             "name": "old bookmarks bar",
             "sync_transaction_version": "1",
@@ -7707,14 +7834,17 @@
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "97",
+      "sync_transaction_version": "464",
       "synced": {
          "children": [ {
             "children": [ {
                "date_added": "13001255144918072",
                "id": "32",
+               "meta_info": {
+                  "last_visited_desktop": "13154093838844325"
+               },
                "name": "IMDb",
-               "sync_transaction_version": "1",
+               "sync_transaction_version": "408",
                "type": "url",
                "url": "http://www.imdb.com/"
             }, {
@@ -7835,10 +7965,11 @@
             "date_added": "13139567318273040",
             "id": "15",
             "meta_info": {
-               "last_visited_desktop": "13153319994005717"
+               "last_visited": "13154112667778122",
+               "last_visited_desktop": "13154083644558813"
             },
             "name": "https://retrospillmessen.hoopla.no/#active",
-            "sync_transaction_version": "27",
+            "sync_transaction_version": "460",
             "type": "url",
             "url": "https://retrospillmessen.hoopla.no/#active"
          }, {
@@ -7925,9 +8056,19 @@
             "sync_transaction_version": "1",
             "type": "url",
             "url": "https://www.bonappetit.com/test-kitchen/cooking-tips/slideshow/basic-cooking-techniques#1"
+         }, {
+            "date_added": "13153646939237046",
+            "id": "1102",
+            "meta_info": {
+               "last_visited": "13153665518636990"
+            },
+            "name": "3 filmer du bør se etter å ha sett NRKs hiphop-dokumentar «Takin Ova» - NATT&DAG",
+            "sync_transaction_version": "128",
+            "type": "url",
+            "url": "http://www.nattogdag.no/2017/10/3-filmer-du-bor-se-etter-a-ha-sett-nrks-takin-ova/"
          } ],
          "date_added": "13152543424034659",
-         "date_modified": "13153342595568209",
+         "date_modified": "13154121214630014",
          "id": "3",
          "name": "Mobile Bookmarks",
          "type": "folder"

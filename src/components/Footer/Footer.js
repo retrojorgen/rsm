@@ -10,6 +10,7 @@ const FooterContainer = styled.footer`
   width: 100%;
   height: 450px;
   background-image: url(${FooterBackground});
+  background-size: 20%;
   display: flex;
   align-items: space-around;
   justify-content: space-around;
@@ -18,12 +19,17 @@ const FooterContainer = styled.footer`
       position: relative;
       display: block;
       height: auto;
+      background-size: 50%;
     }
 `;
 
 const Section = styled.div`
   width: 33%;
   padding: 20px;
+  color: #e3eefb;
+  a {
+    color: #e3eefb; 
+  }
   &:nth-child(2) {
     border-left: 1px solid rgba(0,0,0,0.2);
     border-right: 1px solid rgba(0,0,0,0.2);

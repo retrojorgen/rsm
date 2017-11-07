@@ -77,7 +77,11 @@ const SectionWrapper = styled.section`
         width: 116%;
         height: 100%;
         background-image: url(${GuestsBackground});
+        background-size: 50%;
         transform: rotate(-2deg);
+        @media (max-device-width: 1100px) {
+            background-size: 20%;
+        }
     }
 `;
 
@@ -109,6 +113,7 @@ const Guest = styled(NavLink)`
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
     height: 500px;
     overflow: hidden;
+    border: 6px solid purple;
     transition: all 0.1s ease-in;
     cursor: pointer;
     position: relative;

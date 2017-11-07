@@ -4,6 +4,7 @@ import Title from './../Title/Title';
 import TicketBackground from './tickets-background.jpg';
 import TicketBackgroundYellow from './tickets-background-yellow.png';
 import TicketBackgroundOrange from './tickets-background-orange.png';
+import ticketBackgroundPurple from './tickets-background-purple.png';
 
 
 const TicketsWrapper = styled.section`
@@ -36,6 +37,7 @@ const TicketsListContainer = styled.div`
 
 const TicketGroup = styled.div`
     background-image: url(${(props) => props.ticketBackground});
+    background-size: 50%;
     max-width: 30%;
     border-radius: 4px;
     padding: 20px;
@@ -43,6 +45,7 @@ const TicketGroup = styled.div`
     display: flex;
     flex-direction: column;
     transition: all 0.2s ease-in;
+    color: ${(props) => props.color};
     margin-bottom: 10px;
     &:hover {
       transform: scale(1.05);
@@ -54,8 +57,6 @@ const TicketGroup = styled.div`
       margin-bottom: 20px;
     }
     p {
-      color: black;
-
     }
     @media (max-device-width: 1100px) {
         max-width: 100%;
@@ -98,14 +99,30 @@ export default class Tickets extends Component {
     const translations = {
       no: {
         title: "Billetter til RSM 2018",
-        subTitle: "Obs! Billetter kommer i salg veldig snart. Følg med for early bird tilbud. Våre rabbaterte barnebilletter gjelder barn under 13 år.",
+        subTitle: "Billettene er nå ute! Early bird på VIP-billetter gjelder frem til juleaften (24.12)",
         ticketsHeader: "Billettkategorier",
         unnanouncedHeader: "Følg med, flere gjester annonseres snart!",
-        buyButton: "Kjøp - Tilgjengelig snart",
+        buyButton: "Kjøp billett",
         ticketGroups: [
+          {
+            background: ticketBackgroundPurple,
+            color: 'white',
+            header: "Early bird VIP Helgepass",
+            paragraphs: [
+              `Frem til jul har vi rabatt på VIP-billetter til barn og voksne! VIP-billetter gir deg tilgang til messa en time før vanlige besøkende både lørdag og søndag.
+              Det gir en gyllen mulighet til å møte VIP-gjester og gjøre gode handler før hallen fyller seg opp!`,
+              `Du slipper selvsagt også å vente i den vanlige åpningskøen.`
+            ],
+            ticketOptions: [
+              {name: "Early bird VIP Voksen", price: 499},
+              {name: "Early bird VIP barn (12 og under)", price: 169},
+            ]
+          },
+          /**
           {
             background: TicketBackgroundYellow,
             header: "VIP Helgepass",
+            color: 'black',
             paragraphs: [
               `VIP-biletten gir deg tilgang til Retrospillmessen både lørdag og søndag.
               I tillegg slipper du inn en time tidligere enn andre gjester begge dagene.
@@ -118,9 +135,11 @@ export default class Tickets extends Component {
               {name: "VIP barn (12 og under)", price: 219},
             ]
           },
+          */
           {
             background: TicketBackground,
             header: "Helgepass",
+            color: 'black',
             paragraphs: [
               `Helgepass gir deg tilgang til Retrospillmessen. Det er forskjellige program hver dag
               på Retrospillmessen, og begge dagene gir en helt forskjellig opplevelse.
@@ -130,11 +149,11 @@ export default class Tickets extends Component {
               {name: "Helgepass Voksen", price: 499},
               {name: "Helgepass barn (12 og under)", price: 199},
             ]
-          },
+          }, 
           {
             background: TicketBackgroundOrange,
             header: "Dagspass",
-            
+            color: 'black',
             paragraphs: [
               `Dagspass gir deg tilgang til Retrospillmessen hele lørdagen,
               eller hele søndagen. Vi anbefaler å sjekke timeplanen vårt for å se hvilken
@@ -154,11 +173,28 @@ export default class Tickets extends Component {
         title: "Tickets for RSM 2018",
         subTitle: "Attention! Tickets will be available shortly. Follow us here or on facebook for early bird discounts!",
         ticketsHeader: "Ticket categories",
-        buyButton: "Purchase - available soon",
+        buyButton: "Purchase ticket",
+        
         ticketGroups: [
+          {
+            background: ticketBackgroundPurple,
+            color: 'white',
+            header: "Early bird VIP weekend pass",
+            paragraphs: [
+              `We have early bird discounts on our VIP-tickets until December 24. The VIP-tickets are a golden opportunity to get in to the convention
+              an hour earlier than everyone else on saturday and sundayt. This means you have extra time to spend with the VIP-guests, and hunt for great deals at our vendor booths. `,
+              `Of course you will not have to wait in line with everyone else as well.`
+            ],
+            ticketOptions: [
+              {name: "Early bird VIP Voksen", price: 499},
+              {name: "Early bird VIP barn (12 og under)", price: 169},
+            ]
+          },
+          /**
           {
             background: TicketBackgroundYellow,
             header: "VIP Weekend pass",
+            color: 'black',
             paragraphs: [
               `VIP Weekend pass tickets give you access to everything at Retrospillmessen both Saturday and Sunday`,
               `You also get to enter the convention an hour earlier than everyone else on both days.
@@ -170,9 +206,11 @@ export default class Tickets extends Component {
               {name: "VIP Kid (12 and under)", price: 219},
             ]
           },
+          **/
           {
             background: TicketBackground,
             header: "Weekend pass",
+            color: 'black',
             paragraphs: [
               `Weekend pass gives you access to the entire convention both Saturday and Sunday`,
               `Why weekend pass you ask? Well, there is a different schedule on Saturday and Sunday,
@@ -186,6 +224,7 @@ export default class Tickets extends Component {
           {
             background: TicketBackgroundOrange,
             header: "Day pass",
+            color: 'black',
             paragraphs: [
               `Day pass gives you access to the entire convention on Saturday or Sunday.`,
               `Planning a day out with your family? We recommend Sundays, since it is always
@@ -209,7 +248,7 @@ export default class Tickets extends Component {
         <TicketsListContainer>
           {translation.ticketGroups.map((t,k) => {
             return (
-              <TicketGroup key={k} ticketBackground={t.background}>
+              <TicketGroup key={k} color={t.color} ticketBackground={t.background}>
                 <h3>{t.header}</h3>
                 {t.paragraphs.map((p,k) => (
                   <p key={k}>{p}</p>
@@ -223,7 +262,7 @@ export default class Tickets extends Component {
                     </tbody>
                   </table>
                 </TicketOptions>
-                <BuyButton href="">{translation.buyButton}</BuyButton>  
+                <BuyButton href="https://retrospillmessen.hoopla.no/sales/2422891309" target="new_window">{translation.buyButton}</BuyButton>  
               </TicketGroup>
             )
           })}
