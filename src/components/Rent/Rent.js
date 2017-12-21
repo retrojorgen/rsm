@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import HeaderBackground from './retrospillmessen-market.jpg';
-import Title from '../Title/Title';
+import { BlackSection, TopTitle, HeaderTitleWrapper, Header } from '../Title/Title';
 import yellowBackground from './guests-background.jpg';
 
 
@@ -14,7 +14,7 @@ const Section = styled.div`
     a {
       color: ${(props) => props.background === 'yellow' ? 'black' : 'white'};
     }
-    max-width: 60em;
+    max-width: 50em;
     margin: 0 auto;
     @media (max-device-width: 1100px) {
         max-width: 100%;
@@ -26,14 +26,18 @@ const Section = styled.div`
 
 const SectionHeader = styled.h2 `
   font-family: "Rubik", sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   position: relative;
   font-weight: bold;
+  @media (max-device-width: 1100px) {
+    font-size: 2em;
+    text-align: center;
+  }
 `;
 
 const SectionParagraph = styled.p `
   font-family: "Rubik", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.6em;
   
   position: relative;
@@ -41,38 +45,6 @@ const SectionParagraph = styled.p `
   
 `;
 
-const Header = styled.div `
-  height: 400px;
-  background: url(${(props) => props.headerBackground});
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  background-position: center 20%;
-  p {
-    font-size: 1.4em;
-    margin: 0;
-    text-transform: uppercase;
-    color: #e0c417;
-  }
-`;
-const HeaderTitleWrapper = styled.div `
-  width: 100%;
-  background: linear-gradient(transparent, black);
-  font-family: "Rubik", sans-serif;
-  color: white;
-  text-align: center;
-  padding: 40px 0 60px 0;
-  @media (max-device-width: 1100px) {
-    padding: 40px 0 20px 0;
-  }
-`;
-
-
-const Footer = styled.div `
-  border-top: 2px solid #e0c417;
-  border-radius: 4px;
-`;
 
 export default class About extends Component {
   render() {
@@ -81,6 +53,7 @@ export default class About extends Component {
       no: {
         headerBackground: HeaderBackground,
         title: "Leie plass på RSM",
+        subtitle: "En fantastisk mulighet til å nå ut til mange!",
         footerHeader: "Har du andre spørsmål?",
         footerParagraph: `Henvend deg til <a href="mailto:stand@retrospillmessen.no">stand@retrospillmessen.no</a>. Som regel vil du få svar innen 1-2 dager :) Får du ikke svar ber vi deg henvende deg til vår facebook-side
         <a href="http://facebook.com/retrospillmessen"> http://facebook.com/retrospillmessen </a>`,
@@ -140,6 +113,7 @@ export default class About extends Component {
       en: {
         headerBackground: HeaderBackground,
         title: "Rent booth space at RSM 18",
+        subtitle: "Reach out to thousands of enthusiasts",
         footerHeader: "Got other questions?",
         footerParagraph: `Send an e-mail to <a href="mailto:stand@retrospillmessen.no">stand@retrospillmessen.no</a>. You should get a reply within 1-2 days. If you still have not gotten a reply please send a message through our
         facebook page at <a href="http://facebook.com/retrospillmessen"> http://facebook.com/retrospillmessen </a>`,
@@ -218,18 +192,19 @@ export default class About extends Component {
       <div className="About">
         <Header headerBackground={HeaderBackground}>
           <HeaderTitleWrapper>
-            <Title title={translation.title} />
+            <TopTitle>{translation.title}</TopTitle>
+            <p>{translation.subtitle}</p>
           </HeaderTitleWrapper>
         </Header>
         {sections}
-        <Footer>
+        <BlackSection>
           <Section background="">
             <SectionHeader>
               {translation.footerHeader}
             </SectionHeader>
             <SectionParagraph dangerouslySetInnerHTML={{__html: translation.footerParagraph}} />  
           </Section>
-        </Footer>
+        </BlackSection>
 
       </div>
     );

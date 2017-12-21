@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import larryBack from './larry-rsm-video-background.mp4';
+import etBack from './etBack.jpg';
+import hWarshaw from './hwarshaw.png';
 import alLowe from './allowe.png';
 import lefdalLogo from './lefdal-logo.png';
 import { NavLink } from 'react-router-dom';
-import Title from './../Title/Title';
-import GuestsBackground from './guests-background.jpg';
+import Title, {YellowSection} from './../Title/Title';
+
 
 const HeaderWrapper = styled.div`
     position: absolute;
@@ -18,18 +20,13 @@ const HeaderWrapper = styled.div`
         font-family: "Rubik", sans-serif;
         padding: 0 40px 0 40px;
         font-size: 2em;
-        margin: 0 0 14px 0;
-        span {
-            background-color: black;
-            padding: 4px 6px 4px 6px;
-            box-shadow: 4px 4px 0 0 #e0c417;
-        }
+        margin: 0 0 0 0;
     }
     p {
-        color: #e0c417;
+        color: white;
         font-family: "Rubik", sans-serif;
         padding: 0 44px 0 40px;
-        font-size: 1.4em;
+        font-size: 1.1em;
         margin: 0;
     }
     
@@ -64,30 +61,9 @@ class HeaderContainer extends Component {
     }
 }
 
-const SectionWrapper = styled.section`
-    padding-top: 40px;
-    padding-bottom: 40px;
-    min-height: 800px;
-    position: relative;
-    width: 100%;
-    &:before {
-        content: "";
-        position: absolute;
-        left: -6%;
-        width: 116%;
-        height: 100%;
-        background-image: url(${GuestsBackground});
-        background-size: 50%;
-        transform: rotate(-2deg);
-        @media (max-device-width: 1100px) {
-            background-size: 20%;
-        }
-    }
-`;
-
 const GuestsContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     margin: 0 20px 0 20px;
     height: 100%;
@@ -109,18 +85,20 @@ const Guest = styled(NavLink)`
     width: 30%;
     
     background-color:black;
-    border-radius: 4px;
+    background-image: url(${(props) => props.background ? props.background: ''});
+    background-size: auto 100%;
+
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
     height: 500px;
     overflow: hidden;
-    border: 6px solid purple;
+    border: 6px solid white;
     transition: all 0.1s ease-in;
     cursor: pointer;
     position: relative;
+    transform: scale(1.02);
     video {
         min-height: 100%;
         transform: translateX(-20%);
-        opacity: 0.8;
         position:absolute;
         left: 0;
         top: 0;
@@ -135,7 +113,7 @@ const Guest = styled(NavLink)`
 
 const GuestProfile = styled.div`
     position: absolute;
-    left: -200px;
+    left: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -158,7 +136,7 @@ const Unnanounced = styled.div`
     h1 {
         font-size: 2em;
         margin-bottom: 0;
-        color: #e0c417;
+        color: #fff142;
     }
     p {
         font-size: 1em;
@@ -176,7 +154,7 @@ export default class Guests extends Component {
     const language = localStorage.language || 'no';
     const translations = {
       no: {
-        title: "VIP-gjester Retrospillmessen 2018",
+        title: "VIP-gjester",
         subTitle: `Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
         guests: [
             {
@@ -189,8 +167,13 @@ export default class Guests extends Component {
 
             },
             {
-                type: "unannounced",
-                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+                type: "announced",
+                background: etBack,
+                profile: hWarshaw,
+                name: "Howard Scott Warshaw",
+                description: "Skaperen av \"verdens verste spill\" E.T, til Atari 2600",
+                alt: "Howard Scott Warshaw kommer til RSM 18"
+
             },
             {
                 type: "unannounced",
@@ -199,7 +182,7 @@ export default class Guests extends Component {
         ],
       },
       en: {
-        title: "VIP Guests Retrospillmessen 2018",
+        title: "Guests",
         subTitle: `More guests will be announced soon! Follow us here and on our <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
         guests: [
             {
@@ -212,9 +195,13 @@ export default class Guests extends Component {
 
             },
             {
-                type: "unannounced",
-                p: "hest",
-                message: "Follow us here and on facebook. More guests will be announced soon!"
+                type: "announced",
+                video: etBack,
+                profile: hWarshaw,
+                name: "Howard Scott Warshaw",
+                description: "The creator of the infamous E.T on atari 2600",
+                alt: "Howard Scott Warshaw is coming to RSM 18"
+
             },
             {
                 type: "unannounced",
@@ -226,17 +213,19 @@ export default class Guests extends Component {
     }
     let translation = translations[language];
     return (
-    <SectionWrapper>
-        <Title title={translation.title} />
+    <YellowSection>
+        <Title title={translation.title} color="Yellow" />
         <SectionDescription dangerouslySetInnerHTML={{__html: translation.subTitle}}></SectionDescription>
         <GuestsContainer>
             {translation.guests.map((g, k) => {
-                if(g.type == 'announced') {
+                if(g.type === 'announced') {
                     return (
-                        <Guest to="/guests" key={k}>
-                            <video autoPlay="true" loop="true">
-                                <source src={g.video} type="video/mp4" />
-                            </video>
+                        <Guest to="/guests" key={k} background={g.background}>
+                            {g.video && (
+                                <video autoPlay="true" loop="true">
+                                    <source src={g.video} type="video/mp4" />
+                                </video>
+                            )}
                             <GuestProfile>
                                 <img src={g.profile} alt={g.alt} />
                             </GuestProfile>
@@ -253,7 +242,7 @@ export default class Guests extends Component {
                 }
             })}
         </GuestsContainer>
-    </SectionWrapper>
+    </YellowSection>
     );
   }
 }

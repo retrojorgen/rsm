@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './About.css';
 import styled from 'styled-components';
-import SectionBackground from './guests-background.jpg';
 import Section1Background from './retrospillmessen-people.jpg';
 import Section2Background from './retrospillmessen-cool.jpg';
 import Section3Background from './retrospillmessen-market.jpg';
@@ -12,36 +11,22 @@ import Section7Background from './retrospillmessen-mop.jpg';
 
 import HeaderBackground from './welcome-to-retrospillmessen.jpg';
 
-import Title from '../Title/Title';
+import Title, {BlackSection, TopTitle, HeaderTitleWrapper, Header} from '../Title/Title';
 
 
 const Section = styled.div`
     padding: 40px 40px 40px 40px;
     display: flex;
-    overflow: hidden;
     justify-content: ${props => props.justified};
     align-items: center;
     position: relative;
+    min-height: ${window.innerHeight}px;
     @media (max-device-width: 1100px) {
       flex-direction: column;
       padding: 0;
     } 
 `;
 
-const VideoSection = styled.div`
-  padding: 40px;
-  p {
-    color: white;
-    font-family: "Rubik", sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-  @media (max-device-width: 1100px) {
-      padding: 10px;
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-  } 
-`;
 
 const VideosWrapper = styled.div`
   display: block;
@@ -58,22 +43,15 @@ const Video = styled.div`
 const ContentSection = styled.div `
   position: relative;
   display: block;
-  padding: 40px;
-  overflow: hidden;
   width: 40%;
   border-radius: 8px;
-  &:before {
-    content: '';
-    background: url(${SectionBackground});
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
+  box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+  padding: 40px 40px 70px 40px;
+
   @media (max-device-width: 1100px) {
     width: 100%;
     border-radius: 0;
+    padding: 20px;
   } 
 `;
 
@@ -81,24 +59,41 @@ const ImageSection = styled.div `
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 104%;
   height: 100%;
-  background: url(${props => props.backgroundImage});
-  background-size: cover;  
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: block;
-  opacity: 0.6;
-  box-shadow: 0 0 40px black inset;
-  &:hover {
-    opacity: 0.9;
+  opacity: 1;
+  overflow: hidden;
+  border: 0 solid black;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  &:after {
+    content: "";
+    position: absolute;
+    left: ${(props) => props.alignment === 'right' ? 'auto': '0'};
+    right: ${(props) => props.alignment === 'right' ? '0': 'auto'};
+    top: -5%;
+    width: 50%;
+    height: 110%;
+    background: url(${props => props.backgroundImage});
+    background-size: cover;  
+    background-position:center ${(props) => props.alignment === 'right' ? 'right': 'left'};
+    background-repeat: no-repeat;
   }
   @media (max-device-width: 1100px) {
     position: relative;
     height: 300px;
+    width: 100%;
+   
     opacity: 1;
     text-align: center;
+    &:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+      top: 0;
+      height: 100%;
+
+    }
   } 
 `;
 
@@ -129,47 +124,21 @@ const ImageDescription = styled.span `
 
 const ContentSectionHeader = styled.h2 `
   font-family: "Rubik", sans-serif;
-  font-size: 2em;
-  color: black;
+  font-size: 3em;
+  color: #fff142;
   position: relative;
   font-weight: bold;
 `;
 
 const ContentSectionParagraph = styled.p `
   font-family: "Rubik", sans-serif;
-  font-size: 1em;
+  font-size: 1.4em;
   line-height: 1.6em;
-  color: black;
+  color: white;
   position: relative;
   
 `;
 
-const Header = styled.div `
-  height: 400px;
-  background: url(${(props) => props.headerBackground});
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  background-position: center 20%;
-  p {
-    font-size: 1.4em;
-    margin: 0;
-    text-transform: uppercase;
-    color: #e0c417;
-  }
-`;
-const HeaderTitleWrapper = styled.div `
-  width: 100%;
-  background: linear-gradient(transparent, black);
-  font-family: "Rubik", sans-serif;
-  color: white;
-  text-align: center;
-  padding: 40px 0 60px 0;
-  @media (max-device-width: 1100px) {
-    padding: 40px 0 20px 0;
-  }
-`;
 
 export default class About extends Component {
   
@@ -185,7 +154,7 @@ export default class About extends Component {
           {
             backgroundImage: Section1Background,
             imageDescription: "Retrospillmessen er full av liv",
-            header: "Dette opplever du på Retrospillmessen",
+            header: "Dette opplever du på RSM18",
             paragraphs: [
               `Retrospillmessen er nordens største retroevent. 
               Hvert år strømmer over 5000 mennesker til en hall 
@@ -279,7 +248,7 @@ export default class About extends Component {
           {
             backgroundImage: Section1Background,
             imageDescription: "A living convention",
-            header: "This is Retrospillmessen!",
+            header: "This is RSM!",
             paragraphs: [
               `Retrospillmessen is Scandinavias biggest retro gaming event. 
               Every year 5000 people gather in an indoor Handball-arena
@@ -363,15 +332,15 @@ export default class About extends Component {
     var sectionToggle = false;
     var translation = translations[language];
     let sections = translation.sections.map((a,k) => {
-      var content = [];
       let flex = sectionToggle ? 'flex-start': 'flex-end';
       let imageAligment = sectionToggle ? 'right': 'left';
       sectionToggle = !sectionToggle;
       return (
         <Section justified={flex} key={k}>
-          <ImageSection backgroundImage={a.backgroundImage}>
-            <ImageDescription alignment={imageAligment}>{a.imageDescription}</ImageDescription>
+          
+          <ImageSection backgroundImage={a.backgroundImage} alignment={imageAligment}>
           </ImageSection>
+          <ImageDescription alignment={imageAligment}>{a.imageDescription}</ImageDescription>
           <ContentSection>
             <ContentSectionHeader>{a.header}</ContentSectionHeader>
             {a.paragraphs.map((c, ck) => (
@@ -388,14 +357,14 @@ export default class About extends Component {
       <div className="About">
         <Header headerBackground={HeaderBackground}>
           <HeaderTitleWrapper>
-            <Title title={translation.title} />
+            <TopTitle>{translation.title}</TopTitle>
             <p>{translation.subtitle}</p>
           </HeaderTitleWrapper>
         </Header>
         
         {sections}
 
-        <VideoSection>
+        <BlackSection>
         <Title title={translation.videotitle} />
         <p>{translation.videosubtitle}</p>
           <VideosWrapper>
@@ -431,7 +400,7 @@ export default class About extends Component {
               Her er klippet alle vil se hvor David Wise spiller sin egen låt fra Donkey Kong Country, sammen med Kyoshu Orchestra. Gåsehud!</p>Posted by <a href="https://www.facebook.com/retrospillmessen/">Retrospillmessen</a> on Tuesday, May 23, 2017</blockquote></div>
             </Video>
           </VideosWrapper>
-        </VideoSection>
+        </BlackSection>
 
 
 

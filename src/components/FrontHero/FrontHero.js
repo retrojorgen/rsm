@@ -6,7 +6,7 @@ import SliderRsm from './../SliderRsm/SliderRsm';
 
 export default class FrontHero extends Component {
     render() {
-        let sliderHeight = window.innerHeight - 59;
+        let sliderHeight = window.innerHeight;
         return (
             <div  className="FrontHero-wrapper" style={{'height': sliderHeight + 'px'}}>
                 <Slider className="FrontHero-slider">

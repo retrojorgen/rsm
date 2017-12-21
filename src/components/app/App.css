@@ -20,8 +20,8 @@ body {
 }
 
 .main-page {
-  padding-top: 59px;
-  margin-bottom: 450px;
+  padding-top: 87px;
+  margin-bottom: 560px;
   position: relative;
   z-index: 2;
   background-color: black;
@@ -30,6 +30,7 @@ body {
 @media (max-device-width: 1100px) {
   .main-page {
     margin-bottom: 0;
+    padding-top: 60px;
   }
 }
 

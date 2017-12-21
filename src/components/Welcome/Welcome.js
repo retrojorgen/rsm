@@ -1,25 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import WelcomeImage from './welcome-image.jpg';
-import Title from './../Title/Title';
+import Title, { BlackSection } from './../Title/Title';
 import { NavLink } from 'react-router-dom';
 
-
-const Section = styled.div `
-    display: block;
-    margin-bottom: 20px;
-    margin-top: 80px;
-    @media (max-device-width: 1100px) {
-        margin-top: 20px;
-    }
-`;
 
 const ContentSections = styled.div `
     display: flex;
     font-family: "Rubik", sans-serif;
+    text-align: left;
+    margin-top: 80px;
     @media (max-device-width: 1100px) {
       display: block;
       padding: 0;
+      margin-top: 0;
     }
 `;
 
@@ -41,14 +35,14 @@ const RightContent = styled.div `
     padding: 80px;
     h2 {
         font-weight: bold;
-        font-size: 2em;
-        color: #e0c417;
+        font-size: 3em;
+        color: #fff142;
         margin-top: 0;
         max-width: 600px;
     }
     p {
         font-size: 1.1em;
-        line-height: 1.4em;
+        line-height: 1.6em;
         color: white;
         max-width: 600px;
     }
@@ -61,6 +55,9 @@ const RightContent = styled.div `
         display: block;
         padding: 20px;
         background-color: black;
+        h2 {
+            font-size: 2em;
+        }
     }
 `;
 
@@ -86,7 +83,7 @@ export default class Welcome extends React.Component {
         }
         let translation = translations[language];              
         return (
-            <Section>
+            <BlackSection>
                 <Title title={translation.title} />
                 <ContentSections>
                     <LeftContent />
@@ -96,7 +93,7 @@ export default class Welcome extends React.Component {
                         <NavLink to="/about">{translation.readmore}</NavLink>
                     </RightContent>
                 </ContentSections>
-          </Section>
+          </BlackSection>
         )
     }
 }

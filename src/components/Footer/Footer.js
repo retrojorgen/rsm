@@ -8,7 +8,6 @@ const FooterContainer = styled.footer`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 450px;
   background-image: url(${FooterBackground});
   background-size: 20%;
   display: flex;
@@ -25,7 +24,7 @@ const FooterContainer = styled.footer`
 
 const Section = styled.div`
   width: 33%;
-  padding: 20px;
+  padding: 80px 20px 80px 20px;
   color: #e3eefb;
   a {
     color: #e3eefb; 

@@ -17,7 +17,7 @@
 
 .Guests .unnanounced-container p {
     font-size: 1em;
-    color: #e0c417;
+    color: #fff142;
 }
 
 .Guests .section-description {
@@ -97,11 +97,11 @@
 .Guests .HeaderContainer h1 span{
     background-color: black;
     padding: 4px 6px 4px 6px;
-    box-shadow: 4px 4px 0 0 #e0c417;
+    box-shadow: 4px 4px 0 0 #fff142;
 }
 
 .Guests .HeaderContainer p {
-    color: #e0c417;
+    color: #fff142;
     font-family: "Rubik", sans-serif;
     padding: 0 44px 0 40px;
     font-size: 1.4em;

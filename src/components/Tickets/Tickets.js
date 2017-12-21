@@ -1,29 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Title from './../Title/Title';
+import Title, { BlackSection } from './../Title/Title';
 import TicketBackground from './tickets-background.jpg';
-import TicketBackgroundYellow from './tickets-background-yellow.png';
 import TicketBackgroundOrange from './tickets-background-orange.png';
 import ticketBackgroundPurple from './tickets-background-purple.png';
-
-
-const TicketsWrapper = styled.section`
-    padding: 0 10px 40px 10px;
-    >p {
-      color: white;
-      font-family: "Rubik", sans-serif;
-      text-align: center;
-      padding: 20px 20px 20px 20px;
-      position: relative;
-    }
-    >h2 {
-      color: white;
-      font-family: "Rubik", sans-serif;
-      text-align: center;
-      padding: 20px 20px 20px 20px;
-      position: relative;
-    }
-`;
 
 
 const TicketsListContainer = styled.div`
@@ -86,10 +66,16 @@ const BuyButton = styled.a`
   text-align: center;
   padding: 10px;
   background-color: black;
-  color: #e0c417;
+  color: white;
   border-radius: 4px;
   text-decoration: none;
   margin-top: 20px;
+  font-size: 1.4em;
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
 `;
 
 export default class Tickets extends Component {
@@ -241,7 +227,7 @@ export default class Tickets extends Component {
     let translation = translations[language];
 
     return (
-    <TicketsWrapper>
+    <BlackSection>
         <Title title={translation.title} />
         <p>{translation.subTitle}</p>
         <h2>{translation.ticketsHeader}</h2>
@@ -267,7 +253,7 @@ export default class Tickets extends Component {
             )
           })}
       </TicketsListContainer>
-    </TicketsWrapper>
+    </BlackSection>
     );
   }
 }

@@ -31,7 +31,7 @@
     top: 0;
     width: 50%;
     height: 5px;
-    background-color: #e0c417;
+    background-color: #fff142;
     transform: rotate(-2deg);
     z-index: 1;
 }
@@ -42,7 +42,7 @@
     bottom: 0;
     width: 50%;
     height: 5px;
-    background-color: #e0c417;
+    background-color: #fff142;
     transform: rotate(-2deg);
     z-index: 1;
 }
