@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import logo from './slider-rsm-logo-w.png';
-import logoEn from './slider-rsm-logo-w.png';
+import logo from './pixel-logo.png';
+import logoEn from './pixel-logo.png';
 import background from './slider-rsm-background.jpg';
 import sliderVideo from './slider.mp4';
 import scanLines from './scanlines.png';
@@ -31,7 +31,7 @@ const SliderRsmContainer = styled.div `
         height: 300px;
         max-height: 50%;
         z-index: 4;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
     @media (max-device-width: 1100px) {
         img {

@@ -51,11 +51,11 @@ const TitleWrap = styled.div`
     font-weight: 900;
     font-size: 3em;
     position: relative;
-    transform: translateY(-120px) skew(-6deg) rotate(-1deg);
+    transform: skew(-6deg) rotate(-1deg);
     z-index: 50;
     @media (max-device-width: 1100px) {
       font-size: 1.4em;
-      transform: translateY(-50px) skew(-6deg) rotate(-1deg);
+      transform: skew(-6deg) rotate(-1deg);
     }
     span {
       display: block;
@@ -81,8 +81,6 @@ const TitleWrap = styled.div`
 
 const BlackSection = styled.div `
     display: block;
-    padding-bottom: 130px;
-    padding-top: 80px;
     position: relative;
     color: white;
     text-align: center;
@@ -91,34 +89,9 @@ const BlackSection = styled.div `
         margin-top: 20px;
         padding: 30px 20px 50px 20px;
     }
-    &:before {
-        content: "";
-        position: absolute;
-        left: -6%;
-        top: -27px;
-        width: 116%;
-        height: 40px;
-        background-color: black;
-        transform: rotate(-1deg);
-        z-index: 2;
-    }
-    &:after {
-        content: "";
-        position: absolute;
-        left: -6%;
-        bottom: -27px;
-        width: 116%;
-        height: 40px;
-        background-color: black;
-        transform: rotate(-1deg);
-        z-index: 2;
-    }
 `;
 
 const YellowSection = styled.section`
-    padding-top: 132px;
-    padding-bottom: 160px;
-    min-height: 800px;
     position: relative;
     background-image: url(${YellowTileBackground});
     background-size: 25%;

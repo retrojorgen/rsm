@@ -21,6 +21,7 @@ const Section = styled.div`
     align-items: center;
     position: relative;
     min-height: ${window.innerHeight}px;
+    background-color: #21216f;
     @media (max-device-width: 1100px) {
       flex-direction: column;
       padding: 0;
@@ -45,7 +46,6 @@ const ContentSection = styled.div `
   display: block;
   width: 40%;
   border-radius: 8px;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.6);
   padding: 40px 40px 70px 40px;
 
   @media (max-device-width: 1100px) {
@@ -132,7 +132,7 @@ const ContentSectionHeader = styled.h2 `
 
 const ContentSectionParagraph = styled.p `
   font-family: "Rubik", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.6em;
   color: white;
   position: relative;
@@ -363,47 +363,6 @@ export default class About extends Component {
         </Header>
         
         {sections}
-
-        <BlackSection>
-        <Title title={translation.videotitle} />
-        <p>{translation.videosubtitle}</p>
-          <VideosWrapper>
-            <Video>
-              <div 
-                class="fb-video" 
-                data-href="https://www.facebook.com/retrospillmessen/videos/1491159684284607/" 
-                data-width="500" 
-                data-show-text="false"
-              >
-                <blockquote cite="https://www.facebook.com/retrospillmessen/videos/1491159684284607/" 
-                class="fb-xfbml-parse-ignore">
-                  <a href="https://www.facebook.com/retrospillmessen/videos/1491159684284607/">
-                    Retrospillmessen - Dag 1
-                  </a>
-                  <p>
-                    For de som ikke hadde anledning å komme til Runarhallen i 
-                    dag har vi nå på kveldingen raskt klippet sammen en liten 
-                    teaser på hva dere har gått glipp av og hva som kan forventes av morgendagen!
-                    Håper vi ser nye og kjente fjes, og konkret DEG!
-                    - By the power of the Pixels!</p>
-                  Posted by 
-                  <a href="https://www.facebook.com/retrospillmessen/">
-                    Retrospillmessen
-                  </a> 
-                  on Saturday, May 20, 2017
-                </blockquote>
-              </div>
-            </Video>
-
-            <Video>
-              <div class="fb-video" data-href="https://www.facebook.com/retrospillmessen/videos/1493671560700086/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/retrospillmessen/videos/1493671560700086/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/retrospillmessen/videos/1493671560700086/"></a><p>Lørdagens konsert fra Retrospillmessen 2017 har allerede blitt legendarisk! 
-              Her er klippet alle vil se hvor David Wise spiller sin egen låt fra Donkey Kong Country, sammen med Kyoshu Orchestra. Gåsehud!</p>Posted by <a href="https://www.facebook.com/retrospillmessen/">Retrospillmessen</a> on Tuesday, May 23, 2017</blockquote></div>
-            </Video>
-          </VideosWrapper>
-        </BlackSection>
-
-
-
       </div>
     );
   }

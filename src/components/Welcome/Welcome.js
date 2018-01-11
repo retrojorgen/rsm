@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import WelcomeImage from './welcome-image.jpg';
+import WelcomeImage from './welcome-back.png';
 import Title, { BlackSection } from './../Title/Title';
 import { NavLink } from 'react-router-dom';
 
@@ -9,45 +9,42 @@ const ContentSections = styled.div `
     display: flex;
     font-family: "Rubik", sans-serif;
     text-align: left;
-    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    background: url(${WelcomeImage});
+    background-size: cover;
+    padding: 60px;
     @media (max-device-width: 1100px) {
       display: block;
       padding: 0;
       margin-top: 0;
+      padding: 10px;
     }
 `;
-
-const LeftContent = styled.div `
-    width: 50%;
+const Content = styled.div `
+    width: 100%;
+    max-width: 600px;
     padding: 20px;
-    background-image: url(${WelcomeImage});
-    background-size: cover;
-    @media (max-device-width: 1100px) {
-        width: 100%;
-        height: 200px;
-        display: block;
-        padding: 0;
-    }
-`;
-
-const RightContent = styled.div `
-    width: 50%;
-    padding: 80px;
     h2 {
         font-weight: bold;
-        font-size: 3em;
-        color: #fff142;
+        font-size: 2em;
+        color: white;
         margin-top: 0;
         max-width: 600px;
+        text-align: center;
+        text-shadow: 0 4px 4px rgba(0,0,0,0.4);
     }
     p {
         font-size: 1.1em;
         line-height: 1.6em;
         color: white;
         max-width: 600px;
+        text-align: center;
     }
     a {
-        color: white
+        color: white;
+        text-align: center;
+        display: block;
     }
     @media (max-device-width: 1100px) {
         width: 90%;
@@ -67,31 +64,27 @@ export default class Welcome extends React.Component {
         const translations = {
           no: {
             title: "Retrospillmessen 2018",
-            subTitle: "Endelig kan vi begynne å glede oss til årets største Retrospillmesse!",
-            content: `Retrospillmessen er messa som samler gamere i alle aldre
-            en helg i Sandefjord. Messen hvor vi møter gamle kjente (du skjønner hva vi mener? :), skaper nye minner, og ikke minst har det skikkelig moro!
-            Lurer du på hva som skjer på Retrospillmessen?`,
+            subTitle: "Velkommen til årets største nordiske retrospillmesse!",
+            content: `For fjerde år på rad arrangerer vi Retrospillmessen i Runarhallen i Sandefjord. Med rundt 100 spillbare retrokonsoller og maskiner, fantastiske gjester og et stort marked med retrospill og merch
+            er Retrospillmessen et av årets største happenings for gamere i alle aldre!`,
             readmore: 'Lurer du på hva som foregår på Retrospillmessen? Mere her..',
           },
           en: {
             title: "Retrospillmessen 2018",
-            subTitle: "Finally! We can start looking forward to Retrospillmessen 2018, the biggest retro convention in the Nordics!",
-            content: `Welcome to the convention where retro gamers from all over gather for a weekend to enjoy each others company, great games,
-            amazing speakers and VIP guests, cool tournaments and have fun!`,
+            subTitle: "Welcome to the biggest nordic retro gaming convention of 2018!",
+            content: `For the fourth year in a row, Retrospillmessen is back in Sandefjord, Norway. Featuring around 100 playable retro-systems, amazing guests, a huge retro gaming and merch-market and so much more!`,
             readmore: 'Curios about what goes on at the convention? More here..',  
           }
         }
         let translation = translations[language];              
         return (
             <BlackSection>
-                <Title title={translation.title} />
                 <ContentSections>
-                    <LeftContent />
-                    <RightContent>
+                    <Content>
                         <h2>{translation.subTitle}</h2>
                         <p>{translation.content}</p>
                         <NavLink to="/about">{translation.readmore}</NavLink>
-                    </RightContent>
+                    </Content>
                 </ContentSections>
           </BlackSection>
         )

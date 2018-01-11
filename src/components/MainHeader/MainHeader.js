@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import RSMLogo from './rsm-logo.png';
+import RSMLogo from './rsm-pixel-animation.gif';
 import MenuBackgroundMobile from './menu-background-mobile.jpg';
 import MediaQuery from 'react-responsive';
 import LanguageSelect from '../LanguageSelect/LanguageSelect';

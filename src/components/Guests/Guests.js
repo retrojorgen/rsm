@@ -18,7 +18,7 @@ const HeaderWrapper = styled.div`
     h1 {
         color: white;
         font-family: "Rubik", sans-serif;
-        padding: 0 40px 0 40px;
+        padding: 0 10px 0 10px;
         font-size: 2em;
         margin: 0 0 0 0;
     }
@@ -65,7 +65,6 @@ const GuestsContainer = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 0 20px 0 20px;
     height: 100%;
     @media (max-device-width: 1100px) {
         flex-direction: column;
@@ -82,20 +81,19 @@ const SectionDescription = styled.p`
 
 const Guest = styled(NavLink)`
     display: block;
-    width: 30%;
+    width: 20%;
     
     background-color:black;
     background-image: url(${(props) => props.background ? props.background: ''});
-    background-size: auto 100%;
-
+    background-position: bottom center;
+    flex: 1;
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
     height: 500px;
     overflow: hidden;
-    border: 6px solid white;
     transition: all 0.1s ease-in;
     cursor: pointer;
     position: relative;
-    transform: scale(1.02);
+    transform: scale(1);
     video {
         min-height: 100%;
         transform: translateX(-20%);
@@ -117,6 +115,10 @@ const GuestProfile = styled.div`
     bottom: 0;
     width: 100%;
     height: 100%;
+    background-image: url(${(props) => props.profileImage ? props.profileImage: ''});
+    background-position: bottom center;
+    background-size: auto 85%;
+    background-repeat: no-repeat;
     img {
         max-height: 100%;
     }
@@ -128,9 +130,8 @@ const Unnanounced = styled.div`
     flex-direction: column;
     justify-content: center;
     background-color: black;
-    border-radius: 4px;
     padding: 20px;
-    max-width: 30%;
+    max-width: 20%;
     font-family: "Rubik", sans-serif;
     text-align: center;
     h1 {
@@ -179,6 +180,14 @@ export default class Guests extends Component {
                 type: "unannounced",
                 message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
             },
+            {
+                type: "unannounced",
+                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+            },
+            {
+                type: "unannounced",
+                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+            },
         ],
       },
       en: {
@@ -207,6 +216,16 @@ export default class Guests extends Component {
                 type: "unannounced",
                 s: "hest",
                 message: "Follow us here and on facebook. More guests will be announced soon!"
+            },
+            {
+                type: "unannounced",
+                s: "hest",
+                message: "Follow us here and on facebook. More guests will be announced soon!"
+            },
+            {
+                type: "unannounced",
+                s: "hest",
+                message: "Follow us here and on facebook. More guests will be announced soon!"
             }
         ],
       }
@@ -215,7 +234,6 @@ export default class Guests extends Component {
     return (
     <YellowSection>
         <Title title={translation.title} color="Yellow" />
-        <SectionDescription dangerouslySetInnerHTML={{__html: translation.subTitle}}></SectionDescription>
         <GuestsContainer>
             {translation.guests.map((g, k) => {
                 if(g.type === 'announced') {
@@ -226,8 +244,7 @@ export default class Guests extends Component {
                                     <source src={g.video} type="video/mp4" />
                                 </video>
                             )}
-                            <GuestProfile>
-                                <img src={g.profile} alt={g.alt} />
+                            <GuestProfile profileImage={g.profile}>
                             </GuestProfile>
                             <HeaderContainer guestName={g.name} guestDescription={g.description} />
                         </Guest>
