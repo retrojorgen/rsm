@@ -142,6 +142,10 @@ const ContentSectionParagraph = styled.p `
 
 export default class About extends Component {
   
+  componentDidMount () {
+    window.scrollTo(0, 0);
+  }
+  
   render() {
     const language = localStorage.language || 'no';
     const translations = {

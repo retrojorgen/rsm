@@ -22,7 +22,7 @@ const MainHeaderWrapper = styled.nav`
     top: 0;
     width: 100%;
     background-color: black;
-    z-index: 70;
+    z-index: 170;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     
     @media (max-device-width: 1100px) {

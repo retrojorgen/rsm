@@ -9,9 +9,7 @@ export default class FrontHero extends Component {
         let sliderHeight = window.innerHeight-87;
         return (
             <div  className="FrontHero-wrapper" style={{'height': sliderHeight + 'px'}}>
-                <Slider className="FrontHero-slider">
-                    <div><SliderRsm /></div>
-                </Slider>
+                <SliderRsm />
             </div>
         )
     }

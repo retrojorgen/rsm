@@ -1,6 +1,109 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import YellowTileBackground from './guests-background.jpg';
+import { NavLink } from 'react-router-dom';
+
+const PixelButton = styled.a`
+    font-family: "Rubik",sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 100;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: none;
+    max-width: 100%;
+    padding: 20px;
+    text-decoration: none;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        transition: all 0.15s ease-in-out, opacity 0.1s linear;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:before {
+        z-index: -1;
+        background-color: #31ae1f;
+        box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.15);
+        border-top: 4px solid #64fd1f;
+        border-bottom: 4px solid #1e8c03;
+        border-left: 4px solid #156c00;
+        border-right: 4px solid #47d009;
+    }
+    &:after {
+        background: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMzcsIDE3NiwgNykiIC8+PC9zdmc+") top left no-repeat, url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMTQxLCAyNTMsIDkyKSIgLz48L3N2Zz4=") top right no-repeat, url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMTgsIDg4LCAzKSIgLz48L3N2Zz4=") bottom left no-repeat, url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMzYsIDE4MCwgNikiIC8+PC9zdmc+") bottom right no-repeat;
+
+    }
+`;
+
+const PixelButtonNavLink = styled(NavLink)`
+    font-family: "Rubik",sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 100;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: none;
+    max-width: 100%;
+    padding: 20px;
+    text-decoration: none;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        transition: all 0.15s ease-in-out, opacity 0.1s linear;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:before {
+        z-index: -1;
+        background-color: #31ae1f;
+        box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.15);
+        border-top: 4px solid #64fd1f;
+        border-bottom: 4px solid #1e8c03;
+        border-left: 4px solid #156c00;
+        border-right: 4px solid #47d009;
+    }
+    &:after {
+        background: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMzcsIDE3NiwgNykiIC8+PC9zdmc+") top left no-repeat, url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMTQxLCAyNTMsIDkyKSIgLz48L3N2Zz4=") top right no-repeat, url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMTgsIDg4LCAzKSIgLz48L3N2Zz4=") bottom left no-repeat, url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld2JveD0iMCAwIDRweCA0cHgiIHg9IjBweCIgeT0iMHB4Ij48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSJyZ2IoMzYsIDE4MCwgNikiIC8+PC9zdmc+") bottom right no-repeat;
+
+    }
+`;
 
 
 const TopTitle = styled.h1`
@@ -20,27 +123,19 @@ const TopTitle = styled.h1`
 
 const HeaderTitleWrapper = styled.div `
   width: 100%;
-  background: linear-gradient(transparent, black);
-  font-family: "Rubik", sans-serif;
-  color: white;
-  text-align: center;
-  padding: 40px 0 60px 0;
-  @media (max-device-width: 1100px) {
-    padding: 40px 10px 40px 10px;
-    background: black;
-  }
+  padding: 20px 10px 40px 10px;
 `;
 
 const TitleWrap = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0 20px 0 20px;
-  position: absolute;
   width: 100%;
   color: ${(props) => props && props.color === 'Yellow' ? 'black' : 'white'};
+  margin-bottom: 40px;
   @media (max-device-width: 1100px) {
     padding: 0;
     position: relative;
+    margin-bottom: 20px;
   }
   h1 {
     display: inline-block;
@@ -51,29 +146,17 @@ const TitleWrap = styled.div`
     font-weight: 900;
     font-size: 3em;
     position: relative;
-    transform: skew(-6deg) rotate(-1deg);
     z-index: 50;
+    border-bottom: 4px solid #37e019;
+    
     @media (max-device-width: 1100px) {
       font-size: 1.4em;
-      transform: skew(-6deg) rotate(-1deg);
     }
     span {
       display: block;
       padding: 10px 20px;
-      background-color: ${(props) => props && props.color === 'Yellow' ? 'white ' : 'black'}; 
       position: relative;
       z-index: 2; 
-    }
-    &:after {  
-      content: ""; 
-      position: absolute;
-      right: 1px;
-      bottom: -3px;
-      width: 40%;
-      height: 29px;
-      background-color: ${(props) => props && props.color === 'Yellow' ? 'black ' : '#fff142'}; 
-      transform: rotate(-2deg);
-      z-index: 1;
     }
   }
 `;
@@ -106,18 +189,21 @@ const YellowSection = styled.section`
 `;
 
 const Header = styled.div `
-  height: ${() => window.innerHeight-87}px;
-  background: url(${(props) => props.headerBackground});
+  height: auto;
+  background-color: black;
   background-size: cover;
   width: 100%;
   display: flex;
   align-items: flex-end;
   background-position: center 20%;
+  text-align: center;
   p {
     font-size: 1.4em;
     margin: 0;
     text-transform: uppercase;
     color: #fff142;
+    font-family: "Rubik", sans serif;
+    text-align: center;
   }
 `;
 
@@ -136,5 +222,5 @@ class Title extends Component {
 
 export default Title;
 export { 
-  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header
+  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink
 };

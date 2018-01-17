@@ -4,45 +4,69 @@ import larryBack from './larry-rsm-video-background.mp4';
 import etBack from './etBack.jpg';
 import hWarshaw from './hwarshaw.png';
 import alLowe from './allowe.png';
-import lefdalLogo from './lefdal-logo.png';
+import theCompletionist from '../../images/thecompletionist.png';
+import ronGilbert from './rongilbert.png';
+import elkjopLogo from '../../images/elkjop_logo_blue.png';
+import guestsBack from './guests-back.png';
 import { NavLink } from 'react-router-dom';
-import Title, {YellowSection} from './../Title/Title';
+import Title, {YellowSection, PixelButtonNavLink} from './../Title/Title';
+import animatedClown from '../../images/vomit_ransome_a.gif';
 
 
-const HeaderWrapper = styled.div`
+const VomitClown = styled.div`
     position: absolute;
-    left: 0;
-    bottom: 0;
+    top: 0;
+    left: 50%;
+    margin-left: 140px;
+    width: 222px;
+    height:321px;
+    background: url(${animatedClown});
+    @media (max-device-width: 1100px) {
+        left: -126px;
+        transform: rotate(16deg);
+        margin-left: 0;
+    }
+`;
+const HeaderWrapper = styled.div`
+    position: relative;
     text-align: center;
-    background: linear-gradient(transparent, black);
+    background: black;
     h1 {
         color: white;
         font-family: "Rubik", sans-serif;
-        padding: 0 10px 0 10px;
-        font-size: 2em;
+        padding: 20px 20px 10px 20px;
+        font-size: 1.4em;
         margin: 0 0 0 0;
+        text-decoration: none;
     }
     p {
         color: white;
         font-family: "Rubik", sans-serif;
-        padding: 0 44px 0 40px;
-        font-size: 1.1em;
+        padding: 0 20px 20px 20px;
+        font-size: 1em;
         margin: 0;
+        text-decoration: none;
     }
     
 `;
 
 const SponsorRow = styled.div`
-    color: white;
+    color: #000052;
     text-transform: uppercase;
     font-size: 0.8em;
     font-family: "Rubik", sans-serif;
     padding: 40px 40px 10px 40px;
     letter-spacing: 1px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-        width: 40px;
-        margin-left: 4px;
+        width: 100px;
+        margin-left: 14px;
+    }
+    @media (max-device-width: 1100px) {
+        padding: 0 20px 20px 20px;
     }
 `;
 
@@ -55,19 +79,31 @@ class HeaderContainer extends Component {
             <HeaderWrapper>
                 <h1><span>{guestName}</span></h1>
                 <p>{guestDescription}</p>
-                <SponsorRow>I samarbeid med <img src={lefdalLogo} alt="Lefdal logo" /></SponsorRow>
             </HeaderWrapper>
         )
     }
 }
 
 const GuestsContainer = styled.div`
-    display: flex;
     justify-content: center;
     position: relative;
     height: 100%;
+    margin: 0 auto;
+    max-width: 1020px;
+    text-align: center;
     @media (max-device-width: 1100px) {
         flex-direction: column;
+    }
+`;
+
+const GuestsWrapper = styled.div`
+    padding: 40px 60px 40px 60px;
+    background-color: #c3c3c3;
+    background: url(${guestsBack});
+    background-size: cover;
+    position: relative;
+    @media (max-device-width: 1100px) {
+        padding: 20px;
     }
 `;
 
@@ -80,48 +116,34 @@ const SectionDescription = styled.p`
 `;
 
 const Guest = styled(NavLink)`
-    display: block;
-    width: 20%;
-    
-    background-color:black;
-    background-image: url(${(props) => props.background ? props.background: ''});
-    background-position: bottom center;
-    flex: 1;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
-    height: 500px;
     overflow: hidden;
     transition: all 0.1s ease-in;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
     transform: scale(1);
-    video {
-        min-height: 100%;
-        transform: translateX(-20%);
-        position:absolute;
-        left: 0;
-        top: 0;
-    }
     &:hover {
         transform: scale(1.05);
     }
     @media (max-device-width: 1100px) {
         width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
     }
 `;
 
 const GuestProfile = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 300px;
     background-image: url(${(props) => props.profileImage ? props.profileImage: ''});
-    background-position: bottom center;
-    background-size: auto 85%;
+    background-position: top center;
+    background-size: cover;
     background-repeat: no-repeat;
-    img {
-        max-height: 100%;
-    }
 `;
 
 const Unnanounced = styled.div`
@@ -177,17 +199,23 @@ export default class Guests extends Component {
 
             },
             {
-                type: "unannounced",
-                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+                type: "announced",
+                background: etBack,
+                profile: ronGilbert,
+                name: "Ron Gilbert",
+                description: "Skaperen av Maniac Mansion, Monkey Island, Thimbleweed Park og mye mer!",
+                alt: "Ron Gilbert kommer til RSM 18"
+
             },
             {
-                type: "unannounced",
-                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
+                type: "announced",
+                background: etBack,
+                profile: theCompletionist,
+                name: "The Completionist",
+                description: "Jirard Khalil er The Completionist, som fullfører et spill 100%. Hver uke på hans ekstremt populære youtube-kanal.",
+                alt: "The Completionist kommer til RSM 18"
             },
-            {
-                type: "unannounced",
-                message: "Følg oss her og på facebook. Flere gjester annonseres snart!"
-            },
+            
         ],
       },
       en: {
@@ -196,7 +224,6 @@ export default class Guests extends Component {
         guests: [
             {
                 type: "announced",
-                video: larryBack,
                 profile: alLowe,
                 name: "Al Lowe",
                 description: "The creator of Leisure Suit Larry!",
@@ -205,7 +232,6 @@ export default class Guests extends Component {
             },
             {
                 type: "announced",
-                video: etBack,
                 profile: hWarshaw,
                 name: "Howard Scott Warshaw",
                 description: "The creator of the infamous E.T on atari 2600",
@@ -213,40 +239,40 @@ export default class Guests extends Component {
 
             },
             {
-                type: "unannounced",
-                s: "hest",
-                message: "Follow us here and on facebook. More guests will be announced soon!"
+                type: "announced",
+                background: etBack,
+                profile: ronGilbert,
+                name: "Ron Gilbert",
+                description: "Creator of Maniac Mansion, Monkey Island, Thimbleweed Park an lots more!",
+                alt: "Ron Gilbert is coming to RSM 18"
+
             },
             {
-                type: "unannounced",
-                s: "hest",
-                message: "Follow us here and on facebook. More guests will be announced soon!"
+                type: "announced",
+                background: etBack,
+                profile: theCompletionist,
+                name: "The Completionist",
+                description: "Jirard Khalil is The Completionist. Every week he completes a game 100% on his youtube-channel",
+                alt: "The Completionist is coming to RSM 18"
+
             },
-            {
-                type: "unannounced",
-                s: "hest",
-                message: "Follow us here and on facebook. More guests will be announced soon!"
-            }
         ],
       }
     }
     let translation = translations[language];
     return (
-    <YellowSection>
+    <GuestsWrapper>
         <Title title={translation.title} color="Yellow" />
+        <SponsorRow>I samarbeid med <img src={elkjopLogo} alt="elkjøp logo" /></SponsorRow>
+        <VomitClown />
         <GuestsContainer>
             {translation.guests.map((g, k) => {
                 if(g.type === 'announced') {
                     return (
                         <Guest to="/guests" key={k} background={g.background}>
-                            {g.video && (
-                                <video autoPlay="true" loop="true">
-                                    <source src={g.video} type="video/mp4" />
-                                </video>
-                            )}
-                            <GuestProfile profileImage={g.profile}>
-                            </GuestProfile>
+                            <GuestProfile profileImage={g.profile}></GuestProfile>
                             <HeaderContainer guestName={g.name} guestDescription={g.description} />
+                            <PixelButtonNavLink style={{width: '100%', 'text-align': 'center', display: 'block'}} to="/guests">Les mer</PixelButtonNavLink>
                         </Guest>
                     )
                 } else {
@@ -259,7 +285,7 @@ export default class Guests extends Component {
                 }
             })}
         </GuestsContainer>
-    </YellowSection>
+    </GuestsWrapper>
     );
   }
 }

@@ -5,6 +5,9 @@ import logoEn from './pixel-logo.png';
 import background from './slider-rsm-background.jpg';
 import sliderVideo from './slider.mp4';
 import scanLines from './scanlines.png';
+import { PixelButton } from '../Title/Title';
+import neoTokyoLogo from '../../images/neo-tokyo-white.png';
+import elkjopLogo from '../../images/elkjop_logo_white.png';
 
 
 
@@ -16,7 +19,8 @@ const ConDescription = styled.h2`
     z-index: 3;
     font-family: "Rubik";
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    text-align: center;
 `;
 
 const SliderRsmContainer = styled.div `
@@ -27,6 +31,7 @@ const SliderRsmContainer = styled.div `
     flex-direction: column;
     height: 100%;
     background-color: black;
+    overflow: hidden;
     img {
         height: 300px;
         max-height: 50%;
@@ -52,7 +57,7 @@ const SliderRsmContainer = styled.div `
         content: "";
         position: absolute;
         left: 10px;
-        width: ${window.innerWidth-46}px;
+        width: ${window.innerWidth-30}px;
         height: ${window.innerHeight-110}px;
         top: 10px;
         border: 3px solid rgba(255,255,255,0.9);
@@ -63,23 +68,41 @@ const SliderRsmContainer = styled.div `
     }
 `;
 
-
-const TicketButton = styled.a`
-    border-radius: 4px;
-    background-color: #fff142;
-    padding: 16px 70px;
-    color: black;
-    letter-spacing: 1px;
-    z-index: 3;
-    font-size: 1em;
-    font-family: "Rubik", Sans Serif;
-    text-transform: uppercase;
-    background-color: black;
-    color: white;
-    border: 1px solid #fff142;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.6);
-    text-decoration: none;
+const TicketButton = styled(PixelButton)`
+  
 `;
+
+const SponsorRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 3;
+    a {
+        display: inline-block;
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    img {
+        max-height: 48px;
+        width: auto;
+        margin: 0 20px 0 20px;
+        opacity: 0.6;
+    }
+    @media (max-device-width: 1100px) {
+        img {
+            opacity: 1;
+            margin-top: 20px;
+        }
+    }
+
+`;
+
 
 const Video = styled.video`
     position: absolute;
@@ -87,7 +110,7 @@ const Video = styled.video`
     top: -10%;
     display: none;
     width: 120%;
-    height: 120%;
+    height: 130%;
     @media (min-device-width: 1100px) {
         display: block;
     }
@@ -114,12 +137,12 @@ export default class SliderRsm extends Component {
         const translations = {
             no: {
               logo: logo,
-              conDate: '12.-13. Mai 2018, Sandefjord',
+              conDate: '12.-13. Mai 2018, Runarhallen, Sandefjord',
               buyTicket: "Kjøp billetter"
             },
             en: {
               logo: logoEn,
-              conDate: 'May 12-13th, 2018. Sandefjord, Norway',
+              conDate: 'May 12-13th, 2018. Runarhallen, Sandefjord, Norway',
               buyTicket: "Get tickets   "
             }
           }
@@ -135,6 +158,10 @@ export default class SliderRsm extends Component {
                     {translation.buyTicket}
                 </TicketButton>
                 <ConDescription>{translation.conDate}</ConDescription>
+                <SponsorRow>
+                    <a href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} /></a>
+                    <a href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} /></a>
+                </SponsorRow>
             </SliderRsmContainer>
         )
     }

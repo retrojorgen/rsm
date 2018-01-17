@@ -1,8 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import WelcomeImage from './welcome-back.png';
-import Title, { BlackSection } from './../Title/Title';
-import { NavLink } from 'react-router-dom';
+import Title, { BlackSection, PixelButtonNavLink } from './../Title/Title';
+import welcomeLeft from './welcome-left.png';
+import welcomeRight from './welcome-right.png';
+import flyingBird from '../../images/flying-bird.png';
 
 
 const ContentSections = styled.div `
@@ -10,21 +12,80 @@ const ContentSections = styled.div `
     font-family: "Rubik", sans-serif;
     text-align: left;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background: url(${WelcomeImage});
     background-size: cover;
-    padding: 60px;
+    position: relative;
     @media (max-device-width: 1100px) {
       display: block;
       padding: 0;
       margin-top: 0;
-      padding: 10px;
+      padding: 0;
     }
 `;
+
+const upDown = keyframes`
+  0% {
+    transform: translateY(-10px)
+  }
+  50% {
+    transform: translateY(10px)
+  }
+`;
+
+const FlyingBird = styled.div`
+    width: 200px;
+    height: 152px;
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background: url(${flyingBird});
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-10px);
+    animation: 1s ${upDown} ease-in-out infinite;
+    z-index: 3;
+    @media (max-device-width: 1100px) {
+        right: auto;
+        left: 50%;
+        margin-left: -100px;
+    }
+`;
+
+const LeftSection = styled.div`
+    width: 100%;
+    display: block;
+    background: url(${welcomeLeft});
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+    height: 500px;
+    @media (max-device-width: 1100px) {
+        display: none;
+    }
+`;
+
+const RightSection = styled.div`
+    width: 100%;
+    display: block;
+    background: url(${welcomeRight});
+    background-position: bottom left;
+    background-size: 700px auto;
+    background-repeat: no-repeat;
+    height: 500px;
+    @media (max-device-width: 1100px) {
+        height: 260px;
+        background-size: auto 260px;
+        background-position: bottom right;
+    }
+`;
+
 const Content = styled.div `
     width: 100%;
     max-width: 600px;
-    padding: 20px;
+    padding: 80px 60px 80px 60px;
+    position: relative;
     h2 {
         font-weight: bold;
         font-size: 2em;
@@ -50,13 +111,15 @@ const Content = styled.div `
         width: 90%;
         margin: -20px auto 0 auto;
         display: block;
-        padding: 20px;
+        padding: 160px 20px 20px 20px;
         background-color: black;
         h2 {
             font-size: 2em;
         }
     }
 `;
+
+const ToAbout = styled
 
 export default class Welcome extends React.Component {
     render() {
@@ -67,7 +130,7 @@ export default class Welcome extends React.Component {
             subTitle: "Velkommen til årets største nordiske retrospillmesse!",
             content: `For fjerde år på rad arrangerer vi Retrospillmessen i Runarhallen i Sandefjord. Med rundt 100 spillbare retrokonsoller og maskiner, fantastiske gjester og et stort marked med retrospill og merch
             er Retrospillmessen et av årets største happenings for gamere i alle aldre!`,
-            readmore: 'Lurer du på hva som foregår på Retrospillmessen? Mere her..',
+            readmore: 'Lurer du på hva som foregår på Retrospillmessen? Les her..',
           },
           en: {
             title: "Retrospillmessen 2018",
@@ -78,15 +141,16 @@ export default class Welcome extends React.Component {
         }
         let translation = translations[language];              
         return (
-            <BlackSection>
-                <ContentSections>
-                    <Content>
-                        <h2>{translation.subTitle}</h2>
-                        <p>{translation.content}</p>
-                        <NavLink to="/about">{translation.readmore}</NavLink>
-                    </Content>
-                </ContentSections>
-          </BlackSection>
+            <ContentSections>
+                <FlyingBird />
+                <LeftSection />
+                <Content>
+                    <h2>{translation.subTitle}</h2>
+                    <p>{translation.content}</p>
+                    <PixelButtonNavLink to="/about">{translation.readmore}</PixelButtonNavLink>
+                </Content>
+                <RightSection />
+            </ContentSections>
         )
     }
 }

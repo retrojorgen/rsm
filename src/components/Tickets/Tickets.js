@@ -4,14 +4,28 @@ import Title, { BlackSection } from './../Title/Title';
 import TicketBackground from './tickets-background.jpg';
 import TicketBackgroundOrange from './tickets-background-orange.png';
 import ticketBackgroundPurple from './tickets-background-purple.png';
-
+import sectionBack from '../../images/dark-pixel-back.png';
+import { PixelButton } from '../Title/Title'
 
 const TicketsListContainer = styled.div`
     display: flex;
     justify-content: space-around;
+    max-width: 100%;
+    width: 1020px;
+    margin: 0 auto;
     @media (max-device-width: 1100px) {
         flex-direction: column;
     }
+`;
+
+
+const SectionContainer = styled.div`
+  background: url(${sectionBack});
+  background-size: cover;
+  padding: 80px;
+  @media (max-device-width: 1100px) {
+    padding: 20px;
+  }
 `;
 
 
@@ -19,7 +33,7 @@ const TicketGroup = styled.div`
     background-image: url(${(props) => props.ticketBackground});
     background-size: 50%;
     max-width: 30%;
-    border-radius: 4px;
+    border-radius: 0;
     padding: 20px;
     font-family: "Rubik", sans-serif;
     display: flex;
@@ -35,8 +49,12 @@ const TicketGroup = styled.div`
       text-align: center;
       font-size: 2em;
       margin-bottom: 20px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 2px rgba(0,0,0,0.6);
     }
     p {
+      font-size: 14px;
+      line-height: 19px;
     }
     @media (max-device-width: 1100px) {
         max-width: 100%;
@@ -48,11 +66,12 @@ const TicketOptions = styled.div`
     flex: 1;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: 14px;
     table {
       width: 100%;
       tr {
         td {
-          border-bottom: 1px solid black;
+          border-top: 1px solid black;
           padding: 10px 0 10px 0;
           &:nth-child(2)
             text-align: right;
@@ -61,21 +80,8 @@ const TicketOptions = styled.div`
     }
 `;
 
-const BuyButton = styled.a`
-  display: block;
+const BuyButton = styled(PixelButton)`
   text-align: center;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 1.4em;
-  transition: all 0.2s ease-out;
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-  }
 `;
 
 export default class Tickets extends Component {
@@ -85,7 +91,6 @@ export default class Tickets extends Component {
     const translations = {
       no: {
         title: "Billetter til RSM 2018",
-        subTitle: "Billettene er nå ute! Early bird på VIP-billetter gjelder frem til juleaften (24.12)",
         ticketsHeader: "Billettkategorier",
         unnanouncedHeader: "Følg med, flere gjester annonseres snart!",
         buyButton: "Kjøp billett",
@@ -93,15 +98,15 @@ export default class Tickets extends Component {
           {
             background: ticketBackgroundPurple,
             color: 'white',
-            header: "Early bird VIP Helgepass",
+            header: "VIP Helgepass",
             paragraphs: [
-              `Frem til jul har vi rabatt på VIP-billetter til barn og voksne! VIP-billetter gir deg tilgang til messa en time før vanlige besøkende både lørdag og søndag.
+              `VIP-billetter gir deg tilgang til messa en time før vanlige besøkende både lørdag og søndag.
               Det gir en gyllen mulighet til å møte VIP-gjester og gjøre gode handler før hallen fyller seg opp!`,
-              `Du slipper selvsagt også å vente i den vanlige åpningskøen.`
+              `Du slipper selvsagt også å vente i den vanlige åpningskøen. Barn opp til 2 år slipper inn gratis.`
             ],
             ticketOptions: [
-              {name: "Early bird VIP Voksen", price: 499},
-              {name: "Early bird VIP barn (12 og under)", price: 169},
+              {name: "VIP Voksen", price: 599},
+              {name: "VIP barn (12 og under)", price: 249},
             ]
           },
           /**
@@ -129,7 +134,7 @@ export default class Tickets extends Component {
             paragraphs: [
               `Helgepass gir deg tilgang til Retrospillmessen. Det er forskjellige program hver dag
               på Retrospillmessen, og begge dagene gir en helt forskjellig opplevelse.
-              Vi anbefaler å være med på hele showet!`, 
+              Vi anbefaler å være med på hele showet! OBS. Barn opp til 2 år slipper inn gratis.`, 
             ],
             ticketOptions: [
               {name: "Helgepass Voksen", price: 499},
@@ -146,7 +151,7 @@ export default class Tickets extends Component {
               dag du får mest ut av. Er du på utkikk etter en roligere dag er 
               søndagen den beste.`,
               `Obs! Husk å velge billett til riktig dag
-              på billettsiden vår.`, 
+              på billettsiden vår. Barn opp til 2 år slipper inn gratis.`, 
             ],
             ticketOptions: [
               {name: "Dagspass Voksen", price: 279},
@@ -165,15 +170,15 @@ export default class Tickets extends Component {
           {
             background: ticketBackgroundPurple,
             color: 'white',
-            header: "Early bird VIP weekend pass",
+            header: "VIP weekend pass",
             paragraphs: [
-              `We have early bird discounts on our VIP-tickets until December 24. The VIP-tickets are a golden opportunity to get in to the convention
+              `The VIP-tickets are a golden opportunity to get in to the convention
               an hour earlier than everyone else on saturday and sundayt. This means you have extra time to spend with the VIP-guests, and hunt for great deals at our vendor booths. `,
-              `Of course you will not have to wait in line with everyone else as well.`
+              `Of course you will not have to wait in line with everyone else as well. Kids/babies up to 2 years get in for free.`
             ],
             ticketOptions: [
-              {name: "Early bird VIP Voksen", price: 499},
-              {name: "Early bird VIP barn (12 og under)", price: 169},
+              {name: "VIP Voksen", price: 599},
+              {name: "VIP barn (12 og under)", price: 249},
             ]
           },
           /**
@@ -200,7 +205,7 @@ export default class Tickets extends Component {
             paragraphs: [
               `Weekend pass gives you access to the entire convention both Saturday and Sunday`,
               `Why weekend pass you ask? Well, there is a different schedule on Saturday and Sunday,
-              and if you are a true retro geek you will want to experience it all!` 
+              and if you are a true retro geek you will want to experience it all! Kids/babies up to 2 years get in for free.` 
             ],
             ticketOptions: [
               {name: "Weekend pass Adult", price: 499},
@@ -214,7 +219,7 @@ export default class Tickets extends Component {
             paragraphs: [
               `Day pass gives you access to the entire convention on Saturday or Sunday.`,
               `Planning a day out with your family? We recommend Sundays, since it is always
-              a bit calmer, with more time to play the machines.`, 
+              a bit calmer, with more time to play the machines. Kids/babies up to 2 years get in for free.`, 
             ],
             ticketOptions: [
               {name: "Day pass Adult", price: 279},
@@ -227,7 +232,7 @@ export default class Tickets extends Component {
     let translation = translations[language];
 
     return (
-    <BlackSection>
+    <SectionContainer>
         <Title title={translation.title} />
         <p>{translation.subTitle}</p>
         <h2>{translation.ticketsHeader}</h2>
@@ -243,7 +248,7 @@ export default class Tickets extends Component {
                   <table>
                     <tbody>
                       {t.ticketOptions.map((o, k) => (
-                        <tr><td>{o.name}</td><td>{o.price} NOK</td></tr>
+                        <tr key={k.toString()}><td>{o.name}</td><td>{o.price} NOK</td></tr>
                       ))}
                     </tbody>
                   </table>
@@ -253,7 +258,7 @@ export default class Tickets extends Component {
             )
           })}
       </TicketsListContainer>
-    </BlackSection>
+    </SectionContainer>
     );
   }
 }
