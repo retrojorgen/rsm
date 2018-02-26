@@ -11,7 +11,7 @@ import Section7Background from './retrospillmessen-mop.jpg';
 
 import HeaderBackground from './welcome-to-retrospillmessen.jpg';
 
-import Title, {BlackSection, TopTitle, HeaderTitleWrapper, Header} from '../Title/Title';
+import {TopTitle, HeaderTitleWrapper, Header} from '../Title/Title';
 
 
 const Section = styled.div`
@@ -26,19 +26,6 @@ const Section = styled.div`
       flex-direction: column;
       padding: 0;
     } 
-`;
-
-
-const VideosWrapper = styled.div`
-  display: block;
-  text-align: center;
-`;
-
-const Video = styled.div`
-  @media (max-device-width: 1100px) {
-      max-width: 100%;
-      margin-bottom: 20px;
-  } 
 `;
 
 const ContentSection = styled.div `

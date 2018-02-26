@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {PixelButtonButton} from './../Title/Title';
 
 
 const UnselectedButton = styled.button`
@@ -19,7 +20,7 @@ const UnselectedButton = styled.button`
   }
 `;
 
-const SelectedButton = styled.button`
+const SelectedButton = styled(PixelButtonButton)`
   background-color: #fff142;
   font-family: "Rubik", sans-serif;
   border: 0;

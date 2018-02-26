@@ -1,107 +1,119 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+const guestList = {
+  no: {
+    title: "VIP-gjester",
+    subTitle: `Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
+    guests: [
+        {
+            type: "announced",
+            profile: "prototype.png",
+            url: "playstation-prototype",
+            name: "Nintendo Playstation-prototype",
+            description: "Terry Diebold og sønnen viser frem den unike protypen!",
+            alt: "Nintendo Playstation prototypen kommer til RSM 2018!"
 
-import whitePixelBackground from '../../images/white-pixel-back.png';
-import blackPixelBackground from '../../images/dark-pixel-back.png';
-import Allowe from '../../images/allowe.png';
-import prototype from '../../images/prototype.png';
-import HowardWarshaw from '../../images/hwarshaw.png';
-import RonGilbert from '../../images/rongilbert.png';
-import TheCompletionist from '../../images/thecompletionist.png';
+        },
+        {
+            type: "announced",
+            profile: "allowe.png",
+            url: "al-lowe",
+            name: "Al Lowe",
+            description: "Skaperen av Leisure Suit Larry-serien",
+            alt: "Al Lowe kommer til RSM 2018"
 
-import { TopTitle, HeaderTitleWrapper, Header } from '../Title/Title';
+        },
+        {
+            type: "announced",
+          
+            profile: "hwarshaw.png",
+            url: "howard-scott-warshaw",
+            name: "Howard Scott Warshaw",
+            description: "Skaperen av \"verdens verste spill\" E.T, til Atari 2600",
+            alt: "Howard Scott Warshaw kommer til RSM 18"
 
+        },
+        {
+            type: "announced",
+            profile: "rongilbert.png",
+            url: "ron-gilbert",
+            name: "Ron Gilbert",
+            description: "Skaperen av Maniac Mansion, Monkey Island, Thimbleweed Park og mye mer!",
+            alt: "Ron Gilbert kommer til RSM 18"
 
-const Section = styled.div`
-    padding: 20px;
-    display: flex;
-    overflow: hidden;
-    justify-content: ${props => props.justified};
-    align-items: flex-start;
-    position: relative;
-    width: 800px;
-    max-width: 100%;
-    margin: 0 auto;
-    @media (max-device-width: 1100px) {
-      flex-direction: column;
-      padding: 0;
-    } 
-`;
-const SectionsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: url(${(props) => props.background});
-  background-size: cover;
+        },
+        {
+            type: "announced",
+            profile: "thecompletionist.png",
+            url: "the-completionist",
+            name: "The Completionist",
+            description: "Jirard Khalil er The Completionist, som fullfører et spill 100%. Hver uke på hans ekstremt populære youtube-kanal.",
+            alt: "The Completionist kommer til RSM 18"
+        },
+        
+    ],
+  },
+  en: {
+    title: "Guests",
+    subTitle: `More guests will be announced soon! Follow us here and on our <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
+    guests: [
+        {
+            type: "announced",
+            profile: "prototype.png",
+            url: "playstation-prototype",
+            name: "Nintendo Playstation-prototype",
+            description: "Terry & Dan Diebold are bringing the prototype!",
+            alt: "the Nintendo Playstation prototype is coming to RSM 2018!"
 
-`;
-const ContentSection = styled.div `
-  position: relative;
-  display: block;
-  padding: 20px 0 0 20px;
-  overflow: hidden;
-  border-radius: 8px;
-  @media (max-device-width: 1100px) {
-    width: 100%;
-    border-radius: 0;
-  } 
-`;
+        },
+        {
+            type: "announced",
+            profile: "allowe.png",
+            url: "al-lowe",
+            name: "Al Lowe",
+            description: "The creator of Leisure Suit Larry!",
+            alt: "Al Lowe is coming to RSM 2018"
 
-const ImageSection = styled.div `
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  img {
-    max-width: 300px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+        },
+        {
+            type: "announced",
+            profile: "hwarshaw.png",
+            url: "howard-scott-warshaw",
+            name: "Howard Scott Warshaw",
+            description: "The creator of the infamous E.T on atari 2600",
+            alt: "Howard Scott Warshaw is coming to RSM 18"
+
+        },
+        {
+            type: "announced",
+            profile: "rongilbert.png",
+            url: "ron-gilbert",
+            name: "Ron Gilbert",
+            description: "Creator of Maniac Mansion, Monkey Island, Thimbleweed Park an lots more!",
+            alt: "Ron Gilbert is coming to RSM 18"
+
+        },
+        {
+            type: "announced",
+            profile: "thecompletionist.png",
+            url: "the-completionist",
+            name: "The Completionist",
+            description: "Jirard Khalil is The Completionist. Every week he completes a game 100% on his youtube-channel",
+            alt: "The Completionist is coming to RSM 18"
+
+        },
+    ],
   }
-  @media (max-device-width: 1100px) {
-    padding-top: 0;
-    justify-content: center;
-    img {
-      max-width: 100%;
-    }
-  }
-`;
+}
 
-
-const ContentSectionHeader = styled.h2 `
-  font-family: "Rubik", sans-serif;
-  font-size: 2em;
-  color: ${(props) => props.color};
-  position: relative;
-  font-weight: bold;
-`;
-
-const ContentSectionParagraph = styled.p `
-  font-family: "Rubik", sans-serif;
-  font-size: 1em;
-  line-height: 1.6em;
-  color: ${(props) => props.color};
-  position: relative;
-  a {
-    color: ${(props) => props.color};
-  }
-`;
-
-export default class GuestsList extends Component {
-  
-  componentDidMount () {
-    window.scrollTo(0, 0);
-  }
-
-  render() {
-    window.scrollTo(0, 0);
-    const language = localStorage.language || 'no';
-    const translations = {
+const guests = {
       no: {
         title: "Gjester på RSM 18",
         subtitle: "De beste fra bransjen og youtube!",
         unnanouncedHeader: "Følg med, flere gjester annonseres snart!",
         sections: [
           {
-            personImage: prototype,
+            personImage: "prototype.png",
             header: "Nintendo Playstation Prototype (med Terry og Dan Diebold)",
-            
+            url: "playstation-prototype",
             paragraphs: [
               `Helt siden Dan Diebold fortalte Reddit at faren hans - Terry - hadde den sagnomsuste Nintendo Playstation-prototypen i en pappeske på loftet, 
               har telefonen deres ringt konstant.`,
@@ -138,9 +150,9 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: RonGilbert,
+            personImage: "rongilbert.png",
             header: "Ron Gilbert (Maniac Mansion, Monkey Island etc..)",
-            
+            url: "ron-gilbert",
             paragraphs: [
               `Ron Gilbert er en amerikansk designer, programmerer og produsent av videospill. Han er mest kjent for sitt arbeid hos LucasArts, hvor han blant annet var med på å lage Maniac Mansion og de to første Monkey Island-spillene.`,
               `I 1985 fikk han sjansen til å lage sitt eget spill for LucasArts om en mørk, viktoriansk herregård hvor en gal forsker bodde sammen med sine noe tilbakestående avkom og utenomjordiske skapninger. Ron Gilbert og Gary Winnick fikk idéen i løpet av flere samtaler og de mente at tiden var inne for å presentere det til ledelsen.`,
@@ -151,7 +163,8 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: Allowe,
+            personImage: "allowe.png",
+            url: "al-lowe",
             imageDescription: "Al Lowe kommer til Retrospillmessen 18",
             header: "Al Lowe (Leisure Suit Larry)",
             
@@ -166,7 +179,8 @@ export default class GuestsList extends Component {
 
             ]
           },{
-            personImage: HowardWarshaw,
+            personImage: "hwarshaw.png",
+            url: "howard-scott-warshaw",
             imageDescription: "Howard Scott Warshaw kommer til Retrospillmessen 2018",
             header: "Howard Scott Warshaw (E.T., Atari 2600)",
             
@@ -180,7 +194,8 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: TheCompletionist,
+            personImage: "thecompletionist.png",
+            url: "the-completionist",
             imageDescription: "The Completionist kommer til Retrospillmessen 2018",
             header: "The Completionist (Youtube, 839 999 subs)",
             
@@ -203,9 +218,9 @@ export default class GuestsList extends Component {
         unnanouncedHeader: "More guests will be announced shortly!",
         sections: [
           {
-            personImage: prototype,
+            personImage: "prototype.png",
             header: "Nintendo Playstation Prototype (w/ Terry & Dan Diebold)",
-            
+            url: "playstation-prototype",
             paragraphs: [
               `Ever since Dan Diebold told Reddit that his Father - Terry - had a copy of the legendary Nintendo Playstation in his attic, 
               their phones have been ringing non-stop.`,
@@ -241,7 +256,8 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: Allowe,
+            personImage: "allowe.png",
+            url: "al-lowe",
             imageDescription: "Al Lowe is visiting Retrospillmessen 2018",
             header: "Al Lowe (Leisure Suit Larry-series)",
             
@@ -255,7 +271,8 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: HowardWarshaw,
+            personImage: "hwarshaw.png",
+            url: "howard-scott-warshaw",
             imageDescription: "Howard Scott Warshaw is visiting Retrospillmessen 2018",
             header: "Howard Scott Warshaw (E.T. for Atari 2600)",
             
@@ -269,9 +286,9 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: RonGilbert,
+            personImage: "rongilbert.png",
             header: "Ron Gilbert (Maniac Mansion, Monkey Island etc..)",
-            
+            url: "ron-gilbert",
             paragraphs: [
               `Ron Gilbert is an American video-game designer, programmer, and producer. His games are generally focused on interactive story-telling, and he is arguably best known for his work on several classic LucasArts adventure games, including Maniac Mansion and the first two Monkey Island games.`,
               `While a student in 1983, he co-wrote Graphics Basic and he then worked on action games for HESware, which went out of business. He afterwards joined Lucasfilm Games (LucasArts), and was given the opportunity to develop his own games. He became particularly known for inventing SCUMM, a technology used in many subsequent games. After leaving LucasArts, Gilbert co-founded the children’s gaming company Humongous Entertainment in 1992 and its sister company Cavedog Entertainment in 1995, where he produced games such as Total Annihilation for adults.`,
@@ -280,10 +297,10 @@ export default class GuestsList extends Component {
             ]
           },
           {
-            personImage: TheCompletionist,
+            personImage: "thecompletionist.png",
             imageDescription: "The Completionist kommer til Retrospillmessen 2018",
             header: "The Completionist (Youtube, 839 999 subs)",
-            
+            url: "the-completionist",
             paragraphs: [
               `Don’t miss the chance to meet one of the coolest current Youtubers at Retrospillmessen 2018!`,
               `Jirard Khalil AKA The Completionist has been completing games 100% almost every week on youtube for years. Thats
@@ -299,44 +316,15 @@ export default class GuestsList extends Component {
         ]
       }
     }
-    var sectionToggle = true;
-    var translation = translations[language];
-    let sections = translation.sections.map((a,k) => {
-      let background = sectionToggle ? blackPixelBackground: whitePixelBackground;
-      let color = sectionToggle ? 'white': 'black';
-      sectionToggle = !sectionToggle;
-      return (
-        <SectionsContainer background={background} key={k}>
-          <Section>
-            <ImageSection>
-              <img src={a.personImage} alt={a.personImage} />
-            </ImageSection>
-            <ContentSection>
-              <ContentSectionHeader color={color}>{a.header}</ContentSectionHeader>
-              {a.paragraphs.map((c, ck) => (
-                <ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{__html: c}} color={color}>
-                </ContentSectionParagraph>
-              ))}
-            </ContentSection>
-          </Section>
-        </SectionsContainer>
-      );
-    });
 
-    return (
-      <div className="About">
-        <Header>
-          <HeaderTitleWrapper>
-            <TopTitle>
-              {translation.title}
-            </TopTitle>
-            <p>{translation.subtitle}</p>
-          </HeaderTitleWrapper>
-        </Header>
-        
-          {sections}
-        
-      </div>
-    );
-  }
-}
+
+    function getGuestInfoFromUrl(guestUrl, language) {
+      let filteredGuest = guests[language].sections.filter((elem) => {
+        return elem.url === guestUrl;
+      })
+      
+      return filteredGuest[0];
+    }
+
+    export default getGuestInfoFromUrl;
+    export { getGuestInfoFromUrl, guests, guestList };

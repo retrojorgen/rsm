@@ -9,6 +9,7 @@ import Rent from './../Rent/Rent';
 import Home from './../Home/Home';
 import Footer from './../Footer/Footer';
 import GuestsList from './../GuestsList/GuestsList';
+import GuestListing from './../GuestsList/GuestListing';
 
 const MainPageInner = styled.div`
   position: relative;
@@ -31,7 +32,8 @@ class App extends Component {
                   <Route path="/" component={Home} exact={true} />
                   <Route path="/about" component={About} />
                   <Route path="/rent" component={Rent} />
-                  <Route path="/guests" component={GuestsList} />
+                  <Route path="/guests" component={GuestsList} exact={true} />
+                  <Route path="/guests/:guestUrl" component={GuestListing} />
                 </Switch>
             </div>
           </MainPageInner>

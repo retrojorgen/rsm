@@ -89,10 +89,12 @@ export default class PracticalInfo extends React.Component {
             overnatting: 'Hotell',
             overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br><strong>
             Rabattkode</strong>: BRSM110518<br>Book online 
-            <a href=\"https://www.scandichotels.no/\">her</a>
+            <a href="https://www.scandichotels.no/">her</a>
             `,
             prices: ["Enkeltrom 864 kr", "Dobbeltrom 1015 kr", "Trippelrom 1217 kr", "Firemannsrom 1419 kr", "* Døgnpriser, inkludert frokost"],
+            bookHotel: "Book her",
             billetter: 'Billetter',
+            buyTickets: "Kjøp billetter",
             billetterDescription: `Vi tilbyr både <strong>dagspass</strong>, <strong>helgepass</strong>, og reduserte priser til barn opp til 12 år. 
             
             `,
@@ -116,10 +118,12 @@ export default class PracticalInfo extends React.Component {
             overnatting: 'Hotel',
             overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br><strong>
             Rabattkode</strong>: BRSM110518<br>Book online 
-            <a href=\"https://www.scandichotels.no/\">her</a>
+            <a href="https://www.scandichotels.no/">her</a>
             `,
             prices: ["Single 864 kr", "Double 1015 kr", "Triple 1217 kr", "Four 1419 kr", "* Day rates, breakfast included"],
             billetter: 'Tickets',
+            bookHotel: "Book here",
+            buyTickets: "Buy tickets",
             billetterDescription: `We offer  <strong>day passes</strong>, <strong>weekend passes</strong>, and discounts for children up to 12 years. 
             
             `,
@@ -153,7 +157,7 @@ export default class PracticalInfo extends React.Component {
                         <li key={k.toString()}>{price}</li>
                       ))}
                     </ul>
-                    <PixelButton className="pixel-button" href="https://www.scandichotels.no/">Book her</PixelButton>
+                    <PixelButton className="pixel-button" href="https://www.scandichotels.no/">{translation.bookHotel}</PixelButton>
                   </InfoSection>
                   <InfoSection>
                     <SectionHolder background={paperboy} />
@@ -164,7 +168,7 @@ export default class PracticalInfo extends React.Component {
                         <li key={k.toString()}>{price}</li>
                       ))}
                     </ul>
-                    <PixelButton className="pixel-button" href="https://retrospillmessen.hoopla.no/sales/2422891309">Kjøp billetter</PixelButton>
+                    <PixelButton className="pixel-button" href="https://retrospillmessen.hoopla.no/sales/2422891309">{translation.buyTickets}</PixelButton>
                   </InfoSection>
                   <InfoSection>
                     <SectionHolder background={outrun} />

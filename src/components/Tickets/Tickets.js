@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Title, { BlackSection } from './../Title/Title';
+import Title from './../Title/Title';
 import TicketBackground from './tickets-background.jpg';
 import TicketBackgroundOrange from './tickets-background-orange.png';
 import ticketBackgroundPurple from './tickets-background-purple.png';

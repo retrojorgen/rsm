@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import WelcomeImage from './welcome-back.png';
-import Title, { BlackSection, PixelButtonNavLink } from './../Title/Title';
+import { PixelButtonNavLink } from './../Title/Title';
 import welcomeLeft from './welcome-left.png';
 import welcomeRight from './welcome-right.png';
 import flyingBird from '../../images/flying-bird.png';
@@ -118,8 +118,6 @@ const Content = styled.div `
         }
     }
 `;
-
-const ToAbout = styled
 
 export default class Welcome extends React.Component {
     render() {

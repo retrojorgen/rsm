@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import YellowTileBackground from './guests-background.jpg';
 import { NavLink } from 'react-router-dom';
 
-const PixelButton = styled.a`
+
+const PixelButtonStyle = `
     font-family: "Rubik",sans-serif;
     position: relative;
     text-transform: uppercase;
@@ -53,6 +54,10 @@ const PixelButton = styled.a`
 
     }
 `;
+
+const PixelButtonRegular = styled.div`${PixelButtonStyle}`;
+const PixelButtonButton = styled.button`${PixelButtonStyle}`;
+const PixelButton = styled.a`${PixelButtonStyle}`;
 
 const PixelButtonNavLink = styled(NavLink)`
     font-family: "Rubik",sans-serif;
@@ -111,10 +116,13 @@ const TopTitle = styled.h1`
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+  padding: 10px;
   font-size: 3em;
   position: relative;
   z-index: 50;
   color: white;
+  max-width: 800px;
+  margin: 0 auto;
   @media (max-device-width: 1100px) {
     font-size: 2em;
     margin-bottom: 10px
@@ -222,5 +230,5 @@ class Title extends Component {
 
 export default Title;
 export { 
-  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink
+  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton
 };

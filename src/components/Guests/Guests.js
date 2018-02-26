@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import larryBack from './larry-rsm-video-background.mp4';
-import etBack from './etBack.jpg';
-import hWarshaw from './hwarshaw.png';
-import alLowe from './allowe.png';
-import theCompletionist from '../../images/thecompletionist.png';
-import ronGilbert from './rongilbert.png';
 import elkjopLogo from '../../images/elkjop_logo_blue.png';
 import guestsBack from './guests-back.png';
 import { NavLink } from 'react-router-dom';
-import Title, {YellowSection, PixelButtonNavLink} from './../Title/Title';
+import Title, {PixelButtonRegular} from './../Title/Title';
 import animatedClown from '../../images/vomit_ransome_a.gif';
+import { guestList } from '../../data/guests';
 
 
 const VomitClown = styled.div`
@@ -107,14 +102,6 @@ const GuestsWrapper = styled.div`
     }
 `;
 
-const SectionDescription = styled.p`
-    color: black;
-    font-family: "Rubik", sans-serif;
-    text-align: center;
-    padding: 0 20px 20px 20px;
-    position: relative;
-`;
-
 const Guest = styled(NavLink)`
     display: inline-block;
     width: 300px;
@@ -175,91 +162,8 @@ const Unnanounced = styled.div`
 export default class Guests extends Component {
   render() {
     const language = localStorage.language || 'no';
-    const translations = {
-      no: {
-        title: "VIP-gjester",
-        subTitle: `Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
-        guests: [
-            {
-                type: "announced",
-                video: larryBack,
-                profile: alLowe,
-                name: "Al Lowe",
-                description: "Skaperen av Leisure Suit Larry-serien",
-                alt: "Al Lowe kommer til RSM 2018"
-
-            },
-            {
-                type: "announced",
-                background: etBack,
-                profile: hWarshaw,
-                name: "Howard Scott Warshaw",
-                description: "Skaperen av \"verdens verste spill\" E.T, til Atari 2600",
-                alt: "Howard Scott Warshaw kommer til RSM 18"
-
-            },
-            {
-                type: "announced",
-                background: etBack,
-                profile: ronGilbert,
-                name: "Ron Gilbert",
-                description: "Skaperen av Maniac Mansion, Monkey Island, Thimbleweed Park og mye mer!",
-                alt: "Ron Gilbert kommer til RSM 18"
-
-            },
-            {
-                type: "announced",
-                background: etBack,
-                profile: theCompletionist,
-                name: "The Completionist",
-                description: "Jirard Khalil er The Completionist, som fullfører et spill 100%. Hver uke på hans ekstremt populære youtube-kanal.",
-                alt: "The Completionist kommer til RSM 18"
-            },
-            
-        ],
-      },
-      en: {
-        title: "Guests",
-        subTitle: `More guests will be announced soon! Follow us here and on our <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
-        guests: [
-            {
-                type: "announced",
-                profile: alLowe,
-                name: "Al Lowe",
-                description: "The creator of Leisure Suit Larry!",
-                alt: "Al Lowe is coming to RSM 2018"
-
-            },
-            {
-                type: "announced",
-                profile: hWarshaw,
-                name: "Howard Scott Warshaw",
-                description: "The creator of the infamous E.T on atari 2600",
-                alt: "Howard Scott Warshaw is coming to RSM 18"
-
-            },
-            {
-                type: "announced",
-                background: etBack,
-                profile: ronGilbert,
-                name: "Ron Gilbert",
-                description: "Creator of Maniac Mansion, Monkey Island, Thimbleweed Park an lots more!",
-                alt: "Ron Gilbert is coming to RSM 18"
-
-            },
-            {
-                type: "announced",
-                background: etBack,
-                profile: theCompletionist,
-                name: "The Completionist",
-                description: "Jirard Khalil is The Completionist. Every week he completes a game 100% on his youtube-channel",
-                alt: "The Completionist is coming to RSM 18"
-
-            },
-        ],
-      }
-    }
-    let translation = translations[language];
+    
+    let translation = guestList[language];
     return (
     <GuestsWrapper>
         <Title title={translation.title} color="Yellow" />
@@ -269,10 +173,10 @@ export default class Guests extends Component {
             {translation.guests.map((g, k) => {
                 if(g.type === 'announced') {
                     return (
-                        <Guest to="/guests" key={k} background={g.background}>
-                            <GuestProfile profileImage={g.profile}></GuestProfile>
+                        <Guest to={'/guests/' + g.url} key={k}>
+                            <GuestProfile profileImage={require('../../images/' + g.profile)}></GuestProfile>
                             <HeaderContainer guestName={g.name} guestDescription={g.description} />
-                            <PixelButtonNavLink style={{width: '100%', 'text-align': 'center', display: 'block'}} to="/guests">Les mer</PixelButtonNavLink>
+                            <PixelButtonRegular style={{width: '100%', 'textAlign': 'center', display: 'block'}}>Les mer</PixelButtonRegular>
                         </Guest>
                     )
                 } else {

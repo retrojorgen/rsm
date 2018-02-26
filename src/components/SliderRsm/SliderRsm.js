@@ -159,8 +159,8 @@ export default class SliderRsm extends Component {
                 </TicketButton>
                 <ConDescription>{translation.conDate}</ConDescription>
                 <SponsorRow>
-                    <a href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} /></a>
-                    <a href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} /></a>
+                    <a href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} alt={elkjopLogo}/></a>
+                    <a href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} alt={neoTokyoLogo}/></a>
                 </SponsorRow>
             </SliderRsmContainer>
         )

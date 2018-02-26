@@ -65,20 +65,20 @@ export default class Footer extends React.Component {
           no: {
             visit: "For oppdatering, besøk oss på facebook!",
             remember: `Husk, du når oss alltid på 
-            <a href=\"mailto:mail@retrospillmessen.no\">mail@retrospillmessen.no</a>, 
-            <a href=\"mailto:stand@retrospillmessen.no\">stand@retrospillmessen.no</a>,
-             eller telefon <a href=\"tel:+4797750047\">+47 977 50 047</a>
-            <br/><br/>Ønsker du å søke pressepass til Retrospillmessen? Kontakt oss på <a href=\"mailto:presse@retrospillmessen.no\">presse@retrospillmessen.no</a>.
+            <a href="mailto:mail@retrospillmessen.no">mail@retrospillmessen.no</a>, 
+            <a href="mailto:stand@retrospillmessen.no">stand@retrospillmessen.no</a>,
+             eller telefon <a href="tel:+4797750047">+47 977 50 047</a>
+            <br/><br/>Ønsker du å søke pressepass til Retrospillmessen? Kontakt oss på <a href="mailto:presse@retrospillmessen.no">presse@retrospillmessen.no</a>.
             Vi ber om at du/dere søker pressepass innen utgangen av april.`
           ,
           },
           en: {
             visit: "For updates, visit us on facebook",
             remember: `You can always reach us at 
-            <a href=\"mailto:mail@retrospillmessen.no\">mail@retrospillmessen.no</a>, 
-            <a href=\"mailto:stand@retrospillmessen.no\">stand@retrospillmessen.no</a>,
-             or by phone <a href=\"tel:+4797750047\">+47 977 50 047</a>
-             <br/><br/>Want to apply for press pass to Retrospillmessen? Contact us at <a href=\"mailto:presse@retrospillmessen.no\">presse@retrospillmessen.no</a>.
+            <a href="mailto:mail@retrospillmessen.no">mail@retrospillmessen.no</a>, 
+            <a href="mailto:stand@retrospillmessen.no">stand@retrospillmessen.no</a>,
+             or by phone <a href="tel:+4797750047">+47 977 50 047</a>
+             <br/><br/>Want to apply for press pass to Retrospillmessen? Contact us at <a href="mailto:presse@retrospillmessen.no">presse@retrospillmessen.no</a>.
             We as that you apply for a pass at latest within the month of April.`
             ,
           }
