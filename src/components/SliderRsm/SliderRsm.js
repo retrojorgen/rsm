@@ -8,7 +8,9 @@ import scanLines from './scanlines.png';
 import { PixelButton } from '../Title/Title';
 import neoTokyoLogo from '../../images/neo-tokyo-white.png';
 import elkjopLogo from '../../images/elkjop_logo_white.png';
-
+import nerdeportalenLogo from '../../images/nerdeportalen-logo.png';
+import legoLogo from '../../images/lego-logo.png';
+import capcomLogo from '../../images/capcom-logo.png';
 
 
 const ConDescription = styled.h2`
@@ -19,8 +21,13 @@ const ConDescription = styled.h2`
     z-index: 3;
     font-family: "Rubik";
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 3em;
     text-align: center;
+    @media (min-device-width: 1100px) {
+        font-size: 2em;
+        text-align: left;
+        margin-bottom: 1em;
+    }
 `;
 
 const SliderRsmContainer = styled.div `
@@ -53,19 +60,6 @@ const SliderRsmContainer = styled.div `
         height: 100%;
         background: url(${scanLines});
     }
-    &:before {
-        content: "";
-        position: absolute;
-        left: 10px;
-        width: ${window.innerWidth-30}px;
-        height: ${window.innerHeight-110}px;
-        top: 10px;
-        border: 3px solid rgba(255,255,255,0.9);
-        z-index: 2;
-        @media (max-device-width: 1100px) {
-            width: ${window.innerWidth-26}px;
-        }
-    }
 `;
 
 const TicketButton = styled(PixelButton)`
@@ -80,6 +74,7 @@ const SponsorRow = styled.div`
     padding-bottom: 40px;
     position: relative;
     z-index: 3;
+    
     a {
         display: inline-block;
         &:hover {
@@ -89,10 +84,13 @@ const SponsorRow = styled.div`
         }
     }
     img {
-        max-height: 48px;
+        max-height: 20px;
         width: auto;
         margin: 0 20px 0 20px;
         opacity: 0.6;
+        @media (min-device-width: 1100px) {
+            max-height: 48px;
+        }
     }
     @media (max-device-width: 1100px) {
         img {
@@ -101,6 +99,13 @@ const SponsorRow = styled.div`
         }
     }
 
+`;
+
+const SmallSponsorRow = styled(SponsorRow)`
+    margin-top: -20px;
+    img {
+        max-height: 37px;
+    }
 `;
 
 
@@ -131,8 +136,63 @@ const Backdrop = styled.div `
     }
 `;
 
+const ConInfo = styled.div `
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    @media (min-device-width: 1100px) {
+        padding-left: 20px;
+        text-align: left;
+        margin: 0;
+    }
+`;
+
+const Sponsors = styled.div `
+
+`;
+
+const SliderContainer = styled.div`
+    max-width: 1000px;
+    width: 100%;
+`;
+
+const SliderInfo = styled.div`
+    text-align: center;
+    img {
+        position: relative;
+    }
+    @media (min-device-width: 1100px) {
+        display: flex;
+        flex-direction: column ;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
 export default class SliderRsm extends Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            innerWidth: window.innerWidth,
+            innerHeight: window.innerHeight
+        };
+        this.listenToResize();
+    }
+
+    listenToResize () {
+        window.addEventListener('resize', () => {
+            this.setState(
+                {
+                    innerWidth: window.innerWidth,
+                    innerHeight: window.innerHeight
+                }
+            )
+        });
+    }
+
     render() {
+        const { innerWidth, innerHeight } = this.state;
         const language = localStorage.language || 'no';
         const translations = {
             no: {
@@ -148,20 +208,36 @@ export default class SliderRsm extends Component {
           }
           let translation = translations[language];  
         return (
-            <SliderRsmContainer>
+            <SliderRsmContainer innerWidth={innerWidth} innerHeight={innerHeight}>
+                
                 <Backdrop />
                 <Video autoPlay="true" loop="true">
                     <source src={sliderVideo} type="video/mp4" />
                 </Video>
-                <img src={translation.logo} alt="Slider" />
-                <TicketButton href="https://retrospillmessen.hoopla.no/sales/2422891309">
-                    {translation.buyTicket}
-                </TicketButton>
-                <ConDescription>{translation.conDate}</ConDescription>
-                <SponsorRow>
-                    <a href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} alt={elkjopLogo}/></a>
-                    <a href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} alt={neoTokyoLogo}/></a>
-                </SponsorRow>
+                <SliderContainer>
+                    <SliderInfo>
+                        <img src={translation.logo} alt="Slider" />
+                        <ConInfo>
+                            <ConDescription>{translation.conDate}</ConDescription>
+                            <TicketButton href="https://retrospillmessen.hoopla.no/sales/2422891309">
+                                {translation.buyTicket}
+                            </TicketButton>
+                            
+                        </ConInfo>
+                    </SliderInfo>
+                    <Sponsors>
+                        <SponsorRow>
+                            <a href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} alt={elkjopLogo}/></a>
+                            <a href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} alt={neoTokyoLogo}/></a>
+                            <a href="http://www.nerdeportalen.no" target="new_window"><img src={nerdeportalenLogo} alt={nerdeportalenLogo}/></a>
+                            <a href="http://www.lego.no" target="new_window"><img src={legoLogo} alt={legoLogo}/></a>
+                            <a href="http://www.lego.no" target="new_window"><img src={capcomLogo} alt={capcomLogo}/></a>
+                        </SponsorRow>
+                        <SmallSponsorRow>
+                            
+                        </SmallSponsorRow>
+                    </Sponsors>
+                </SliderContainer>
             </SliderRsmContainer>
         )
     }

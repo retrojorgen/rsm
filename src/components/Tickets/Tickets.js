@@ -7,6 +7,15 @@ import ticketBackgroundPurple from './tickets-background-purple.png';
 import sectionBack from '../../images/dark-pixel-back.png';
 import { PixelButton } from '../Title/Title'
 
+
+const TicketsListWrapper = styled.div`
+  @media (max-device-width: 1100px) {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+`;
+
 const TicketsListContainer = styled.div`
     display: flex;
     justify-content: space-around;
@@ -14,7 +23,9 @@ const TicketsListContainer = styled.div`
     width: 1020px;
     margin: 0 auto;
     @media (max-device-width: 1100px) {
-        flex-direction: column;
+        flex-direction: row;
+        max-width: none;
+        width: ${props => (window.innerWidth-40) * props.tickets}px;
     }
 `;
 
@@ -24,7 +35,7 @@ const SectionContainer = styled.div`
   background-size: cover;
   padding: 80px;
   @media (max-device-width: 1100px) {
-    padding: 20px;
+    padding: 0;
   }
 `;
 
@@ -57,7 +68,10 @@ const TicketGroup = styled.div`
       line-height: 19px;
     }
     @media (max-device-width: 1100px) {
+        width: ${window.innerWidth-40}px;
         max-width: 100%;
+        margin: 10px;
+
     }
 `;
 
@@ -236,28 +250,30 @@ export default class Tickets extends Component {
         <Title title={translation.title} />
         <p>{translation.subTitle}</p>
         <h2>{translation.ticketsHeader}</h2>
-        <TicketsListContainer>
-          {translation.ticketGroups.map((t,k) => {
-            return (
-              <TicketGroup key={k} color={t.color} ticketBackground={t.background}>
-                <h3>{t.header}</h3>
-                {t.paragraphs.map((p,k) => (
-                  <p key={k}>{p}</p>
-                ))}
-                <TicketOptions>
-                  <table>
-                    <tbody>
-                      {t.ticketOptions.map((o, k) => (
-                        <tr key={k.toString()}><td>{o.name}</td><td>{o.price} NOK</td></tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </TicketOptions>
-                <BuyButton href="https://retrospillmessen.hoopla.no/sales/2422891309" target="new_window">{translation.buyButton}</BuyButton>  
-              </TicketGroup>
-            )
-          })}
-      </TicketsListContainer>
+        <TicketsListWrapper>
+          <TicketsListContainer tickets={translation.ticketGroups.length}>
+            {translation.ticketGroups.map((t,k) => {
+              return (
+                <TicketGroup key={k} color={t.color} ticketBackground={t.background}>
+                  <h3>{t.header}</h3>
+                  {t.paragraphs.map((p,k) => (
+                    <p key={k}>{p}</p>
+                  ))}
+                  <TicketOptions>
+                    <table>
+                      <tbody>
+                        {t.ticketOptions.map((o, k) => (
+                          <tr key={k.toString()}><td>{o.name}</td><td>{o.price} NOK</td></tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </TicketOptions>
+                  <BuyButton href="https://retrospillmessen.hoopla.no/sales/2422891309" target="new_window">{translation.buyButton}</BuyButton>  
+                </TicketGroup>
+              )
+            })}
+        </TicketsListContainer>
+      </TicketsListWrapper>
     </SectionContainer>
     );
   }

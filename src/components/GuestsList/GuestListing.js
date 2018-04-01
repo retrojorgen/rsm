@@ -23,6 +23,9 @@ const Section = styled.div`
       padding: 0;
     } 
 `;
+
+
+
 const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;

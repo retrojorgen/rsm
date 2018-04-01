@@ -111,6 +111,8 @@ const PixelButtonNavLink = styled(NavLink)`
 `;
 
 
+
+
 const TopTitle = styled.h1`
   margin: 0;
   font-family: "Rubik", sans-serif;
@@ -144,6 +146,7 @@ const TitleWrap = styled.div`
     padding: 0;
     position: relative;
     margin-bottom: 20px;
+    padding-top: 20px;
   }
   h1 {
     display: inline-block;
@@ -167,6 +170,34 @@ const TitleWrap = styled.div`
       z-index: 2; 
     }
   }
+`;
+
+
+const Section = styled.div`
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    justify-content: ${props => props.justified};
+    align-items: flex-start;
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    @media (max-device-width: 1100px) {
+      flex-direction: column;
+      padding: 0;
+    } 
+`;
+const SectionsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: url(${(props) => props.background});
+  background-size: cover;
+
+`;
+
+const WideSection = styled(Section)`
+    width: 1100px;
 `;
 
 
@@ -230,5 +261,5 @@ class Title extends Component {
 
 export default Title;
 export { 
-  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton
+  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton, Section, SectionsContainer, WideSection
 };

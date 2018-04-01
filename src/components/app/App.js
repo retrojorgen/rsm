@@ -8,6 +8,7 @@ import About from './../About/About';
 import Rent from './../Rent/Rent';
 import Home from './../Home/Home';
 import Footer from './../Footer/Footer';
+import Events from './../Events/Events';
 import GuestsList from './../GuestsList/GuestsList';
 import GuestListing from './../GuestsList/GuestListing';
 
@@ -16,6 +17,9 @@ const MainPageInner = styled.div`
   z-index: 10;
   background-color: black;
   box-shadow: 0 0 40px rgba(0,0,0,0.6);
+  * {
+    font-family: "Rubik",sans-serif;
+  }
 `;
 
 class App extends Component {
@@ -30,7 +34,8 @@ class App extends Component {
             <div className="router-view">
                 <Switch>
                   <Route path="/" component={Home} exact={true} />
-                  <Route path="/about" component={About} />
+                  <Route path="/about" component={About} exact={true} />
+                  <Route path="/about/program" component={Events} />
                   <Route path="/rent" component={Rent} />
                   <Route path="/guests" component={GuestsList} exact={true} />
                   <Route path="/guests/:guestUrl" component={GuestListing} />

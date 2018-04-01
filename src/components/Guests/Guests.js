@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import elkjopLogo from '../../images/elkjop_logo_blue.png';
 import guestsBack from './guests-back.png';
 import { NavLink } from 'react-router-dom';
-import Title, {PixelButtonRegular} from './../Title/Title';
+import Title, {PixelButtonNavLink} from './../Title/Title';
 import animatedClown from '../../images/vomit_ransome_a.gif';
 import { guestList } from '../../data/guests';
+
+import Slider from 'react-slick';
 
 
 const VomitClown = styled.div`
@@ -65,6 +67,17 @@ const SponsorRow = styled.div`
     }
 `;
 
+const GuestWrapper = styled.div`
+    width: 300px;
+    display: inline-block;
+    padding: 10px;
+    @media (max-device-width: 1100px) {
+        width: ${window.innerWidth-40}px;
+        
+        
+    }
+`;
+
 
 class HeaderContainer extends Component {
     render() {
@@ -79,15 +92,27 @@ class HeaderContainer extends Component {
     }
 }
 
+const GuestsContainerWrapper = styled.div`
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+`;
+
 const GuestsContainer = styled.div`
-    justify-content: center;
     position: relative;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1020px;
+    height: 100%;    
     text-align: center;
+    width: 100%;
     @media (max-device-width: 1100px) {
-        flex-direction: column;
+        width: ${props => (window.innerWidth-40) * props.guests}px;
+        text-align: left;
+        display: flex;
+    }
+    .slick-next, .slick-prev {
+        &:before {
+            color: #222;
+            font-size: 40px;
+        }
     }
 `;
 
@@ -98,26 +123,22 @@ const GuestsWrapper = styled.div`
     background-size: cover;
     position: relative;
     @media (max-device-width: 1100px) {
-        padding: 20px;
+        padding: 0;
     }
 `;
 
-const Guest = styled(NavLink)`
+const Guest = styled.div`
     display: inline-block;
-    width: 300px;
+    width: 100%;
     margin: 20px;
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
     overflow: hidden;
     transition: all 0.1s ease-in;
-    cursor: pointer;
     position: relative;
     text-decoration: none;
-    transform: scale(1);
     &:hover {
-        transform: scale(1.05);
     }
     @media (max-device-width: 1100px) {
-        width: 100%;
         margin: 0;
         margin-bottom: 20px;
     }
@@ -161,6 +182,7 @@ const Unnanounced = styled.div`
 
 export default class Guests extends Component {
   render() {
+
     const language = localStorage.language || 'no';
     
     let translation = guestList[language];
@@ -169,26 +191,33 @@ export default class Guests extends Component {
         <Title title={translation.title} color="Yellow" />
         <SponsorRow>I samarbeid med <img src={elkjopLogo} alt="elkjøp logo" /></SponsorRow>
         <VomitClown />
-        <GuestsContainer>
-            {translation.guests.map((g, k) => {
-                if(g.type === 'announced') {
-                    return (
-                        <Guest to={'/guests/' + g.url} key={k}>
-                            <GuestProfile profileImage={require('../../images/' + g.profile)}></GuestProfile>
-                            <HeaderContainer guestName={g.name} guestDescription={g.description} />
-                            <PixelButtonRegular style={{width: '100%', 'textAlign': 'center', display: 'block'}}>Les mer</PixelButtonRegular>
-                        </Guest>
-                    )
-                } else {
-                    return (
-                        <Unnanounced key={k}>
-                            <h1>?</h1>
-                            <p>{g.message}</p>
-                        </Unnanounced>
-                    )
-                }
-            })}
-        </GuestsContainer>
+        <GuestsContainerWrapper>
+            <GuestsContainer guests={translation.guests.length}>
+                    {translation.guests.map((g, k) => {
+                        if(g.type === 'announced') {
+                            return (
+                                <GuestWrapper key={k}>
+                                    <Guest>
+                                        
+                                            <GuestProfile profileImage={require('../../images/' + g.profile)}></GuestProfile>
+                                            <HeaderContainer guestName={g.name} guestDescription={g.description} />
+                                            <PixelButtonNavLink to={'/guests/' + g.url} style={{width: '100%', 'textAlign': 'center', display: 'block'}}>Les mer</PixelButtonNavLink>
+                                    </Guest>
+                                </GuestWrapper>
+                            )
+                        } else {
+                            return (
+                                <div>
+                                    <Unnanounced key={k}>
+                                        <h1>?</h1>
+                                        <p>{g.message}</p>
+                                    </Unnanounced>
+                                </div>
+                            )
+                        }
+                    })}
+            </GuestsContainer>
+        </GuestsContainerWrapper>
     </GuestsWrapper>
     );
   }

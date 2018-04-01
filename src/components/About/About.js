@@ -15,13 +15,13 @@ import {TopTitle, HeaderTitleWrapper, Header} from '../Title/Title';
 
 
 const Section = styled.div`
-    padding: 40px 40px 40px 40px;
+    padding: 0;
     display: flex;
     justify-content: ${props => props.justified};
-    align-items: center;
+    align-items: stretch;
     position: relative;
-    min-height: ${window.innerHeight}px;
-    background-color: #21216f;
+    min-height: 600px;
+    background-color: black;
     @media (max-device-width: 1100px) {
       flex-direction: column;
       padding: 0;
@@ -32,14 +32,18 @@ const ContentSection = styled.div `
   position: relative;
   display: block;
   width: 40%;
-  border-radius: 8px;
-  padding: 40px 40px 70px 40px;
+  min-height: 100%;
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(${(props) => props.alignment === "left" ? "-90deg": "90deg"}, black 80%, transparent);
 
   @media (max-device-width: 1100px) {
     width: 100%;
     border-radius: 0;
     padding: 20px;
+    background: black;
   } 
+
 `;
 
 const ImageSection = styled.div `
@@ -58,8 +62,8 @@ const ImageSection = styled.div `
     position: absolute;
     left: ${(props) => props.alignment === 'right' ? 'auto': '0'};
     right: ${(props) => props.alignment === 'right' ? '0': 'auto'};
-    top: -5%;
-    width: 50%;
+    top: 0;
+    width: 100%;
     height: 110%;
     background: url(${props => props.backgroundImage});
     background-size: cover;  
@@ -105,13 +109,14 @@ const ImageDescription = styled.span `
     top: auto;
     margin-top: 10px;
     padding: 10px;
+    text-align: center;
   } 
 `;
 
 
 const ContentSectionHeader = styled.h2 `
   font-family: "Rubik", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   color: #fff142;
   position: relative;
   font-weight: bold;
@@ -119,7 +124,7 @@ const ContentSectionHeader = styled.h2 `
 
 const ContentSectionParagraph = styled.p `
   font-family: "Rubik", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6em;
   color: white;
   position: relative;
@@ -332,7 +337,7 @@ export default class About extends Component {
           <ImageSection backgroundImage={a.backgroundImage} alignment={imageAligment}>
           </ImageSection>
           <ImageDescription alignment={imageAligment}>{a.imageDescription}</ImageDescription>
-          <ContentSection>
+          <ContentSection alignment={imageAligment}>
             <ContentSectionHeader>{a.header}</ContentSectionHeader>
             {a.paragraphs.map((c, ck) => (
               <ContentSectionParagraph key={ck}>

@@ -4,6 +4,14 @@ const guestList = {
     subTitle: `Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
     guests: [
         {
+          type: "announced",
+          profile: "charlesmartinet.png",
+          url: "charles-martinet",
+          name: "Charles Martinet",
+          description: "Stemmen til Mario, Luigi og fler!",
+          alt: "Charles Martinet, stemmen til Mario, Luigi og fler kommer til RSM 2018!"
+        },
+        {
             type: "announced",
             profile: "prototype.png",
             url: "playstation-prototype",
@@ -55,6 +63,14 @@ const guestList = {
     title: "Guests",
     subTitle: `More guests will be announced soon! Follow us here and on our <a href="http://www.facebook.com/retrospillmessen">facebook</a>`,
     guests: [
+        {
+          type: "announced",
+          profile: "charlesmartinet.png",
+          url: "charles-martinet",
+          name: "Charles Martinet",
+          description: "The voice of Mario, Luigi and more!",
+          alt: "Charles Martinet, the voice of Mario, Luigi and more is coming to RSM 2018!"
+        },
         {
             type: "announced",
             profile: "prototype.png",
@@ -110,6 +126,31 @@ const guests = {
         subtitle: "De beste fra bransjen og youtube!",
         unnanouncedHeader: "Følg med, flere gjester annonseres snart!",
         sections: [
+          {
+            personImage: "charlesmartinet.png",
+            header: "Charles Martinet, stemmen til Mario, Luigi og mange fler!",
+            url: "charles-martinet",
+            paragraphs: [
+              `De fleste som har spilt et Mario-spill de siste 20 årene har hørt stemmen til Martinet. Siden 1990 har han vært ansatt av Nintendo for å gi stemme til Mario-universet!`,
+              `Mange stiftet nok bekjentskap med Martinets karakteristiske tolkning av Mario i det grensesprengende platformspillet Super Mario 64 til konsollen Nintendo 64. 
+              Da hadde han allerede vært stemmen til Mario på ymse messer og og lærespillet Mario's FUNdamentals til Windows 95.
+              `,
+              `Siden den gang har Martinet gitt stemmen til Mario i over 40 spill, i tillegg til bi-karakterer som Luigi, Wario og Waluigi. Han har også gitt stemme til spill
+              utenfor Nintendo, slik som dragen Paarthurnax i Elders Scrolls V: Skyrim, og Orvus i Ratchet & Clank Future: A Crack in Time.`,
+              `Visste du at? Martinet gjør også film og tv, og har blant annet spilt i serier som Matlock og Nash Bridges.`,
+              `Presse: 
+                <ul>
+                  <li>
+                    <a href=https://www.youtube.com/watch?v=jcdIqTFgWRA>Great Big Story om Charles Martinet</a>
+                  </li>
+                  <li>
+                    <a href=https://www.youtube.com/watch?v=7Kv4HlKLjfg>Video-interjvu med IGTV</a>
+                  </li>
+                </ul>  `
+            ]
+          },
+
+
           {
             personImage: "prototype.png",
             header: "Nintendo Playstation Prototype (med Terry og Dan Diebold)",
@@ -217,6 +258,29 @@ const guests = {
         subtitle: "The best of the biz",
         unnanouncedHeader: "More guests will be announced shortly!",
         sections: [
+          {
+            personImage: "charlesmartinet.png",
+            header: "Charles Martinet, the voice of Mario, Luigi and more!",
+            url: "charles-martinet",
+            paragraphs: [
+              `Have you played a Mario-game the last 20-years? Well then you have probably heard Martinets voice! Since 1990 he has been the voice of Mario and a host of other Nintendo-characters.`,
+              `For many of us, Super Mario 64 on the classic console Nintendo 64 was the first time we heard Martinets interpretation of the lovable plumber Mario. 
+              At that time Charles had already voiced Mario for several years at conventions and tech demos, and even in an educational game for Windows 95!
+              `,
+              `Since the 90s Martinet has voiced Mario in over 40-games, including other characters like Luigi, Wario and Waluigi. Other than Nintendo-games he is known for voicing
+              the dragon Paarthurnax in Elders Scrolls V: Skyrim, and Orvus in Ratchet & Clank Future: A Crack in Time.`,
+              `Did you know? Martinet also plays in movies and tv, including hit series Matlock and Nash Bridges.`,
+              `Presse: 
+                <ul>
+                  <li>
+                    <a href=https://www.youtube.com/watch?v=jcdIqTFgWRA>Great Big Story on Charles Martinet</a>
+                  </li>
+                  <li>
+                    <a href=https://www.youtube.com/watch?v=7Kv4HlKLjfg>Video-interview with IGTV</a>
+                  </li>
+                </ul>  `
+            ]
+          },
           {
             personImage: "prototype.png",
             header: "Nintendo Playstation Prototype (w/ Terry & Dan Diebold)",

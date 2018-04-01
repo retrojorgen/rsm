@@ -320,6 +320,10 @@ export default class MainHeader extends React.Component {
             title: "VIP Gjester",
             subMenu: [
               {
+                url: "/guests/charles-martinet",
+                title: "Charles Martinet"
+              },
+              {
                 url: "/guests/playstation-prototype",
                 title: "Playstation Prototype"
               },
@@ -360,6 +364,10 @@ export default class MainHeader extends React.Component {
             url: "/guests",
             title: "VIP Guests",
             subMenu: [
+              {
+                url: "/guests/charles-martinet",
+                title: "Charles Martinet"
+              },
               {
                 url: "/guests/playstation-prototype",
                 title: "Playstation Prototype"
