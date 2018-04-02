@@ -72,7 +72,7 @@ const SponsorRow = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     position: relative;
     z-index: 3;
     

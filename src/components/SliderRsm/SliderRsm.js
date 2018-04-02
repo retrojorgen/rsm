@@ -71,7 +71,7 @@ const SponsorRow = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     position: relative;
     z-index: 3;
     
@@ -158,12 +158,13 @@ const SliderContainer = styled.div`
 
 const SliderInfo = styled.div`
     text-align: center;
+    margin-top: 20px;
     img {
         position: relative;
     }
     @media (min-device-width: 1100px) {
+        margin-top: 0;
         display: flex;
-        flex-direction: column ;
         flex-direction: row;
         justify-content: center;
         align-items: center;
