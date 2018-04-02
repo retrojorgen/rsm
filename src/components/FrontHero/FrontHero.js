@@ -26,6 +26,11 @@ const SlickWrap = styled.div`
     .slick-next {
         right: 40px;
     }
+    .slick-slide {
+        img {
+            display: inline-block;
+        }
+    }
 `;
 
 export default class FrontHero extends Component {
