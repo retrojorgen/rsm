@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import HeaderBackground from './retrospillmessen-market.jpg';
+import HeaderBackground from '../../images/retrospillmessen-market.jpg';
 import { BlackSection, TopTitle, HeaderTitleWrapper, Header } from '../Title/Title';
-import yellowBackground from './guests-background.jpg';
 
 
 const Section = styled.div`
     padding: 60px 80px 60px 80px;
     align-items: center;
     position: relative;
-    color: ${(props) => props.background === 'yellow' ? 'black' : 'white'};
-    background: url(${(props) => props.background === 'yellow' ? yellowBackground : ''});
+    color: white;
+    background: black;
     a {
-      color: ${(props) => props.background === 'yellow' ? 'black' : 'white'};
+      color: white;
     }
     max-width: 50em;
     margin: 0 auto;

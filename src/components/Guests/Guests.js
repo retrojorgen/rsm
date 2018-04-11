@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import elkjopLogo from '../../images/elkjop_logo_blue.png';
-import guestsBack from './guests-back.png';
+import guestsBack from '../../images/white-pixel-back.png';
 import { NavLink } from 'react-router-dom';
 import Title, {PixelButtonNavLink} from './../Title/Title';
 import animatedClown from '../../images/vomit_ransome_a.gif';

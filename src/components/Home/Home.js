@@ -3,7 +3,6 @@ import FrontHero from './../FrontHero/FrontHero';
 import Guests from './../Guests/Guests';
 import Tickets from './../Tickets/Tickets';
 import Welcome from './../Welcome/Welcome';
-import './Home.css';
 import PracticalInfo from './../PracticalInfo/PracticalInfo'
 
 export default class Home extends Component {

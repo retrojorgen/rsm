@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
-import WelcomeImage from './welcome-back.png';
+import WelcomeImage from '../../images/welcome-back.png';
 import { PixelButtonNavLink } from './../Title/Title';
-import welcomeLeft from './welcome-left.png';
-import welcomeRight from './welcome-right.png';
+import welcomeLeft from '../../images/welcome-left.png';
+import welcomeRight from '../../images/welcome-right.png';
 import flyingBird from '../../images/flying-bird.png';
 
 

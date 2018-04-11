@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Title from './../Title/Title';
-import TicketBackground from './tickets-background.jpg';
-import TicketBackgroundOrange from './tickets-background-orange.png';
-import ticketBackgroundPurple from './tickets-background-purple.png';
 import sectionBack from '../../images/dark-pixel-back.png';
+import pikachu from '../../images/pikachu.gif';
 import { PixelButton } from '../Title/Title'
 
 
@@ -34,6 +32,7 @@ const SectionContainer = styled.div`
   background: url(${sectionBack});
   background-size: cover;
   padding: 80px;
+  position: relative;
   @media (max-device-width: 1100px) {
     padding: 0;
   }
@@ -41,7 +40,7 @@ const SectionContainer = styled.div`
 
 
 const TicketGroup = styled.div`
-    background-image: url(${(props) => props.ticketBackground});
+    background: ${props => props.ticketBackground};
     background-size: 50%;
     max-width: 30%;
     border-radius: 0;
@@ -73,6 +72,17 @@ const TicketGroup = styled.div`
         margin: 10px;
 
     }
+`;
+
+const Pikachu = styled.div`
+    background: url(${pikachu});
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-500px) scaleX(-1);
+    top: 60px;
 `;
 
 const TicketOptions = styled.div`
@@ -110,7 +120,7 @@ export default class Tickets extends Component {
         buyButton: "Kjøp billett",
         ticketGroups: [
           {
-            background: ticketBackgroundPurple,
+            background: "#a22abc",
             color: 'white',
             header: "VIP Helgepass",
             paragraphs: [
@@ -142,7 +152,7 @@ export default class Tickets extends Component {
           },
           */
           {
-            background: TicketBackground,
+            background: "#eeda44",
             header: "Helgepass",
             color: 'black',
             paragraphs: [
@@ -156,7 +166,7 @@ export default class Tickets extends Component {
             ]
           }, 
           {
-            background: TicketBackgroundOrange,
+            background: "#eeda44",
             header: "Dagspass",
             color: 'black',
             paragraphs: [
@@ -182,7 +192,7 @@ export default class Tickets extends Component {
         
         ticketGroups: [
           {
-            background: ticketBackgroundPurple,
+            background: "#a22abc",
             color: 'white',
             header: "VIP weekend pass",
             paragraphs: [
@@ -213,7 +223,7 @@ export default class Tickets extends Component {
           },
           **/
           {
-            background: TicketBackground,
+            background: "#eeda44",
             header: "Weekend pass",
             color: 'black',
             paragraphs: [
@@ -227,7 +237,7 @@ export default class Tickets extends Component {
             ]
           },
           {
-            background: TicketBackgroundOrange,
+            background: "#eeda44",
             header: "Day pass",
             color: 'black',
             paragraphs: [
@@ -251,6 +261,7 @@ export default class Tickets extends Component {
         <p>{translation.subTitle}</p>
         <h2>{translation.ticketsHeader}</h2>
         <TicketsListWrapper>
+          <Pikachu />
           <TicketsListContainer tickets={translation.ticketGroups.length}>
             {translation.ticketGroups.map((t,k) => {
               return (

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import logo from './pixel-logo.png';
-import logoEn from './pixel-logo.png';
-import background from './slider-rsm-background.jpg';
-import sliderVideo from './slider.mp4';
-import scanLines from './scanlines.png';
+import logo from '../../images/pixel-logo.png';
+import logoEn from '../../images/pixel-logo.png';
+import background from '../../images/slider-rsm-background.jpg';
+import sliderVideo from '../../images/slider.mp4';
+import scanLines from '../../images/scanlines.png';
 import { PixelButton } from '../Title/Title';
 import neoTokyoLogo from '../../images/neo-tokyo-white.png';
 import elkjopLogo from '../../images/elkjop_logo_white.png';

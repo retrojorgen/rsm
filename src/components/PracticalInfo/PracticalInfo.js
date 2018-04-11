@@ -87,9 +87,10 @@ export default class PracticalInfo extends React.Component {
           no: {
             title: "Praktisk info",
             overnatting: 'Hotell',
-            overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br><strong>
-            Rabattkode</strong>: BRSM110518<br>Book online 
-            <a href="https://www.scandichotels.no/">her</a>
+            overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br>
+            <br>Trenger du å booke rom til messa? Det er fortsatt noen rom ledig, men online-rabattkoden har utløp.
+            Send derfor en mail til <a href="solveig.edvardsen@scandichotels.com">solveig.edvardsen@scandichotels.com </a> eller ring Solveig på <a href="tel:33447422">33447422</a>
+            for å få rom med vår rabatt!
             `,
             prices: ["Enkeltrom 864 kr", "Dobbeltrom 1015 kr", "Trippelrom 1217 kr", "Firemannsrom 1419 kr", "* Døgnpriser, inkludert frokost"],
             bookHotel: "Book her",
@@ -116,10 +117,9 @@ export default class PracticalInfo extends React.Component {
           en: {
             title: "Info",
             overnatting: 'Hotel',
-            overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br><strong>
-            Rabattkode</strong>: BRSM110518<br>Book online 
-            <a href="https://www.scandichotels.no/">her</a>
-            `,
+            overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br>
+            <br>Need to book a room for the convention? There are still rooms available with our discout, but the online discount-code has expired.
+            To book a room with our discounted prices e-mail the hotel at <a href="solveig.edvardsen@scandichotels.com">solveig.edvardsen@scandichotels.com </a> or call Solveig Edvardsen (hotel event coordinator) at <a href="tel:+4733447422">+47 33 44 74 22</a>`,
             prices: ["Single 864 kr", "Double 1015 kr", "Triple 1217 kr", "Four 1419 kr", "* Day rates, breakfast included"],
             billetter: 'Tickets',
             bookHotel: "Book here",
@@ -157,7 +157,6 @@ export default class PracticalInfo extends React.Component {
                         <li key={k.toString()}>{price}</li>
                       ))}
                     </ul>
-                    <PixelButton className="pixel-button" href="https://www.scandichotels.no/">{translation.bookHotel}</PixelButton>
                   </InfoSection>
                   <InfoSection>
                     <SectionHolder background={paperboy} />
