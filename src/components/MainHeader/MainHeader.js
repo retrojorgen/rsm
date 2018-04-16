@@ -25,7 +25,7 @@ const MainHeaderWrapper = styled.nav`
     background-color: black;
     z-index: 170;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    
+    max-width: 100%;
     @media (max-device-width: 1100px) {
         border-bottom: 2px solid #fff142;
         background-position: top center;
@@ -320,6 +320,10 @@ export default class MainHeader extends React.Component {
             title: "VIP Gjester",
             subMenu: [
               {
+                url: "/guests/john-de-lancie",
+                title: "John De Lancie"
+              },
+              {
                 url: "/guests/charles-martinet",
                 title: "Charles Martinet"
               },
@@ -364,6 +368,10 @@ export default class MainHeader extends React.Component {
             url: "/guests",
             title: "VIP Guests",
             subMenu: [
+              {
+                url: "/guests/john-de-lancie",
+                title: "John De Lancie"
+              },
               {
                 url: "/guests/charles-martinet",
                 title: "Charles Martinet"

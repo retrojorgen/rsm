@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Title from './../Title/Title';
-import sectionBack from '../../images/dark-pixel-back.png';
+import sectionBack from '../../images/dark-pixel-back.jpg';
 import pikachu from '../../images/pikachu.gif';
 import { PixelButton } from '../Title/Title'
 

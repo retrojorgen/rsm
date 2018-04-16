@@ -200,6 +200,15 @@ const WideSection = styled(Section)`
     width: 1100px;
 `;
 
+const Wrapper = styled.div`
+    padding-top: 60px;
+    margin-bottom: ${window.innerHeight}px;
+  @media (min-device-width: 1100px) {
+    padding-top: 87px;
+    margin-bottom: 600px;
+  }
+`;
+
 
 const BlackSection = styled.div `
     display: block;
@@ -261,5 +270,5 @@ class Title extends Component {
 
 export default Title;
 export { 
-  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton, Section, SectionsContainer, WideSection
+  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton, Section, SectionsContainer, WideSection, Wrapper
 };

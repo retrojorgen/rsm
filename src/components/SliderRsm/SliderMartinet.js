@@ -4,7 +4,6 @@ import logo from '../../images/pixel-logo.png';
 import logoEn from '../../images/pixel-logo.png';
 import background from '../../images/martinet-background.jpg';
 import martinetLarge from '../../images/charles-martinet-big.png';
-import sliderVideo from '../../images/slider.mp4';
 import scanLines from '../../images/scanlines.png';
 import { PixelButton } from '../Title/Title';
 import neoTokyoLogo from '../../images/neo-tokyo-white.png';

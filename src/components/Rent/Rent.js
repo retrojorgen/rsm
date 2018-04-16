@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import HeaderBackground from '../../images/retrospillmessen-market.jpg';
-import { BlackSection, TopTitle, HeaderTitleWrapper, Header } from '../Title/Title';
+import { BlackSection, TopTitle, HeaderTitleWrapper, Header, Wrapper } from '../Title/Title';
 
 
 const Section = styled.div`
@@ -188,7 +188,7 @@ export default class About extends Component {
     });
 
     return (
-      <div className="About">
+      <Wrapper>
         <Header headerBackground={HeaderBackground}>
           <HeaderTitleWrapper>
             <TopTitle>{translation.title}</TopTitle>
@@ -205,7 +205,7 @@ export default class About extends Component {
           </Section>
         </BlackSection>
 
-      </div>
+      </Wrapper>
     );
   }
 }

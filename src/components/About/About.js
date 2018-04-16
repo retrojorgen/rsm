@@ -11,7 +11,7 @@ import Section7Background from './retrospillmessen-mop.jpg';
 
 import HeaderBackground from './welcome-to-retrospillmessen.jpg';
 
-import {TopTitle, HeaderTitleWrapper, Header} from '../Title/Title';
+import {TopTitle, HeaderTitleWrapper, Header, Wrapper} from '../Title/Title';
 
 
 const Section = styled.div`
@@ -348,9 +348,9 @@ export default class About extends Component {
         </Section>
       );
     });
-
+''
     return (
-      <div className="About">
+      <Wrapper>
         <Header headerBackground={HeaderBackground}>
           <HeaderTitleWrapper>
             <TopTitle>{translation.title}</TopTitle>
@@ -359,7 +359,7 @@ export default class About extends Component {
         </Header>
         
         {sections}
-      </div>
+      </Wrapper>
     );
   }
 }

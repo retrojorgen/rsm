@@ -11,10 +11,14 @@ const InfoContainer = styled.footer`
   background-image: url(${infoBackground});
   background-size: cover;
   background-position: center center;
+
+
   
   font-family: "Rubik", sans-serif;
   padding: 80px;
-
+  a {
+    word-break: break-word;
+  }
   @media (max-device-width: 1100px) {
       position: relative;
       display: block;
@@ -89,7 +93,7 @@ export default class PracticalInfo extends React.Component {
             overnatting: 'Hotell',
             overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br>
             <br>Trenger du å booke rom til messa? Det er fortsatt noen rom ledig, men online-rabattkoden har utløp.
-            Send derfor en mail til <a href="solveig.edvardsen@scandichotels.com">solveig.edvardsen@scandichotels.com </a> eller ring Solveig på <a href="tel:33447422">33447422</a>
+            Send derfor en mail til <a href="mailto:solveig.edvardsen@scandichotels.com">solveig.edvardsen@scandichotels.com </a> eller ring Solveig på <a href="tel:33447422">33447422</a>
             for å få rom med vår rabatt!
             `,
             prices: ["Enkeltrom 864 kr", "Dobbeltrom 1015 kr", "Trippelrom 1217 kr", "Firemannsrom 1419 kr", "* Døgnpriser, inkludert frokost"],
@@ -109,7 +113,7 @@ export default class PracticalInfo extends React.Component {
               "Dagspass Barn - 106kr",
               "** Barn opp til 2 år slipper inn gratis", 
             ],
-            address: "Adresse/praktisk",
+            address: "Adresse / praktisk",
             addressDescription: `<strong>Retrospillmessen 2018</strong><br>Runarhallen, <br>Klavenesveien 20,<br> 3220 Sandefjord<br><br>
             * <a href="https://www.google.no/maps/place/Runarhallen/@59.1486775,10.1854385,17z/data=!3m1!4b1!4m5!3m4!1s0x4646c0d946585e91:0x44ab2add79b2fdf9!8m2!3d59.1486775!4d10.1854386?hl=no" target="new_window">Runarhallen kan søkes opp i google maps</a>`
           ,
@@ -119,7 +123,7 @@ export default class PracticalInfo extends React.Component {
             overnatting: 'Hotel',
             overnattingDescription: `<strong>Scandic Park Sandefjord</strong><br>
             <br>Need to book a room for the convention? There are still rooms available with our discout, but the online discount-code has expired.
-            To book a room with our discounted prices e-mail the hotel at <a href="solveig.edvardsen@scandichotels.com">solveig.edvardsen@scandichotels.com </a> or call Solveig Edvardsen (hotel event coordinator) at <a href="tel:+4733447422">+47 33 44 74 22</a>`,
+            To book a room with our discounted prices e-mail the hotel at <a href="mailto:solveig.edvardsen@scandichotels.com">solveig.edvardsen@scandichotels.com </a> or call Solveig Edvardsen (hotel event coordinator) at <a href="tel:+4733447422">+47 33 44 74 22</a>`,
             prices: ["Single 864 kr", "Double 1015 kr", "Triple 1217 kr", "Four 1419 kr", "* Day rates, breakfast included"],
             billetter: 'Tickets',
             bookHotel: "Book here",
@@ -137,7 +141,7 @@ export default class PracticalInfo extends React.Component {
               "Day pass Child - 106kr", 
               "** Kids/Babies up to 2 years get in for free", 
             ],
-            address: "Address/info",
+            address: "Address / info",
             addressDescription: `<strong>Retrospillmessen 2018</strong><br>Runarhallen, <br>Klavenesveien 20,<br> 3220 Sandefjord<br><br>
             * <a href="https://www.google.no/maps/place/Runarhallen/@59.1486775,10.1854385,17z/data=!3m1!4b1!4m5!3m4!1s0x4646c0d946585e91:0x44ab2add79b2fdf9!8m2!3d59.1486775!4d10.1854386?hl=no" target="new_window">Runarhallen is searchable in google maps</a>`
           ,

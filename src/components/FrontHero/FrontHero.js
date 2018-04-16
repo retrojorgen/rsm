@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import styled from 'styled-components';
 import SliderRsm from './../SliderRsm/SliderRsm';
 import SliderMartinet from './../SliderRsm/SliderMartinet';
+import SliderDeLancie from './../SliderRsm/SliderDeLancie';
 
 const SliderWrap = styled.div`
     height: ${window.innerHeight-87}px;
@@ -49,6 +50,9 @@ export default class FrontHero extends Component {
         return (
             <SlickWrap style={{'height': sliderHeight + 'px'}}>
                 <Slider  className="FrontHero-wrapper">
+                    <SliderWrap>
+                        <SliderDeLancie />
+                    </SliderWrap>
                     <SliderWrap>
                         <SliderMartinet />
                     </SliderWrap>

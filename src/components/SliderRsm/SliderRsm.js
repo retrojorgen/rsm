@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import logo from '../../images/pixel-logo.png';
 import logoEn from '../../images/pixel-logo.png';
 import background from '../../images/slider-rsm-background.jpg';
-import sliderVideo from '../../images/slider.mp4';
 import scanLines from '../../images/scanlines.png';
 import { PixelButton } from '../Title/Title';
 import neoTokyoLogo from '../../images/neo-tokyo-white.png';
@@ -109,7 +108,7 @@ const SmallSponsorRow = styled(SponsorRow)`
 `;
 
 
-const Video = styled.video`
+const Video = styled.iframe`
     position: absolute;
     left: -10%;
     top: -10%;
@@ -212,9 +211,7 @@ export default class SliderRsm extends Component {
             <SliderRsmContainer innerWidth={innerWidth} innerHeight={innerHeight}>
                 
                 <Backdrop />
-                <Video autoPlay="true" loop="true">
-                    <source src={sliderVideo} type="video/mp4" />
-                </Video>
+                <Video class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/r8aGjuYCTr0?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY" frameborder="0"></Video>
                 <SliderContainer>
                     <SliderInfo>
                         <img src={translation.logo} alt="Slider" />

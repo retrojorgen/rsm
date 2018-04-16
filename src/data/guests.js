@@ -5,7 +5,15 @@ const guestList = {
     guests: [
         {
           type: "announced",
-          profile: "charlesmartinet.png",
+          profile: "johndelancie.jpg",
+          url: "john-de-lancie",
+          name: "John De Lancie",
+          description: "Kjent fra Star Trek, Breaking Bad, My Little Pony og mye mer!",
+          alt: "John De Lancie er kjent som Q fra Star trek og mye mer. Nå kommer han til RSM 2018!"
+        },
+        {
+          type: "announced",
+          profile: "charlesmartinet.jpg",
           url: "charles-martinet",
           name: "Charles Martinet",
           description: "Stemmen til Mario, Luigi og fler!",
@@ -13,7 +21,7 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "prototype.png",
+            profile: "prototype.jpg",
             url: "playstation-prototype",
             name: "Nintendo Playstation-prototype",
             description: "Terry Diebold og sønnen viser frem den unike protypen!",
@@ -22,7 +30,7 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "allowe.png",
+            profile: "allowe.jpg",
             url: "al-lowe",
             name: "Al Lowe",
             description: "Skaperen av Leisure Suit Larry-serien",
@@ -32,16 +40,16 @@ const guestList = {
         {
             type: "announced",
           
-            profile: "hwarshaw.png",
+            profile: "hwarshaw.jpg",
             url: "howard-scott-warshaw",
-            name: "Howard Scott Warshaw",
-            description: "Skaperen av \"verdens verste spill\" E.T, til Atari 2600",
+            name: "OBS! Avlyst, Howard Scott Warshaw",
+            description: "Vår venn Howard må dessverre avlyse årets tur av personlige årsaker",
             alt: "Howard Scott Warshaw kommer til RSM 18"
 
         },
         {
             type: "announced",
-            profile: "rongilbert.png",
+            profile: "rongilbert.jpg",
             url: "ron-gilbert",
             name: "Ron Gilbert",
             description: "Skaperen av Maniac Mansion, Monkey Island, Thimbleweed Park og mye mer!",
@@ -50,11 +58,19 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "thecompletionist.png",
+            profile: "thecompletionist.jpg",
             url: "the-completionist",
             name: "The Completionist",
             description: "Jirard Khalil er The Completionist, som fullfører et spill 100%. Hver uke på hans ekstremt populære youtube-kanal.",
             alt: "The Completionist kommer til RSM 18"
+        },
+        {
+          type: "announced",
+          profile: "dextheswede.jpg",
+          url: "dex-the-swede",
+          name: "Dex The Swede",
+          description: "En av sveriges mest populære retro-youtubere vender tilbake til messen!",
+          alt: "Dex the Swede kommer til RSM 18"
         },
         
     ],
@@ -65,7 +81,15 @@ const guestList = {
     guests: [
         {
           type: "announced",
-          profile: "charlesmartinet.png",
+          profile: "johndelancie.jpg",
+          url: "john-de-lancie",
+          name: "John De Lancie",
+          description: "Known from Star Trek, Breaking Bad, My Little Pony and heaps more!",
+          alt: "John De Lancie AKA  Q from Star Trek is coming to RSM 2018!"
+        },
+        {
+          type: "announced",
+          profile: "charlesmartinet.jpg",
           url: "charles-martinet",
           name: "Charles Martinet",
           description: "The voice of Mario, Luigi and more!",
@@ -73,7 +97,7 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "prototype.png",
+            profile: "prototype.jpg",
             url: "playstation-prototype",
             name: "Nintendo Playstation-prototype",
             description: "Terry & Dan Diebold are bringing the prototype!",
@@ -82,7 +106,7 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "allowe.png",
+            profile: "allowe.jpg",
             url: "al-lowe",
             name: "Al Lowe",
             description: "The creator of Leisure Suit Larry!",
@@ -91,16 +115,16 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "hwarshaw.png",
+            profile: "hwarshaw.jpg",
             url: "howard-scott-warshaw",
-            name: "Howard Scott Warshaw",
-            description: "The creator of the infamous E.T on atari 2600",
+            name: "Cancelled! Howard Scott Warshaw",
+            description: "Unfortunately our friend Howard had to cancel his trip this year.",
             alt: "Howard Scott Warshaw is coming to RSM 18"
 
         },
         {
             type: "announced",
-            profile: "rongilbert.png",
+            profile: "rongilbert.jpg",
             url: "ron-gilbert",
             name: "Ron Gilbert",
             description: "Creator of Maniac Mansion, Monkey Island, Thimbleweed Park an lots more!",
@@ -109,12 +133,20 @@ const guestList = {
         },
         {
             type: "announced",
-            profile: "thecompletionist.png",
+            profile: "thecompletionist.jpg",
             url: "the-completionist",
             name: "The Completionist",
             description: "Jirard Khalil is The Completionist. Every week he completes a game 100% on his youtube-channel",
             alt: "The Completionist is coming to RSM 18"
 
+        },
+        {
+          type: "announced",
+          profile: "dextheswede.jpg",
+          url: "dex-the-swede",
+          name: "Dex The Swede",
+          description: "One of Swedens most popular retro-youtubers returns to the convention!",
+          alt: "Dex the Swede is coming to RSM 18"
         },
     ],
   }
@@ -126,8 +158,22 @@ const guests = {
         subtitle: "De beste fra bransjen og youtube!",
         unnanouncedHeader: "Følg med, flere gjester annonseres snart!",
         sections: [
+
           {
-            personImage: "charlesmartinet.png",
+            personImage: "johndelancie.jpg",
+            header: "John De Lancie, Q fra Star Trek, Discord fra My Little Pony, og mye mer!",
+            url: "john-de-lancie",
+            paragraphs: [
+              `Veteranskuespiller John De Lancie har en merittliste innen spill og film som kan få de fleste til å måpe!`,
+              `Vi kjenner han nok kanskje best fra sin signaturrolle som Q i Star Trek. De yngre kjenner han nok best som Draconequusen Discord fra My Little Pony: Friendship is Magic.`,
+              `Faktum er at John har spilt i filmer og tv-serier i flere tiår, vi nevner blant annet Breaking Bad, MacGyver, Battlestar Galactica, Stargate SG-1, Judging Amy, The Mentalist, CSI og til og med såpeserien Days of Our Lives`,
+              `I tilegg har har spilt karakterer i spillserier som Assassins Creed, StarCraft, Gabriel Knight og World of Warcraft.`,
+              `Vi gleder oss vanvittig til Retrospillmessen får besøk av sin første vaskekte filmlegende!`
+            ]
+          },
+
+          {
+            personImage: "charlesmartinet.jpg",
             header: "Charles Martinet, stemmen til Mario, Luigi og mange fler!",
             url: "charles-martinet",
             paragraphs: [
@@ -152,7 +198,7 @@ const guests = {
 
 
           {
-            personImage: "prototype.png",
+            personImage: "prototype.jpg",
             header: "Nintendo Playstation Prototype (med Terry og Dan Diebold)",
             url: "playstation-prototype",
             paragraphs: [
@@ -191,7 +237,7 @@ const guests = {
             ]
           },
           {
-            personImage: "rongilbert.png",
+            personImage: "rongilbert.jpg",
             header: "Ron Gilbert (Maniac Mansion, Monkey Island etc..)",
             url: "ron-gilbert",
             paragraphs: [
@@ -204,7 +250,7 @@ const guests = {
             ]
           },
           {
-            personImage: "allowe.png",
+            personImage: "allowe.jpg",
             url: "al-lowe",
             imageDescription: "Al Lowe kommer til Retrospillmessen 18",
             header: "Al Lowe (Leisure Suit Larry)",
@@ -220,22 +266,17 @@ const guests = {
 
             ]
           },{
-            personImage: "hwarshaw.png",
+            personImage: "hwarshaw.jpg",
             url: "howard-scott-warshaw",
             imageDescription: "Howard Scott Warshaw kommer til Retrospillmessen 2018",
-            header: "Howard Scott Warshaw (E.T., Atari 2600)",
+            header: "OBS! Avlyst! - Howard Scott Warshaw (E.T., Atari 2600)",
             
             paragraphs: [
-              `Howard Scott Warshaw er en tidligere amerikansk spilldesigner, som er verdenskjent for å ha skapt det legendariske spillet E.T. til spillkonsollen Atari 2600. Spillet fikk mye av skylden for at spillindustrien i nord-amerika kollapset fullstendig tidlig på 80-tallet.`,
-              `Warshaw ble selv håndplukket til E.T-prosjektet, og hevder selv at spillet ble utviklet på 5 og en halv uke. Det var fordi spillet måtte bli ferdig til julehandelen i 1982. Spillet solgte faktisk forbausende godt, men etter jul rant returene inn i butikkene som hadde solgt spillet.`,
-              `Det gikk lenge rykter om at Atari i ren frustrasjon hadde begravd de gjenværende E.T kassetene på en hemmelig plass i ørkene i New Mexico.`,
-              `Et tema som ble dekket i dokumentaren <a href=https://en.wikipedia.org/wiki/Atari:_Game_Over> Game: Over</a> og <a href=https://en.wikipedia.org/wiki/Angry_Video_Game_Nerd:_The_Movie> Angry Video Game Nerd: The Movie</a>.  Warshaw medvirker i begge filmene.`,
-              `Warshaw utviklet faktisk gode spill også, slik som det annerkjente Yar’s Revenge og Indiana Jones-spillet Raiders of The Lost Ark. Warshaw forlot Atari ikke lenge etter E.T fadesen. Senere i livet tok han master-grad i psykologi og livnærer seg i dag som psychoterapeut i Silicon Valley.`,
-              `Warshaw er fortsatt en lidenskapelig fyr, og han gleder seg til å komme til Norge for å snakke om spillene han skapte, og historien rundt dem!`
+              `Grunnet personlige årsaker har vår venn Howard dessverre måttet avlyst i år. Howard hilser til alle i Norge, og håper han kan komme til Retrospillmessen 2019`
             ]
           },
           {
-            personImage: "thecompletionist.png",
+            personImage: "thecompletionist.jpg",
             url: "the-completionist",
             imageDescription: "The Completionist kommer til Retrospillmessen 2018",
             header: "The Completionist (Youtube, 839 999 subs)",
@@ -250,6 +291,20 @@ const guests = {
               `Og PS, ta en titt på youtube-kanalen hans her <a href=https://www.youtube.com/user/ThatOneVideoGamer>https://www.youtube.com/user/ThatOneVideoGamer</a>`
             ]
           },
+          {
+            personImage: "dextheswede.jpg",
+            url: "dex-the-swede",
+            imageDescription: "Dex The Swede kommer til Retrospillmessen 2018",
+            header: "Dex the Swede (Youtube, 61 742 subs)",
+            
+            paragraphs: [
+              `Dex the Swede er en av de mest gærne og populære svenske retro-youtuberne!`,
+              `En yndling blant amerikanske youtubere, kjent for sin crazy stil og humor i videoer. Dex har faktisk besøkt oss to ganger allerede, men denne gangen er han med
+              som offisiell gjest, fordi så mange fans ønsket det!`,
+              `Vi gleder oss til å ta i mot Dex på Retrospillmessen 2018.`,
+              `Og PS, ta en titt på youtube-kanalen hans, og hans annonseringsvideo her <a href=https://www.youtube.com/user/DexTheSwede>https://www.youtube.com/user/DexTheSwede</a>`
+            ]
+          },
           
         ]
       },
@@ -259,7 +314,19 @@ const guests = {
         unnanouncedHeader: "More guests will be announced shortly!",
         sections: [
           {
-            personImage: "charlesmartinet.png",
+            personImage: "johndelancie.jpg",
+            header: "John De Lancie, Q from Star Trek, Discord from My Little Pony, and lots more!",
+            url: "john-de-lancie",
+            paragraphs: [
+              `Veteran actor John De Lancie has a list of merits long enough to make monst fanboys drop their milkshake!`,
+              `We know him best from his signature role as Q on Star Trek. Kids will probably recognise him from the cult series My Little Pony: Friendship is magic, where he plays the Draconequuse Discord.`,
+              `Fact is, John has played in cult movies and tv-shows for decades, including Breaking Bad, McGyver, Battlestar Galactica, Stargate SG-1, Judginng Amy, The Mentalic, CSI, and even daytime soap Days of Our Lives.`,
+              `He has portrayed video game characters in series like Assassins Creed, StarCraft, Gabrien Knight and World of Warcraft.`,
+              `We can hardly wait to meet Retrospillmessens first ever real movie legend!`
+            ]
+          },
+          {
+            personImage: "charlesmartinet.jpg",
             header: "Charles Martinet, the voice of Mario, Luigi and more!",
             url: "charles-martinet",
             paragraphs: [
@@ -282,7 +349,7 @@ const guests = {
             ]
           },
           {
-            personImage: "prototype.png",
+            personImage: "prototype.jpg",
             header: "Nintendo Playstation Prototype (w/ Terry & Dan Diebold)",
             url: "playstation-prototype",
             paragraphs: [
@@ -320,7 +387,7 @@ const guests = {
             ]
           },
           {
-            personImage: "allowe.png",
+            personImage: "allowe.jpg",
             url: "al-lowe",
             imageDescription: "Al Lowe is visiting Retrospillmessen 2018",
             header: "Al Lowe (Leisure Suit Larry-series)",
@@ -335,22 +402,17 @@ const guests = {
             ]
           },
           {
-            personImage: "hwarshaw.png",
+            personImage: "hwarshaw.jpg",
             url: "howard-scott-warshaw",
             imageDescription: "Howard Scott Warshaw is visiting Retrospillmessen 2018",
-            header: "Howard Scott Warshaw (E.T. for Atari 2600)",
+            header: "Cancelled! Howard Scott Warshaw (E.T. for Atari 2600)",
             
             paragraphs: [
-              `Howard Scott Warshaw is a former American game designer, famous / infamous for creating the legendary game E.T for the Atari 2600.`, 
-              `The game was largely blamed starting the North-American video game crash of the early 80s.`,
-              `Warshaw was actually hand-picket to do the E.T project, and claims to have created the game in only 5 and a half weeks. The game needed to be finished before the Christmas sale of 1982. The game actually sold well initially, however after Christmas many kids returned their games to the stores.`,
-              `For long there were rumours that Atari buried the remaining games in an unspecified lot in New Mexico. The subject was covered in the documentary <a href=https://en.wikipedia.org/wiki/Atari:_Game_Over> Game: Over</a>, and the movie <a href=https://en.wikipedia.org/wiki/Angry_Video_Game_Nerd:_The_Movie> Angry Video Game Nerd: The Movie</a>. Warshaw appears in both movies.`,
-              `Warshaw actually developed several good games as well, including the acclaimed Yar’s Revenge, and the Indiana Jones-based game Raiders of The Lost Ark.`,
-              `Warsaw left Atari shortly after E.T., and later in life received a degree in Psychology. His current occupation is as a Psychotherapist in Silicon Valley.`
+              `Due to personal private issues our friend Howard can not make it to the convention this year. Howard says he hopes to make it to Norway for Retrospillmessen 2019`
             ]
           },
           {
-            personImage: "rongilbert.png",
+            personImage: "rongilbert.jpg",
             header: "Ron Gilbert (Maniac Mansion, Monkey Island etc..)",
             url: "ron-gilbert",
             paragraphs: [
@@ -361,7 +423,7 @@ const guests = {
             ]
           },
           {
-            personImage: "thecompletionist.png",
+            personImage: "thecompletionist.jpg",
             imageDescription: "The Completionist kommer til Retrospillmessen 2018",
             header: "The Completionist (Youtube, 839 999 subs)",
             url: "the-completionist",
@@ -376,7 +438,22 @@ const guests = {
               `We can’t wait to get The Completionist back to Norway for Retrospillmessen 2018.
               Oh if you have not been there already, please have a look at his youtube channel here <a href=“https://www.youtube.com/user/ThatOneVideoGamer”>https://www.youtube.com/user/ThatOneVideoGamer</a>`
             ]
-          }
+          },
+          {
+            personImage: "dextheswede.jpg",
+            url: "dex-the-swede",
+            imageDescription: "Dex The Swede is coming to Retrospillmessen 2018",
+            header: "Dex the Swede (Youtube, 61 742 subs)",
+            
+            paragraphs: [
+              `Dex The Swede is a guy who reviews games, makes fun of them and also makes fun of himself. His
+              cartoony slapstick comedy is nothing to mess around with, as Dex has brought entertainment, laughter
+              and sillyness since 2012.`,
+              `While he seems crazy in some of his videos, Dex is very calm and sociable person who enjoys every
+              minute hanging out with fans at conventions.
+              You can find his Youtube channel here <a href=https://www.youtube.com/user/DexTheSwede>https://www.youtube.com/user/DexTheSwede</a>`
+            ]
+          },
         ]
       }
     }

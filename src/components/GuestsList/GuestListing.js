@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import blackPixelBackground from '../../images/dark-pixel-back.png';
+import blackPixelBackground from '../../images/dark-pixel-back.jpg';
 
-import { TopTitle, HeaderTitleWrapper, Header } from '../Title/Title';
+import { TopTitle, HeaderTitleWrapper, Header, Wrapper } from '../Title/Title';
 import { getGuestInfoFromUrl } from '../../data/guests';
 import Guests from './../Guests/Guests';
 
@@ -23,8 +23,6 @@ const Section = styled.div`
       padding: 0;
     } 
 `;
-
-
 
 const SectionsContainer = styled.div`
   display: flex;
@@ -114,7 +112,7 @@ export default class GuestsList extends Component {
     var guestInfo = this.state.guestInfo;
 
     return (
-      <div className="About">
+      <Wrapper>
         <Header>
           <HeaderTitleWrapper>
             <TopTitle>
@@ -136,7 +134,7 @@ export default class GuestsList extends Component {
           </Section>
         </SectionsContainer>
         <Guests />
-      </div>
+      </Wrapper>
     );
   }
 }

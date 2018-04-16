@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import whitePixelBackground from '../../images/white-pixel-back.png';
-import blackPixelBackground from '../../images/dark-pixel-back.png';
+import whitePixelBackground from '../../images/white-pixel-back.jpg';
+import blackPixelBackground from '../../images/dark-pixel-back.jpg';
 import { TopTitle, HeaderTitleWrapper, Header, WideSection, SectionsContainer,PixelButtonNavLink } from '../Title/Title';
 import Guests from './../Guests/Guests';
 
@@ -76,26 +76,45 @@ export default class Events extends Component {
               {
                 name: "Dørene åpner for VIP",
                 description: "Har du VIP-billett kommer du inn en time før ordinær åpning",
+                start: "10:00",
+              },
+              {
+                name: "Dørene åpner for alle!",
+                description: "",
                 start: "11:00",
               },
               {
-                name: "Dørene åpner for ordinære besøkende",
-                description: "",
+                name: "Hvordan slå seg opp som Youtuber på engelsk",
+                description: "Profilene bak kanalene CommonWealth Realm (136 000 subs) og Dr Wily (160 000 subs) forteller om hvordan de oppnår suksess med engelske youtube-kanaler drevet fra Norge",
+                info: [
+                  {
+                    name: "CommonWealth Realm",
+                    url: "guests/commonwealth-realm",
+                    profile: "commonwealth.png"
+                  },
+                  {
+                    name: "Dr Wily",
+                    url: "guests/dr-wily",
+                    profile: "drwily.png"
+                  }
+                ],
                 start: "12:00",
+                end: "12:30",
+                location: "panelrommet"
               },
               {
-                name: "Q&A / Panel med Ron Gilbert",
-                description: "Legenden Ron Gilbert kjent for eventyrspillene Monkey Island og Maniac Mansion holdet et foredrag og spørre-runde etterpå",
+                name: "Ron Gilbert Q&A",
+                description: "Møt mannen bak det legendariske eventyrspillet Monkey Island. Den selvtitulerte grumpy gamer svarer på dine spørsmål",
                 info: [
                   {
                     name: "Ron Gilbert",
                     url: "guests/ron-gilbert",
-                    profile: "rongilbert.png"
+                    profile: "commonwealth.png"
                   }
                 ],
-                start: "12:00",
-                end: "13:00",
-                location: "teltet"
+                start: "12:20",
+                end: "13:20",
+                location: "panelrommet"
               },
               {
                 name: "Dørene stenger i hallen",
