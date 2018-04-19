@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import RSMLogo from '../../images/rsm-pixel-animation.gif';
-import MenuBackgroundMobile from '../../images/menu-background-mobile.jpg';
 import MediaQuery from 'react-responsive';
 import LanguageSelect from '../LanguageSelect/LanguageSelect';
 
@@ -180,7 +179,7 @@ const MainHeaderWrapper = styled.nav`
       
       li {
         font-family: "Rubik", sans-serif;
-        font-size: 0.9em;
+        font-size: 0.8em;
         letter-spacing: 1px;
         text-transform: uppercase;
         cursor: pointer;
@@ -205,7 +204,7 @@ const MainHeaderWrapper = styled.nav`
         }
         a {
           display: inline-block;
-          padding: 35px 35px;
+          padding: 35px 20px;
           color: white;
           text-decoration: none;
 
@@ -309,7 +308,15 @@ export default class MainHeader extends React.Component {
           },
           {
             url: "/about",
-            title: "Om Retrospillmessen"
+            title: "Om messa"
+          },
+          {
+            url: "/program",
+            title: "Program 2018"
+          },
+          {
+            url: "/neo-geo-world-tour",
+            title: "Neo Geo Tour"
           },
           {
             url: "/rent",
@@ -358,7 +365,15 @@ export default class MainHeader extends React.Component {
           },
           {
             url: "/about",
-            title: "About the convention"
+            title: "About"
+          },
+          {
+            url: "/program",
+            title: "Schedule 2018"
+          },
+          {
+            url: "/neo-geo-world-tour",
+            title: "Neo Geo Tour"
           },
           {
             url: "/rent",

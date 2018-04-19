@@ -34,7 +34,7 @@ class App extends Component {
                 <Switch>
                   <Route path="/" component={Home} exact={true} />
                   <Route path="/about" component={About} exact={true} />
-                  <Route path="/about/program" component={Events} />
+                  <Route path="/program" component={Events} />
                   <Route path="/rent" component={Rent} />
                   <Route path="/guests" component={GuestsList} exact={true} />
                   <Route path="/neo-geo-world-tour" component={NeoGeo} exact={true} />

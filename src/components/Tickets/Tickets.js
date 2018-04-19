@@ -124,7 +124,7 @@ export default class Tickets extends Component {
             color: 'white',
             header: "VIP Helgepass",
             paragraphs: [
-              `VIP-billetter gir deg tilgang til messa en time før vanlige besøkende både lørdag og søndag.
+              `VIP-billetter er akkurat som et vanlig helgepass, bortsett fra en viktig ting. Du slipper inn i hallen en time før alle andre på både lørdag og søndag.
               Det gir en gyllen mulighet til å møte VIP-gjester og gjøre gode handler før hallen fyller seg opp!`,
               `Du slipper selvsagt også å vente i den vanlige åpningskøen. Barn opp til 2 år slipper inn gratis.`
             ],

@@ -38,7 +38,7 @@ export default class FrontHero extends Component {
     render() {
         let sliderHeight = window.innerHeight-87;
         let settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
@@ -49,7 +49,7 @@ export default class FrontHero extends Component {
           };
         return (
             <SlickWrap style={{'height': sliderHeight + 'px'}}>
-                <Slider  className="FrontHero-wrapper">
+                <Slider  className="FrontHero-wrapper" {...settings}>
                     <SliderWrap>
                         <SliderDeLancie />
                     </SliderWrap>

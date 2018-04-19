@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import './About.css';
 import styled from 'styled-components';
-import Section1Background from './retrospillmessen-people.jpg';
-import Section2Background from './retrospillmessen-cool.jpg';
-import Section3Background from './retrospillmessen-market.jpg';
-import Section4Background from './retrospillmessen-kids.jpg';
-import Section5Background from './retrospillmessen-lecture.jpg';
-import Section6Background from './retrospillmessen-indiegames.jpg';
-import Section7Background from './retrospillmessen-mop.jpg';
-
-import HeaderBackground from './welcome-to-retrospillmessen.jpg';
+import Section1Background from '../../images/retrospillmessen-people.jpg';
+import Section2Background from '../../images/retrospillmessen-cool.jpg';
+import Section3Background from '../../images/retrospillmessen-market.jpg';
+import Section4Background from '../../images/retrospillmessen-kids.jpg';
+import Section5Background from '../../images/retrospillmessen-lecture.jpg';
+import Section6Background from '../../images/retrospillmessen-indiegames.jpg';
+import Section7Background from '../../images/retrospillmessen-mop.jpg';
+import HeaderBackground from '../../images/welcome-to-retrospillmessen.jpg';
 
 import {TopTitle, HeaderTitleWrapper, Header, Wrapper} from '../Title/Title';
 
@@ -348,7 +346,7 @@ export default class About extends Component {
         </Section>
       );
     });
-''
+
     return (
       <Wrapper>
         <Header headerBackground={HeaderBackground}>

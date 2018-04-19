@@ -109,18 +109,6 @@ const SmallSponsorRow = styled(SponsorRow)`
 `;
 
 
-const Video = styled.video`
-    position: absolute;
-    left: -10%;
-    top: -10%;
-    display: none;
-    width: 120%;
-    height: 130%;
-    @media (min-device-width: 1100px) {
-        display: block;
-    }
-`;
-
 const Backdrop = styled.div `
     background-size: cover;
     background-image: url(${background});
@@ -270,7 +258,7 @@ export default class SliderMartinet extends Component {
                 
                 <Backdrop />
                 <FixedLeftLarge>
-                  <img src={martinetLarge} />
+                  <img src={martinetLarge} alt="John De Lancie" />
                 </FixedLeftLarge>
                 <SliderContainer>
                     <SliderInfo>

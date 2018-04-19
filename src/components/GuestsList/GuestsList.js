@@ -104,8 +104,7 @@ export default class GuestsList extends Component {
             <ContentSection>
               <ContentSectionHeader color={color}>{a.header}</ContentSectionHeader>
               {a.paragraphs.map((c, ck) => (
-                <ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{__html: c}} color={color}>
-                </ContentSectionParagraph>
+                <ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{__html: c}}  color={color} />
               ))}
             </ContentSection>
           </Section>

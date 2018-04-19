@@ -2,7 +2,6 @@ import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import neogeologo from '../../images/neogeo-logo.png';
 import neogeowlogo from '../../images/neogeo-wlogo.png';
-import Title from './../Title/Title';
 import scanLines from '../../images/scanlines.png';
 import snkFighterLeft from '../../images/snkFighterLeft.png';
 import snkFighterRight from '../../images/snkFighterRight.png';
@@ -18,10 +17,11 @@ const VideoBackground = styled.div`
   color: blue;
   
   iframe {
-    position: absolute;
-    width: 150%;
-    left: -50%;
-    top: -50%;
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
     opacity: 0.6;
   }
   &:after {
@@ -234,7 +234,18 @@ export default class NeoGeo extends React.Component {
             ]
           },
           en: {
-       
+            title: "Neo Geo World tour at RSM18",
+            subtitle: `Retrospillmessen 2018 is an official leg of the Neo Geo World Tour!`,
+            description: [
+              `Neo Geo is a legendary piece of arcade and home console hardware from the Japanese game company SNK.
+              Through the years several of Neo Geos premiere games have become cult hits, like Metal Slug, Puzzle Bobble, Samurai Showdown and of the fighting game King of Fighters.`,
+              `This year SNK is touring the world with Neo Geo, arranging tournaments in key locations, like Los Angeles, Monaco, Kuwait, and now Retrospillmessen 2018 in Norway!
+              Are you an oldschool or new school gamer? Doesn't matter! There will be held two separate tournaments in King of Fighters 98 and King of Fighters XIV.
+              Winners of both tournaments will win a trip to Hong Kong to compete in the international finals!`,
+              `PS. During the convention SNK will also run other tournaments in Metal Slug, Bomberman 5 og Street Fighter 2, with prizes.`,
+              `When? Saturday 12. May: Neo Geo World Tour-tournament in KoF 98, KoF XIV and a casual tournament in Metal Slug. Sunday 13. May: Retro Cup med Super Bomberman 5 og Street Fighter 2`
+
+            ]
           }
         }
         let translation = translations[language];              
@@ -245,11 +256,11 @@ export default class NeoGeo extends React.Component {
             </NeoLeft>
             <NeoBody>
             <NeoLogoHeader>
-              <img id="logo" className={active ? '': 'active'} src={neogeologo} />
-              <img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} />
+              <img id="logo" className={active ? '': 'active'} src={neogeologo} alt="King of Fighters Character" />
+              <img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} alt="King of Fighters Character" />
             </NeoLogoHeader>
             <VideoBackground>
-              <iframe class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/5OiTEHX4Plw?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY" frameborder="0"></iframe>
+              <iframe title="neo-geo-youtube-video" class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameborder="0"></iframe>
             </VideoBackground>
             <Constrainer>
               <NeoTitle>{translation.title}</NeoTitle>

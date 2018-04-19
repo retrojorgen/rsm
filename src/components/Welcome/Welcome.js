@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
-import WelcomeImage from '../../images/welcome-back.png';
+import WelcomeImage from '../../images/dark-pixel-back.jpg';
 import { PixelButtonNavLink } from './../Title/Title';
 import welcomeLeft from '../../images/welcome-left.png';
 import welcomeRight from '../../images/welcome-right.png';

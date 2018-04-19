@@ -211,7 +211,7 @@ export default class SliderRsm extends Component {
             <SliderRsmContainer innerWidth={innerWidth} innerHeight={innerHeight}>
                 
                 <Backdrop />
-                <Video class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/r8aGjuYCTr0?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY" frameborder="0"></Video>
+                <Video title="rsm-youtube-video" class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/r8aGjuYCTr0?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=r8aGjuYCTr0" frameborder="0"></Video>
                 <SliderContainer>
                     <SliderInfo>
                         <img src={translation.logo} alt="Slider" />
