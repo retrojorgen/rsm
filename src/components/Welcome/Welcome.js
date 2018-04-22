@@ -125,14 +125,14 @@ export default class Welcome extends React.Component {
         const translations = {
           no: {
             title: "Retrospillmessen 2018",
-            subTitle: "Velkommen til årets største nordiske retrospillmesse!",
+            subTitle: "Velkommen til årets største nordiske retrospillmesse 12.-13. mai 2018!",
             content: `For fjerde år på rad arrangerer vi Retrospillmessen i Runarhallen i Sandefjord. Med rundt 100 spillbare retrokonsoller og maskiner, fantastiske gjester og et stort marked med retrospill og merch
             er Retrospillmessen et av årets største happenings for gamere i alle aldre!`,
             readmore: 'Lurer du på hva som foregår på Retrospillmessen? Les her..',
           },
           en: {
             title: "Retrospillmessen 2018",
-            subTitle: "Welcome to the biggest nordic retro gaming convention of 2018!",
+            subTitle: "Welcome to the biggest nordic retro gaming convention of 2018 (12-13. May)!",
             content: `For the fourth year in a row, Retrospillmessen is back in Sandefjord, Norway. Featuring around 100 playable retro-systems, amazing guests, a huge retro gaming and merch-market and so much more!`,
             readmore: 'Curios about what goes on at the convention? More here..',  
           }

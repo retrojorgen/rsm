@@ -157,7 +157,7 @@ export default class Events extends Component {
       schedule: [
         {
           no : {
-            day: "Lørdag 13.5",
+            day: "Lørdag 12.05.2018",
             schedule: [
               {
                 name: "Dørene åpner for VIP",
@@ -281,7 +281,7 @@ export default class Events extends Component {
             ]
           },
           en: {
-            day: "Saturday 05.13.2018",
+            day: "Saturday 05.12.2018",
             schedule: [
                 {
                   name: "Doors open for VIP ticket holders",
@@ -405,7 +405,7 @@ export default class Events extends Component {
           }
         }, {
         no : {
-          day: "Søndag 14.5",
+          day: "Søndag 13.05.2018",
           schedule: [
             {
               name: "Dørene åpner for VIP",
@@ -495,7 +495,7 @@ export default class Events extends Component {
           ]
         },
         en: {
-          day: "Sunday 05.14.2018",
+          day: "Sunday 05.13.2018",
           schedule: [
             {
               name: "Doors open for VIP ticket holders",
