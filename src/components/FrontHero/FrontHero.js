@@ -44,6 +44,7 @@ export default class FrontHero extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
+            //autoplay: false,
             arrows: true,
             adaptiveHeight: true
           };

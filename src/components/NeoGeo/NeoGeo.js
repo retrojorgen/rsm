@@ -111,19 +111,30 @@ const NeoTitle = styled.h1`
     text-transform: uppercase;
     color: #f3f07a;
     text-shadow: 4px 4px 2px rgba(0,0,0,1);
+    font-size: 2.7em;
+    margin-bottom: 0;
+    margin-top: 0;
 `;
 
 const NeoSubTitle = styled.h2`
   text-transform: uppercase;
   color: #eeb528;
-  font-size: 1em;
+  font-size: 1.44em;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  
 `;
 
 const NeoParagraph = styled.p`
-    text-transform: uppercase;
     color: #00acca;
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.5em;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    a {
+      color: #00d4f9;
+    }
     &:nth-child(odd) {
       color: #00d4f9;
     }
@@ -190,8 +201,6 @@ const Constrainer = styled.div`
     z-index: 20;
     background-color: rgba(0,0,0,0.4);
     padding: 20px;
-    border-radius: 20px;
-    margin-top: 20px;
 `;
 
 
@@ -216,34 +225,28 @@ export default class NeoGeo extends React.Component {
         const language = localStorage.language || 'no';
         const translations = {
           no: {
-            title: "Neo Geo World tour på RSM18",
-            subtitle: `Endelig kan vi avsløre at Retrospillmessen 2018 er offisielt
-            stoppested for Neo Geo World Tour`,
+            title: "Offisiell Neo Geo World tour på RSM18",
+            subtitle: `Retrospillmessen er offisielt stoppested for Neo Geo World Tour fra SNK`,
             description: [
-              `Neo Geo er navnet på et legendarisk stykke arcade og hjemmekonsoll-hardware fra det japanske spillselskapet SNK.
-              Gjennom årene har maskinen vært gjenstand for kultspill som Metal Slug, Puzzle Bobble, Samurai Showdown og ikke minst
-              den langløpende fightingserien King Of Fighters`,
-              `I år turnerer SNK verden rundt med Neo Geo, og kommer til Retrospillmessen for å arrangere turning i nettopp King of Fighters.
-              Her blir det både innslag av King of Fighters 98 og nyere King Of Fighters XIV, så det er bare å sette i gang og øve hvis du tror du
-              har en sjanse i turneringen! Fra før av har turnering vært innom  Los Angeles, Monaco og Kuwait!`,
-              `Hva kan jeg vinne spør du? Vinnerene av turneringene i King Of Fighters 98 og King of Fighters XIV vinner begge en reise til Hong Kong for å delta i en internasjonal finale i King of Fighters!
-              Det blir også andre fete premier å vinne`,
-              `PS. Det blir også turnering i blant annet Metal Slug, Bomberman 5 og Street Fighter 2`,
-              `Når skjer det? Lørdag 12. mai: Neo Geo World Tour-turnering i KoF 98, KoF XIV og Metal Slug. Søndag 13. mai: Retro Cup med Super Bomberman 5 og Street Fighter 2`
+              `Er du skandinavias beste fighting-gamer? Da kan du vinne
+              en reise til Hong Kong!`,
+              `På lørdagen (13.05.2018) av Retrospillmessen holder SNK turneringer i både King of Fighters 98 og King of Fighters XIV! SNK trekker to vinnere som hver får
+              en tur til Hong Kong for å delta i de internasjonale finalene. Alle kan delta!`,
+              `Les mer på <a href=https://www.facebook.com/neogeoworldtour/>Neo Geo World Tour sin Facebookside</a> 
+              og <a href=https://smash.gg/tournament/neo-geo-world-tour-norway-stop>meld deg på her for å være sikret plass!</a> Vi sees`
 
             ]
           },
           en: {
-            title: "Neo Geo World tour at RSM18",
-            subtitle: `Retrospillmessen 2018 is an official leg of the Neo Geo World Tour!`,
+            title: "Official Neo Geo World tour at RSM18",
+            subtitle: `Retrospillmessen 2018 is an offical leg of the Neo Geo World Tour from SNK`,
+
             description: [
-              `Neo Geo is a legendary piece of arcade and home console hardware from the Japanese game company SNK.
-              Through the years several of Neo Geos premiere games have become cult hits, like Metal Slug, Puzzle Bobble, Samurai Showdown and of the fighting game King of Fighters.`,
-              `This year SNK is touring the world with Neo Geo, arranging tournaments in key locations, like Los Angeles, Monaco, Kuwait, and now Retrospillmessen 2018 in Norway!
-              Are you an oldschool or new school gamer? Doesn't matter! There will be held two separate tournaments in King of Fighters 98 and King of Fighters XIV.
-              Winners of both tournaments will win a trip to Hong Kong to compete in the international finals!`,
-              `PS. During the convention SNK will also run other tournaments in Metal Slug, Bomberman 5 og Street Fighter 2, with prizes.`,
-              `When? Saturday 12. May: Neo Geo World Tour-tournament in KoF 98, KoF XIV and a casual tournament in Metal Slug. Sunday 13. May: Retro Cup med Super Bomberman 5 og Street Fighter 2`
+              `Are you amazing at fighting games? Well, at Retrospillmessen 2018 you have the chance of winning a trip to Hong Kong!`,
+              `On Saturday (05.13.2018) during the convention SNK wil beholding a tournament in both King of Fighters 98 and King of Fighters XIV. Winners of both tournaments
+              will get a trip to Hong Kong each to compete in the finals. Everyone can participate!`,
+              `Find out more on <a href=https://www.facebook.com/neogeoworldtour/>Neo Geo World Tour's Facebook page</a> 
+              and <a href=https://smash.gg/tournament/neo-geo-world-tour-norway-stop>register here to secure your spot in the tournament!</a> See you there.`
 
             ]
           }
@@ -260,13 +263,13 @@ export default class NeoGeo extends React.Component {
               <img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} alt="King of Fighters Character" />
             </NeoLogoHeader>
             <VideoBackground>
-              <iframe title="neo-geo-youtube-video" class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameborder="0"></iframe>
+              <iframe title="neo-geo-youtube-video" class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameBorder="0"></iframe>
             </VideoBackground>
             <Constrainer>
               <NeoTitle>{translation.title}</NeoTitle>
               <NeoSubTitle>{translation.subtitle}</NeoSubTitle>
               {translation.description.map((description, key) => (
-                <NeoParagraph key={key}>{description}</NeoParagraph>
+                <NeoParagraph key={key} dangerouslySetInnerHTML={{__html: description}} />
               ))}
             </Constrainer>
             </NeoBody>

@@ -6,11 +6,8 @@ import background from '../../images/martinet-background.jpg';
 import martinetLarge from '../../images/charles-martinet-big.png';
 import scanLines from '../../images/scanlines.png';
 import { PixelButton } from '../Title/Title';
-import neoTokyoLogo from '../../images/neo-tokyo-white.png';
-import elkjopLogo from '../../images/elkjop_logo_white.png';
-import nerdeportalenLogo from '../../images/nerdeportalen-logo.png';
-import legoLogo from '../../images/lego-logo.png';
-import capcomLogo from '../../images/capcom-logo.png';
+
+import LogoRow from './LogoRow';
 
 
 const ConDescription = styled.h2`
@@ -39,14 +36,14 @@ const SliderRsmContainer = styled.div `
     height: 100%;
     background-color: black;
     overflow: hidden;
-    img {
+    >img {
         height: 300px;
         max-height: 50%;
         z-index: 4;
         margin-bottom: 10px;
     }
     @media (max-device-width: 1100px) {
-        img {
+        >img {
             max-width: 100%;
         }
     }
@@ -64,47 +61,6 @@ const SliderRsmContainer = styled.div `
 
 const TicketButton = styled(PixelButton)`
   
-`;
-
-const SponsorRow = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    z-index: 3;
-    
-    a {
-        display: inline-block;
-        &:hover {
-            img {
-                opacity: 1;
-            }
-        }
-    }
-    img {
-        max-height: 20px;
-        width: auto;
-        margin: 0 20px 0 20px;
-        opacity: 1;
-        @media (min-device-width: 1100px) {
-            max-height: 48px;
-        }
-    }
-    @media (max-device-width: 1100px) {
-        img {
-            opacity: 1;
-            margin-top: 20px;
-        }
-    }
-`;
-
-const SmallSponsorRow = styled(SponsorRow)`
-    margin-top: -20px;
-    img {
-        max-height: 37px;
-    }
 `;
 
 
@@ -136,6 +92,7 @@ const FixedLeftLarge = styled.div `
       max-height: 100%;
       transform: scaleX(-1) translateX(-80px);
       max-width: none;
+      z-index: 4;
     }
     @media (min-width: 768px) {
       img {
@@ -276,18 +233,7 @@ export default class SliderMartinet extends Component {
                             
                         </ConInfo>
                     </SliderInfo>
-                    <Sponsors>
-                        <SponsorRow>
-                            <a href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} alt={elkjopLogo}/></a>
-                            <a href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} alt={neoTokyoLogo}/></a>
-                            <a href="http://www.nerdeportalen.no" target="new_window"><img src={nerdeportalenLogo} alt={nerdeportalenLogo}/></a>
-                            <a href="http://www.lego.no" target="new_window"><img src={legoLogo} alt={legoLogo}/></a>
-                            <a href="http://www.lego.no" target="new_window"><img src={capcomLogo} alt={capcomLogo}/></a>
-                        </SponsorRow>
-                        <SmallSponsorRow>
-                            
-                        </SmallSponsorRow>
-                    </Sponsors>
+                    <LogoRow />
                 </SliderContainer>
             </SliderRsmContainer>
         )
