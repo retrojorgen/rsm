@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import elkjopLogo from '../../images/elkjop_logo_blue.png';
 import guestsBack from '../../images/white-pixel-back.png';
-import Title, {PixelButtonNavLink} from './../Title/Title';
+import Title, { PixelButtonNavLink } from './../Title/Title';
 import animatedClown from '../../images/vomit_ransome_a.gif';
 import { guestList } from '../../data/guests';
 
@@ -64,30 +65,23 @@ const SponsorRow = styled.div`
     }
 `;
 
-const GuestWrapper = styled.div`
-    width: 300px;
-    display: inline-block;
-    padding: 10px;
-    @media (max-device-width: 1100px) {
-        width: ${window.innerWidth-40}px;
-        
-        
-    }
-`;
+const HeaderContainer = props => (
+	<HeaderWrapper>
+		<h1>
+			<span>
+				{props.guestName}
+			</span>
+		</h1>
+		<p>
+			{props.guestDescription}
+		</p>
+	</HeaderWrapper>
+);
 
-
-class HeaderContainer extends Component {
-    render() {
-      let guestName = this.props.guestName;
-      let guestDescription = this.props.guestDescription;
-        return (
-            <HeaderWrapper>
-                <h1><span>{guestName}</span></h1>
-                <p>{guestDescription}</p>
-            </HeaderWrapper>
-        )
-    }
-}
+HeaderContainer.propTypes = {
+	guestName: PropTypes.string.isRequired,
+	guestDescription: PropTypes.string.isRequired,
+};
 
 const GuestsContainerWrapper = styled.div`
     width: 100%;
@@ -100,10 +94,15 @@ const GuestsContainer = styled.div`
     height: 100%;    
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     @media (max-device-width: 1100px) {
+        justify-content: center;
         width: ${props => (window.innerWidth-40) * props.guests}px;
         text-align: left;
         display: flex;
+        justify-content: flex-start;
     }
     .slick-next, .slick-prev {
         &:before {
@@ -126,17 +125,19 @@ const GuestsWrapper = styled.div`
 
 const Guest = styled.div`
     display: inline-block;
-    width: 100%;
-    margin: 20px;
+    width: 200px;
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
     overflow: hidden;
     transition: all 0.1s ease-in;
     position: relative;
     text-decoration: none;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
     &:hover {
     }
     @media (max-device-width: 1100px) {
-        margin: 0;
+        margin: 10px;
         margin-bottom: 20px;
     }
 `;
@@ -144,8 +145,8 @@ const Guest = styled.div`
 const GuestProfile = styled.div`
     position: relative;
     width: 100%;
-    height: 300px;
-    background-image: url(${(props) => props.profileImage ? props.profileImage: ''});
+    flex: 1 1 200px;
+    background-image: url(${props => (props.profileImage ? props.profileImage: '')});
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -177,45 +178,46 @@ const Unnanounced = styled.div`
     
 `;
 
-export default class Guests extends Component {
-  render() {
+export default () => {
+	const language = localStorage.language || 'no';
+	const translation = guestList[language];
 
-    const language = localStorage.language || 'no';
-    
-    let translation = guestList[language];
-    return (
-    <GuestsWrapper>
-        <Title title={translation.title} color="Yellow" />
-        <SponsorRow>I samarbeid med <img src={elkjopLogo} alt="elkjøp logo" /></SponsorRow>
-        <VomitClown />
-        <GuestsContainerWrapper>
-            <GuestsContainer guests={translation.guests.length}>
-                    {translation.guests.map((g, k) => {
-                        if(g.type === 'announced') {
-                            return (
-                                <GuestWrapper key={k}>
-                                    <Guest>
-                                        
-                                            <GuestProfile profileImage={require('../../images/' + g.profile)}></GuestProfile>
-                                            <HeaderContainer guestName={g.name} guestDescription={g.description} />
-                                            <PixelButtonNavLink to={'/guests/' + g.url} style={{width: '100%', 'textAlign': 'center', display: 'block'}}>Les mer</PixelButtonNavLink>
-                                    </Guest>
-                                </GuestWrapper>
-                            )
-                        } else {
-                            return (
-                                <div>
-                                    <Unnanounced key={k}>
-                                        <h1>?</h1>
-                                        <p>{g.message}</p>
-                                    </Unnanounced>
-                                </div>
-                            )
-                        }
-                    })}
-            </GuestsContainer>
-        </GuestsContainerWrapper>
-    </GuestsWrapper>
-    );
-  }
-}
+	return (
+		<GuestsWrapper>
+			<Title title={translation.title} color="Yellow" />
+			<SponsorRow>I samarbeid med <img src={elkjopLogo} alt="elkjøp logo" /></SponsorRow>
+			<VomitClown />
+			<GuestsContainerWrapper>
+				<GuestsContainer guests={translation.guests.length}>
+					{translation.guests.map((g, k) => {
+						if (g.type === 'announced') {
+							const profilePic = require(`../../images/${g.profile}`);
+							return (
+								<Guest key={k}>
+									<GuestProfile profileImage={profilePic} />
+									<HeaderContainer guestName={g.name} guestDescription={g.description} />
+									<PixelButtonNavLink
+										to={`/guests/${g.url}`}
+										style={
+											{ width: '100%', textAlign: 'center', display: 'block' }
+										}
+									>
+                                        Les mer
+									</PixelButtonNavLink>
+								</Guest>
+							);
+						}
+						return (
+							<div>
+								<Unnanounced key={k}>
+									<h1>?</h1>
+									<p>{g.message}</p>
+								</Unnanounced>
+							</div>
+						);
+					})}
+				</GuestsContainer>
+			</GuestsContainerWrapper>
+		</GuestsWrapper>
+	);
+};

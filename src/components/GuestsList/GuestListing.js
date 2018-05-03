@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import PropTypes from 'prop-types';
 import blackPixelBackground from '../../images/dark-pixel-back.jpg';
 
 import { TopTitle, HeaderTitleWrapper, Header, Wrapper } from '../Title/Title';
@@ -27,11 +27,11 @@ const Section = styled.div`
 const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background: url(${(props) => props.background});
+  background: url(${props => props.background});
   background-size: cover;
 
 `;
-const ContentSection = styled.div `
+const ContentSection = styled.div`
   position: relative;
   display: block;
   padding: 20px 0 0 20px;
@@ -44,7 +44,7 @@ const ContentSection = styled.div `
   } 
 `;
 
-const ImageSection = styled.div `
+const ImageSection = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -61,80 +61,80 @@ const ImageSection = styled.div `
   }
 `;
 
-const ContentSectionParagraph = styled.p `
+const ContentSectionParagraph = styled.p`
   font-family: "Rubik", sans-serif;
   font-size: 1em;
   line-height: 1.6em;
-  color: ${(props) => props.color};
+  color: ${props => props.color};
   position: relative;
   a {
-    color: ${(props) => props.color};
+    color: ${props => props.color};
   }
 `;
 
 export default class GuestsList extends Component {
-  
-  constructor (props) {
-    super(props);
-    this.state = {};
-  }
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
 
-  componentWillMount() {
-    this.setState(
-      {
-        guestInfo: getGuestInfoFromUrl(this.props.match.params.guestUrl, localStorage.language || 'no'),
-        url: this.props.match.params.guestUrl
-      }
-    );
-  }
+	componentWillMount() {
+		this.setState({
+			guestInfo: getGuestInfoFromUrl(this.props.match.params.guestUrl, localStorage.language || 'no'),
+			url: this.props.match.params.guestUrl,
+		});
+	}
 
-  componentDidMount () {
-    window.scrollTo(0, 0);
-  }
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 
-  componentDidUpdate () {
-  }
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.match.params.guestUrl !== this.state.url) {
+			this.setState({
+				guestInfo: getGuestInfoFromUrl(nextProps.match.params.guestUrl, localStorage.language || 'no'),
+				url: nextProps.match.params.guestUrl,
+			});
+		}
+	}
 
-  componentWillReceiveProps (nextProps) {
-    if(nextProps.match.params.guestUrl !== this.state.url) {
-      this.setState(
-        {
-          guestInfo: getGuestInfoFromUrl(nextProps.match.params.guestUrl, localStorage.language || 'no'),
-          url: nextProps.match.params.guestUrl
-        }
-      );
-    }
-  }
+	render() {
+		window.scrollTo(0, 0);
 
-  render() {
-    window.scrollTo(0, 0);
+		const { guestInfo } = this.state;
+		const personImage = require(`../../images/${guestInfo.personImage}`);
+		return (
+			<Wrapper>
+				<Header>
+					<HeaderTitleWrapper>
+						<TopTitle>
+							{guestInfo.header}
+						</TopTitle>
+					</HeaderTitleWrapper>
+				</Header>
 
-    var guestInfo = this.state.guestInfo;
-
-    return (
-      <Wrapper>
-        <Header>
-          <HeaderTitleWrapper>
-            <TopTitle>
-              {guestInfo.header}
-            </TopTitle>
-          </HeaderTitleWrapper>
-        </Header>
-        
-        <SectionsContainer background={blackPixelBackground}>
-          <Section>
-            <ImageSection>
-              <img src={require('../../images/' + guestInfo.personImage)} alt={guestInfo.personImage} />
-            </ImageSection>
-            <ContentSection>
-              {guestInfo.paragraphs.map((c, ck) => (
-                <ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{__html: c}} color="white"/>
-              ))}
-            </ContentSection>
-          </Section>
-        </SectionsContainer>
-        <Guests />
-      </Wrapper>
-    );
-  }
+				<SectionsContainer background={blackPixelBackground}>
+					<Section>
+						<ImageSection>
+							<img src={personImage} alt={guestInfo.personImage} />
+						</ImageSection>
+						<ContentSection>
+							{guestInfo.paragraphs.map((c, ck) => (
+								<ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{ __html: c }} color="white" />
+							))}
+						</ContentSection>
+					</Section>
+				</SectionsContainer>
+				<Guests />
+			</Wrapper>
+		);
+	}
 }
+
+GuestsList.propTypes = {
+	match: PropTypes.shape({
+		params: PropTypes.shape({
+			guestUrl: PropTypes.node,
+		}).isRequired,
+	}).isRequired,
+};

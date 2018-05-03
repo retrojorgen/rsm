@@ -1,8 +1,9 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import RSMLogo from '../../images/rsm-pixel-animation.gif';
-import MediaQuery from 'react-responsive';
+
 import LanguageSelect from '../LanguageSelect/LanguageSelect';
 
 
@@ -55,14 +56,16 @@ const MainHeaderWrapper = styled.nav`
       position: absolute;
       left: 50%;
       top: 60px;
-      width: 200px;
+      width: 300px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
       justify-content: center;
       visibility: hidden;
       transition: all 0.1s ease-in-out;
       opacity: 0;
-      transform: translateX(-100px) translateY(-10px);
+      transform: translateX(-150px) translateY(-10px);
 
       
       
@@ -105,6 +108,12 @@ const MainHeaderWrapper = styled.nav`
         background-color: #fff142;
         border-bottom: 1px solid black;
         position: relative;
+        @media (min-device-width: 1100px) {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .pixel-left,
         .pixel-right {
           transition: all 0.25s ease-in-out;
@@ -189,7 +198,7 @@ const MainHeaderWrapper = styled.nav`
             
             .sub-menu {
               opacity: 1;
-              transform: translateX(-100px) translateY(00px);
+              transform: translateX(-150px) translateY(00px);
               visibility: visible;
             }
           }
@@ -234,7 +243,7 @@ const MainHeaderWrapper = styled.nav`
         width: 100%;
         height: calc(100% - 60px);
         overflow: auto;
-        display: ${(props) => props.state ? 'flex': 'none'};
+        display: ${props => (props.state ? 'flex': 'none')};
         padding: 20px 0 20px 0;
         
       }
@@ -252,7 +261,7 @@ const MobileButton = styled.button`
   span {
     position: absolute;
     border-radius: 2px;
-    background-color: ${(props) => props.state ? 'transparent': '#fff142'};
+    background-color: ${props => (props.state ? 'transparent': '#fff142')};
     height: 4px;
     top: 50%;
     width: 50%;
@@ -269,195 +278,263 @@ const MobileButton = styled.button`
       
     }
     &:before {
-      transform: ${(props) => props.state ? 'rotate(-45deg)': 'translateY(-8px)'};
+      transform: ${props => (props.state ? 'rotate(-45deg)': 'translateY(-8px)')};
     }
     &:after {
-      transform: ${(props) => props.state ? 'rotate(45deg)': 'translateY(8px)'};
+      transform: ${props => (props.state ? 'rotate(45deg)': 'translateY(8px)')};
     }
   }
 `;
 
 export default class MainHeader extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      mobileButton: false,
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			mobileButton: false,
+		};
 
-    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
-  }
+		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+	}
 
-  toggleMobileMenu () {
-    this.setState({mobileButton: !this.state.mobileButton})
-  }
+	toggleMobileMenu() {
+		this.setState({ mobileButton: !this.state.mobileButton });
+	}
 
-  render() {
-    const language = localStorage.language || 'no';
-    
-    const translation = {
-      buyTickets: {
-        no: "Billetter",
-        en: "Tickets"
-      },
-      menuItems: {
-        no: [
-          {
-            url: "/",
-            title: "Forside",
-            exact: true
-          },
-          {
-            url: "/about",
-            title: "Om messa"
-          },
-          {
-            url: "/program",
-            title: "Program 2018"
-          },
-          {
-            url: "/neo-geo-world-tour",
-            title: "Neo Geo Tour"
-          },
-          {
-            url: "/rent",
-            title: "Leie stand"
-          },
-          {
-            url: "/guests",
-            title: "VIP Gjester",
-            subMenu: [
-              {
-                url: "/guests/john-de-lancie",
-                title: "John De Lancie"
-              },
-              {
-                url: "/guests/charles-martinet",
-                title: "Charles Martinet"
-              },
-              {
-                url: "/guests/playstation-prototype",
-                title: "Playstation Prototype"
-              },
-              {
-                url: "/guests/ron-gilbert",
-                title: "Ron Gilbert"
-              },
-              {
-                url: "/guests/howard-scott-warshaw",
-                title: "Howard Scott Warshaw"
-              },
-              {
-                url: "/guests/al-lowe",
-                title: "Al Lowe"
-              },
-              {
-                url: "/guests/the-completionist",
-                title: "The Completionist"
-              }
-            ]
-          }
-        ],  
-        en: [
-          {
-            url: "/",
-            title: "Frontpage",
-            exact: true
-          },
-          {
-            url: "/about",
-            title: "About"
-          },
-          {
-            url: "/program",
-            title: "Schedule 2018"
-          },
-          {
-            url: "/neo-geo-world-tour",
-            title: "Neo Geo Tour"
-          },
-          {
-            url: "/rent",
-            title: "For vendors"
-          },
-          {
-            url: "/guests",
-            title: "VIP Guests",
-            subMenu: [
-              {
-                url: "/guests/john-de-lancie",
-                title: "John De Lancie"
-              },
-              {
-                url: "/guests/charles-martinet",
-                title: "Charles Martinet"
-              },
-              {
-                url: "/guests/playstation-prototype",
-                title: "Playstation Prototype"
-              },
-              {
-                url: "/guests/ron-gilbert",
-                title: "Ron Gilbert"
-              },
-              {
-                url: "/guests/howard-scott-warshaw",
-                title: "Howard Scott Warshaw"
-              },
-              {
-                url: "/guests/al-lowe",
-                title: "Al Lowe"
-              },
-              {
-                url: "/guests/the-completionist",
-                title: "The Completionist"
-              }
-            ]
-          },
-        ],
-      }
-    }
+	render() {
+		const language = localStorage.language || 'no';
 
-    let buyTickets = translation.buyTickets[language];
-    let menuItems = translation.menuItems[language].map((a, key) => (
-      <li key={key}>
-        <NavLink to={a.url} onClick={this.toggleMobileMenu} activeClassName="active" exact={ a.exact }>{a.title}</NavLink>
-        {a.subMenu && (
-          <ul className="sub-menu">
-            {a.subMenu.map((s, sk) => (
-              <li key={sk}>
-                <span class="pixel-right" />
-                <span class="pixel-left" />
-                <NavLink to={s.url} onClick={this.toggleMobileMenu} activeClassName="active" exact={true}>
-                  
-                  {s.title}
-                  
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        )}
-      </li>      
-    ));
+		const translation = {
+			buyTickets: {
+				no: 'Billetter',
+				en: 'Tickets',
+			},
+			menuItems: {
+				no: [
+					{
+						url: '/',
+						title: 'Forside',
+						exact: true,
+					},
+					{
+						url: '/about',
+						title: 'Hva skjer?',
+						subMenu: [
+							{
+								url: '/about',
+								title: 'Opplevelser',
+							},
+							{
+								url: '/kids',
+								title: 'Barneaktiviteter',
+							},
+							{
+								url: '/guests',
+								title: 'VIP-Gjester',
+							},
+							{
+								url: '/neo-geo-world-tour',
+								title: 'Neo Geo World Tour',
+							},
+							{
+								url: '/program',
+								title: 'Program 2018',
+							},
+						],
+					},
+					{
+						url: '/program',
+						title: 'Program 2018',
+					},
+					{
+						url: '/neo-geo-world-tour',
+						title: 'Neo Geo Tour',
+					},
+					{
+						url: '/rent',
+						title: 'Leie stand',
+					},
+					{
+						url: '/guests',
+						title: 'VIP Gjester',
+						subMenu: [
+							{
+								url: '/guests/john-de-lancie',
+								title: 'John De Lancie',
+							},
+							{
+								url: '/guests/charles-martinet',
+								title: 'Charles Martinet',
+							},
+							{
+								url: '/guests/playstation-prototype',
+								title: 'Playstation Prototype',
+							},
+							{
+								url: '/guests/ron-gilbert',
+								title: 'Ron Gilbert',
+							},
+							{
+								url: '/guests/howard-scott-warshaw',
+								title: 'Howard Scott Warshaw',
+							},
+							{
+								url: '/guests/al-lowe',
+								title: 'Al Lowe',
+							},
+							{
+								url: '/guests/the-completionist',
+								title: 'The Completionist',
+							},
+							{
+								url: '/guests/daniel-pesina-mortal-kombat',
+								title: 'Daniel Pesina (Mortal Kombat)',
+							},
+							{
+								url: '/guests/anthony-marquez-mortal-kombat',
+								title: 'Anthony Marquez (Mortal Kombat)',
+							},
+							{
+								url: '/guests/philip-ahn-mortal-kombat',
+								title: 'Philip Ahn (Mortal Kombat)',
+							},
+							{
+								url: '/guests/chris-marlow-rare',
+								title: 'Chris Marlow (RARE)',
+							},
+							{
+								url: '/guests/shawn-pile-rare',
+								title: 'Shawn Pile (RARE)',
+							},
+							{
+								url: '/guests/dex-the-swede',
+								title: 'Dex The Swede',
+							},
+						],
+					},
+				],
+				en: [
+					{
+						url: '/',
+						title: 'Frontpage',
+						exact: true,
+					},
+					{
+						url: '/about',
+						title: 'The convention',
+						subMenu: [
+							{
+								url: '/about',
+								title: 'What goes in',
+							},
+							{
+								url: '/kids',
+								title: 'For kids',
+							},
+							{
+								url: '/guests',
+								title: 'VIP-Guests',
+							},
+							{
+								url: '/neo-geo-world-tour',
+								title: 'Neo Geo World Tour',
+							},
+							{
+								url: '/program',
+								title: 'Schedule 2018',
+							},
+						],
+					},
+					{
+						url: '/program',
+						title: 'Schedule 2018',
+					},
+					{
+						url: '/neo-geo-world-tour',
+						title: 'Neo Geo Tour',
+					},
+					{
+						url: '/rent',
+						title: 'For vendors',
+					},
+					{
+						url: '/guests',
+						title: 'VIP Guests',
+						subMenu: [
+							{
+								url: '/guests/john-de-lancie',
+								title: 'John De Lancie',
+							},
+							{
+								url: '/guests/charles-martinet',
+								title: 'Charles Martinet',
+							},
+							{
+								url: '/guests/playstation-prototype',
+								title: 'Playstation Prototype',
+							},
+							{
+								url: '/guests/ron-gilbert',
+								title: 'Ron Gilbert',
+							},
+							{
+								url: '/guests/howard-scott-warshaw',
+								title: 'Howard Scott Warshaw',
+							},
+							{
+								url: '/guests/al-lowe',
+								title: 'Al Lowe',
+							},
+							{
+								url: '/guests/the-completionist',
+								title: 'The Completionist',
+							},
+						],
+					},
+				],
+			},
+		};
+
+		const buyTickets = translation.buyTickets[language];
+		const menuItems = translation.menuItems[language].map((a, key) => (
+			<li key={key}>
+				<NavLink to={a.url} onClick={this.toggleMobileMenu} activeClassName="active" exact={a.exact}>{a.title}</NavLink>
+				{a.subMenu && (
+					<ul className="sub-menu">
+						{a.subMenu.map((s, sk) => (
+							<li key={sk}>
+								<span className="pixel-right" />
+								<span className="pixel-left" />
+								<NavLink to={s.url} onClick={this.toggleMobileMenu} activeClassName="active" exact>
+
+									{s.title}
+
+								</NavLink>
+							</li>
+						))}
+					</ul>
+				)}
+			</li>
+		));
 
 
-    return (
-      <MainHeaderWrapper state={this.state.mobileButton}>
-        <MeanHeaderContainer>
-          <h1>RSM 18</h1>
-          <MediaQuery query="(max-device-width: 1224px)">
-            <MobileButton onClick={this.toggleMobileMenu} state={this.state.mobileButton}>
-              <span></span>
-            </MobileButton>
-          </MediaQuery>
-          <ul>
-            {menuItems}
-            <li>
-              <a href="https://retrospillmessen.hoopla.no/sales/2422891309">{buyTickets}</a>
-            </li>
-          </ul>
-          <LanguageSelect />
-        </MeanHeaderContainer>
-      </MainHeaderWrapper>
-    );
-  }
+		return (
+			<MainHeaderWrapper state={this.state.mobileButton}>
+				<MeanHeaderContainer>
+					<h1>RSM 18</h1>
+					<MediaQuery query="(max-device-width: 1224px)">
+						<MobileButton onClick={this.toggleMobileMenu} state={this.state.mobileButton}>
+							<span />
+						</MobileButton>
+					</MediaQuery>
+					<ul>
+						{menuItems}
+						<li>
+							<a href="https://retrospillmessen.hoopla.no/sales/2422891309">{buyTickets}</a>
+						</li>
+					</ul>
+					<LanguageSelect />
+				</MeanHeaderContainer>
+			</MainHeaderWrapper>
+		);
+	}
 }

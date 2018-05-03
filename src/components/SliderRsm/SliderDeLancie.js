@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import logo from '../../images/pixel-logo.png';
-import logoEn from '../../images/pixel-logo.png';
 import background from '../../images/de-lancie-background.jpg';
 import martinetLarge from '../../images/john-de-lancie-big.png';
 import scanLines from '../../images/scanlines.png';
@@ -9,7 +8,7 @@ import { PixelButton } from '../Title/Title';
 
 import LogoRow from './LogoRow';
 
-
+const logoEn = logo;
 const ConDescription = styled.h2`
     color: white;
     letter-spacing: 3px;
@@ -27,7 +26,7 @@ const ConDescription = styled.h2`
     }
 `;
 
-const SliderRsmContainer = styled.div `
+const SliderRsmContainer = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
@@ -64,7 +63,7 @@ const TicketButton = styled(PixelButton)`
 `;
 
 
-const Backdrop = styled.div `
+const Backdrop = styled.div`
     background-size: cover;
     background-image: url(${background});
     position: absolute;
@@ -81,7 +80,7 @@ const Backdrop = styled.div `
 const PersonImage = styled.img`
 `;
 
-const FixedLeftLarge = styled.div `
+const FixedLeftLarge = styled.div`
     position: absolute;
     left: 0;
     top: 0;
@@ -110,7 +109,7 @@ const FixedLeftLarge = styled.div `
     }
 `;
 
-const ConInfo = styled.div `
+const ConInfo = styled.div`
     max-width: 400px;
     margin: 0 auto;
     padding: 10px;
@@ -123,7 +122,6 @@ const ConInfo = styled.div `
         margin-bottom: 2em;
     }
 `;
-
 
 
 const SliderContainer = styled.div`
@@ -170,72 +168,70 @@ const ConTitle = styled.div`
 `;
 
 export default class SliderMartinet extends Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            innerWidth: window.innerWidth,
-            innerHeight: window.innerHeight
-        };
-        this.listenToResize();
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			innerWidth: window.innerWidth,
+			innerHeight: window.innerHeight,
+		};
+		this.listenToResize();
+	}
 
-    listenToResize () {
-        window.addEventListener('resize', () => {
-            this.setState(
-                {
-                    innerWidth: window.innerWidth,
-                    innerHeight: window.innerHeight
-                }
-            )
-        });
-    }
+	listenToResize() {
+		window.addEventListener('resize', () => {
+			this.setState({
+				innerWidth: window.innerWidth,
+				innerHeight: window.innerHeight,
+			});
+		});
+	}
 
-    render() {
-        const { innerWidth, innerHeight } = this.state;
-        const language = localStorage.language || 'no';
-        const translations = {
-            no: {
-              logo: logo,
-              conDate: '12.-13. Mai 2018, Runarhallen, Sandefjord',
-              buyTicket: "Kjøp billetter",
-              title: "Møt John De Lancie",
-              titleSub: "Q fra Star Trek, Discord fra My Little Pony"
-            },
-            en: {
-              logo: logoEn,
-              conDate: 'May 12-13th, 2018. Runarhallen, Sandefjord, Norway',
-              buyTicket: "Get tickets",
-              title: "Møt John De Lancie",
-              titleSub: "Q from Star Trek, Discord from My Little Pony"
-            }
-          }
-          let translation = translations[language];  
-        return (
-            <SliderRsmContainer innerWidth={innerWidth} innerHeight={innerHeight}>
-                
-                <Backdrop />
-                <FixedLeftLarge>
-                  <PersonImage src={martinetLarge} alt="John De Lancie" />
-                </FixedLeftLarge>
-                <SliderContainer>
-                    <SliderInfo>
+	render() {
+		const { innerWidth, innerHeight } = this.state;
+		const language = localStorage.language || 'no';
+		const translations = {
+			no: {
+				logo,
+				conDate: '12.-13. Mai 2018, Runarhallen, Sandefjord',
+				buyTicket: 'Kjøp billetter',
+				title: 'Møt John De Lancie',
+				titleSub: 'Q fra Star Trek, Discord fra My Little Pony',
+			},
+			en: {
+				logo: logoEn,
+				conDate: 'May 12-13th, 2018. Runarhallen, Sandefjord, Norway',
+				buyTicket: 'Get tickets',
+				title: 'Møt John De Lancie',
+				titleSub: 'Q from Star Trek, Discord from My Little Pony',
+			},
+		};
+		const translation = translations[language];
+		return (
+			<SliderRsmContainer innerWidth={innerWidth} innerHeight={innerHeight}>
 
-                        <ConTitle>
-                          <h1>{translation.title}</h1>
-                          <h2>{translation.titleSub}</h2>
-                        </ConTitle>
-                        
-                        <ConInfo>
-                            <ConDescription>{translation.conDate}</ConDescription>
-                            <TicketButton href="https://retrospillmessen.hoopla.no/sales/2422891309">
-                                {translation.buyTicket}
-                            </TicketButton>
-                            
-                        </ConInfo>
-                    </SliderInfo>
-                    <LogoRow />
-                </SliderContainer>
-            </SliderRsmContainer>
-        )
-    }
+				<Backdrop />
+				<FixedLeftLarge>
+					<PersonImage src={martinetLarge} alt="John De Lancie" />
+				</FixedLeftLarge>
+				<SliderContainer>
+					<SliderInfo>
+
+						<ConTitle>
+							<h1>{translation.title}</h1>
+							<h2>{translation.titleSub}</h2>
+						</ConTitle>
+
+						<ConInfo>
+							<ConDescription>{translation.conDate}</ConDescription>
+							<TicketButton href="https://retrospillmessen.hoopla.no/sales/2422891309">
+								{translation.buyTicket}
+							</TicketButton>
+
+						</ConInfo>
+					</SliderInfo>
+					<LogoRow />
+				</SliderContainer>
+			</SliderRsmContainer>
+		);
+	}
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import SliderRsm from './../SliderRsm/SliderRsm';
@@ -9,8 +9,6 @@ const SliderWrap = styled.div`
     height: ${window.innerHeight-87}px;
     
 `;
-
-
 
 
 const SlickWrap = styled.div`
@@ -34,35 +32,33 @@ const SlickWrap = styled.div`
     }
 `;
 
-export default class FrontHero extends Component {
-    render() {
-        let sliderHeight = window.innerHeight-87;
-        let settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            //autoplay: false,
-            arrows: true,
-            adaptiveHeight: true
-          };
-        return (
-            <SlickWrap style={{'height': sliderHeight + 'px'}}>
-                <Slider  className="FrontHero-wrapper" {...settings}>
-                    <SliderWrap>
-                        <SliderDeLancie />
-                    </SliderWrap>
-                    <SliderWrap>
-                        <SliderMartinet />
-                    </SliderWrap>
-                    <SliderWrap>
-                        <SliderRsm />
-                    </SliderWrap>
-                    
-                </Slider>
-            </SlickWrap>
-        )
-    }
-}
+export default () => {
+	const sliderHeight = window.innerHeight-87;
+	const settings = {
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		// autoplay: false,
+		arrows: true,
+		adaptiveHeight: true,
+	};
+	return (
+		<SlickWrap style={{ height: `${sliderHeight}px` }}>
+			<Slider  className="FrontHero-wrapper" {...settings}>
+				<SliderWrap>
+					<SliderDeLancie />
+				</SliderWrap>
+				<SliderWrap>
+					<SliderMartinet />
+				</SliderWrap>
+				<SliderWrap>
+					<SliderRsm />
+				</SliderWrap>
+
+			</Slider>
+		</SlickWrap>
+	);
+};

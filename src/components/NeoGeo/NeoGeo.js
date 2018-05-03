@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, {keyframes} from 'styled-components';
-import neogeologo from '../../images/neogeo-logo.png';
+import styled, { keyframes } from 'styled-components';
+import neogeologo from '../../images/neogeo-spin-logo.png';
 import neogeowlogo from '../../images/neogeo-wlogo.png';
 import scanLines from '../../images/scanlines.png';
 import snkFighterLeft from '../../images/snkFighterLeft.png';
@@ -205,76 +205,73 @@ const Constrainer = styled.div`
 
 
 export default class NeoGeo extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        notActive : true
-      }
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			notActive: true,
+		};
+	}
 
-    componentDidMount () {
-      window.setTimeout(() => {
-        this.setState({
-          notActive: false
-        })
-      }, 10);
-      
-    }
-    render() {
-        let active = this.state.notActive
-        const language = localStorage.language || 'no';
-        const translations = {
-          no: {
-            title: "Offisiell Neo Geo World tour på RSM18",
-            subtitle: `Retrospillmessen er offisielt stoppested for Neo Geo World Tour fra SNK`,
-            description: [
-              `Er du skandinavias beste fighting-gamer? Da kan du vinne
+	componentDidMount() {
+		window.setTimeout(() => {
+			this.setState({
+				notActive: false,
+			});
+		}, 10);
+	}
+	render() {
+		const active = this.state.notActive;
+		const language = localStorage.language || 'no';
+		const translations = {
+			no: {
+				title: 'Offisiell Neo Geo World tour på RSM18',
+				subtitle: 'Retrospillmessen er offisielt stoppested for Neo Geo World Tour fra SNK',
+				description: [
+					`Er du skandinavias beste fighting-gamer? Da kan du vinne
               en reise til Hong Kong!`,
-              `På lørdagen (13.05.2018) av Retrospillmessen holder SNK turneringer i både King of Fighters 98 og King of Fighters XIV! SNK trekker to vinnere som hver får
+					`På lørdagen (12.05.2018) av Retrospillmessen holder SNK turneringer i både King of Fighters 98 og King of Fighters XIV! SNK trekker to vinnere som hver får
               en tur til Hong Kong for å delta i de internasjonale finalene. Alle kan delta!`,
-              `Les mer på <a href=https://www.facebook.com/neogeoworldtour/>Neo Geo World Tour sin Facebookside</a> 
-              og <a href=https://smash.gg/tournament/neo-geo-world-tour-norway-stop>meld deg på her for å være sikret plass!</a> Vi sees`
+					`Les mer på <a href=https://www.facebook.com/neogeoworldtour/>Neo Geo World Tour sin Facebookside</a> 
+              og <a href=https://smash.gg/tournament/neo-geo-world-tour-norway-stop>meld deg på her for å være sikret plass!</a> Vi sees`,
 
-            ]
-          },
-          en: {
-            title: "Official Neo Geo World tour at RSM18",
-            subtitle: `Retrospillmessen 2018 is an offical leg of the Neo Geo World Tour from SNK`,
+				],
+			},
+			en: {
+				title: 'Official Neo Geo World tour at RSM18',
+				subtitle: 'Retrospillmessen 2018 is an offical leg of the Neo Geo World Tour from SNK',
 
-            description: [
-              `Are you amazing at fighting games? Well, at Retrospillmessen 2018 you have the chance of winning a trip to Hong Kong!`,
-              `On Saturday (05.13.2018) during the convention SNK wil beholding a tournament in both King of Fighters 98 and King of Fighters XIV. Winners of both tournaments
+				description: [
+					'Are you amazing at fighting games? Well, at Retrospillmessen 2018 you have the chance of winning a trip to Hong Kong!',
+					`On Saturday (05.12.2018) during the convention SNK wil beholding a tournament in both King of Fighters 98 and King of Fighters XIV. Winners of both tournaments
               will get a trip to Hong Kong each to compete in the finals. Everyone can participate!`,
-              `Find out more on <a href=https://www.facebook.com/neogeoworldtour/>Neo Geo World Tour's Facebook page</a> 
-              and <a href=https://smash.gg/tournament/neo-geo-world-tour-norway-stop>register here to secure your spot in the tournament!</a> See you there.`
+					`Find out more on <a href=https://www.facebook.com/neogeoworldtour/>Neo Geo World Tour's Facebook page</a> 
+              and <a href=https://smash.gg/tournament/neo-geo-world-tour-norway-stop>register here to secure your spot in the tournament!</a> See you there.`,
 
-            ]
-          }
-        }
-        let translation = translations[language];              
-        return (
-          <NeoWrapper>
-            <NeoLeft className={active ? '': 'active'}>
-              
-            </NeoLeft>
-            <NeoBody>
-            <NeoLogoHeader>
-              <img id="logo" className={active ? '': 'active'} src={neogeologo} alt="King of Fighters Character" />
-              <img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} alt="King of Fighters Character" />
-            </NeoLogoHeader>
-            <VideoBackground>
-              <iframe title="neo-geo-youtube-video" class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameBorder="0"></iframe>
-            </VideoBackground>
-            <Constrainer>
-              <NeoTitle>{translation.title}</NeoTitle>
-              <NeoSubTitle>{translation.subtitle}</NeoSubTitle>
-              {translation.description.map((description, key) => (
-                <NeoParagraph key={key} dangerouslySetInnerHTML={{__html: description}} />
-              ))}
-            </Constrainer>
-            </NeoBody>
-            <NeoRight className={active ? '': 'active'}></NeoRight>
-          </NeoWrapper>
-        )
-    }
+				],
+			},
+		};
+		const translation = translations[language];
+		return (
+			<NeoWrapper>
+				<NeoLeft className={active ? '': 'active'} />
+				<NeoBody>
+					<NeoLogoHeader>
+						<img id="logo" className={active ? '': 'active'} src={neogeologo} alt="King of Fighters Character" />
+						<img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} alt="King of Fighters Character" />
+					</NeoLogoHeader>
+					<VideoBackground>
+						<iframe title="neo-geo-youtube-video" className="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameBorder="0" />
+					</VideoBackground>
+					<Constrainer>
+						<NeoTitle>{translation.title}</NeoTitle>
+						<NeoSubTitle>{translation.subtitle}</NeoSubTitle>
+						{translation.description.map((description, key) => (
+							<NeoParagraph key={key} dangerouslySetInnerHTML={{ __html: description }} />
+						))}
+					</Constrainer>
+				</NeoBody>
+				<NeoRight className={active ? '': 'active'} />
+			</NeoWrapper>
+		);
+	}
 }

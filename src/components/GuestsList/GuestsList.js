@@ -26,11 +26,11 @@ const Section = styled.div`
 const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background: url(${(props) => props.background});
+  background: url(${props => props.background});
   background-size: cover;
 
 `;
-const ContentSection = styled.div `
+const ContentSection = styled.div`
   position: relative;
   display: block;
   padding: 20px 0 0 20px;
@@ -42,7 +42,7 @@ const ContentSection = styled.div `
   } 
 `;
 
-const ImageSection = styled.div `
+const ImageSection = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -60,72 +60,71 @@ const ImageSection = styled.div `
 `;
 
 
-const ContentSectionHeader = styled.h2 `
+const ContentSectionHeader = styled.h2`
   font-family: "Rubik", sans-serif;
   font-size: 2em;
-  color: ${(props) => props.color};
+  color: ${props => props.color};
   position: relative;
   font-weight: bold;
 `;
 
-const ContentSectionParagraph = styled.p `
+const ContentSectionParagraph = styled.p`
   font-family: "Rubik", sans-serif;
   font-size: 1em;
   line-height: 1.6em;
-  color: ${(props) => props.color};
+  color: ${props => props.color};
   position: relative;
   a {
-    color: ${(props) => props.color};
+    color: ${props => props.color};
   }
 `;
 
 export default class GuestsList extends Component {
-  
-  componentDidMount () {
-    window.scrollTo(0, 0);
-  }
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 
-  render() {
-    window.scrollTo(0, 0);
-    const language = localStorage.language || 'no';
-    var sectionToggle = true;
-    console.log(guests);
-    var translation = guests[language];
-    let sections = translation.sections.map((a,k) => {
-      let background = sectionToggle ? blackPixelBackground: whitePixelBackground;
-      let color = sectionToggle ? 'white': 'black';
-      sectionToggle = !sectionToggle;
-      return (
-        <SectionsContainer background={background} key={k}>
-          <Section>
-            <ImageSection>
-              <img src={require('../../images/' + a.personImage)} alt={a.personImage} />
-            </ImageSection>
-            <ContentSection>
-              <ContentSectionHeader color={color}>{a.header}</ContentSectionHeader>
-              {a.paragraphs.map((c, ck) => (
-                <ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{__html: c}}  color={color} />
-              ))}
-            </ContentSection>
-          </Section>
-        </SectionsContainer>
-      );
-    });
+	render() {
+		window.scrollTo(0, 0);
+		const language = localStorage.language || 'no';
+		let sectionToggle = true;
+		console.log(guests);
+		const translation = guests[language];
+		const sections = translation.sections.map((a, k) => {
+			const background = sectionToggle ? blackPixelBackground: whitePixelBackground;
+			const color = sectionToggle ? 'white': 'black';
+			sectionToggle = !sectionToggle;
+			return (
+				<SectionsContainer background={background} key={k}>
+					<Section>
+						<ImageSection>
+							<img src={require(`../../images/${a.personImage}`)} alt={a.personImage} />
+						</ImageSection>
+						<ContentSection>
+							<ContentSectionHeader color={color}>{a.header}</ContentSectionHeader>
+							{a.paragraphs.map((c, ck) => (
+								<ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{ __html: c }}  color={color} />
+							))}
+						</ContentSection>
+					</Section>
+				</SectionsContainer>
+			);
+		});
 
-    return (
-      <Wrapper>
-        <Header>
-          <HeaderTitleWrapper>
-            <TopTitle>
-              {translation.title}
-            </TopTitle>
-            <p>{translation.subtitle}</p>
-          </HeaderTitleWrapper>
-        </Header>
-        
-          {sections}
-        
-      </Wrapper>
-    );
-  }
+		return (
+			<Wrapper>
+				<Header>
+					<HeaderTitleWrapper>
+						<TopTitle>
+							{translation.title}
+						</TopTitle>
+						<p>{translation.subtitle}</p>
+					</HeaderTitleWrapper>
+				</Header>
+
+				{sections}
+
+			</Wrapper>
+		);
+	}
 }

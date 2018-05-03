@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FooterBackground from '../../images/white-pixel-back.png';
-import {PixelButton} from '../Title/Title';
+import { PixelButton } from '../Title/Title';
 
 
 const FooterContainer = styled.footer`
@@ -57,40 +57,37 @@ const FooterContainer = styled.footer`
 `;
 
 
-
-export default class Footer extends React.Component {
-    render() {
-        const language = localStorage.language || 'no';
-        const translations = {
-          no: {
-            visit: "For oppdatering, besøk oss på facebook!",
-            remember: `Husk, du når oss alltid på 
+export default () => {
+	const language = localStorage.language || 'no';
+	const translations = {
+		no: {
+			visit: 'For oppdatering, besøk oss på facebook!',
+			remember: `Husk, du når oss alltid på 
             <a href="mailto:mail@retrospillmessen.no">mail@retrospillmessen.no</a>, 
             <a href="mailto:stand@retrospillmessen.no">stand@retrospillmessen.no</a>,
              eller telefon <a href="tel:+4797750047">+47 977 50 047</a>
             <br/><br/>Ønsker du å søke pressepass til Retrospillmessen? Kontakt oss på <a href="mailto:presse@retrospillmessen.no">presse@retrospillmessen.no</a>.
             Vi ber om at du/dere søker pressepass innen utgangen av april.`
-          ,
-          },
-          en: {
-            visit: "For updates, visit us on facebook",
-            remember: `You can always reach us at 
+			,
+		},
+		en: {
+			visit: 'For updates, visit us on facebook',
+			remember: `You can always reach us at 
             <a href="mailto:mail@retrospillmessen.no">mail@retrospillmessen.no</a>, 
             <a href="mailto:stand@retrospillmessen.no">stand@retrospillmessen.no</a>,
              or by phone <a href="tel:+4797750047">+47 977 50 047</a>
              <br/><br/>Want to apply for press pass to Retrospillmessen? Contact us at <a href="mailto:presse@retrospillmessen.no">presse@retrospillmessen.no</a>.
             We as that you apply for a pass at latest within the month of April.`
-            ,
-          }
-        }
-        let translation = translations[language];              
-        return (
-            <FooterContainer>
-                
-                <h1>{translation.visit}</h1>
-                <PixelButton href="https://www.facebook.com/retrospillmessen/">Gå til facebook</PixelButton>
-                <h2 dangerouslySetInnerHTML={{__html: translation.remember}} />
-          </FooterContainer>
-        )
-    }
-}
+			,
+		},
+	};
+	const translation = translations[language];
+	return (
+		<FooterContainer>
+
+			<h1>{translation.visit}</h1>
+			<PixelButton href="https://www.facebook.com/retrospillmessen/">Gå til facebook</PixelButton>
+			<h2 dangerouslySetInnerHTML={{ __html: translation.remember }} />
+		</FooterContainer>
+	);
+};

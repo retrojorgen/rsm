@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import neoTokyoLogo from '../../images/neo-tokyo-white.png';
 import elkjopLogo from '../../images/elkjop_logo_white.png';
@@ -10,7 +10,9 @@ import allegroLogo from '../../images/allegro-logo.png';
 import playstationLogo from '../../images/playstation-logo.png';
 import nerdeportalenLogo from '../../images/nerdeportalen-logo.png';
 import legoLogo from '../../images/lego-logo.png';
+import neogeoLogo from '../../images/neogeo-logo.png';
 import capcomLogo from '../../images/capcom-logo.png';
+import funcomLogo from '../../images/funcom-logo.png';
 
 const SponsorRow = styled.div`
     display: flex;
@@ -49,27 +51,27 @@ const SponsorItem = styled.a`
     }
 `;
 
-const Sponsors = styled.div `
+const Sponsors = styled.div`
 
 `;
 
 
-
-
 export default () => (
-  <Sponsors>
-      <SponsorRow>
-          <SponsorItem href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} alt={elkjopLogo}/></SponsorItem>
-          <SponsorItem href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} alt={neoTokyoLogo}/></SponsorItem>
-          <SponsorItem href="http://www.bk.no" target="new_window"><img src={bkLogo} alt={bkLogo}/></SponsorItem>
-          <SponsorItem href="http://www.cosmosit.no" target="new_window"><img src={cosmosLogo} alt={cosmosLogo}/></SponsorItem>
-          <SponsorItem href="http://www.nerdeportalen.no" target="new_window"><img src={nerdeportalenLogo} alt={nerdeportalenLogo}/></SponsorItem>
-          <SponsorItem href="http://www.lego.no" target="new_window"><img src={legoLogo} alt={legoLogo}/></SponsorItem>
-          <SponsorItem href="http://www.allegro.no" target="new_window"><img src={allegroLogo} alt={allegroLogo}/></SponsorItem>
-          <SponsorItem href="http://www.xbox.no" target="new_window"><img src={xboxLogo} alt={xboxLogo}/></SponsorItem>
-          <SponsorItem href="http://www.retroservice.no" target="new_window"><img src={retroserviceLogo} alt={retroserviceLogo}/></SponsorItem>
-          <SponsorItem href="http://www.capcom.com" target="new_window"><img src={capcomLogo} alt={capcomLogo}/></SponsorItem>
-          <SponsorItem href="http://www.playstation.no" target="new_window"><img src={playstationLogo} alt={playstationLogo}/></SponsorItem>
-      </SponsorRow>
-  </Sponsors>
-)
+	<Sponsors>
+		<SponsorRow>
+			<SponsorItem href="http://www.elkjop.no" target="new_window"><img src={elkjopLogo} alt={elkjopLogo} /></SponsorItem>
+			<SponsorItem href="http://www.neotokyo.no" target="new_window"><img src={neoTokyoLogo} alt={neoTokyoLogo} /></SponsorItem>
+			<SponsorItem href="http://www.bk.no" target="new_window"><img src={bkLogo} alt={bkLogo} /></SponsorItem>
+			<SponsorItem href="http://www.cosmosit.no" target="new_window"><img src={cosmosLogo} alt={cosmosLogo} /></SponsorItem>
+			<SponsorItem href="http://www.nerdeportalen.no" target="new_window"><img src={nerdeportalenLogo} alt={nerdeportalenLogo} /></SponsorItem>
+			<SponsorItem href="http://www.lego.no" target="new_window"><img src={legoLogo} alt={legoLogo} /></SponsorItem>
+			<SponsorItem href="http://www.allegro.no" target="new_window"><img src={allegroLogo} alt={allegroLogo} /></SponsorItem>
+			<SponsorItem href="http://www.xbox.no" target="new_window"><img src={xboxLogo} alt={xboxLogo} /></SponsorItem>
+			<SponsorItem href="http://www.retroservice.no" target="new_window"><img src={retroserviceLogo} alt={retroserviceLogo} /></SponsorItem>
+			<SponsorItem href="http://www.capcom.com" target="new_window"><img src={capcomLogo} alt={capcomLogo} /></SponsorItem>
+			<SponsorItem href="http://www.playstation.no" target="new_window"><img src={playstationLogo} alt={playstationLogo} /></SponsorItem>
+			<SponsorItem href="https://nb-no.facebook.com/neogeoworldtour/" target="new_window"><img src={neogeoLogo} alt={neogeoLogo} /></SponsorItem>
+			<SponsorItem href="http://funcom.no/" target="new_window"><img src={funcomLogo} alt={funcomLogo} /></SponsorItem>
+		</SponsorRow>
+	</Sponsors>
+);

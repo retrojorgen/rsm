@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import YellowTileBackground from './guests-background.jpg';
-import { NavLink } from 'react-router-dom';
 
 
 const PixelButtonStyle = `
@@ -111,8 +112,6 @@ const PixelButtonNavLink = styled(NavLink)`
 `;
 
 
-
-
 const TopTitle = styled.h1`
   margin: 0;
   font-family: "Rubik", sans-serif;
@@ -131,7 +130,7 @@ const TopTitle = styled.h1`
   }
 `;
 
-const HeaderTitleWrapper = styled.div `
+const HeaderTitleWrapper = styled.div`
   width: 100%;
   padding: 20px 10px 40px 10px;
 `;
@@ -140,7 +139,7 @@ const TitleWrap = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  color: ${(props) => props && props.color === 'Yellow' ? 'black' : 'white'};
+  color: ${props => (props && props.color === 'Yellow' ? 'black' : 'white')};
   margin-bottom: 40px;
   @media (max-device-width: 1100px) {
     padding: 0;
@@ -191,7 +190,7 @@ const Section = styled.div`
 const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background: url(${(props) => props.background});
+  background: url(${props => props.background});
   background-size: cover;
 
 `;
@@ -210,7 +209,7 @@ const Wrapper = styled.div`
 `;
 
 
-const BlackSection = styled.div `
+const BlackSection = styled.div`
     display: block;
     position: relative;
     color: white;
@@ -236,7 +235,7 @@ const YellowSection = styled.section`
     }
 `;
 
-const Header = styled.div `
+const Header = styled.div`
   height: auto;
   background-color: black;
   background-size: cover;
@@ -256,19 +255,20 @@ const Header = styled.div `
 `;
 
 
+const Title = (props) => {
+	const { title }  = props;
+	const color = props.color ? props.color : '';
+	return (
+		<TitleWrap color={color}><h1><span>{title}</span></h1></TitleWrap>
+	);
+};
 
-class Title extends Component {
-    
-  render() {
-    let title = this.props.title;
-    let color = this.props.color ? this.props.color : '';
-    return (
-        <TitleWrap color={color}><h1><span>{title}</span></h1></TitleWrap>
-    );
-  }
-}
+Title.propTypes = {
+	title: PropTypes.string.isRequired,
+	color: PropTypes.string.isRequired,
+};
 
 export default Title;
-export { 
-  BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton, Section, SectionsContainer, WideSection, Wrapper
-};
+
+
+export { BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton, Section, SectionsContainer, WideSection, Wrapper  };

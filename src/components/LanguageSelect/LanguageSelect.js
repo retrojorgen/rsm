@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {PixelButtonButton} from './../Title/Title';
+import { PixelButtonButton } from './../Title/Title';
 
 
 const UnselectedButton = styled.button`
@@ -65,38 +65,35 @@ const SelectLanguageWrapper = styled.div`
 `;
 
 export default class MainHeader extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      language: localStorage.language || 'no',
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			language: localStorage.language || 'no',
+		};
 
-    this.toggleLanguage = this.toggleLanguage.bind(this);
-  }
+		this.toggleLanguage = this.toggleLanguage.bind(this);
+	}
 
-  toggleLanguage (language) {
-    
-    this.setState({'language': language});
-    localStorage.language = language;
-    window.location.reload();
-  }
+	toggleLanguage(language) {
+		this.setState({ language });
+		localStorage.language = language;
+		window.location.reload();
+	}
 
-  render() {
-    const languages = ['no', 'en'];
-    let selectedLanguage = this.state.language
+	render() {
+		const languages = ['no', 'en'];
+		const selectedLanguage = this.state.language;
 
-    let languageItems = languages.map((a, key) => {
-      console.log(a, selectedLanguage);
-      if(a === selectedLanguage)
-        return (<SelectedButton key={key} onClick={() => this.toggleLanguage(a)}>{a}</SelectedButton>)
-      else
-        return (<UnselectedButton key={key} onClick={() => this.toggleLanguage(a)}>{a}</UnselectedButton>)  
-  });
+		const languageItems = languages.map((a, key) => {
+			console.log(a, selectedLanguage);
+			if (a === selectedLanguage) { return (<SelectedButton key={key} onClick={() => this.toggleLanguage(a)}>{a}</SelectedButton>); }
+			return (<UnselectedButton key={key} onClick={() => this.toggleLanguage(a)}>{a}</UnselectedButton>);
+		});
 
-    return (
-      <SelectLanguageWrapper>
-        {languageItems}
-      </SelectLanguageWrapper>
-    );
-  }
+		return (
+			<SelectLanguageWrapper>
+				{languageItems}
+			</SelectLanguageWrapper>
+		);
+	}
 }
