@@ -104,6 +104,22 @@ const guestList = {
 				description: 'Utvikler bak Conkers Bad Fur Day og Banjo Kazooie: Nuts & Bolts',
 				alt: 'Utvikler bak Conkers Bad Fur Day og Banjo Kazooie',
 			},
+			{
+				type: 'announced',
+				profile: 'daviddoak.jpg',
+				url: 'david-doak-rare',
+				name: 'David Doak',
+				description: 'Utvikler bak legendariske GoldenEye 007 og Perfect Dark. Senere Timesplitters serien',
+				alt: 'Utvikler bak legendariske GoldenEye 007 og Perfect Dark. Senere Timesplitters serien',
+			},
+			{
+				type: 'announced',
+				profile: 'konradcommonwealth.jpg',
+				url: 'konrad-commonwealth-realm',
+				name: 'Konrad fra Commonwealth Realm',
+				description: 'Skaperen av den norske youtube-kanalen Commonwealth Realm, med over 130 000 subs',
+				alt: 'Skaperen av den norske youtube-kanalen Commonwealth Realm, med over 130 000 subs',
+			},
 		],
 	},
 	en: {
@@ -218,6 +234,22 @@ const guestList = {
 				name: 'Shawn Pile',
 				description: 'Developer of Conkers Bad Fur Day and Banjo Kazooie: Nuts & Bolts',
 				alt: 'Developer of Conkers Bad Fur Day and Banjo Kazooie: Nuts & Bolts',
+			},
+			{
+				type: 'announced',
+				profile: 'daviddoak.jpg',
+				url: 'david-doak-rare',
+				name: 'David Doak',
+				description: 'Developer of legendary games GoldenEye 007 and Perfect Dark',
+				alt: 'Developer of legendary games GoldenEye 007 and Perfect Dark',
+			},
+			{
+				type: 'announced',
+				profile: 'konradcommonwealth.jpg',
+				url: 'konrad-commonwealth-realm',
+				name: 'Konrad from Commonwealth Realm',
+				description: 'Creator of the youtube-channel Commonwealth Realm, with over 130 000 subs',
+				alt: 'Creator of the youtube-channel Commonwealth Realm, with over 130 000 subs',
 			},
 		],
 	},
@@ -440,7 +472,32 @@ const guests = {
 					'Chris Marlow og Shawn Pile holder RARE-Q&A om Conker og nyere spill som Sea of Thieves på lørdag. Sjekk programmet for mer info.',
 				],
 			},
+			{
+				personImage: 'konradcommonwealth.jpg',
+				url: 'konrad-commonwealth-realm',
+				imageDescription: 'Konrad fra youtube-kanalen CommonWealth Realm',
+				header: 'Konrad fra youtube-kanalen Commonwealth Realm (over 130 000 subs)',
 
+				paragraphs: [
+					'Konrad er skaperen av gamingkanalen Commonwealth Realm på youtube. En kanal som hurtig har gjort seg bemerket med detaljerte videoer og ekspertanalyser om Nintendos historie og fremtid, med fokus på blant annet Zelda, Mario og Donkey Kong-seriene.',
+					'Kanalen gjør det faktisk så bra at den er blitt offisiell brand ambassador for Nintendo of America.',
+					'Konrad kommer til oss for å fortelle om hvordan han har bygget opp kanalen sin, hvordan han arbeider med amerikanske stemmeskuespillere og hvordan han gjør research.',
+					'Vi gleder oss til å treffe Konrad på messen!',
+					'PS: Sjekk ut hans youtube <a href=https://twitter.com/commonrealm>kanal Commonwealth Realms her</a>',
+				],
+			},
+			{
+				personImage: 'daviddoak.jpg',
+				url: 'david-doak-rare',
+				imageDescription: 'David Doak (GoldenEye 007, Perfect Dark, Timesplitters)',
+				header: 'David Doak (GoldenEye 007, Perfect Dark, Timesplitters)',
+
+				paragraphs: [
+					'David Doak er en av de virkelig store veteranene hos spillselskapet Rare. Som utvikler på 90-tallet jobbet han på hit-spillene GoldenEye 007 og Perfect Dark til Nintendo 64. Senere forlot han Rare og jobbet på den forholdsvis populære  Timesplitters serien.',
+					'David var på besøk hos oss i fjor og hadde så lyst til å komme tilbake  år at vi sa ja :)',
+					'Vi gleder oss til å treffe David igjen og hører flere historier fra Rare!',
+				],
+			},
 		],
 	},
 	en: {
@@ -650,6 +707,32 @@ const guests = {
 				paragraphs: [
 					'Shawn is like Chris Marlow one of the veterans from the 2000s at RARE studios. He worked with Marlow on Conkers Bad Fur Day and the remake Live and Reloaded',
 					'Chris Marlow and Shawn Pile will host a RARE Q&A about Conker and newer games like Sea of Thieves on Saturday. Check the program for more info!',
+				],
+			},
+			{
+				personImage: 'konradcommonwealth.jpg',
+				url: 'konrad-commonwealth-realm',
+				imageDescription: 'Konrad from the youtube-channel CommonWealth Realm',
+				header: 'Konrad from the Youtube-channel Commonwealth Realm (over 130 000 subs)',
+
+				paragraphs: [
+					'Konrad is the creator of the gaming channel Commonwealth Realm on Youtube. A channel that has gained notoriety recently for its detailed videos and expert analysis of Nintendo history and future.',
+					'The channel focuses on The Zelda and Mario-series of games as well as other mostly Nintendo-related topics, like the Nintendo Switch',
+					'Nintendo has even noticed Konrads hard work making the channel an offial brand ambassador for Nintendo of America',
+					'At the convention Konrad will be speaking about his experiences running a youtube-channel. We are happy to have Konrad on board for Retrospillmessen 2018!',
+					'PS: Check out his Youtube channel <a href=https://twitter.com/commonrealm> Commonwealth Realms here</a>',
+				],
+			},
+			{
+				personImage: 'daviddoak.jpg',
+				url: 'david-doak-rare',
+				imageDescription: 'David Doak (GoldenEye 007, Perfect Dark, Timesplitters)',
+				header: 'David Doak (GoldenEye 007, Perfect Dark, Timesplitters)',
+
+				paragraphs: [
+					'David is one of the true veterans of the legendary british game studio Rare. In the 90s he worked on classic games like Goldeneye 007 and Perfect Dark.',
+					'He later left Rare and worked on the cult series Timesplitters. David visited the convention last year, and had such a good time he asked if he could come back this year.',
+					'And we said YES OF COURSE! We can\'t wait to see David again and hear more stories from the history of Rare',
 				],
 			},
 		],
