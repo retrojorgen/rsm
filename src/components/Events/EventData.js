@@ -15,11 +15,32 @@ const DayPick = {
 	],
 };
 
+const EventAttributes = {
+	from: {
+		no: 'Fra',
+		en: 'From',
+	},
+	to: {
+		no: 'Til',
+		en: 'To',
+
+	},
+};
+
 const EventData = [
 	{
 		no: {
 			day: 'Lørdag 12.05.2018',
+
 			schedule: [
+				{
+					name: 'Neo Geo Tournament',
+					description: 'Varer hele dagen. Husk å møt opp tidlig, eller registrer deg online for å bli med! <a href=/neo-geo-world-tour>Les mer her</a>',
+					start: '10:00',
+					end: '18:00',
+					type: 'allDay',
+					typedesc: 'Varer hele dagen!',
+				},
 				{
 					name: 'Dørene åpner for VIP',
 					description: 'Har du VIP-billett kommer du inn en time før ordinær åpning',
@@ -149,6 +170,14 @@ const EventData = [
 		en: {
 			day: 'Saturday 05.12.2018',
 			schedule: [
+				{
+					name: 'Neo Geo Tournament',
+					description: 'All day event. Remember to show up early or register online to compete! <a href=/neo-geo-world-tour>More info here</a>',
+					start: '10:00',
+					end: '18:00',
+					type: 'allDay',
+					typedesc: 'All day event!',
+				},
 				{
 					name: 'Doors open for VIP ticket holders',
 					description: 'If you have VIP ticket you may enter one hour before regular opening',
@@ -285,6 +314,14 @@ const EventData = [
 		no: {
 			day: 'Søndag 13.05.2018',
 			schedule: [
+				{
+					name: 'Retro cup! Street Figher 2, Super Bomberman',
+					description: 'Varer hele dagen. Husk å møt opp tidlig, eller registrer deg online for å bli med! <a href=/retro-cup>Les mer her</a>',
+					start: '10:00',
+					end: '18:00',
+					type: 'allDay',
+					typedesc: 'Varer hele dagen!',
+				},
 				{
 					name: 'Dørene åpner for VIP',
 					description: 'Har du VIP-billett kommer du inn en time før ordinær åpning',
@@ -452,4 +489,4 @@ const EventData = [
 ];
 
 export default EventData;
-export { EventData, DayPick };
+export { EventData, DayPick, EventAttributes };

@@ -10,6 +10,7 @@ import Footer from './../Footer/Footer';
 import Events from './../Events/Events';
 import GuestsList from './../GuestsList/GuestsList';
 import NeoGeo from './../NeoGeo/NeoGeo';
+import RetroCup from './../NeoGeo/RetroCup';
 import GuestListing from './../GuestsList/GuestListing';
 import KidsActivities from './../Kids/KidsActivities';
 
@@ -37,6 +38,7 @@ const App = () => (
 						<Route path="/kids" component={KidsActivities} />
 						<Route path="/guests" component={GuestsList} exact />
 						<Route path="/neo-geo-world-tour" component={NeoGeo} exact />
+						<Route path="/retro-cup" component={RetroCup} exact />
 						<Route path="/guests/:guestUrl" component={GuestListing} />
 					</Switch>
 				</div>

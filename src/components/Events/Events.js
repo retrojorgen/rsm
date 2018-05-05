@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-
 import { TopTitle, HeaderTitleWrapper, Header, SectionsContainer } from '../Title/Title';
 import Guests from './../Guests/Guests';
 import EventList from './EventList';
@@ -57,7 +55,7 @@ export default class Events extends Component {
 					</HeaderTitleWrapper>
 				</Header>
 				<SectionsContainer background={whitePixelBackground}>
-					<EventList minified />
+					<EventList />
 				</SectionsContainer>
 				<Guests />
 			</div>

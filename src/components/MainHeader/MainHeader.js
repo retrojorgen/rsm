@@ -333,7 +333,11 @@ export default class MainHeader extends React.Component {
 							},
 							{
 								url: '/neo-geo-world-tour',
-								title: 'Neo Geo World Tour',
+								title: 'Lørdag: Neo Geo World Tour',
+							},
+							{
+								url: '/retro-cup',
+								title: 'Søndag: Retro Cup',
 							},
 							{
 								url: '/program',
@@ -436,7 +440,11 @@ export default class MainHeader extends React.Component {
 							},
 							{
 								url: '/neo-geo-world-tour',
-								title: 'Neo Geo World Tour',
+								title: 'Saturday: Neo Geo World Tour',
+							},
+							{
+								url: '/retro-cup',
+								title: 'Sunday: Retro Cup',
 							},
 							{
 								url: '/program',

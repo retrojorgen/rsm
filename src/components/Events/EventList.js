@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { EventData, DayPick }  from './EventData';
+import { EventData, DayPick, EventAttributes }  from './EventData';
 import { WideSection } from '../Title/Title';
 
 
@@ -9,14 +9,16 @@ const WideSectionModified = styled(WideSection)`
   height: 300px;
   position: relative;
   
-  
+  @media (min-width: 1100px) {
+      height: 500px;
+  }
   .day {
     position: relative;
     &:after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 10px;
+      left: 0;
       width: 100%;
       height: 100px;
       background: linear-gradient(180deg, transparent, #000);
@@ -41,6 +43,7 @@ const Day = styled.div`
   max-height: 100%;
   overflow: hidden;
   position: relative;
+
   h2 {
     text-align: center;
     padding: 10px;
@@ -86,6 +89,11 @@ const Event = styled.div`
   justify-content: flex-start;
   align-items: stretch;
   border-bottom: 2px solid black;
+  &.allDay {
+    .time {
+      background-color: #e11111;
+    }
+  }
 `;
 
 const Time = styled.div`
@@ -96,17 +104,28 @@ const Time = styled.div`
   color: white;
   flex: 0 0 80px;
   font-size: 0.9em;
-
-  span {
+  @media (min-width: 1100px) {
+    padding-top: 10px;
+  }
+  .time-box {
     display: block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    span {
+      display: block;
+    }
+    .smallcap {
+      font-size: 0.7em;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      color: #999;
+    }
   }
   @media (min-width: 1100px) {
     flex: 0 0 100px;
     font-size: 1em;
-    span {
-      padding: 20px;
+    .time-box {
+      padding: 10px 20px;
     }
   }
 `;
@@ -181,9 +200,10 @@ const days = [
 	EventData[0][language],
 	EventData[1][language],
 ];
-const selectTitle = DayPick.selectTitle[language];
+const selectedTitle = DayPick.selectTitle[language];
 const { selectDays } = DayPick;
-
+const from = EventAttributes.from[language];
+const to = EventAttributes.to[language];
 
 export default class EventList extends Component {
 	constructor(props) {
@@ -193,9 +213,7 @@ export default class EventList extends Component {
 			activeTile: 0,
 		};
 		if (props.minified) {
-			console.log('fis');
-			this.state.expanded = false;
-			console.log(this.state);
+			this.setState({ expanded: true });
 		}
 		this.toggleExpand = this.toggleExpand.bind(this);
 	}
@@ -212,7 +230,6 @@ export default class EventList extends Component {
 
 	render() {
 		const { activeTile, expanded } = this.state;
-		const selectedTitle = DayPick.selectTitle[language];
 		return (
 			<div>
 				<DayPicker>
@@ -228,18 +245,28 @@ export default class EventList extends Component {
 						<Day key={d} className={`day ${activeTile === parseInt(d, 10) ? 'active': ''}`}>
 							<h2>{day.day}</h2>
 							{day.schedule.map((event, e) => (
-								<Event key={e}>
-									<Time>
-										{event.start && (
-											<span>{event.start}</span>
+								<Event key={e} className={event.type ? event.type : ''}>
+									<Time className="time">
+										{event.type && event.typedesc && (
+											<div className="time-box"><span>{event.typedesc}</span></div>
 										)}
-										{event.end && (
-											<span>{event.end}</span>
+										{!event.typedesc && event.start && (
+											<div className="time-box">
+												<span className="smallcap">{from}</span>
+												<span>{event.start}</span>
+											</div>
 										)}
+										{!event.typedesc && event.end && (
+											<div className="time-box">
+												<span className="smallcap">{to}</span>
+												<span>{event.end}</span>
+											</div>
+										)}
+
 									</Time>
-									<Description>
+									<Description className="description">
 										<h3>{event.name}</h3>
-										<p>{event.description}</p>
+										<p dangerouslySetInnerHTML={{ __html: event.description }} />
 										<ul>
 											{event.info && event.info.map((info, i) => {
 												const profileImage = require(`../../images/${info.profile}`);
