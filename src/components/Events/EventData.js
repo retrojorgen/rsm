@@ -66,8 +66,8 @@ const EventData = [
 							profile: 'dextheswede.jpg',
 						},
 					],
-					start: '12:00',
-					end: '12:30',
+					start: '11:30',
+					end: '12:00',
 					location: 'panelrommet',
 				},
 				{
@@ -85,8 +85,8 @@ const EventData = [
 					location: 'panelrommet',
 				},
 				{
-					name: '??????? Q&A',
-					description: 'Annonseres snart!',
+					name: 'Owlboy og norsk spillbransje Q&A',
+					description: 'Jo-Remi, utvikleren bak det norske smash-hit pixel-spillet Owlboy tar med noen venner fra norske spillbransjen og holder spørrerunde! Lurer du på å jobbe med spillutvikling? Da er dette panelet for deg!',
 					info: [
 					],
 					start: '13:40',
@@ -127,7 +127,7 @@ const EventData = [
 					location: 'panel room',
 				},
 				{
-					name: 'Completionist / ???? Q&A',
+					name: 'Completionist / Beard Bros / The National Dex Q&A',
 					description: 'The Completionist tar med seg et par gjester og holder Q&A for tredje året på rad. Alltid populært!',
 					info: [
 						{
@@ -203,8 +203,8 @@ const EventData = [
 							profile: 'dextheswede.jpg',
 						},
 					],
-					start: '12:00',
-					end: '12:30',
+					start: '11:30',
+					end: '12:00',
 					location: 'panel room',
 				},
 				{
@@ -222,13 +222,12 @@ const EventData = [
 					location: 'panel room',
 				},
 				{
-					name: '??????? Q&A',
-					description: 'Announced soon!',
+					name: 'Owlboy and the Norwegian gaming scene Q&A',
+					description: 'Jo-Remi, the developer behind the now cult pixel game Owlboy brings some of his friends from the game industry along for a special Q&A. Thinking of becoming a game developer? This is the panel for you!',
 					info: [
 					],
 					start: '13:40',
 					end: '14:40',
-					location: 'panel room',
 				},
 				{
 					name: 'Al Lowe Q&A',
@@ -244,16 +243,6 @@ const EventData = [
 					end: '16:00',
 					location: 'panel room',
 				},
-				{
-					name: '??????? Q&A',
-					description: 'Announced soon',
-					info: [
-					],
-					start: '16:20',
-					end: '17:20',
-					location: 'panel room',
-				},
-
 				{
 					name: ' Rare / Conkers Bad Fur Day / Sea of Thieves Q&A with Chris Marlow og Shawn Pile',
 					description: 'Two veterans from RARE talk about the history of the company and their cult games',
@@ -275,8 +264,8 @@ const EventData = [
 				},
 
 				{
-					name: 'Completionist / ???? Q&A',
-					description: 'For the third year in a row American Youtuber The Completionst takes the stage to answer questions from fans. Rumours are he might bring some guests along?',
+					name: 'Completionist / Beard Bros / The National Dex Q&A',
+					description: 'For the third year in a row American Youtuber The Completionst takes the stage to answer questions from fans. Alex and Kellie from Beard Bros and National Dex will also be joining The Completionist on stage!',
 					info: [
 						{
 							name: 'The Completionist',

@@ -1,7 +1,101 @@
+const youtubeGuests = {
+	no: {
+		title: 'Norske Youtubere på RSM2018',
+		subTitle: 'Disse norske youtuberne har annonsert at de dukker opp på messen',
+		visit: 'besøk',
+		saturdayTitle: 'Lørdag 12.mai',
+		sundayTitle: 'Søndag 13.mai',
+		saturday: [
+			{
+				name: 'SONDREogPAPZ',
+				url: 'https://www.youtube.com/channel/UCr3KVSnGqOj1dXv_lb1DMeQ',
+				profile: 'yt-sondreogpapz',
+			},
+			{
+				name: 'Kattekryp',
+				url: 'https://www.youtube.com/user/Kattekryp',
+				profile: 'yt-kattekryp',
+			},
+			{
+				name: 'Chris-Stian',
+				url: 'https://www.youtube.com/user/flashyNOR',
+				profile: 'yt-chris-stian',
+			},
+			{
+				name: 'emwaAdventure',
+				url: 'https://www.youtube.com/user/emwaAdventure',
+				profile: 'yt-emwaadventure',
+			},
+			{
+				name: 'Misbetta',
+				url: 'https://www.youtube.com/user/BetinaReine',
+				profile: 'yt-misbetta',
+			},
+			{
+				name: 'Henning Mythe',
+				url: 'https://www.youtube.com/channel/UCXY4FAJrmlXSn5th9e2VY2g',
+				profile: 'yt-henningmythe',
+			},
+			{
+				name: 'Hege Beate',
+				url: 'https://www.youtube.com/channel/UCoK7alj76iTNR4Kx-NQR4Ng',
+				profile: 'yt-hege-beate',
+			},
+			{
+				name: 'The Paxian',
+				url: 'https://www.youtube.com/channel/UCeO_XdHS5ZRVhcTDwzA9JaQ',
+				profile: 'yt-the-paxian',
+			},
+
+		],
+		sunday: [
+			{
+				name: 'SONDREogPAPZ',
+				url: 'https://www.youtube.com/channel/UCr3KVSnGqOj1dXv_lb1DMeQ',
+				profile: 'yt-sondreogpapz',
+			},
+			{
+				name: 'Kattekryp',
+				url: 'https://www.youtube.com/user/Kattekryp',
+				profile: 'yt-kattekryp',
+			},
+			{
+				name: 'Chris-Stian',
+				url: 'https://www.youtube.com/user/flashyNOR',
+				profile: 'yt-chris-stian',
+			},
+
+			{
+				name: 'The Paxian',
+				url: 'https://www.youtube.com/channel/UCeO_XdHS5ZRVhcTDwzA9JaQ',
+				profile: 'yt-the-paxian',
+			},
+			{
+				name: 'Misbetta',
+				url: 'https://www.youtube.com/user/BetinaReine',
+				profile: 'yt-misbetta',
+			},
+			{
+				name: 'Hege Beate',
+				url: 'https://www.youtube.com/channel/UCoK7alj76iTNR4Kx-NQR4Ng',
+				profile: 'yt-hege-beate',
+			},
+			{
+				name: 'Preben Fjell',
+				url: 'https://www.youtube.com/user/multicomno',
+				profile: 'yt-preben-fjell',
+			},
+		],
+
+	},
+};
+
 const guestList = {
 	no: {
 		title: 'VIP-gjester',
-		subTitle: 'Vi annonserer gjester fortløpende. Følg med her og på vår <a href="http://www.facebook.com/retrospillmessen">facebook</a>',
+		subTitle: 'Alle våre gjester er tilgjengelig begge dager av messen, men vil være fraværende i perioder for paneler og pauser.  OBS! Vi gjør oppmerksom på at enkelte av våre gjester tar cover for autografer og selfies. Dette er ikke noe vi styrer, eller tar en cut av. Noen av våre gjester lever av messer, og har deler av eller hele sin inntekt gjennom autografer og selfies. Det koster ingenting å møte gjestene eller delta på panelene',
+		cover: 'Cover',
+		coverfree: 'Ingen cover',
 		guests: [
 			{
 				type: 'announced',
@@ -10,6 +104,16 @@ const guestList = {
 				name: 'John De Lancie',
 				description: 'Kjent fra Star Trek, Breaking Bad, My Little Pony og mye mer!',
 				alt: 'John De Lancie er kjent som Q fra Star trek og mye mer. Nå kommer han til RSM 2018!',
+				cover: [
+					{
+						description: 'Autograf',
+						price: '300',
+					},
+					{
+						description: 'Bilde / selfie',
+						price: '200',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -18,6 +122,16 @@ const guestList = {
 				name: 'Charles Martinet',
 				description: 'Stemmen til Mario, Luigi og fler!',
 				alt: 'Charles Martinet, stemmen til Mario, Luigi og fler kommer til RSM 2018!',
+				cover: [
+					{
+						description: 'Autograf',
+						price: '200',
+					},
+					{
+						description: 'Bilde / selfie',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -26,7 +140,6 @@ const guestList = {
 				name: 'Nintendo Playstation-prototype',
 				description: 'Terry Diebold og sønnen viser frem den unike protypen!',
 				alt: 'Nintendo Playstation prototypen kommer til RSM 2018!',
-
 			},
 			{
 				type: 'announced',
@@ -35,17 +148,20 @@ const guestList = {
 				name: 'Al Lowe',
 				description: 'Skaperen av Leisure Suit Larry-serien',
 				alt: 'Al Lowe kommer til RSM 2018',
-
+				cover: [
+					{
+						description: 'Sitat: Jeg gjør hva som helst for en hundrings (signatur, selfies etc..)',
+						price: '100',
+					},
+				],
 			},
 			{
 				type: 'announced',
-
 				profile: 'hwarshaw.jpg',
 				url: 'howard-scott-warshaw',
 				name: 'OBS! Avlyst, Howard Scott Warshaw',
 				description: 'Vår venn Howard må dessverre avlyse årets tur av personlige årsaker',
 				alt: 'Howard Scott Warshaw kommer til RSM 18',
-
 			},
 			{
 				type: 'announced',
@@ -71,6 +187,20 @@ const guestList = {
 				name: 'Daniel Pesina',
 				description: 'Mannen bak Sub-Zero, Scorpion og Johnny Cage i Mortal Kombat',
 				alt: 'Mannen bak Sub-Zero, Scorpion og Johnny Cage i Mortal Kombat',
+				cover: [
+					{
+						description: 'Autograf',
+						price: '100',
+					},
+					{
+						description: 'Bilde / selfie',
+						price: '100',
+					},
+					{
+						description: 'Selfie og autograf',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -79,6 +209,20 @@ const guestList = {
 				name: 'Anthony Marquez',
 				description: 'Mannen bak karakteren Kung Lao i Mortal Kombat',
 				alt: 'Mannen bak karakteren Kung Lao i Mortal Kombat',
+				cover: [
+					{
+						description: 'Autograf',
+						price: '100',
+					},
+					{
+						description: 'Bilde / selfie',
+						price: '100',
+					},
+					{
+						description: 'Selfie og autograf',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -87,6 +231,20 @@ const guestList = {
 				name: 'Philip Ahn',
 				description: 'Mannen bak karakteren Shang Tsung i Mortal Kombat',
 				alt: 'Mannen bak karakteren Shang Tsung i Mortal Kombat',
+				cover: [
+					{
+						description: 'Autograf',
+						price: '100',
+					},
+					{
+						description: 'Bilde / selfie',
+						price: '100',
+					},
+					{
+						description: 'Selfie og autograf',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -120,6 +278,14 @@ const guestList = {
 				description: 'Skaperen av den norske youtube-kanalen Commonwealth Realm, med over 130 000 subs',
 				alt: 'Skaperen av den norske youtube-kanalen Commonwealth Realm, med over 130 000 subs',
 			},
+			{
+				type: 'announced',
+				profile: 'dextheswede.jpg',
+				url: 'dex-the-swede',
+				name: 'Dex The Swede',
+				description: 'En av sverige mest populære retro-youtubere!',
+				alt: 'Dex the Swede is coming to RSM 18',
+			},
 		],
 	},
 	en: {
@@ -133,6 +299,16 @@ const guestList = {
 				name: 'John De Lancie',
 				description: 'Known from Star Trek, Breaking Bad, My Little Pony and heaps more!',
 				alt: 'John De Lancie AKA  Q from Star Trek is coming to RSM 2018!',
+				cover: [
+					{
+						description: 'Autograph',
+						price: '300',
+					},
+					{
+						description: 'Picture / selfie',
+						price: '200',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -141,6 +317,16 @@ const guestList = {
 				name: 'Charles Martinet',
 				description: 'The voice of Mario, Luigi and more!',
 				alt: 'Charles Martinet, the voice of Mario, Luigi and more is coming to RSM 2018!',
+				cover: [
+					{
+						description: 'Autograph',
+						price: '200',
+					},
+					{
+						description: 'Picture / selfie',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -158,7 +344,12 @@ const guestList = {
 				name: 'Al Lowe',
 				description: 'The creator of Leisure Suit Larry!',
 				alt: 'Al Lowe is coming to RSM 2018',
-
+				cover: [
+					{
+						description: 'Quote - I will sign anything for 100 kr',
+						price: '100',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -194,6 +385,20 @@ const guestList = {
 				name: 'Daniel Pesina',
 				description: 'Martial artist behind Sub-Zero, Scorpion og Johnny Cage from Mortal Kombat',
 				alt: 'Martial artist behind Sub-Zero, Scorpion og Johnny Cage from Mortal Kombat',
+				cover: [
+					{
+						description: 'Autograph',
+						price: '100',
+					},
+					{
+						description: 'Picture / selfie',
+						price: '100',
+					},
+					{
+						description: 'Selfie and Autograph',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -202,6 +407,20 @@ const guestList = {
 				name: 'Anthony Marquez',
 				description: 'Martial artist behind the character Kung Lao from Mortal Kombat',
 				alt: 'Martial artist behind the character Kung Lao from Mortal Kombat',
+				cover: [
+					{
+						description: 'Autograph',
+						price: '100',
+					},
+					{
+						description: 'Picture / selfie',
+						price: '100',
+					},
+					{
+						description: 'Selfie and Autograph',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -210,6 +429,20 @@ const guestList = {
 				name: 'Philip Ahn',
 				description: 'Martial artist behind the character Shang Tsung from Mortal Kombat',
 				alt: 'Martial artist behind the character Shang Tsung from Mortal Kombat',
+				cover: [
+					{
+						description: 'Autograph',
+						price: '100',
+					},
+					{
+						description: 'Picture / selfie',
+						price: '100',
+					},
+					{
+						description: 'Selfie and Autograph',
+						price: '150',
+					},
+				],
 			},
 			{
 				type: 'announced',
@@ -749,4 +982,4 @@ function getGuestInfoFromUrl(guestUrl, language) {
 }
 
 export default getGuestInfoFromUrl;
-export { getGuestInfoFromUrl, guests, guestList };
+export { getGuestInfoFromUrl, guests, guestList, youtubeGuests };

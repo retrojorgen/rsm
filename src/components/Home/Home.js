@@ -4,6 +4,7 @@ import Guests from './../Guests/Guests';
 import Tickets from './../Tickets/Tickets';
 import Welcome from './../Welcome/Welcome';
 import EventFront from './../Events/EventFront';
+import GuestsYT from './../Guests/GuestsYT';
 import { Wrapper } from '../Title/Title';
 import PracticalInfo from './../PracticalInfo/PracticalInfo';
 
@@ -15,6 +16,7 @@ export default () => (
 		<EventFront />
 		<Guests />
 		<Tickets />
+		<GuestsYT />
 	</Wrapper>
 );
 

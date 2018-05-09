@@ -49,13 +49,13 @@ export default () => {
 		<SlickWrap style={{ height: `${sliderHeight}px` }}>
 			<Slider  className="FrontHero-wrapper" {...settings}>
 				<SliderWrap>
-					<SliderDeLancie />
-				</SliderWrap>
-				<SliderWrap>
 					<SliderMartinet />
 				</SliderWrap>
 				<SliderWrap>
 					<SliderRsm />
+				</SliderWrap>
+				<SliderWrap>
+					<SliderDeLancie />
 				</SliderWrap>
 
 			</Slider>

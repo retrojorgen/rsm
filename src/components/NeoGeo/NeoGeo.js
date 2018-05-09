@@ -5,9 +5,10 @@ import neogeowlogo from '../../images/neogeo-wlogo.png';
 import scanLines from '../../images/scanlines.png';
 import snkFighterLeft from '../../images/snkFighterLeft.png';
 import snkFighterRight from '../../images/snkFighterRight.png';
+import { Wrapper } from '../Title/Title';
 
 const VideoBackground = styled.div`
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -17,7 +18,7 @@ const VideoBackground = styled.div`
   color: blue;
   
   iframe {
-    position:fixed;
+    position:absolute;
     top: 0;
     left:0;
     width: 100%;
@@ -69,20 +70,23 @@ const NeoLogoHeader = styled.div`
     }
     
     #logo {
-      height: 100px;
+      width: 100px;
       transform: translateX(-100px) rotate(-360deg);
       opacity: 0;
-      margin-right: 20px;
+      
       @media (min-device-width: 1100px) {
         height: 200px;
+        width: auto;
+        margin-right: 20px;
       }
     }
     #wlogo {
-      height: 60px;
+      width: 200px;
       transform: translateX(100px);
       opacity: 0;
       @media (min-device-width: 1100px) {
         height: 160px;
+        width: auto;
       }
     }
     #logo, 
@@ -102,6 +106,7 @@ const NeoWrapper = styled.div`
   position: relative;
   padding-bottom: 20px;
   display: flex;
+  overflow: hidden;
   @media (min-device-width: 1100px) {
     padding-top: 140px;
   }
@@ -252,26 +257,28 @@ export default class NeoGeo extends React.Component {
 		};
 		const translation = translations[language];
 		return (
-			<NeoWrapper>
-				<NeoLeft className={active ? '': 'active'} />
-				<NeoBody>
-					<NeoLogoHeader>
-						<img id="logo" className={active ? '': 'active'} src={neogeologo} alt="King of Fighters Character" />
-						<img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} alt="King of Fighters Character" />
-					</NeoLogoHeader>
-					<VideoBackground>
-						<iframe title="neo-geo-youtube-video" className="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameBorder="0" />
-					</VideoBackground>
-					<Constrainer>
-						<NeoTitle>{translation.title}</NeoTitle>
-						<NeoSubTitle>{translation.subtitle}</NeoSubTitle>
-						{translation.description.map((description, key) => (
-							<NeoParagraph key={key} dangerouslySetInnerHTML={{ __html: description }} />
-						))}
-					</Constrainer>
-				</NeoBody>
-				<NeoRight className={active ? '': 'active'} />
-			</NeoWrapper>
+			<Wrapper>
+				<NeoWrapper>
+					<NeoLeft className={active ? '': 'active'} />
+					<NeoBody>
+						<NeoLogoHeader>
+							<img id="logo" className={active ? '': 'active'} src={neogeologo} alt="King of Fighters Character" />
+							<img id="wlogo" className={active ? '': 'active'} src={neogeowlogo} alt="King of Fighters Character" />
+						</NeoLogoHeader>
+						<VideoBackground>
+							<iframe title="neo-geo-youtube-video" className="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IDmNL4c4xwE?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IDmNL4c4xwE" frameBorder="0" />
+						</VideoBackground>
+						<Constrainer>
+							<NeoTitle>{translation.title}</NeoTitle>
+							<NeoSubTitle>{translation.subtitle}</NeoSubTitle>
+							{translation.description.map((description, key) => (
+								<NeoParagraph key={key} dangerouslySetInnerHTML={{ __html: description }} />
+							))}
+						</Constrainer>
+					</NeoBody>
+					<NeoRight className={active ? '': 'active'} />
+				</NeoWrapper>
+			</Wrapper>
 		);
 	}
 }

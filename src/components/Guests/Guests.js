@@ -11,12 +11,13 @@ import { guestList } from '../../data/guests';
 const VomitClown = styled.div`
     position: absolute;
     top: 0;
-    left: 50%;
+    right: 0;
     margin-left: 140px;
     width: 222px;
     height:321px;
     background: url(${animatedClown});
     @media (max-device-width: 1100px) {
+        right: auto;
         left: -126px;
         transform: rotate(16deg);
         margin-left: 0;
@@ -125,7 +126,7 @@ const GuestsWrapper = styled.div`
 
 const Guest = styled.div`
     display: inline-block;
-    width: 200px;
+    width: 300px;
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.3);
     overflow: hidden;
     transition: all 0.1s ease-in;
@@ -137,6 +138,7 @@ const Guest = styled.div`
     &:hover {
     }
     @media (max-device-width: 1100px) {
+        width: 300px;
         margin: 10px;
         margin-bottom: 20px;
     }
@@ -178,6 +180,36 @@ const Unnanounced = styled.div`
     
 `;
 
+const SubTitle = styled.p`
+    font-size: 0.8em;
+    max-width: 60%;
+    background-color: rgba(255,255,255,0.6);
+    margin: 0 auto 20px auto;
+    @media (min-device-width: 1100px) {
+        max-width: 700px;
+    }
+`;
+
+const Cover = styled.div`
+    text-align: center;
+    background-color: #333;
+    p {
+        color: white;
+        text-transform: uppercase;
+    }
+    table {
+        width: 100%;
+    }
+    td {
+        padding: 10px;
+        color: white;
+        text-align: left;
+        border-bottom: 1px solid #444;
+    }
+    td:nth-child(2) {
+        text-align: right;
+    }
+`;
 export default () => {
 	const language = localStorage.language || 'no';
 	const translation = guestList[language];
@@ -185,6 +217,7 @@ export default () => {
 	return (
 		<GuestsWrapper>
 			<Title title={translation.title} color="Yellow" />
+			<SubTitle>{translation.subTitle}</SubTitle>
 			<SponsorRow>I samarbeid med <img src={elkjopLogo} alt="elkjøp logo" /></SponsorRow>
 			<VomitClown />
 			<GuestsContainerWrapper>
@@ -196,6 +229,25 @@ export default () => {
 								<Guest key={k}>
 									<GuestProfile profileImage={profilePic} />
 									<HeaderContainer guestName={g.name} guestDescription={g.description} />
+
+									{g.cover && (
+										<Cover>
+											<table>
+												{g.cover && g.cover.map((charge, c) => (
+													<tr>
+														<td>{charge.description}</td>
+														<td>{charge.price}kr</td>
+													</tr>
+												))}
+											</table>
+										</Cover>
+									)}
+									{!g.cover && (
+										<Cover>
+											<p>{translation.coverfree}</p>
+										</Cover>
+									)}
+
 									<PixelButtonNavLink
 										to={`/guests/${g.url}`}
 										style={

@@ -410,6 +410,10 @@ export default class MainHeader extends React.Component {
 								title: 'Shawn Pile (RARE)',
 							},
 							{
+								url: '/guests/david-doak-rare',
+								title: 'David Doak (GoldenEye 007)',
+							},
+							{
 								url: '/guests/dex-the-swede',
 								title: 'Dex The Swede',
 							},
@@ -495,6 +499,34 @@ export default class MainHeader extends React.Component {
 							{
 								url: '/guests/the-completionist',
 								title: 'The Completionist',
+							},
+							{
+								url: '/guests/daniel-pesina-mortal-kombat',
+								title: 'Daniel Pesina (Mortal Kombat)',
+							},
+							{
+								url: '/guests/anthony-marquez-mortal-kombat',
+								title: 'Anthony Marquez (Mortal Kombat)',
+							},
+							{
+								url: '/guests/philip-ahn-mortal-kombat',
+								title: 'Philip Ahn (Mortal Kombat)',
+							},
+							{
+								url: '/guests/chris-marlow-rare',
+								title: 'Chris Marlow (RARE)',
+							},
+							{
+								url: '/guests/shawn-pile-rare',
+								title: 'Shawn Pile (RARE)',
+							},
+							{
+								url: '/guests/david-doak-rare',
+								title: 'David Doak (GoldenEye 007)',
+							},
+							{
+								url: '/guests/dex-the-swede',
+								title: 'Dex The Swede',
 							},
 						],
 					},

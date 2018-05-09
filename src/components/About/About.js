@@ -65,13 +65,14 @@ const ImageSection = styled.div`
     height: 110%;
     background: url(${props => props.backgroundImage});
     background-size: cover;  
-    background-position:center ${props => (props.alignment === 'right' ? 'right': 'left')};
+    background-position:center center};
     background-repeat: no-repeat;
   }
   @media (max-device-width: 1100px) {
     position: relative;
     height: 300px;
     width: 100%;
+		background-position:center ${props => (props.alignment === 'right' ? 'right': 'left')};
    
     opacity: 1;
     text-align: center;
@@ -220,14 +221,14 @@ export default class About extends Component {
 					},
 					{
 						backgroundImage: Section7Background,
-						imageDescription: 'Master Of Pixels er vår storturnering',
-						header: 'Master Of Pixels',
+						imageDescription: 'To storturneringer!',
+						header: 'Neo Geo World Tour og Retro cup',
 						paragraphs: [
-							`Er du Norges beste retrogamer? Både lørdag og søndag kårer vi en pikselsmester på
-              Retrospillmessen. Spillene du skal konkurrere i avsløres nærmere messen.`,
-							`Gjennom neste hele åpningstiden vil du kunne kvalifisere deg til finalen i Master Of Pixels.
-              Det gjør du vet å få gode poengsummer i et uvalg av spill. Finalen foregår på hovedscenen.`,
-							'Og det blir fete premier og pokal begge dagene!',
+							'På årets messa har vi en ekte godbit! Spillselskapet SNK kommer til oss, som en del av sin NEO GEO World Tour. Det legendariske selskapet står bak noen av de mest ikoniske fightingspillene i historien.',
+							'Hos oss arrangerer de turnering i King of Fighters 98 og King of Fighters XIV på lørdag 12. mai., og du kan vinne en reise til den internasjonale finalen! <a href=/neo-geo-world-tour>Les mer om hvordan du melder deg på her</a>',
+							'På søndag får vi hjelp av retro.hk (jepp de kommer helt fra Hong Kong) til å arrangere turnering i Street Fighter 2 og Super Bomberman.',
+							'Her blir det garantert liv og kule premier! Les mer om <a href=/retro-cup>søndagens turnering her</a>',
+
 						],
 					},
 				],
@@ -310,13 +311,14 @@ export default class About extends Component {
 					},
 					{
 						backgroundImage: Section7Background,
-						imageDescription: 'Master Of Pixels is our grand tournament',
-						header: 'Master Of Pixels',
+						imageDescription: 'Neo Geo World Tour tournament and Retro Cup',
+						header: 'Neo Geo World Tour tournament and Retro Cup',
 						paragraphs: [
-							`Are you the best retro gamer in all the land? On Saturday and Sunday we host individual tournaments to choose the
-              Master of Pixels!`,
-							`Through most of the day you can qualify for the daily finale, held at the end of each day. To qualify you must be the best at 
-              an array of games we have selected. For more info on the games, keep following this page and our facebook page.`,
+							'We have a real treat for all your tournament lovers this year! We are teaming up with SNK and their Neo Geo World Tour to host some truly awesome tournaments.',
+							'On Saturday (May 12.) you can participate in three awesome tournaments. Metal Slug, King of Fighters 98 and King of Fighters XIV. The winners of KoF98 and KoFXIV will win a trip to the finals in Hong Kong.',
+							'Read more about how to register to participate on our <a href=/neo-geo-world-tour>World Tour page, here</a>.',
+							'On Sunday (May 13.) retro.hk is helping us run tournaments in Street Fighter 2 and Super Bomberman. These competitions are always fun, and we have some cool prices lined up.',
+							'For more info about the tournaments on Sunday visit our  <a href=/retro-cup>Retro cup page here</a>',
 						],
 					},
 				],
@@ -336,9 +338,7 @@ export default class About extends Component {
 					<ContentSection alignment={imageAligment}>
 						<ContentSectionHeader>{a.header}</ContentSectionHeader>
 						{a.paragraphs.map((c, ck) => (
-							<ContentSectionParagraph key={ck}>
-								{c}
-							</ContentSectionParagraph>
+							<ContentSectionParagraph key={ck} dangerouslySetInnerHTML={{ __html: c }} />
 						))}
 					</ContentSection>
 				</Section>

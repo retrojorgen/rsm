@@ -6,7 +6,7 @@ import { WideSection } from '../Title/Title';
 
 
 const WideSectionModified = styled(WideSection)`
-  height: 300px;
+  height: 400px;
   position: relative;
   
   @media (min-width: 1100px) {
@@ -209,13 +209,18 @@ export default class EventList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			expanded: true,
+			expanded: !props.minified,
 			activeTile: 0,
 		};
-		if (props.minified) {
-			this.setState({ expanded: true });
-		}
+
 		this.toggleExpand = this.toggleExpand.bind(this);
+	}
+
+
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.minified) {
+			this.setState({ expanded: false });
+		}
 	}
 
 	toggleExpand() {

@@ -4,9 +4,10 @@ import wideLogo from '../../images/retro-cup-logo.svg';
 import leftFigure from '../../images/bomberMan.png';
 import rightFigure from '../../images/streetFighter.png';
 import background from '../../images/retrocup-background.jpg';
+import { Wrapper } from '../Title/Title';
 
 const Background = styled.div`
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -64,10 +65,12 @@ const NeoLogoHeader = styled.div`
       }
     }
     #wide-logo {
-      height: 80px;
+      height: auto;
       transform: translateX(100px);
       opacity: 0;
+      width: calc(100% - 40px);
       @media (min-device-width: 1100px) {
+        width: auto;
         height: 200px;
       }
     }
@@ -85,12 +88,10 @@ const NeoLogoHeader = styled.div`
 `;
 
 const NeoWrapper = styled.div`
-  padding-top: 80px;
   position: relative;
   padding-bottom: 20px;
   display: flex;
   @media (min-device-width: 1100px) {
-    padding-top: 90px;
   }
 `;
 
@@ -232,23 +233,25 @@ export default class NeoGeo extends React.Component {
 		};
 		const translation = translations[language];
 		return (
-			<NeoWrapper>
-				<NeoLeft className={active ? '': 'active'} />
-				<NeoBody>
-					<NeoLogoHeader>
-						<img id="wide-logo" className={active ? '': 'active'} src={wideLogo} alt="Retro Cup" />
-					</NeoLogoHeader>
-					<Background />
-					<Constrainer>
-						<NeoTitle>{translation.title}</NeoTitle>
-						<NeoSubTitle>{translation.subtitle}</NeoSubTitle>
-						{translation.description.map((description, key) => (
-							<NeoParagraph key={key} dangerouslySetInnerHTML={{ __html: description }} />
-						))}
-					</Constrainer>
-				</NeoBody>
-				<NeoRight className={active ? '': 'active'} />
-			</NeoWrapper>
+			<Wrapper>
+				<NeoWrapper>
+					<NeoLeft className={active ? '': 'active'} />
+					<NeoBody>
+						<NeoLogoHeader>
+							<img id="wide-logo" className={active ? '': 'active'} src={wideLogo} alt="Retro Cup" />
+						</NeoLogoHeader>
+						<Background />
+						<Constrainer>
+							<NeoTitle>{translation.title}</NeoTitle>
+							<NeoSubTitle>{translation.subtitle}</NeoSubTitle>
+							{translation.description.map((description, key) => (
+								<NeoParagraph key={key} dangerouslySetInnerHTML={{ __html: description }} />
+							))}
+						</Constrainer>
+					</NeoBody>
+					<NeoRight className={active ? '': 'active'} />
+				</NeoWrapper>
+			</Wrapper>
 		);
 	}
 }

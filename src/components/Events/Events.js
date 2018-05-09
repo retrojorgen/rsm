@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TopTitle, HeaderTitleWrapper, Header, SectionsContainer } from '../Title/Title';
+import { TopTitle, HeaderTitleWrapper, Header, SectionsContainer, Wrapper } from '../Title/Title';
 import Guests from './../Guests/Guests';
 import EventList from './EventList';
 
@@ -45,7 +45,7 @@ export default class Events extends Component {
 
 
 		return (
-			<div className="">
+			<Wrapper>
 				<Header>
 					<HeaderTitleWrapper>
 						<TopTitle>
@@ -58,7 +58,7 @@ export default class Events extends Component {
 					<EventList />
 				</SectionsContainer>
 				<Guests />
-			</div>
+			</Wrapper>
 		);
 	}
 }

@@ -201,13 +201,24 @@ const WideSection = styled(Section)`
 
 const Wrapper = styled.div`
     padding-top: 60px;
-    margin-bottom: ${window.innerHeight}px;
   @media (min-device-width: 1100px) {
     padding-top: 87px;
     margin-bottom: 600px;
   }
 `;
 
+const SubTitle = styled.p`
+    font-size: 0.8em;
+    max-width: 60%;
+    background-color: rgba(255,255,255,0.6);
+    margin: 0 auto 20px auto;
+    @media (min-device-width: 1100px) {
+        font-size: 1em;
+        background: transparent;
+        max-width: 700px;
+        text-align: center;
+    }
+`;
 
 const BlackSection = styled.div`
     display: block;
@@ -271,4 +282,19 @@ Title.propTypes = {
 export default Title;
 
 
-export { BlackSection, YellowSection, TopTitle, HeaderTitleWrapper, Header, PixelButton, PixelButtonNavLink, PixelButtonRegular, PixelButtonButton, Section, SectionsContainer, WideSection, Wrapper  };
+export {
+	BlackSection,
+	YellowSection,
+	TopTitle,
+	HeaderTitleWrapper,
+	Header,
+	PixelButton,
+	PixelButtonNavLink,
+	PixelButtonRegular,
+	PixelButtonButton,
+	Section,
+	SectionsContainer,
+	WideSection,
+	Wrapper,
+	SubTitle,
+};

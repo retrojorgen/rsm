@@ -175,7 +175,7 @@ export default () => {
               på billettsiden vår. Barn opp til 2 år slipper inn gratis.`,
 					],
 					ticketOptions: [
-						{ name: 'Dagspass Voksen', price: 279 },
+						{ name: 'Dagspass Voksen', price: 289 },
 						{ name: 'Dagspass barn (12 og under)', price: 106 },
 					],
 				},
@@ -243,7 +243,7 @@ export default () => {
               a bit calmer, with more time to play the machines. Kids/babies up to 2 years get in for free.`,
 					],
 					ticketOptions: [
-						{ name: 'Day pass Adult', price: 279 },
+						{ name: 'Day pass Adult', price: 289 },
 						{ name: 'Day pass Kid (12 and under)', price: 106 },
 					],
 				},
@@ -254,7 +254,7 @@ export default () => {
 
 	return (
 		<SectionContainer>
-			<Title title={translation.title} />
+			<Title title={translation.title} color="white" />
 			<p>{translation.subTitle}</p>
 			<h2>{translation.ticketsHeader}</h2>
 			<TicketsListWrapper>
