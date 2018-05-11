@@ -97,9 +97,7 @@ export default () => {
 			bookHotel: 'Book her',
 			billetter: 'Billetter',
 			buyTickets: 'Kjøp billetter',
-			billetterDescription: `Vi tilbyr både <strong>dagspass</strong>, <strong>helgepass</strong>, og reduserte priser til barn opp til 12 år. 
-            
-            `,
+			billetterDescription: 'Vi tilbyr både <strong>dagspass</strong>, <strong>helgepass</strong>, og reduserte priser til barn opp til 12 år. Du kan selvsagt betale i døra også!',
 			ticketPrices: [
 				'Helgepass VIP Voksen - 599kr',
 				'* VIP-pass gir tilgang til messa en time før ordinær åpningstid hver dag',
@@ -125,9 +123,7 @@ export default () => {
 			billetter: 'Tickets',
 			bookHotel: 'Book here',
 			buyTickets: 'Buy tickets',
-			billetterDescription: `We offer  <strong>day passes</strong>, <strong>weekend passes</strong>, and discounts for children up to 12 years. 
-            
-            `,
+			billetterDescription: 'We offer  <strong>day passes</strong>, <strong>weekend passes</strong>, and discounts for children up to 12 years. You can pay at the entrance as well',
 			ticketPrices: [
 				'Weekend pass VIP Adult - 599kr',
 				'* VIP gives you access to the convention an hour before regular opening hours, all days',

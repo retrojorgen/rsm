@@ -71,11 +71,6 @@ const youtubeGuests = {
 				profile: 'yt-the-paxian',
 			},
 			{
-				name: 'Misbetta',
-				url: 'https://www.youtube.com/user/BetinaReine',
-				profile: 'yt-misbetta',
-			},
-			{
 				name: 'Hege Beate',
 				url: 'https://www.youtube.com/channel/UCoK7alj76iTNR4Kx-NQR4Ng',
 				profile: 'yt-hege-beate',
